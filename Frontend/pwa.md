@@ -95,6 +95,112 @@ registerRoute(
 
 ---
 
+## Angular PWA
+
+### 설치
+
+```bash
+ng add @angular/pwa
+```
+
+이 명령은 자동으로:
+
+- `manifest.webmanifest` 생성
+- Service Worker 설정 (`ngsw-config.json`)
+- `index.html`에 manifest 링크 추가
+- 앱 아이콘 생성
+
+### ngsw-config.json
+
+```json
+{
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": ["/favicon.ico", "/index.html", "/*.css", "/*.js"]
+      }
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/**",
+          "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
+        ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api",
+      "urls": ["/api/**"],
+      "cacheConfig": {
+        "maxSize": 100,
+        "maxAge": "1h",
+        "strategy": "freshness"
+      }
+    }
+  ]
+}
+```
+
+### SwUpdate Service
+
+```typescript
+import { SwUpdate } from "@angular/service-worker";
+import { inject } from "@angular/core";
+
+export class AppComponent {
+  private swUpdate = inject(SwUpdate);
+
+  ngOnInit() {
+    // 업데이트 확인
+    if (this.swUpdate.isEnabled) {
+      this.swUpdate.versionUpdates.subscribe((event) => {
+        if (event.type === "VERSION_READY") {
+          if (confirm("새 버전이 있습니다. 업데이트하시겠습니까?")) {
+            window.location.reload();
+          }
+        }
+      });
+    }
+  }
+}
+```
+
+### 푸시 알림 (Angular)
+
+```typescript
+import { SwPush } from "@angular/service-worker";
+
+export class NotificationService {
+  private swPush = inject(SwPush);
+
+  subscribeToPush() {
+    this.swPush
+      .requestSubscription({
+        serverPublicKey: "YOUR_PUBLIC_KEY",
+      })
+      .then((sub) => console.log("Subscribed", sub))
+      .catch((err) => console.error("Error", err));
+  }
+
+  // 푸시 메시지 수신
+  ngOnInit() {
+    this.swPush.messages.subscribe((msg) => {
+      console.log("Push message:", msg);
+    });
+  }
+}
+```
+
+---
+
 ## 🎯 PWA 체크리스트
 
 - [ ] HTTPS 필수

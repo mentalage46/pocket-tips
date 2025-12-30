@@ -139,32 +139,261 @@ function CreateUser() {
 
 ---
 
+## Angular 상태 관리
+
+### 1. Services (전통적 방식)
+
+```typescript
+import { Injectable, signal } from "@angular/core";
+
+@Injectable({ providedIn: "root" })
+export class AuthService {
+  private currentUser = signal<User | null>(null);
+
+  // 읽기 전용 노출
+  user = this.currentUser.asReadonly();
+
+  login(credentials: Credentials) {
+    // API 호출 후
+    this.currentUser.set(user);
+  }
+
+  logout() {
+    this.currentUser.set(null);
+  }
+}
+
+// 컴포넌트에서 사용
+export class HeaderComponent {
+  private auth = inject(AuthService);
+
+  user = this.auth.user; // Signal
+}
+```
+
+```html
+<!-- Template에서 사용 -->
+@if (user()) {
+<p>Welcome, {{ user()!.name }}</p>
+}
+```
+
+### 2. Signals (Angular 16+) ⭐
+
+```typescript
+import { signal, computed, effect } from "@angular/core";
+
+@Injectable({ providedIn: "root" })
+export class CartService {
+  // 기본 시그널
+  items = signal<Product[]>([]);
+
+  // Computed Signal (자동 계산)
+  total = computed(() =>
+    this.items().reduce((sum, item) => sum + item.price, 0)
+  );
+
+  itemCount = computed(() => this.items().length);
+
+  // Effect (부수 효과)
+  constructor() {
+    effect(() => {
+      console.log("장바구니 개수:", this.itemCount());
+      localStorage.setItem("cart", JSON.stringify(this.items()));
+    });
+  }
+
+  addItem(product: Product) {
+    this.items.update((items) => [...items, product]);
+  }
+
+  removeItem(id: number) {
+    this.items.update((items) => items.filter((item) => item.id !== id));
+  }
+
+  clear() {
+    this.items.set([]);
+  }
+}
+```
+
+### 3. NgRx (대규모 앱)
+
+```typescript
+// State
+export interface AppState {
+  counter: number;
+}
+
+// Actions
+import { createAction, props } from "@ngrx/store";
+
+export const increment = createAction("[Counter] Increment");
+export const decrement = createAction("[Counter] Decrement");
+export const reset = createAction("[Counter] Reset");
+
+// Reducer
+import { createReducer, on } from "@ngrx/store";
+
+export const counterReducer = createReducer(
+  0,
+  on(increment, (state) => state + 1),
+  on(decrement, (state) => state - 1),
+  on(reset, () => 0)
+);
+
+// Selector
+import { createFeatureSelector, createSelector } from "@ngrx/store";
+
+export const selectCounter = createFeatureSelector<number>("counter");
+export const selectDoubled = createSelector(
+  selectCounter,
+  (counter) => counter * 2
+);
+
+// Component
+export class CounterComponent {
+  private store = inject(Store);
+
+  count$ = this.store.select(selectCounter);
+  doubled$ = this.store.select(selectDoubled);
+
+  increment() {
+    this.store.dispatch(increment());
+  }
+}
+```
+
+```html
+<!-- Template -->
+<p>Count: {{ count$ | async }}</p>
+<p>Doubled: {{ doubled$ | async }}</p>
+<button (click)="increment()">+</button>
+```
+
+### 4. NgRx Component Store (로컬 상태)
+
+```typescript
+import { ComponentStore } from "@ngrx/component-store";
+
+interface TodoState {
+  todos: Todo[];
+  filter: "all" | "active" | "completed";
+}
+
+@Injectable()
+export class TodoStore extends ComponentStore<TodoState> {
+  constructor() {
+    super({ todos: [], filter: "all" });
+  }
+
+  // Selectors
+  readonly todos$ = this.select((state) => state.todos);
+  readonly filter$ = this.select((state) => state.filter);
+
+  readonly filteredTodos$ = this.select(
+    this.todos$,
+    this.filter$,
+    (todos, filter) => {
+      if (filter === "active") return todos.filter((t) => !t.done);
+      if (filter === "completed") return todos.filter((t) => t.done);
+      return todos;
+    }
+  );
+
+  // Updaters
+  readonly addTodo = this.updater((state, todo: Todo) => ({
+    ...state,
+    todos: [...state.todos, todo],
+  }));
+
+  readonly setFilter = this.updater((state, filter: TodoState["filter"]) => ({
+    ...state,
+    filter,
+  }));
+}
+
+// 컴포넌트에서 사용
+@Component({
+  providers: [TodoStore], // 컴포넌트 레벨 프로바이더
+})
+export class TodoListComponent {
+  private todoStore = inject(TodoStore);
+
+  todos$ = this.todoStore.filteredTodos$;
+
+  addTodo(text: string) {
+    this.todoStore.addTodo({ id: Date.now(), text, done: false });
+  }
+}
+```
+
+### 5. RxJS + BehaviorSubject
+
+```typescript
+import { BehaviorSubject, Observable } from "rxjs";
+import { map } from "rxjs/operators";
+
+@Injectable({ providedIn: "root" })
+export class ThemeService {
+  private themeSubject = new BehaviorSubject<"light" | "dark">("light");
+
+  theme$: Observable<"light" | "dark"> = this.themeSubject.asObservable();
+  isDark$ = this.theme$.pipe(map((theme) => theme === "dark"));
+
+  toggleTheme() {
+    const current = this.themeSubject.value;
+    this.themeSubject.next(current === "light" ? "dark" : "light");
+  }
+
+  setTheme(theme: "light" | "dark") {
+    this.themeSubject.next(theme);
+  }
+}
+```
+
+---
+
 ## 🎯 상태 관리 선택 체크리스트
 
-**Context API 선택**
+**Angular Services + Signals 선택**
 
-- [ ] 단순한 전역 상태 (테마, 언어)
-- [ ] 상태 변경 빈도 낮음
-- [ ] 추가 라이브러리 없이 해결
-
-**Zustand 선택**
-
-- [ ] 간단한 API 선호
-- [ ] 보일러플레이트 최소화
+- [ ] Angular 16+ 사용
 - [ ] 중소규모 프로젝트
+- [ ] 간단한 반응형 상태 필요
+- [ ] 최소한의 보일러플레이트
 
-**Redux Toolkit 선택**
+**NgRx Component Store 선택**
 
-- [ ] 대규모 프로젝트
+- [ ] 컴포넌트 로컬 복잡한 상태
+- [ ] NgRx 장점 + 낮은 진입장벽
+- [ ] 중간 규모 기능
+
+**NgRx Store 선택**
+
+- [ ] 대규모 엔터프라이즈 앱
 - [ ] 복잡한 상태 로직
-- [ ] DevTools, 미들웨어 필요
-- [ ] 팀이 이미 Redux 숙련
+- [ ] 타임 트래블 디버깅 필요
+- [ ] 팀이 RxJS/Redux 패턴 숙련
 
-**React Query 선택**
+**RxJS + BehaviorSubject 선택**
 
-- [ ] 서버 상태 관리 (API 캐시)
-- [ ] 자동 리페칭 필요
-- [ ] 로딩/에러 상태 관리
+- [ ] 레거시 Angular 프로젝트
+- [ ] RxJS 스트림과 통합 필요
+- [ ] Signals 마이그레이션 전
+
+---
+
+## React vs Angular 상태 관리 비교
+
+| 항목                 | React                   | Angular                 |
+| -------------------- | ----------------------- | ----------------------- |
+| **로컬 상태**        | useState                | Signal, BehaviorSubject |
+| **전역 상태 (간단)** | Context API             | Service + Signal        |
+| **전역 상태 (복잡)** | Redux Toolkit / Zustand | NgRx Store              |
+| **컴포넌트 상태**    | useState + useReducer   | ComponentStore          |
+| **서버 상태**        | React Query / SWR       | RxJS + HttpClient       |
+| **비동기 처리**      | useEffect + async       | RxJS Observables        |
 
 ---
 

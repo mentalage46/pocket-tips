@@ -321,6 +321,188 @@ getOrder(userId); // Error! 타입이 다름
 
 ---
 
+## Angular 특화 패턴
+
+### Dependency Injection 타입
+
+```typescript
+import { InjectionToken } from "@angular/core";
+
+// 인터페이스 토큰
+export interface ApiConfig {
+  baseUrl: string;
+  timeout: number;
+}
+
+export const API_CONFIG = new InjectionToken<ApiConfig>("api.config");
+
+// Provider
+providers: [
+  { provide: API_CONFIG, useValue: { baseUrl: "/api", timeout: 5000 } },
+];
+
+// 사용
+export class ApiService {
+  constructor(@Inject(API_CONFIG) private config: ApiConfig) {}
+}
+```
+
+### RxJS 타입 안전성
+
+```typescript
+import { Observable } from "rxjs";
+import { map, filter } from "rxjs/operators";
+
+// 타입 추론 강화
+function getUsers(): Observable<User[]> {
+  return this.http.get<User[]>("/api/users");
+}
+
+// 타입 가드와 함께
+function isActiveUser(user: User): user is ActiveUser {
+  return user.status === "active";
+}
+
+getUsers().pipe(
+  map((users) => users.filter(isActiveUser)), // ActiveUser[]
+  map((activeUsers) => activeUsers[0].permissions) // TypeScript가 타입 알고 있음
+);
+```
+
+### Signal 타입
+
+```typescript
+import { signal, computed, Signal } from "@angular/core";
+
+interface User {
+  id: number;
+  name: string;
+  role: "admin" | "user";
+}
+
+export class UserStore {
+  // WritableSignal<User | null>
+  private user = signal<User | null>(null);
+
+  // Signal<User | null> (읽기 전용)
+  readonly currentUser: Signal<User | null> = this.user.asReadonly();
+
+  // Signal<boolean>
+  readonly isAdmin = computed(() => this.user()?.role === "admin");
+
+  setUser(user: User) {
+    this.user.set(user);
+  }
+}
+```
+
+### Form 타입 (Typed Forms)
+
+```typescript
+import { FormControl, FormGroup } from "@angular/forms";
+
+interface LoginForm {
+  email: FormControl<string>;
+  password: FormControl<string>;
+  rememberMe: FormControl<boolean>;
+}
+
+export class LoginComponent {
+  // 타입 안전한 폼
+  loginForm = new FormGroup<LoginForm>({
+    email: new FormControl("", { nonNullable: true }),
+    password: new FormControl("", { nonNullable: true }),
+    rememberMe: new FormControl(false, { nonNullable: true }),
+  });
+
+  onSubmit() {
+    // value가 정확한 타입을 가짐
+    const { email, password, rememberMe } = this.loginForm.value;
+    // email: string, password: string, rememberMe: boolean
+  }
+}
+```
+
+### Component Input/Output 타입
+
+```typescript
+import { Component, Input, Output, EventEmitter } from "@angular/core";
+
+@Component({
+  selector: "app-user-card",
+  template: `...`,
+})
+export class UserCardComponent {
+  // 타입 안전한 Input
+  @Input({ required: true }) user!: User;
+  @Input() editable: boolean = false;
+
+  // 타입 안전한 Output
+  @Output() userDeleted = new EventEmitter<number>(); // User ID
+  @Output() userUpdated = new EventEmitter<User>();
+
+  deleteUser() {
+    this.userDeleted.emit(this.user.id); // number만 가능
+  }
+}
+
+// 사용
+@Component({
+  template: `
+    <app-user-card
+      [user]="currentUser"
+      (userDeleted)="handleDelete($event)"
+      (userUpdated)="handleUpdate($event)"
+    >
+    </app-user-card>
+  `,
+})
+export class ParentComponent {
+  handleDelete(userId: number) {} // 타입이 명확
+  handleUpdate(user: User) {}
+}
+```
+
+### Directive 타입
+
+```typescript
+import { Directive, Input, TemplateRef, ViewContainerRef } from "@angular/core";
+
+@Directive({
+  selector: "[appRepeat]",
+})
+export class RepeatDirective<T> {
+  @Input() set appRepeat(items: T[]) {
+    this.viewContainer.clear();
+    items.forEach((item) => {
+      this.viewContainer.createEmbeddedView(this.templateRef, {
+        $implicit: item,
+        index: items.indexOf(item),
+      });
+    });
+  }
+
+  constructor(
+    private templateRef: TemplateRef<{ $implicit: T; index: number }>,
+    private viewContainer: ViewContainerRef
+  ) {}
+}
+
+// 사용 (타입 추론됨)
+@Component({
+  template: `
+    <div *appRepeat="let user of users; let i = index">
+      {{ i }}: {{ user.name }}
+    </div>
+  `,
+})
+export class UsersComponent {
+  users: User[] = [];
+}
+```
+
+---
+
 ## 🎯 TypeScript 체크리스트
 
 ### 기본
