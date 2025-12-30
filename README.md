@@ -6,15 +6,16 @@
 
 ## 📁 카테고리
 
-| 폴더                                                    | 설명                                           |
-| ------------------------------------------------------- | ---------------------------------------------- |
-| [AI](./AI/)                                             | AI 프롬프팅 기법                               |
-| [Backend](./Backend/)                                   | API 설계, 인증, DB, 캐싱, 로깅, 메시징, 테스트 |
-| [Frontend](./Frontend/)                                 | 상태 관리, TypeScript, 성능 최적화, PWA        |
-| [Infrastructure](./Infrastructure/)                     | Docker, CI/CD, Nginx                           |
-| [Security](./Security/)                                 | OWASP, 환경변수, CORS                          |
-| [Utility](./Utility/)                                   | Makefile, YAML, Husky, 코드 리뷰               |
-| [Version Control System](./Version%20Control%20System/) | Git 명령어, Rebase, Cherry-pick                |
+| 폴더                                                    | 설명                                               |
+| ------------------------------------------------------- | -------------------------------------------------- |
+| [AI](./AI/)                                             | AI 프롬프팅 기법                                   |
+| [Backend](./Backend/)                                   | API 설계, 인증, DB, 캐싱, 로깅, 메시징, 테스트     |
+| [Frontend](./Frontend/)                                 | 상태 관리, TypeScript, 성능 최적화, PWA, 웹 접근성 |
+| [I18N](./I18N/)                                         | 다국어 번역 파일 관리, React & Angular 구현        |
+| [Infrastructure](./Infrastructure/)                     | Docker, CI/CD, Nginx                               |
+| [Security](./Security/)                                 | OWASP, 환경변수, CORS                              |
+| [Utility](./Utility/)                                   | Makefile, YAML, Husky, 코드 리뷰                   |
+| [Version Control System](./Version%20Control%20System/) | Git 명령어, Rebase, Cherry-pick                    |
 
 ---
 
@@ -30,6 +31,11 @@
 
 - [State Management](./Frontend/state-management.md) | [TypeScript](./Frontend/typescript.md)
 - [Web Performance](./Frontend/web-performance.md) | [PWA](./Frontend/pwa.md)
+- [Accessibility](./Frontend/accessibility.md)
+
+### I18N
+
+- [Translation](./I18N/translation.md) - 다국어 번역 파일 관리, 동적 언어 변경, UI 관리
 
 ### Infrastructure
 
