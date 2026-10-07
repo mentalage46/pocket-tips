@@ -11,6 +11,7 @@
 | [AI](./AI/)                                             | AI 프롬프팅 기법                                   |
 | [Backend](./Backend/)                                   | API 설계, 인증, DB, 캐싱, 로깅, 메시징, 테스트     |
 | [Frontend](./Frontend/)                                 | 상태 관리, TypeScript, 성능 최적화, PWA, 웹 접근성 |
+| [Hardware](./Hardware/)                                 | 전기·전자 기초, GPIO, 통신, 센서·모터 제어         |
 | [I18N](./I18N/)                                         | 다국어 번역 파일 관리, React & Angular 구현        |
 | [Network](./Network/)                                   | 프로토콜, 서브넷, 라우터, 게이트웨이               |
 | [Infrastructure](./Infrastructure/)                     | Docker, CI/CD, Nginx                               |
@@ -33,6 +34,13 @@
 - [State Management](./Frontend/state-management.md) | [TypeScript](./Frontend/typescript.md)
 - [Web Performance](./Frontend/web-performance.md) | [PWA](./Frontend/pwa.md)
 - [Accessibility](./Frontend/accessibility.md)
+
+### Hardware
+
+- [학습 순서와 전체 목차](./Hardware/README.md)
+- [전기 기초](./Hardware/basics/electrical-basics.md) | [전원과 배선](./Hardware/basics/power-and-wiring.md)
+- [GPIO](./Hardware/interfaces/gpio.md) | [I2C](./Hardware/interfaces/i2c.md) | [SPI](./Hardware/interfaces/spi.md)
+- [센서](./Hardware/modules/sensor-basics.md) | [출력 장치](./Hardware/modules/actuator-basics.md) | [문제 진단](./Hardware/debugging/troubleshooting.md)
 
 ### I18N
 
