@@ -1,5 +1,7 @@
 # Makefile
 
+빌드의 원리부터 읽으려면 [빌드 시스템 학습 가이드](../Build/README.md)를, 실제 소스를 빌드하려면 [C 프로젝트 실습](../Build/c-build-example.md)을 참고합니다.
+
 ## Makefile이란?
 
 > 빌드 자동화 도구 `make`의 설정 파일. 반복 명령어를 타겟으로 정의하여 실행
@@ -19,7 +21,8 @@
 	명령어  # 반드시 TAB으로 시작!
 
 # 예시
-build: clean
+.PHONY: build clean deploy
+build:
 	npm run build
 
 clean:
@@ -65,10 +68,12 @@ test: ## 테스트 실행
 | 기능              | 설명                      | 예시                 |
 | ----------------- | ------------------------- | -------------------- |
 | **명령어 간소화** | 긴 명령어를 짧은 타겟으로 | `make deploy`        |
-| **의존성 관리**   | 순서대로 실행 보장        | `deploy: build test` |
+| **의존성 관리**   | 선행 작업 완료 후 타깃 실행 | `deploy: build test` |
 | **변수 지원**     | 재사용 가능한 값          | `$(APP_NAME)`        |
 | **조건부 실행**   | 파일 변경 시에만 빌드     | 타임스탬프 비교      |
 | **병렬 실행**     | `-j` 옵션                 | `make -j4 build`     |
+
+`deploy: build test`는 `build`와 `test` 사이의 순서를 보장하지 않습니다. 테스트에 빌드 결과가 필요하면 `test: build`를 추가합니다. 일반 빌드가 매번 `clean`에 의존하면 증분 빌드의 이점이 사라지므로 정리는 별도 작업으로 실행합니다.
 
 ---
 
@@ -126,10 +131,11 @@ db-up:
 db-migrate:
 	npm run migrate
 
-db-seed:
+db-seed: db-migrate
 	npm run seed
 
-db-reset: db-migrate db-seed
+# 마이그레이션 후 시드 실행 (데이터 삭제·초기화는 하지 않음)
+db-setup: db-seed
 ```
 
 ---

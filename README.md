@@ -10,6 +10,7 @@
 | ------------------------------------------------------- | -------------------------------------------------- |
 | [AI](./AI/)                                             | AI 프롬프팅 기법                                   |
 | [Backend](./Backend/)                                   | API 설계, 인증, DB, 캐싱, 로깅, 메시징, 테스트     |
+| [Build](./Build/)                                       | 빌드 과정, 의존성, 도구 선택, 캐시, 오류 진단     |
 | [Frontend](./Frontend/)                                 | 상태 관리, TypeScript, 성능 최적화, PWA, 웹 접근성 |
 | [Hardware](./Hardware/)                                 | 전기·전자 기초, GPIO, 통신, 센서·모터 제어         |
 | [I18N](./I18N/)                                         | 다국어 번역 파일 관리, React & Angular 구현        |
@@ -28,6 +29,13 @@
 - [API Design](./Backend/api/api-design.md) | [Rate Limiting](./Backend/api/rate-limiting.md)
 - [JWT](./Backend/auth/jwt.md) | [Cookie](./Backend/auth/cookie.md)
 - [Redis](./Backend/caching/redis.md) | [Testing](./Backend/testing/testing-strategy.md)
+
+### Build
+
+- [학습 순서와 전체 목차](./Build/README.md)
+- [빌드 과정](./Build/build-pipeline.md) | [의존성과 증분 빌드](./Build/dependency-graph.md) | [도구 선택](./Build/tools.md)
+- [C 빌드 실습](./Build/c-build-example.md) | [캐시와 재현성](./Build/reproducibility.md) | [오류 진단](./Build/troubleshooting.md)
+- [JavaScript 빌드 도구](./Build/javascript-tools.md) | [모듈과 번들링](./Build/javascript-modules.md) | [JS 빌드·모노레포](./Build/javascript-workflows.md)
 
 ### Frontend
 
