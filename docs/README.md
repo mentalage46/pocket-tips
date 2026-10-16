@@ -8,7 +8,7 @@
 
 | 폴더                                                    | 설명                                               |
 | ------------------------------------------------------- | -------------------------------------------------- |
-| [AI](./AI/)                                             | AI 프롬프팅 기법                                   |
+| [AI](./AI/)                                             | 프롬프팅, 에이전트 하네스 설계·평가                 |
 | [Backend](./Backend/)                                   | API 설계, 인증, DB, 캐싱, 로깅, 메시징, 테스트     |
 | [Build](./Build/)                                       | 빌드 과정, 의존성, 도구 선택, 캐시, 오류 진단     |
 | [Frontend](./Frontend/)                                 | 상태 관리, TypeScript, 성능 최적화, PWA, 웹 접근성 |
@@ -23,6 +23,12 @@
 ---
 
 ## 🚀 Quick Links
+
+### AI
+
+- [Prompting Tips](./AI/prompting/prompting-tips.md) - 프롬프팅 기법과 템플릿
+- [Harness 학습 가이드](./AI/harness/README.md) - 에이전트 실행과 평가 환경의 역할
+- [Harness 개념](./AI/harness/concepts.md) | [실행 구조와 설계](./AI/harness/runtime-design.md) | [평가와 오류 진단](./AI/harness/evaluation.md)
 
 ### Backend
 
