@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T06:01:48.934Z",
+  "generatedAt": "2026-10-16T06:23:02.328Z",
   "root": "docs",
   "home": "README.md",
   "tree": [
@@ -10,6 +10,51 @@
       "title": "AI",
       "index": "AI/README.md",
       "children": [
+        {
+          "type": "dir",
+          "name": "agents",
+          "path": "AI/agents",
+          "title": "agents",
+          "index": "AI/agents/README.md",
+          "children": [
+            {
+              "type": "file",
+              "name": "concepts.md",
+              "path": "AI/agents/concepts.md",
+              "title": "에이전트 개념과 구성 요소"
+            },
+            {
+              "type": "file",
+              "name": "context-and-knowledge.md",
+              "path": "AI/agents/context-and-knowledge.md",
+              "title": "문맥과 지식 축적"
+            },
+            {
+              "type": "file",
+              "name": "operations.md",
+              "path": "AI/agents/operations.md",
+              "title": "운영과 안전"
+            },
+            {
+              "type": "file",
+              "name": "sdlc-roles.md",
+              "path": "AI/agents/sdlc-roles.md",
+              "title": "개발 방법론과 역할"
+            },
+            {
+              "type": "file",
+              "name": "tools.md",
+              "path": "AI/agents/tools.md",
+              "title": "도구와 생태계"
+            },
+            {
+              "type": "file",
+              "name": "workflows.md",
+              "path": "AI/agents/workflows.md",
+              "title": "실무 워크플로"
+            }
+          ]
+        },
         {
           "type": "dir",
           "name": "harness",
@@ -799,6 +844,341 @@
           "level": 2,
           "text": "Harness",
           "id": "harness"
+        },
+        {
+          "level": 2,
+          "text": "Agents",
+          "id": "agents"
+        }
+      ]
+    },
+    "AI/agents/README.md": {
+      "title": "Agents",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Agents",
+          "id": "agents"
+        },
+        {
+          "level": 2,
+          "text": "학습 순서",
+          "id": "학습-순서"
+        },
+        {
+          "level": 2,
+          "text": "어디까지가 에이전트인가",
+          "id": "어디까지가-에이전트인가"
+        },
+        {
+          "level": 2,
+          "text": "먼저 기억할 것",
+          "id": "먼저-기억할-것"
+        }
+      ]
+    },
+    "AI/agents/concepts.md": {
+      "title": "에이전트 개념과 구성 요소",
+      "headings": [
+        {
+          "level": 1,
+          "text": "에이전트 개념과 구성 요소",
+          "id": "에이전트-개념과-구성-요소"
+        },
+        {
+          "level": 2,
+          "text": "구성 요소",
+          "id": "구성-요소"
+        },
+        {
+          "level": 2,
+          "text": "자율성 단계",
+          "id": "자율성-단계"
+        },
+        {
+          "level": 2,
+          "text": "워크플로와 에이전트",
+          "id": "워크플로와-에이전트"
+        },
+        {
+          "level": 2,
+          "text": "기본 패턴",
+          "id": "기본-패턴"
+        },
+        {
+          "level": 2,
+          "text": "도입 기준",
+          "id": "도입-기준"
+        }
+      ]
+    },
+    "AI/agents/context-and-knowledge.md": {
+      "title": "문맥과 지식 축적",
+      "headings": [
+        {
+          "level": 1,
+          "text": "문맥과 지식 축적",
+          "id": "문맥과-지식-축적"
+        },
+        {
+          "level": 2,
+          "text": "지식의 층",
+          "id": "지식의-층"
+        },
+        {
+          "level": 2,
+          "text": "프로젝트 지침 파일",
+          "id": "프로젝트-지침-파일"
+        },
+        {
+          "level": 2,
+          "text": "스킬과 절차 문서",
+          "id": "스킬과-절차-문서"
+        },
+        {
+          "level": 2,
+          "text": "설계 기록(ADR)",
+          "id": "설계-기록adr"
+        },
+        {
+          "level": 2,
+          "text": "메모리",
+          "id": "메모리"
+        },
+        {
+          "level": 2,
+          "text": "문맥 예산",
+          "id": "문맥-예산"
+        },
+        {
+          "level": 2,
+          "text": "문서 구조 권장",
+          "id": "문서-구조-권장"
+        },
+        {
+          "level": 2,
+          "text": "에이전트 온보딩 체크리스트",
+          "id": "에이전트-온보딩-체크리스트"
+        }
+      ]
+    },
+    "AI/agents/operations.md": {
+      "title": "운영과 안전",
+      "headings": [
+        {
+          "level": 1,
+          "text": "운영과 안전",
+          "id": "운영과-안전"
+        },
+        {
+          "level": 2,
+          "text": "권한과 격리",
+          "id": "권한과-격리"
+        },
+        {
+          "level": 2,
+          "text": "프롬프트 주입과 신뢰 경계",
+          "id": "프롬프트-주입과-신뢰-경계"
+        },
+        {
+          "level": 2,
+          "text": "비용 관리",
+          "id": "비용-관리"
+        },
+        {
+          "level": 2,
+          "text": "관측",
+          "id": "관측"
+        },
+        {
+          "level": 2,
+          "text": "품질 게이트",
+          "id": "품질-게이트"
+        },
+        {
+          "level": 2,
+          "text": "책임과 규칙",
+          "id": "책임과-규칙"
+        },
+        {
+          "level": 2,
+          "text": "팀 도입 단계",
+          "id": "팀-도입-단계"
+        },
+        {
+          "level": 2,
+          "text": "점검 목록",
+          "id": "점검-목록"
+        }
+      ]
+    },
+    "AI/agents/sdlc-roles.md": {
+      "title": "개발 방법론과 역할",
+      "headings": [
+        {
+          "level": 1,
+          "text": "개발 방법론과 역할",
+          "id": "개발-방법론과-역할"
+        },
+        {
+          "level": 2,
+          "text": "단계별 적용",
+          "id": "단계별-적용"
+        },
+        {
+          "level": 2,
+          "text": "역할별 적용",
+          "id": "역할별-적용"
+        },
+        {
+          "level": 3,
+          "text": "PM / 기획",
+          "id": "pm-기획"
+        },
+        {
+          "level": 3,
+          "text": "아키텍트 / 테크리드",
+          "id": "아키텍트-테크리드"
+        },
+        {
+          "level": 3,
+          "text": "개발자",
+          "id": "개발자"
+        },
+        {
+          "level": 3,
+          "text": "리뷰어",
+          "id": "리뷰어"
+        },
+        {
+          "level": 3,
+          "text": "QA / 테스트",
+          "id": "qa-테스트"
+        },
+        {
+          "level": 3,
+          "text": "DevOps / SRE",
+          "id": "devops-sre"
+        },
+        {
+          "level": 3,
+          "text": "테크니컬 라이터",
+          "id": "테크니컬-라이터"
+        },
+        {
+          "level": 2,
+          "text": "애자일 의식과 결합",
+          "id": "애자일-의식과-결합"
+        },
+        {
+          "level": 2,
+          "text": "역할 정의 템플릿",
+          "id": "역할-정의-템플릿"
+        },
+        {
+          "level": 2,
+          "text": "사람이 결정을 유지해야 하는 지점",
+          "id": "사람이-결정을-유지해야-하는-지점"
+        }
+      ]
+    },
+    "AI/agents/tools.md": {
+      "title": "도구와 생태계",
+      "headings": [
+        {
+          "level": 1,
+          "text": "도구와 생태계",
+          "id": "도구와-생태계"
+        },
+        {
+          "level": 2,
+          "text": "층별 구분",
+          "id": "층별-구분"
+        },
+        {
+          "level": 2,
+          "text": "코딩 에이전트 제품",
+          "id": "코딩-에이전트-제품"
+        },
+        {
+          "level": 2,
+          "text": "프레임워크와 SDK",
+          "id": "프레임워크와-sdk"
+        },
+        {
+          "level": 2,
+          "text": "도구 연결 규약",
+          "id": "도구-연결-규약"
+        },
+        {
+          "level": 2,
+          "text": "평가와 관측",
+          "id": "평가와-관측"
+        },
+        {
+          "level": 2,
+          "text": "실행 환경",
+          "id": "실행-환경"
+        },
+        {
+          "level": 2,
+          "text": "조합 예",
+          "id": "조합-예"
+        }
+      ]
+    },
+    "AI/agents/workflows.md": {
+      "title": "실무 워크플로",
+      "headings": [
+        {
+          "level": 1,
+          "text": "실무 워크플로",
+          "id": "실무-워크플로"
+        },
+        {
+          "level": 2,
+          "text": "기본 루프: 계획 → 구현 → 검증",
+          "id": "기본-루프-계획-구현-검증"
+        },
+        {
+          "level": 2,
+          "text": "스펙 주도 개발",
+          "id": "스펙-주도-개발"
+        },
+        {
+          "level": 2,
+          "text": "테스트 주도",
+          "id": "테스트-주도"
+        },
+        {
+          "level": 2,
+          "text": "디버깅",
+          "id": "디버깅"
+        },
+        {
+          "level": 2,
+          "text": "리뷰 루프",
+          "id": "리뷰-루프"
+        },
+        {
+          "level": 2,
+          "text": "이슈에서 PR까지 자동화",
+          "id": "이슈에서-pr까지-자동화"
+        },
+        {
+          "level": 2,
+          "text": "멀티 에이전트 구성",
+          "id": "멀티-에이전트-구성"
+        },
+        {
+          "level": 2,
+          "text": "체크포인트와 승인 게이트",
+          "id": "체크포인트와-승인-게이트"
+        },
+        {
+          "level": 2,
+          "text": "실패 패턴",
+          "id": "실패-패턴"
         }
       ]
     },
