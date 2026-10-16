@@ -4,6 +4,14 @@
 
 - [Prompting Tips](./prompting/prompting-tips.md) - AI 프롬프팅 기법 & 템플릿
 
+## LLM 기초
+
+- [LLM 기초와 API 활용](./llm-basics/README.md) - 모델 동작, API 호출, 구조화 출력, 비용과 지연의 학습 순서
+- [모델의 동작 원리](./llm-basics/how-llms-work.md) - 토큰, 문맥 창, 샘플링 파라미터, 학습 단계, 한계, 모델 선택
+- [API 호출 구조](./llm-basics/api-usage.md) - 메시지 역할, 종료 이유, 멀티턴, 스트리밍, 오류와 재시도, 호출 래퍼
+- [구조화 출력과 도구 호출](./llm-basics/structured-output.md) - JSON 스키마 출력, 검증 단계, 도구 호출 루프, 도구 정의 원칙
+- [비용과 지연](./llm-basics/cost-and-latency.md) - 과금 구조, TTFT, 프롬프트 캐싱, 절감 순서, 속도 제한, 관측 지표
+
 ## Harness
 
 - [Harness 학습 가이드](./harness/README.md) - 에이전트 하네스와 평가 하네스의 역할, 학습 순서

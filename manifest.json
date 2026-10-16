@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T06:23:02.328Z",
+  "generatedAt": "2026-10-16T08:07:24.619Z",
   "root": "docs",
   "home": "README.md",
   "tree": [
@@ -79,6 +79,39 @@
               "name": "runtime-design.md",
               "path": "AI/harness/runtime-design.md",
               "title": "Harness 실행 구조와 설계"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "llm-basics",
+          "path": "AI/llm-basics",
+          "title": "llm-basics",
+          "index": "AI/llm-basics/README.md",
+          "children": [
+            {
+              "type": "file",
+              "name": "api-usage.md",
+              "path": "AI/llm-basics/api-usage.md",
+              "title": "API 호출 구조"
+            },
+            {
+              "type": "file",
+              "name": "cost-and-latency.md",
+              "path": "AI/llm-basics/cost-and-latency.md",
+              "title": "비용과 지연"
+            },
+            {
+              "type": "file",
+              "name": "how-llms-work.md",
+              "path": "AI/llm-basics/how-llms-work.md",
+              "title": "모델의 동작 원리"
+            },
+            {
+              "type": "file",
+              "name": "structured-output.md",
+              "path": "AI/llm-basics/structured-output.md",
+              "title": "구조화 출력과 도구 호출"
             }
           ]
         },
@@ -842,6 +875,11 @@
         },
         {
           "level": 2,
+          "text": "LLM 기초",
+          "id": "llm-기초"
+        },
+        {
+          "level": 2,
           "text": "Harness",
           "id": "harness"
         },
@@ -1319,6 +1357,191 @@
           "level": 2,
           "text": "구현 순서",
           "id": "구현-순서"
+        }
+      ]
+    },
+    "AI/llm-basics/README.md": {
+      "title": "LLM 기초와 API 활용",
+      "headings": [
+        {
+          "level": 1,
+          "text": "LLM 기초와 API 활용",
+          "id": "llm-기초와-api-활용"
+        },
+        {
+          "level": 2,
+          "text": "학습 순서",
+          "id": "학습-순서"
+        },
+        {
+          "level": 2,
+          "text": "어디에 쓰이는가",
+          "id": "어디에-쓰이는가"
+        },
+        {
+          "level": 2,
+          "text": "먼저 기억할 것",
+          "id": "먼저-기억할-것"
+        }
+      ]
+    },
+    "AI/llm-basics/api-usage.md": {
+      "title": "API 호출 구조",
+      "headings": [
+        {
+          "level": 1,
+          "text": "API 호출 구조",
+          "id": "api-호출-구조"
+        },
+        {
+          "level": 2,
+          "text": "요청과 응답의 구성",
+          "id": "요청과-응답의-구성"
+        },
+        {
+          "level": 2,
+          "text": "종료 이유(stop reason)",
+          "id": "종료-이유stop-reason"
+        },
+        {
+          "level": 2,
+          "text": "멀티턴 대화 관리",
+          "id": "멀티턴-대화-관리"
+        },
+        {
+          "level": 2,
+          "text": "스트리밍",
+          "id": "스트리밍"
+        },
+        {
+          "level": 2,
+          "text": "오류와 재시도",
+          "id": "오류와-재시도"
+        },
+        {
+          "level": 2,
+          "text": "호출 래퍼 설계",
+          "id": "호출-래퍼-설계"
+        }
+      ]
+    },
+    "AI/llm-basics/cost-and-latency.md": {
+      "title": "비용과 지연",
+      "headings": [
+        {
+          "level": 1,
+          "text": "비용과 지연",
+          "id": "비용과-지연"
+        },
+        {
+          "level": 2,
+          "text": "비용 구조",
+          "id": "비용-구조"
+        },
+        {
+          "level": 2,
+          "text": "지연 구조",
+          "id": "지연-구조"
+        },
+        {
+          "level": 2,
+          "text": "프롬프트 캐싱",
+          "id": "프롬프트-캐싱"
+        },
+        {
+          "level": 2,
+          "text": "비용과 지연을 줄이는 순서",
+          "id": "비용과-지연을-줄이는-순서"
+        },
+        {
+          "level": 2,
+          "text": "속도 제한과 동시성",
+          "id": "속도-제한과-동시성"
+        },
+        {
+          "level": 2,
+          "text": "관측할 지표",
+          "id": "관측할-지표"
+        }
+      ]
+    },
+    "AI/llm-basics/how-llms-work.md": {
+      "title": "모델의 동작 원리",
+      "headings": [
+        {
+          "level": 1,
+          "text": "모델의 동작 원리",
+          "id": "모델의-동작-원리"
+        },
+        {
+          "level": 2,
+          "text": "토큰",
+          "id": "토큰"
+        },
+        {
+          "level": 2,
+          "text": "문맥 창(Context Window)",
+          "id": "문맥-창context-window"
+        },
+        {
+          "level": 2,
+          "text": "생성 방식과 샘플링 파라미터",
+          "id": "생성-방식과-샘플링-파라미터"
+        },
+        {
+          "level": 2,
+          "text": "학습 단계와 모델 종류",
+          "id": "학습-단계와-모델-종류"
+        },
+        {
+          "level": 2,
+          "text": "한계",
+          "id": "한계"
+        },
+        {
+          "level": 2,
+          "text": "모델 선택 기준",
+          "id": "모델-선택-기준"
+        }
+      ]
+    },
+    "AI/llm-basics/structured-output.md": {
+      "title": "구조화 출력과 도구 호출",
+      "headings": [
+        {
+          "level": 1,
+          "text": "구조화 출력과 도구 호출",
+          "id": "구조화-출력과-도구-호출"
+        },
+        {
+          "level": 2,
+          "text": "구조화 출력을 얻는 방법",
+          "id": "구조화-출력을-얻는-방법"
+        },
+        {
+          "level": 2,
+          "text": "형식이 맞아도 검증이 필요한 이유",
+          "id": "형식이-맞아도-검증이-필요한-이유"
+        },
+        {
+          "level": 2,
+          "text": "도구 호출(Function Calling)",
+          "id": "도구-호출function-calling"
+        },
+        {
+          "level": 2,
+          "text": "도구 정의 작성 원칙",
+          "id": "도구-정의-작성-원칙"
+        },
+        {
+          "level": 2,
+          "text": "도구 선택 제어",
+          "id": "도구-선택-제어"
+        },
+        {
+          "level": 2,
+          "text": "흔한 실패와 대응",
+          "id": "흔한-실패와-대응"
         }
       ]
     },
