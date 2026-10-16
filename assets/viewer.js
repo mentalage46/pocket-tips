@@ -2,8 +2,9 @@
 // Routing: #/dir/file.md?id=heading-slug. Content lives under docs/ and is
 // fetched on demand; the folder tree comes from manifest.json.
 import {
-  createSlugger, parseRoute, buildHash, resolveDoc, rewriteHref, resolveRelative, encodePath, dirname,
+  createSlugger, parseRoute, buildHash, resolveDoc, rewriteHref, resolveRelative, encodePath, dirname, flattenTree,
 } from './core.js';
+import { buildBodyIndex, searchDocs, tokenize } from './search.js';
 
 const MERMAID_URL = 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.12.0/mermaid.esm.min.mjs';
 const $ = (sel) => document.querySelector(sel);
@@ -11,11 +12,14 @@ const els = {
   tree: $('#tree'), results: $('#search-results'), search: $('#search'), article: $('#article'),
   breadcrumb: $('#breadcrumb'), footer: $('#doc-footer'), toc: $('#toc'), sidebar: $('#sidebar'),
   backdrop: $('#backdrop'), menuBtn: $('#menu-btn'), themeBtn: $('#theme-btn'),
+  pager: $('#pager'), recent: $('#recent'),
 };
+const RECENT_MAX = 5;
 
 const state = {
   manifest: null, index: null, docsBase: 'docs', current: null,
   cache: new Map(), expanded: loadSet('pt.expanded'), mermaid: null, tocObserver: null, navToken: 0,
+  order: [], bodies: new Map(), bodiesLoading: null, recent: loadList('pt.recent'), query: '',
 };
 
 marked.use({ gfm: true, breaks: false });
@@ -34,7 +38,10 @@ marked.use({ gfm: true, breaks: false });
   }
   state.docsBase = state.manifest.root || 'docs';
   state.index = buildIndex(state.manifest);
+  state.order = flattenTree(state.manifest);
+  state.recent = state.recent.filter((p) => state.index.files.has(p));
   renderTree();
+  renderRecent();
   wireChrome();
   window.addEventListener('hashchange', navigate);
   navigate();
@@ -97,6 +104,7 @@ function renderNotFound(path, err) {
   document.title = '문서를 찾을 수 없음 · Pocket Tips';
   els.breadcrumb.innerHTML = '';
   els.toc.innerHTML = '';
+  els.pager.innerHTML = '';
   els.footer.innerHTML = '';
   els.article.innerHTML = `<div class="not-found"><h2>문서를 찾을 수 없습니다</h2>
     <p><code>${escapeHtml(path || '(empty)')}</code></p>
@@ -120,7 +128,9 @@ async function renderDoc(path, markdown) {
 
   renderBreadcrumb(path);
   renderToc(headings);
+  renderPager(path);
   renderFooter(path);
+  pushRecent(path);
   window.scrollTo({ top: 0 });
 
   if (mermaidBlocks.length) await renderMermaid(mermaidBlocks);
@@ -302,6 +312,72 @@ function scrollToId(id, fresh) {
   el.classList.add('flash');
 }
 
+// ---------- prev / next ----------
+function neighbors(path) {
+  const i = state.order.indexOf(path);
+  return { prev: i > 0 ? state.order[i - 1] : null, next: i >= 0 && i < state.order.length - 1 ? state.order[i + 1] : null };
+}
+
+function renderPager(path) {
+  const { prev, next } = neighbors(path);
+  const cell = (doc, dir) => {
+    if (!doc) return Object.assign(document.createElement('span'), { className: 'pager-empty' });
+    const a = document.createElement('a');
+    a.className = `pager-link ${dir}`;
+    a.href = doc === state.manifest.home ? '#/' : buildHash(doc);
+    a.rel = dir;
+    const label = document.createElement('span');
+    label.className = 'pager-label';
+    label.textContent = dir === 'prev' ? '← 이전' : '다음 →';
+    const title = document.createElement('span');
+    title.className = 'pager-title';
+    title.textContent = state.manifest.docs[doc]?.title ?? doc;
+    a.append(label, title);
+    return a;
+  };
+  els.pager.replaceChildren(cell(prev, 'prev'), cell(next, 'next'));
+}
+
+function goNeighbor(dir) {
+  if (!state.current) return;
+  const doc = neighbors(state.current)[dir];
+  if (doc) location.hash = doc === state.manifest.home ? '#/' : buildHash(doc);
+}
+
+// ---------- recent documents ----------
+function pushRecent(path) {
+  if (path === state.manifest.home) return;
+  state.recent = [path, ...state.recent.filter((p) => p !== path)].slice(0, RECENT_MAX);
+  saveList('pt.recent', state.recent);
+  renderRecent();
+}
+
+function renderRecent() {
+  if (!state.recent.length) { els.recent.hidden = true; els.recent.innerHTML = ''; return; }
+  const head = document.createElement('div');
+  head.className = 'recent-head';
+  const h4 = document.createElement('h4');
+  h4.textContent = '최근 본 문서';
+  const clear = document.createElement('button');
+  clear.type = 'button';
+  clear.className = 'recent-clear';
+  clear.textContent = '지우기';
+  clear.addEventListener('click', () => { state.recent = []; saveList('pt.recent', []); renderRecent(); });
+  head.append(h4, clear);
+  const ul = document.createElement('ul');
+  for (const path of state.recent) {
+    const li = document.createElement('li');
+    const row = document.createElement('div');
+    row.className = `row${path === state.current ? ' active' : ''}`;
+    row.append(spacer(), treeLink(buildHash(path), state.manifest.docs[path]?.title ?? path, path));
+    li.append(row);
+    ul.append(li);
+  }
+  els.recent.replaceChildren(head, ul);
+  // Stay hidden while search results occupy the sidebar.
+  els.recent.hidden = tokenize(state.query).length > 0;
+}
+
 // ---------- sidebar tree ----------
 function renderTree() {
   const { tree, home } = state.manifest;
@@ -392,6 +468,7 @@ function setExpanded(li, open) {
 
 function highlightTree(doc) {
   for (const row of els.tree.querySelectorAll('.row.active')) row.classList.remove('active');
+  for (const row of els.recent.querySelectorAll('.row')) row.classList.toggle('active', row.querySelector('.label')?.title === doc);
   if (!doc) return;
   const li = [...els.tree.querySelectorAll('li')].find((el) =>
     el.dataset.path === doc || (el.classList.contains('dir') && `${el.dataset.path}/README.md` === doc));
@@ -408,47 +485,77 @@ function highlightTree(doc) {
 }
 
 // ---------- search ----------
+async function ensureBodies() {
+  if (state.bodiesLoading) return state.bodiesLoading;
+  state.bodiesLoading = (async () => {
+    const paths = Object.keys(state.manifest.docs);
+    await Promise.all(paths.map(async (path) => {
+      try {
+        const md = await loadDoc(path);
+        state.bodies.set(path, buildBodyIndex(md, state.manifest.docs[path].headings));
+      } catch (err) { console.warn('body index skipped', path, err); }
+    }));
+  })();
+  return state.bodiesLoading;
+}
+
 function runSearch(query) {
-  const q = query.trim().toLowerCase();
-  if (!q) {
+  state.query = query;
+  const terms = tokenize(query);
+  if (!terms.length) {
     els.results.hidden = true;
     els.tree.hidden = false;
+    els.recent.hidden = !state.recent.length;
     return;
   }
-  const terms = q.split(/\s+/);
-  const hits = [];
-  for (const [path, meta] of Object.entries(state.manifest.docs)) {
-    const hay = `${meta.title} ${path}`.toLowerCase();
-    const titleHit = terms.every((t) => hay.includes(t));
-    const headingHits = meta.headings.filter((h) => h.level > 1 && terms.every((t) => h.text.toLowerCase().includes(t))).slice(0, 4);
-    if (titleHit || headingHits.length) hits.push({ path, meta, titleHit, headingHits });
-  }
-  hits.sort((a, b) => Number(b.titleHit) - Number(a.titleHit) || a.path.localeCompare(b.path));
+  const loading = state.bodies.size < Object.keys(state.manifest.docs).length;
+  if (loading) ensureBodies().then(() => { if (state.query === query) runSearch(query); });
 
+  const hits = searchDocs(terms, state.manifest.docs, state.bodies);
   const frag = document.createDocumentFragment();
   const summary = document.createElement('div');
   summary.className = 'summary';
-  summary.textContent = hits.length ? `${hits.length}개 문서` : '검색 결과가 없습니다';
+  summary.textContent = (hits.length ? `${hits.length}개 문서` : '검색 결과가 없습니다') + (loading ? ' · 본문 검색 준비 중…' : '');
   frag.append(summary);
+
   for (const hit of hits.slice(0, 50)) {
-    const a = document.createElement('a');
-    a.className = 'hit';
-    a.href = buildHash(hit.path, hit.titleHit || !hit.headingHits.length ? '' : hit.headingHits[0].id);
-    a.innerHTML = `<div class="t">${mark(hit.meta.title, terms)}</div><div class="p">${escapeHtml(hit.path)}</div>`
-      + hit.headingHits.map((h) => `<div class="h">${mark(h.text, terms)}</div>`).join('');
-    a.addEventListener('click', (ev) => {
-      const target = ev.target.closest('.h');
-      if (target) {
-        ev.preventDefault();
-        const idx = [...a.querySelectorAll('.h')].indexOf(target);
-        location.hash = buildHash(hit.path, hit.headingHits[idx].id);
-      }
-    });
-    frag.append(a);
+    const box = document.createElement('div');
+    box.className = 'hit';
+    const main = document.createElement('a');
+    main.className = 'hit-main';
+    main.href = buildHash(hit.path, hit.titleHit ? '' : (hit.headingHits[0]?.id ?? hit.lineHits[0]?.id ?? ''));
+    main.innerHTML = `<div class="t">${mark(hit.meta.title, terms)}</div><div class="p">${escapeHtml(hit.path)}</div>`;
+    box.append(main);
+    for (const h of hit.headingHits) {
+      const a = document.createElement('a');
+      a.className = 'h';
+      a.href = buildHash(hit.path, h.id);
+      a.innerHTML = mark(h.text, terms);
+      box.append(a);
+    }
+    for (const l of hit.lineHits) {
+      const a = document.createElement('a');
+      a.className = 'l';
+      a.href = buildHash(hit.path, l.id);
+      a.innerHTML = mark(l.text, terms);
+      box.append(a);
+    }
+    frag.append(box);
   }
   els.results.replaceChildren(frag);
   els.results.hidden = false;
   els.tree.hidden = true;
+  els.recent.hidden = true;
+}
+
+function moveSelection(delta) {
+  const links = [...els.results.querySelectorAll('a')];
+  if (!links.length) return;
+  const cur = links.findIndex((a) => a.classList.contains('selected'));
+  const next = Math.min(links.length - 1, Math.max(0, cur + delta));
+  links[cur]?.classList.remove('selected');
+  links[next].classList.add('selected');
+  links[next].scrollIntoView({ block: 'nearest' });
 }
 
 function mark(text, terms) {
@@ -465,14 +572,18 @@ function wireChrome() {
   els.search.addEventListener('input', () => runSearch(els.search.value));
   els.search.addEventListener('keydown', (ev) => {
     if (ev.key === 'Escape') { els.search.value = ''; runSearch(''); els.search.blur(); }
-    if (ev.key === 'Enter') els.results.querySelector('a.hit')?.click();
+    else if (ev.key === 'ArrowDown') { ev.preventDefault(); moveSelection(1); }
+    else if (ev.key === 'ArrowUp') { ev.preventDefault(); moveSelection(-1); }
+    else if (ev.key === 'Enter') {
+      (els.results.querySelector('a.selected') ?? els.results.querySelector('a'))?.click();
+      els.search.blur();
+    }
   });
   document.addEventListener('keydown', (ev) => {
-    if (ev.key === '/' && !/^(INPUT|TEXTAREA)$/.test(document.activeElement?.tagName ?? '')) {
-      ev.preventDefault();
-      els.search.focus();
-      els.search.select();
-    }
+    if (/^(INPUT|TEXTAREA)$/.test(document.activeElement?.tagName ?? '') || ev.metaKey || ev.ctrlKey || ev.altKey) return;
+    if (ev.key === '/') { ev.preventDefault(); els.search.focus(); els.search.select(); }
+    else if (ev.key === '[') goNeighbor('prev');
+    else if (ev.key === ']') goNeighbor('next');
   });
   els.menuBtn.addEventListener('click', () => {
     els.sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
@@ -537,6 +648,12 @@ function escapeHtml(s) {
 function escapeRegExp(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
 function loadSet(key) {
   try { return new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch { return new Set(); }
+}
+function loadList(key) {
+  try { const v = JSON.parse(localStorage.getItem(key) || '[]'); return Array.isArray(v) ? v : []; } catch { return []; }
+}
+function saveList(key, list) {
+  try { localStorage.setItem(key, JSON.stringify(list)); } catch {}
 }
 function saveSet(key, set) {
   try { localStorage.setItem(key, JSON.stringify([...set])); } catch {}

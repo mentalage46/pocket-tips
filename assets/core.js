@@ -117,3 +117,23 @@ export function rewriteHref(href, currentDoc, index, docsBase = 'docs') {
 function safeDecode(s) {
   try { return decodeURIComponent(s); } catch { return s; }
 }
+
+/**
+ * Reading order of every document in the manifest: home first, then each
+ * folder's README followed by its children, depth-first in tree order.
+ */
+export function flattenTree(manifest) {
+  const order = [];
+  if (manifest.home) order.push(manifest.home);
+  const walk = (nodes) => {
+    for (const n of nodes) {
+      if (n.type === 'file') order.push(n.path);
+      else {
+        if (n.index) order.push(n.index);
+        walk(n.children);
+      }
+    }
+  };
+  walk(manifest.tree);
+  return order;
+}

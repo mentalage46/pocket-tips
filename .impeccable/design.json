@@ -4,46 +4,337 @@
   "title": "Design System: Pocket Tips",
   "extensions": {
     "colorMeta": {
-      "ink-blue": { "role": "primary", "displayName": "잉크 블루 (Ink Blue)", "canonical": "#0969da", "tonalRamp": ["oklch(22% 0.09 255)", "oklch(32% 0.13 255)", "oklch(42% 0.16 255)", "oklch(52% 0.18 255)", "oklch(62% 0.16 255)", "oklch(74% 0.11 255)", "oklch(86% 0.06 255)", "oklch(95% 0.02 255)"] },
-      "ink-blue-dark": { "role": "primary", "displayName": "잉크 블루 · 다크", "canonical": "#4493f8", "tonalRamp": ["oklch(22% 0.09 255)", "oklch(32% 0.13 255)", "oklch(42% 0.16 255)", "oklch(52% 0.18 255)", "oklch(64% 0.16 255)", "oklch(74% 0.11 255)", "oklch(86% 0.06 255)", "oklch(95% 0.02 255)"] },
-      "ink-wash": { "role": "primary", "displayName": "잉크 번짐 (Ink Wash)", "canonical": "#ddf4ff", "tonalRamp": ["oklch(25% 0.06 235)", "oklch(40% 0.08 235)", "oklch(55% 0.09 235)", "oklch(68% 0.08 235)", "oklch(80% 0.06 235)", "oklch(88% 0.045 235)", "oklch(94% 0.03 235)", "oklch(97% 0.015 235)"] },
-      "ink-wash-dark": { "role": "primary", "displayName": "잉크 번짐 · 다크", "canonical": "#122a45", "tonalRamp": ["oklch(18% 0.04 250)", "oklch(26% 0.06 250)", "oklch(36% 0.08 250)", "oklch(48% 0.09 250)", "oklch(60% 0.08 250)", "oklch(74% 0.06 250)", "oklch(86% 0.04 250)", "oklch(95% 0.015 250)"] },
-      "paper": { "role": "neutral", "displayName": "종이 (Paper)", "canonical": "#ffffff", "tonalRamp": ["oklch(16% 0.01 250)", "oklch(28% 0.01 250)", "oklch(42% 0.01 250)", "oklch(56% 0.01 250)", "oklch(70% 0.008 250)", "oklch(84% 0.006 250)", "oklch(94% 0.004 250)", "oklch(100% 0 0)"] },
-      "paper-soft": { "role": "neutral", "displayName": "연한 종이 (Paper Soft)", "canonical": "#f6f8fa", "tonalRamp": ["oklch(16% 0.01 250)", "oklch(28% 0.01 250)", "oklch(42% 0.01 250)", "oklch(56% 0.01 250)", "oklch(70% 0.008 250)", "oklch(84% 0.006 250)", "oklch(92% 0.005 250)", "oklch(97.5% 0.004 250)"] },
-      "paper-dark": { "role": "neutral", "displayName": "종이 · 다크", "canonical": "#0d1117", "tonalRamp": ["oklch(16% 0.015 260)", "oklch(22% 0.015 260)", "oklch(30% 0.015 260)", "oklch(42% 0.012 260)", "oklch(56% 0.01 260)", "oklch(70% 0.008 260)", "oklch(84% 0.006 260)", "oklch(95% 0.004 260)"] },
-      "paper-soft-dark": { "role": "neutral", "displayName": "연한 종이 · 다크", "canonical": "#161b22", "tonalRamp": ["oklch(16% 0.015 260)", "oklch(22% 0.015 260)", "oklch(30% 0.015 260)", "oklch(42% 0.012 260)", "oklch(56% 0.01 260)", "oklch(70% 0.008 260)", "oklch(84% 0.006 260)", "oklch(95% 0.004 260)"] },
-      "pencil": { "role": "neutral", "displayName": "연필 (Pencil)", "canonical": "#1f2328", "tonalRamp": ["oklch(16% 0.008 250)", "oklch(24% 0.008 250)", "oklch(34% 0.008 250)", "oklch(46% 0.008 250)", "oklch(58% 0.008 250)", "oklch(72% 0.006 250)", "oklch(86% 0.004 250)", "oklch(95% 0.002 250)"] },
-      "pencil-light": { "role": "neutral", "displayName": "옅은 연필 (Pencil Light)", "canonical": "#59636e", "tonalRamp": ["oklch(16% 0.008 250)", "oklch(26% 0.01 250)", "oklch(36% 0.012 250)", "oklch(48% 0.014 250)", "oklch(60% 0.012 250)", "oklch(72% 0.01 250)", "oklch(86% 0.006 250)", "oklch(95% 0.003 250)"] },
-      "pencil-dark": { "role": "neutral", "displayName": "연필 · 다크", "canonical": "#e6edf3", "tonalRamp": ["oklch(16% 0.008 250)", "oklch(28% 0.008 250)", "oklch(42% 0.008 250)", "oklch(56% 0.008 250)", "oklch(70% 0.008 250)", "oklch(84% 0.006 250)", "oklch(94% 0.005 250)", "oklch(98% 0.003 250)"] },
-      "pencil-light-dark": { "role": "neutral", "displayName": "옅은 연필 · 다크", "canonical": "#9198a1", "tonalRamp": ["oklch(16% 0.008 250)", "oklch(28% 0.01 250)", "oklch(40% 0.012 250)", "oklch(52% 0.012 250)", "oklch(66% 0.01 250)", "oklch(78% 0.008 250)", "oklch(88% 0.005 250)", "oklch(95% 0.003 250)"] },
-      "rule-line": { "role": "neutral", "displayName": "괘선 (Rule Line)", "canonical": "#d1d9e0", "tonalRamp": ["oklch(16% 0.01 240)", "oklch(28% 0.012 240)", "oklch(42% 0.014 240)", "oklch(56% 0.014 240)", "oklch(70% 0.012 240)", "oklch(80% 0.01 240)", "oklch(88% 0.008 240)", "oklch(95% 0.004 240)"] },
-      "rule-line-dark": { "role": "neutral", "displayName": "괘선 · 다크", "canonical": "#30363d", "tonalRamp": ["oklch(16% 0.01 250)", "oklch(24% 0.01 250)", "oklch(32% 0.01 250)", "oklch(44% 0.01 250)", "oklch(56% 0.01 250)", "oklch(70% 0.008 250)", "oklch(84% 0.006 250)", "oklch(95% 0.003 250)"] },
-      "highlighter": { "role": "tertiary", "displayName": "형광펜 (Highlighter)", "canonical": "#fff8c5", "tonalRamp": ["oklch(25% 0.06 95)", "oklch(40% 0.09 95)", "oklch(55% 0.12 95)", "oklch(70% 0.13 95)", "oklch(82% 0.12 95)", "oklch(90% 0.09 95)", "oklch(95% 0.06 95)", "oklch(98% 0.03 95)"] },
-      "highlighter-dark": { "role": "tertiary", "displayName": "형광펜 · 다크", "canonical": "#3a2f00", "tonalRamp": ["oklch(20% 0.05 95)", "oklch(30% 0.07 95)", "oklch(42% 0.09 95)", "oklch(55% 0.11 95)", "oklch(68% 0.12 95)", "oklch(80% 0.11 95)", "oklch(90% 0.08 95)", "oklch(96% 0.04 95)"] },
-      "red-pen": { "role": "error", "displayName": "빨간 펜 (Red Pen)", "canonical": "#d1242f", "tonalRamp": ["oklch(22% 0.09 25)", "oklch(32% 0.13 25)", "oklch(44% 0.17 25)", "oklch(55% 0.20 25)", "oklch(65% 0.17 25)", "oklch(76% 0.12 25)", "oklch(87% 0.06 25)", "oklch(95% 0.02 25)"] }
+      "ink-blue": {
+        "role": "primary",
+        "displayName": "잉크 블루 (Ink Blue)",
+        "canonical": "#0969da",
+        "tonalRamp": [
+          "oklch(22% 0.09 255)",
+          "oklch(32% 0.13 255)",
+          "oklch(42% 0.16 255)",
+          "oklch(52% 0.18 255)",
+          "oklch(62% 0.16 255)",
+          "oklch(74% 0.11 255)",
+          "oklch(86% 0.06 255)",
+          "oklch(95% 0.02 255)"
+        ]
+      },
+      "ink-blue-dark": {
+        "role": "primary",
+        "displayName": "잉크 블루 · 다크",
+        "canonical": "#4493f8",
+        "tonalRamp": [
+          "oklch(22% 0.09 255)",
+          "oklch(32% 0.13 255)",
+          "oklch(42% 0.16 255)",
+          "oklch(52% 0.18 255)",
+          "oklch(64% 0.16 255)",
+          "oklch(74% 0.11 255)",
+          "oklch(86% 0.06 255)",
+          "oklch(95% 0.02 255)"
+        ]
+      },
+      "ink-wash": {
+        "role": "primary",
+        "displayName": "잉크 번짐 (Ink Wash)",
+        "canonical": "#ddf4ff",
+        "tonalRamp": [
+          "oklch(25% 0.06 235)",
+          "oklch(40% 0.08 235)",
+          "oklch(55% 0.09 235)",
+          "oklch(68% 0.08 235)",
+          "oklch(80% 0.06 235)",
+          "oklch(88% 0.045 235)",
+          "oklch(94% 0.03 235)",
+          "oklch(97% 0.015 235)"
+        ]
+      },
+      "ink-wash-dark": {
+        "role": "primary",
+        "displayName": "잉크 번짐 · 다크",
+        "canonical": "#122a45",
+        "tonalRamp": [
+          "oklch(18% 0.04 250)",
+          "oklch(26% 0.06 250)",
+          "oklch(36% 0.08 250)",
+          "oklch(48% 0.09 250)",
+          "oklch(60% 0.08 250)",
+          "oklch(74% 0.06 250)",
+          "oklch(86% 0.04 250)",
+          "oklch(95% 0.015 250)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "종이 (Paper)",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(16% 0.01 250)",
+          "oklch(28% 0.01 250)",
+          "oklch(42% 0.01 250)",
+          "oklch(56% 0.01 250)",
+          "oklch(70% 0.008 250)",
+          "oklch(84% 0.006 250)",
+          "oklch(94% 0.004 250)",
+          "oklch(100% 0 0)"
+        ]
+      },
+      "paper-soft": {
+        "role": "neutral",
+        "displayName": "연한 종이 (Paper Soft)",
+        "canonical": "#f6f8fa",
+        "tonalRamp": [
+          "oklch(16% 0.01 250)",
+          "oklch(28% 0.01 250)",
+          "oklch(42% 0.01 250)",
+          "oklch(56% 0.01 250)",
+          "oklch(70% 0.008 250)",
+          "oklch(84% 0.006 250)",
+          "oklch(92% 0.005 250)",
+          "oklch(97.5% 0.004 250)"
+        ]
+      },
+      "paper-dark": {
+        "role": "neutral",
+        "displayName": "종이 · 다크",
+        "canonical": "#0d1117",
+        "tonalRamp": [
+          "oklch(16% 0.015 260)",
+          "oklch(22% 0.015 260)",
+          "oklch(30% 0.015 260)",
+          "oklch(42% 0.012 260)",
+          "oklch(56% 0.01 260)",
+          "oklch(70% 0.008 260)",
+          "oklch(84% 0.006 260)",
+          "oklch(95% 0.004 260)"
+        ]
+      },
+      "paper-soft-dark": {
+        "role": "neutral",
+        "displayName": "연한 종이 · 다크",
+        "canonical": "#161b22",
+        "tonalRamp": [
+          "oklch(16% 0.015 260)",
+          "oklch(22% 0.015 260)",
+          "oklch(30% 0.015 260)",
+          "oklch(42% 0.012 260)",
+          "oklch(56% 0.01 260)",
+          "oklch(70% 0.008 260)",
+          "oklch(84% 0.006 260)",
+          "oklch(95% 0.004 260)"
+        ]
+      },
+      "pencil": {
+        "role": "neutral",
+        "displayName": "연필 (Pencil)",
+        "canonical": "#1f2328",
+        "tonalRamp": [
+          "oklch(16% 0.008 250)",
+          "oklch(24% 0.008 250)",
+          "oklch(34% 0.008 250)",
+          "oklch(46% 0.008 250)",
+          "oklch(58% 0.008 250)",
+          "oklch(72% 0.006 250)",
+          "oklch(86% 0.004 250)",
+          "oklch(95% 0.002 250)"
+        ]
+      },
+      "pencil-light": {
+        "role": "neutral",
+        "displayName": "옅은 연필 (Pencil Light)",
+        "canonical": "#59636e",
+        "tonalRamp": [
+          "oklch(16% 0.008 250)",
+          "oklch(26% 0.01 250)",
+          "oklch(36% 0.012 250)",
+          "oklch(48% 0.014 250)",
+          "oklch(60% 0.012 250)",
+          "oklch(72% 0.01 250)",
+          "oklch(86% 0.006 250)",
+          "oklch(95% 0.003 250)"
+        ]
+      },
+      "pencil-dark": {
+        "role": "neutral",
+        "displayName": "연필 · 다크",
+        "canonical": "#e6edf3",
+        "tonalRamp": [
+          "oklch(16% 0.008 250)",
+          "oklch(28% 0.008 250)",
+          "oklch(42% 0.008 250)",
+          "oklch(56% 0.008 250)",
+          "oklch(70% 0.008 250)",
+          "oklch(84% 0.006 250)",
+          "oklch(94% 0.005 250)",
+          "oklch(98% 0.003 250)"
+        ]
+      },
+      "pencil-light-dark": {
+        "role": "neutral",
+        "displayName": "옅은 연필 · 다크",
+        "canonical": "#9198a1",
+        "tonalRamp": [
+          "oklch(16% 0.008 250)",
+          "oklch(28% 0.01 250)",
+          "oklch(40% 0.012 250)",
+          "oklch(52% 0.012 250)",
+          "oklch(66% 0.01 250)",
+          "oklch(78% 0.008 250)",
+          "oklch(88% 0.005 250)",
+          "oklch(95% 0.003 250)"
+        ]
+      },
+      "rule-line": {
+        "role": "neutral",
+        "displayName": "괘선 (Rule Line)",
+        "canonical": "#d1d9e0",
+        "tonalRamp": [
+          "oklch(16% 0.01 240)",
+          "oklch(28% 0.012 240)",
+          "oklch(42% 0.014 240)",
+          "oklch(56% 0.014 240)",
+          "oklch(70% 0.012 240)",
+          "oklch(80% 0.01 240)",
+          "oklch(88% 0.008 240)",
+          "oklch(95% 0.004 240)"
+        ]
+      },
+      "rule-line-dark": {
+        "role": "neutral",
+        "displayName": "괘선 · 다크",
+        "canonical": "#30363d",
+        "tonalRamp": [
+          "oklch(16% 0.01 250)",
+          "oklch(24% 0.01 250)",
+          "oklch(32% 0.01 250)",
+          "oklch(44% 0.01 250)",
+          "oklch(56% 0.01 250)",
+          "oklch(70% 0.008 250)",
+          "oklch(84% 0.006 250)",
+          "oklch(95% 0.003 250)"
+        ]
+      },
+      "highlighter": {
+        "role": "tertiary",
+        "displayName": "형광펜 (Highlighter)",
+        "canonical": "#fff8c5",
+        "tonalRamp": [
+          "oklch(25% 0.06 95)",
+          "oklch(40% 0.09 95)",
+          "oklch(55% 0.12 95)",
+          "oklch(70% 0.13 95)",
+          "oklch(82% 0.12 95)",
+          "oklch(90% 0.09 95)",
+          "oklch(95% 0.06 95)",
+          "oklch(98% 0.03 95)"
+        ]
+      },
+      "highlighter-dark": {
+        "role": "tertiary",
+        "displayName": "형광펜 · 다크",
+        "canonical": "#3a2f00",
+        "tonalRamp": [
+          "oklch(20% 0.05 95)",
+          "oklch(30% 0.07 95)",
+          "oklch(42% 0.09 95)",
+          "oklch(55% 0.11 95)",
+          "oklch(68% 0.12 95)",
+          "oklch(80% 0.11 95)",
+          "oklch(90% 0.08 95)",
+          "oklch(96% 0.04 95)"
+        ]
+      },
+      "red-pen": {
+        "role": "error",
+        "displayName": "빨간 펜 (Red Pen)",
+        "canonical": "#d1242f",
+        "tonalRamp": [
+          "oklch(22% 0.09 25)",
+          "oklch(32% 0.13 25)",
+          "oklch(44% 0.17 25)",
+          "oklch(55% 0.20 25)",
+          "oklch(65% 0.17 25)",
+          "oklch(76% 0.12 25)",
+          "oklch(87% 0.06 25)",
+          "oklch(95% 0.02 25)"
+        ]
+      }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "문서 제목 h1. 아래 괘선. 모바일 1.6em." },
-      "headline": { "displayName": "Headline", "purpose": "섹션 제목 h2. 아래 괘선. 모바일 1.3em." },
-      "title": { "displayName": "Title", "purpose": "소제목 h3(1.25em)·h4(1.05em). 밑줄 없음." },
-      "body": { "displayName": "Body", "purpose": "본문. 최대 860px 폭." },
-      "nav": { "displayName": "Nav", "purpose": "사이드바 트리. 폴더와 현재 문서는 600." },
-      "label": { "displayName": "Label", "purpose": "'이 페이지' 같은 구역 이름. 대문자, 자간 0.06em. 유일하게 자간을 벌리는 자리." },
-      "code": { "displayName": "Code", "purpose": "인라인 코드와 코드 블록. 블록 안에서는 0.85em." }
+      "display": {
+        "displayName": "Display",
+        "purpose": "문서 제목 h1. 아래 괘선. 모바일 1.6em."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "섹션 제목 h2. 아래 괘선. 모바일 1.3em."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "소제목 h3(1.25em)·h4(1.05em). 밑줄 없음."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "본문. 최대 860px 폭."
+      },
+      "nav": {
+        "displayName": "Nav",
+        "purpose": "사이드바 트리. 폴더와 현재 문서는 600."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "'이 페이지' 같은 구역 이름. 대문자, 자간 0.06em. 유일하게 자간을 벌리는 자리."
+      },
+      "code": {
+        "displayName": "Code",
+        "purpose": "인라인 코드와 코드 블록. 블록 안에서는 0.85em."
+      }
     },
     "shadows": [
-      { "name": "drawer", "value": "0 8px 24px rgba(31, 35, 40, .12)", "purpose": "900px 이하 모바일 드로어가 열렸을 때만. 시스템의 유일한 그림자. 다크: 0 8px 24px rgba(0, 0, 0, .5)." }
+      {
+        "name": "drawer",
+        "value": "0 8px 24px rgba(31, 35, 40, .12)",
+        "purpose": "900px 이하 모바일 드로어가 열렸을 때만. 시스템의 유일한 그림자. 다크: 0 8px 24px rgba(0, 0, 0, .5)."
+      }
     ],
     "motion": [
-      { "name": "drawer-slide", "value": "transform .2s ease", "purpose": "모바일 사이드바 드로어 열고 닫기." },
-      { "name": "chevron-turn", "value": "transform .15s ease", "purpose": "트리 토글 셰브론 90도 회전." },
-      { "name": "reveal", "value": "opacity .15s", "purpose": "코드 블록 복사 버튼이 hover에서 나타남." },
-      { "name": "anchor-flash", "value": "flash 1.6s ease-out (background: highlighter → transparent)", "purpose": "앵커로 이동한 헤딩 강조." },
-      { "name": "reduced-motion", "value": "transition: none", "purpose": "prefers-reduced-motion에서 드로어·셰브론 전환 제거." }
+      {
+        "name": "drawer-slide",
+        "value": "transform .2s ease",
+        "purpose": "모바일 사이드바 드로어 열고 닫기."
+      },
+      {
+        "name": "chevron-turn",
+        "value": "transform .15s ease",
+        "purpose": "트리 토글 셰브론 90도 회전."
+      },
+      {
+        "name": "reveal",
+        "value": "opacity .15s",
+        "purpose": "코드 블록 복사 버튼이 hover에서 나타남."
+      },
+      {
+        "name": "anchor-flash",
+        "value": "flash 1.6s ease-out (background: highlighter → transparent)",
+        "purpose": "앵커로 이동한 헤딩 강조."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transition: none",
+        "purpose": "prefers-reduced-motion에서 드로어·셰브론 전환 제거."
+      }
     ],
     "breakpoints": [
-      { "name": "toc-hidden", "value": "1200px", "purpose": "이하에서 오른쪽 페이지 목차 숨김, 2단." },
-      { "name": "mobile", "value": "900px", "purpose": "이하에서 사이드바가 드로어로 바뀌고 메뉴 버튼 표시, 1단." }
+      {
+        "name": "toc-hidden",
+        "value": "1200px",
+        "purpose": "이하에서 오른쪽 페이지 목차 숨김, 2단."
+      },
+      {
+        "name": "mobile",
+        "value": "900px",
+        "purpose": "이하에서 사이드바가 드로어로 바뀌고 메뉴 버튼 표시, 1단."
+      }
     ],
     "layout": {
       "topbarHeight": "56px",
@@ -116,9 +407,17 @@
       "name": "Search Result",
       "kind": "chip",
       "refersTo": "",
-      "description": "트리 자리에 나타나는 검색 결과 항목. 제목·경로·일치 헤딩, 일치 글자는 형광펜.",
-      "html": "<div class=\"ds-results\"><div class=\"ds-results-summary\">4개 문서</div><a class=\"ds-hit\" href=\"#\"><div class=\"ds-hit-t\"><mark>I2C</mark></div><div class=\"ds-hit-p\">Hardware/interfaces/i2c.md</div></a><a class=\"ds-hit\" href=\"#\"><div class=\"ds-hit-t\">통신 용어</div><div class=\"ds-hit-p\">Hardware/glossary/communication.md</div><div class=\"ds-hit-h\"><mark>I2C</mark></div></a></div>",
-      "css": ".ds-results { width: 260px; font-size: 14px; padding: 4px; } .ds-results-summary { padding: 6px 8px; color: var(--fg-muted, #59636e); font-size: 12px; } .ds-hit { display: block; padding: 6px 8px; border-radius: 6px; color: var(--fg, #1f2328); text-decoration: none; } .ds-hit:hover, .ds-hit:focus-visible { background: var(--bg-soft, #f6f8fa); } .ds-hit-t { font-weight: 600; } .ds-hit-p { font-size: 12px; color: var(--fg-muted, #59636e); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } .ds-hit-h { font-size: 12px; color: var(--fg-muted, #59636e); padding-left: 10px; } .ds-hit-h::before { content: '# '; } .ds-results mark { background: var(--mark, #fff8c5); color: inherit; border-radius: 2px; padding: 0 1px; }"
+      "description": "트리 자리에 나타나는 검색 결과. 문서 묶음 안의 제목·헤딩·본문 줄이 각각 링크이고, 일치 글자는 형광펜.",
+      "html": "<div class=\"ds-results\"><div class=\"ds-results-summary\">2개 문서</div><div class=\"ds-hit\"><a class=\"ds-hit-main\" href=\"#\"><div class=\"ds-hit-t\">Git 생산성 향상 팁</div><div class=\"ds-hit-p\">Version Control System/git/tips.md</div></a><a class=\"ds-hit-h\" href=\"#\">1. git <mark>rebase</mark> -i: 커밋 내역 정리</a><a class=\"ds-hit-l ds-selected\" href=\"#\">git <mark>rebase</mark> -i HEAD~3</a></div></div>",
+      "css": ".ds-results { width: 260px; font-size: 14px; padding: 4px; } .ds-results-summary { padding: 6px 8px; color: var(--fg-muted, #59636e); font-size: 12px; } .ds-hit { padding: 2px 0 6px; } .ds-hit a { display: block; padding: 4px 8px; border-radius: 6px; color: var(--fg, #1f2328); text-decoration: none; } .ds-hit a:hover, .ds-hit a:focus-visible, .ds-selected { background: var(--bg-soft, #f6f8fa); } .ds-selected { outline: 2px solid var(--accent, #0969da); outline-offset: -2px; } .ds-hit-t { font-weight: 600; } .ds-hit-p { font-size: 12px; color: var(--fg-muted, #59636e); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } .ds-hit-h, .ds-hit-l { font-size: 12px; color: var(--fg-muted, #59636e) !important; padding-left: 18px !important; line-height: 1.45; } .ds-hit-h::before { content: '# '; } .ds-results mark { background: var(--mark, #fff8c5); color: inherit; border-radius: 2px; padding: 0 1px; }"
+    },
+    {
+      "name": "Prev / Next Pager",
+      "kind": "nav",
+      "refersTo": "",
+      "description": "문서 끝의 이전·다음 링크. 상자 없이 Label과 잉크 블루 제목만.",
+      "html": "<nav class=\"ds-pager\"><a class=\"ds-pager-link\" href=\"#\"><span class=\"ds-pager-label\">← 이전</span><span class=\"ds-pager-title\">보드와 핀맵</span></a><a class=\"ds-pager-link ds-pager-next\" href=\"#\"><span class=\"ds-pager-label\">다음 →</span><span class=\"ds-pager-title\">데이터시트 읽기</span></a></nav>",
+      "css": ".ds-pager { display: flex; justify-content: space-between; gap: 16px; width: 420px; padding-top: 16px; border-top: 1px solid var(--border, #d1d9e0); } .ds-pager-link { display: flex; flex-direction: column; gap: 2px; text-decoration: none; } .ds-pager-next { text-align: right; align-items: flex-end; } .ds-pager-label { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--fg-muted, #59636e); } .ds-pager-title { font-size: 15px; font-weight: 600; color: var(--accent, #0969da); } .ds-pager-link:hover .ds-pager-title { text-decoration: underline; }"
     }
   ],
   "narrative": {
@@ -132,11 +431,31 @@
       "인터페이스는 hover에서만 드러남: 복사 버튼, 헤딩 앵커, 행 배경이 손을 올렸을 때만 나타남"
     ],
     "rules": [
-      { "name": "The One Ink Rule", "body": "강조색은 잉크 블루 하나입니다. 화면 어디서든 파란 것은 \"누르면 이동한다\" 또는 \"지금 여기\"를 뜻하고, 그 두 의미 외에는 파란색을 쓰지 않습니다.", "section": "colors" },
-      { "name": "The Paper Tone Rule", "body": "면의 구분은 종이와 연한 종이, 두 톤으로만 합니다. 세 번째 회색 면을 만들지 말고, 더 구분이 필요하면 괘선을 긋습니다.", "section": "colors" },
-      { "name": "The Heading Rule-Line Rule", "body": "h1과 h2에만 밑줄을 긋습니다. h3 이하는 크기와 굵기로만 구분하며, 밑줄로 위계를 흉내 내지 않습니다.", "section": "typography" },
-      { "name": "The System Font Rule", "body": "웹폰트를 추가하지 않습니다. 가독성이 부족하면 크기·행간·여백으로 해결합니다.", "section": "typography" },
-      { "name": "The Flat Paper Rule", "body": "종이 위에 놓인 것은 종이와 같은 높이에 있습니다. 그림자는 종이를 떠난 드로어에만 허용되고, 카드·버튼·입력창·팝오버에는 쓰지 않습니다.", "section": "elevation" }
+      {
+        "name": "The One Ink Rule",
+        "body": "강조색은 잉크 블루 하나입니다. 화면 어디서든 파란 것은 \"누르면 이동한다\" 또는 \"지금 여기\"를 뜻하고, 그 두 의미 외에는 파란색을 쓰지 않습니다.",
+        "section": "colors"
+      },
+      {
+        "name": "The Paper Tone Rule",
+        "body": "면의 구분은 종이와 연한 종이, 두 톤으로만 합니다. 세 번째 회색 면을 만들지 말고, 더 구분이 필요하면 괘선을 긋습니다.",
+        "section": "colors"
+      },
+      {
+        "name": "The Heading Rule-Line Rule",
+        "body": "h1과 h2에만 밑줄을 긋습니다. h3 이하는 크기와 굵기로만 구분하며, 밑줄로 위계를 흉내 내지 않습니다.",
+        "section": "typography"
+      },
+      {
+        "name": "The System Font Rule",
+        "body": "웹폰트를 추가하지 않습니다. 가독성이 부족하면 크기·행간·여백으로 해결합니다.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Paper Rule",
+        "body": "종이 위에 놓인 것은 종이와 같은 높이에 있습니다. 그림자는 종이를 떠난 드로어에만 허용되고, 카드·버튼·입력창·팝오버에는 쓰지 않습니다.",
+        "section": "elevation"
+      }
     ],
     "dos": [
       "Do 색은 잉크 블루 한 가지로 \"이동\"과 \"현재 위치\"만 표시한다 (The One Ink Rule).",
