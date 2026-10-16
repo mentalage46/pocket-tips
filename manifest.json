@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T08:07:33.378Z",
+  "generatedAt": "2026-10-16T08:39:02.791Z",
   "root": "docs",
   "home": "README.md",
   "tree": [
@@ -117,16 +117,127 @@
         },
         {
           "type": "dir",
+          "name": "llmops",
+          "path": "AI/llmops",
+          "title": "llmops",
+          "index": "AI/llmops/README.md",
+          "children": [
+            {
+              "type": "file",
+              "name": "architecture.md",
+              "path": "AI/llmops/architecture.md",
+              "title": "LLM 애플리케이션 아키텍처"
+            },
+            {
+              "type": "file",
+              "name": "observability-and-cost.md",
+              "path": "AI/llmops/observability-and-cost.md",
+              "title": "관측과 비용"
+            },
+            {
+              "type": "file",
+              "name": "prompt-management.md",
+              "path": "AI/llmops/prompt-management.md",
+              "title": "프롬프트 관리"
+            },
+            {
+              "type": "file",
+              "name": "reliability.md",
+              "path": "AI/llmops/reliability.md",
+              "title": "LLM 기능의 신뢰성"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "local-models",
+          "path": "AI/local-models",
+          "title": "local-models",
+          "index": "AI/local-models/README.md",
+          "children": [
+            {
+              "type": "file",
+              "name": "quantization-and-hardware.md",
+              "path": "AI/local-models/quantization-and-hardware.md",
+              "title": "양자화와 하드웨어"
+            },
+            {
+              "type": "file",
+              "name": "runtimes.md",
+              "path": "AI/local-models/runtimes.md",
+              "title": "로컬 모델 런타임과 도구"
+            },
+            {
+              "type": "file",
+              "name": "serving-and-integration.md",
+              "path": "AI/local-models/serving-and-integration.md",
+              "title": "로컬 모델 서빙과 연결"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "mcp",
+          "path": "AI/mcp",
+          "title": "mcp",
+          "index": "AI/mcp/README.md",
+          "children": [
+            {
+              "type": "file",
+              "name": "building-a-server.md",
+              "path": "AI/mcp/building-a-server.md",
+              "title": "MCP 서버 만들기"
+            },
+            {
+              "type": "file",
+              "name": "concepts.md",
+              "path": "AI/mcp/concepts.md",
+              "title": "MCP 개념과 구조"
+            },
+            {
+              "type": "file",
+              "name": "testing-and-distribution.md",
+              "path": "AI/mcp/testing-and-distribution.md",
+              "title": "MCP 서버 테스트와 배포"
+            },
+            {
+              "type": "file",
+              "name": "tool-design.md",
+              "path": "AI/mcp/tool-design.md",
+              "title": "MCP 도구 설계"
+            }
+          ]
+        },
+        {
+          "type": "dir",
           "name": "prompting",
           "path": "AI/prompting",
           "title": "prompting",
-          "index": null,
+          "index": "AI/prompting/README.md",
           "children": [
             {
               "type": "file",
               "name": "prompting-tips.md",
               "path": "AI/prompting/prompting-tips.md",
               "title": "Prompting Tips"
+            },
+            {
+              "type": "file",
+              "name": "system-prompts.md",
+              "path": "AI/prompting/system-prompts.md",
+              "title": "시스템 프롬프트 설계"
+            },
+            {
+              "type": "file",
+              "name": "techniques.md",
+              "path": "AI/prompting/techniques.md",
+              "title": "프롬프팅 기법과 원리"
+            },
+            {
+              "type": "file",
+              "name": "testing-and-iteration.md",
+              "path": "AI/prompting/testing-and-iteration.md",
+              "title": "프롬프트 테스트와 반복 개선"
             }
           ]
         },
@@ -172,6 +283,33 @@
               "name": "vector-stores.md",
               "path": "AI/rag/vector-stores.md",
               "title": "벡터 저장소"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "security",
+          "path": "AI/security",
+          "title": "security",
+          "index": "AI/security/README.md",
+          "children": [
+            {
+              "type": "file",
+              "name": "data-and-output.md",
+              "path": "AI/security/data-and-output.md",
+              "title": "데이터 보호와 출력 검증"
+            },
+            {
+              "type": "file",
+              "name": "owasp-llm-top-10.md",
+              "path": "AI/security/owasp-llm-top-10.md",
+              "title": "OWASP LLM Top 10"
+            },
+            {
+              "type": "file",
+              "name": "prompt-injection.md",
+              "path": "AI/security/prompt-injection.md",
+              "title": "프롬프트 주입"
             }
           ]
         }
@@ -930,6 +1068,26 @@
         },
         {
           "level": 2,
+          "text": "MCP",
+          "id": "mcp"
+        },
+        {
+          "level": 2,
+          "text": "LLMOps",
+          "id": "llmops"
+        },
+        {
+          "level": 2,
+          "text": "Security",
+          "id": "security"
+        },
+        {
+          "level": 2,
+          "text": "Local Models",
+          "id": "local-models"
+        },
+        {
+          "level": 2,
           "text": "Harness",
           "id": "harness"
         },
@@ -1595,6 +1753,531 @@
         }
       ]
     },
+    "AI/llmops/README.md": {
+      "title": "LLM 애플리케이션 운영",
+      "headings": [
+        {
+          "level": 1,
+          "text": "LLM 애플리케이션 운영",
+          "id": "llm-애플리케이션-운영"
+        },
+        {
+          "level": 2,
+          "text": "학습 순서",
+          "id": "학습-순서"
+        },
+        {
+          "level": 2,
+          "text": "일반 서비스 운영과 다른 점",
+          "id": "일반-서비스-운영과-다른-점"
+        },
+        {
+          "level": 2,
+          "text": "먼저 기억할 것",
+          "id": "먼저-기억할-것"
+        }
+      ]
+    },
+    "AI/llmops/architecture.md": {
+      "title": "LLM 애플리케이션 아키텍처",
+      "headings": [
+        {
+          "level": 1,
+          "text": "LLM 애플리케이션 아키텍처",
+          "id": "llm-애플리케이션-아키텍처"
+        },
+        {
+          "level": 2,
+          "text": "계층 구조",
+          "id": "계층-구조"
+        },
+        {
+          "level": 2,
+          "text": "게이트웨이",
+          "id": "게이트웨이"
+        },
+        {
+          "level": 2,
+          "text": "모델 라우팅",
+          "id": "모델-라우팅"
+        },
+        {
+          "level": 2,
+          "text": "동기와 비동기 처리",
+          "id": "동기와-비동기-처리"
+        },
+        {
+          "level": 2,
+          "text": "상태와 데이터",
+          "id": "상태와-데이터"
+        },
+        {
+          "level": 2,
+          "text": "배포 단위와 환경",
+          "id": "배포-단위와-환경"
+        }
+      ]
+    },
+    "AI/llmops/observability-and-cost.md": {
+      "title": "관측과 비용",
+      "headings": [
+        {
+          "level": 1,
+          "text": "관측과 비용",
+          "id": "관측과-비용"
+        },
+        {
+          "level": 2,
+          "text": "추적(Trace)",
+          "id": "추적trace"
+        },
+        {
+          "level": 2,
+          "text": "지표",
+          "id": "지표"
+        },
+        {
+          "level": 2,
+          "text": "로그와 개인정보",
+          "id": "로그와-개인정보"
+        },
+        {
+          "level": 2,
+          "text": "비용 배분",
+          "id": "비용-배분"
+        },
+        {
+          "level": 2,
+          "text": "예산 통제",
+          "id": "예산-통제"
+        },
+        {
+          "level": 2,
+          "text": "도구",
+          "id": "도구"
+        }
+      ]
+    },
+    "AI/llmops/prompt-management.md": {
+      "title": "프롬프트 관리",
+      "headings": [
+        {
+          "level": 1,
+          "text": "프롬프트 관리",
+          "id": "프롬프트-관리"
+        },
+        {
+          "level": 2,
+          "text": "프롬프트를 코드로 다루기",
+          "id": "프롬프트를-코드로-다루기"
+        },
+        {
+          "level": 2,
+          "text": "템플릿 구성",
+          "id": "템플릿-구성"
+        },
+        {
+          "level": 2,
+          "text": "변경 흐름",
+          "id": "변경-흐름"
+        },
+        {
+          "level": 2,
+          "text": "평가 세트 관리",
+          "id": "평가-세트-관리"
+        },
+        {
+          "level": 2,
+          "text": "모델 버전과 프롬프트의 결합",
+          "id": "모델-버전과-프롬프트의-결합"
+        },
+        {
+          "level": 2,
+          "text": "도구",
+          "id": "도구"
+        }
+      ]
+    },
+    "AI/llmops/reliability.md": {
+      "title": "LLM 기능의 신뢰성",
+      "headings": [
+        {
+          "level": 1,
+          "text": "LLM 기능의 신뢰성",
+          "id": "llm-기능의-신뢰성"
+        },
+        {
+          "level": 2,
+          "text": "장애 유형과 대응",
+          "id": "장애-유형과-대응"
+        },
+        {
+          "level": 2,
+          "text": "타임아웃과 재시도",
+          "id": "타임아웃과-재시도"
+        },
+        {
+          "level": 2,
+          "text": "폴백",
+          "id": "폴백"
+        },
+        {
+          "level": 2,
+          "text": "회로 차단과 부하 제어",
+          "id": "회로-차단과-부하-제어"
+        },
+        {
+          "level": 2,
+          "text": "캐싱",
+          "id": "캐싱"
+        },
+        {
+          "level": 2,
+          "text": "품질 저하 모드(Graceful Degradation)",
+          "id": "품질-저하-모드graceful-degradation"
+        },
+        {
+          "level": 2,
+          "text": "멱등성과 중복 실행",
+          "id": "멱등성과-중복-실행"
+        }
+      ]
+    },
+    "AI/local-models/README.md": {
+      "title": "로컬 모델 실행",
+      "headings": [
+        {
+          "level": 1,
+          "text": "로컬 모델 실행",
+          "id": "로컬-모델-실행"
+        },
+        {
+          "level": 2,
+          "text": "학습 순서",
+          "id": "학습-순서"
+        },
+        {
+          "level": 2,
+          "text": "언제 로컬 모델인가",
+          "id": "언제-로컬-모델인가"
+        },
+        {
+          "level": 2,
+          "text": "먼저 기억할 것",
+          "id": "먼저-기억할-것"
+        }
+      ]
+    },
+    "AI/local-models/quantization-and-hardware.md": {
+      "title": "양자화와 하드웨어",
+      "headings": [
+        {
+          "level": 1,
+          "text": "양자화와 하드웨어",
+          "id": "양자화와-하드웨어"
+        },
+        {
+          "level": 2,
+          "text": "메모리 계산",
+          "id": "메모리-계산"
+        },
+        {
+          "level": 2,
+          "text": "양자화",
+          "id": "양자화"
+        },
+        {
+          "level": 2,
+          "text": "하드웨어 선택",
+          "id": "하드웨어-선택"
+        },
+        {
+          "level": 2,
+          "text": "속도에 영향을 주는 것",
+          "id": "속도에-영향을-주는-것"
+        },
+        {
+          "level": 2,
+          "text": "런타임 설정 항목",
+          "id": "런타임-설정-항목"
+        }
+      ]
+    },
+    "AI/local-models/runtimes.md": {
+      "title": "로컬 모델 런타임과 도구",
+      "headings": [
+        {
+          "level": 1,
+          "text": "로컬 모델 런타임과 도구",
+          "id": "로컬-모델-런타임과-도구"
+        },
+        {
+          "level": 2,
+          "text": "층별 구분",
+          "id": "층별-구분"
+        },
+        {
+          "level": 2,
+          "text": "런타임 비교",
+          "id": "런타임-비교"
+        },
+        {
+          "level": 2,
+          "text": "모델 허브와 형식",
+          "id": "모델-허브와-형식"
+        },
+        {
+          "level": 2,
+          "text": "모델 선택",
+          "id": "모델-선택"
+        },
+        {
+          "level": 2,
+          "text": "관련 도구",
+          "id": "관련-도구"
+        }
+      ]
+    },
+    "AI/local-models/serving-and-integration.md": {
+      "title": "로컬 모델 서빙과 연결",
+      "headings": [
+        {
+          "level": 1,
+          "text": "로컬 모델 서빙과 연결",
+          "id": "로컬-모델-서빙과-연결"
+        },
+        {
+          "level": 2,
+          "text": "연결 구조",
+          "id": "연결-구조"
+        },
+        {
+          "level": 2,
+          "text": "기능 지원 확인",
+          "id": "기능-지원-확인"
+        },
+        {
+          "level": 2,
+          "text": "개인 사용에서 팀 서빙으로",
+          "id": "개인-사용에서-팀-서빙으로"
+        },
+        {
+          "level": 2,
+          "text": "운영 점검",
+          "id": "운영-점검"
+        },
+        {
+          "level": 2,
+          "text": "API 모델과의 차이",
+          "id": "api-모델과의-차이"
+        }
+      ]
+    },
+    "AI/mcp/README.md": {
+      "title": "MCP 서버와 도구 설계",
+      "headings": [
+        {
+          "level": 1,
+          "text": "MCP 서버와 도구 설계",
+          "id": "mcp-서버와-도구-설계"
+        },
+        {
+          "level": 2,
+          "text": "학습 순서",
+          "id": "학습-순서"
+        },
+        {
+          "level": 2,
+          "text": "언제 MCP 서버를 만드는가",
+          "id": "언제-mcp-서버를-만드는가"
+        },
+        {
+          "level": 2,
+          "text": "먼저 기억할 것",
+          "id": "먼저-기억할-것"
+        }
+      ]
+    },
+    "AI/mcp/building-a-server.md": {
+      "title": "MCP 서버 만들기",
+      "headings": [
+        {
+          "level": 1,
+          "text": "MCP 서버 만들기",
+          "id": "mcp-서버-만들기"
+        },
+        {
+          "level": 2,
+          "text": "SDK 선택",
+          "id": "sdk-선택"
+        },
+        {
+          "level": 2,
+          "text": "최소 서버",
+          "id": "최소-서버"
+        },
+        {
+          "level": 2,
+          "text": "구성 요소별 설계",
+          "id": "구성-요소별-설계"
+        },
+        {
+          "level": 2,
+          "text": "리소스와 프롬프트 추가",
+          "id": "리소스와-프롬프트-추가"
+        },
+        {
+          "level": 2,
+          "text": "HTTP 전송과 인증",
+          "id": "http-전송과-인증"
+        },
+        {
+          "level": 2,
+          "text": "로깅과 진단",
+          "id": "로깅과-진단"
+        }
+      ]
+    },
+    "AI/mcp/concepts.md": {
+      "title": "MCP 개념과 구조",
+      "headings": [
+        {
+          "level": 1,
+          "text": "MCP 개념과 구조",
+          "id": "mcp-개념과-구조"
+        },
+        {
+          "level": 2,
+          "text": "참여자",
+          "id": "참여자"
+        },
+        {
+          "level": 2,
+          "text": "서버가 제공하는 것",
+          "id": "서버가-제공하는-것"
+        },
+        {
+          "level": 2,
+          "text": "클라이언트가 제공하는 것",
+          "id": "클라이언트가-제공하는-것"
+        },
+        {
+          "level": 2,
+          "text": "전송 방식",
+          "id": "전송-방식"
+        },
+        {
+          "level": 2,
+          "text": "메시지 흐름",
+          "id": "메시지-흐름"
+        },
+        {
+          "level": 2,
+          "text": "자주 혼동하는 것",
+          "id": "자주-혼동하는-것"
+        }
+      ]
+    },
+    "AI/mcp/testing-and-distribution.md": {
+      "title": "MCP 서버 테스트와 배포",
+      "headings": [
+        {
+          "level": 1,
+          "text": "MCP 서버 테스트와 배포",
+          "id": "mcp-서버-테스트와-배포"
+        },
+        {
+          "level": 2,
+          "text": "테스트 단계",
+          "id": "테스트-단계"
+        },
+        {
+          "level": 2,
+          "text": "흔한 문제",
+          "id": "흔한-문제"
+        },
+        {
+          "level": 2,
+          "text": "호스트에 등록하기",
+          "id": "호스트에-등록하기"
+        },
+        {
+          "level": 2,
+          "text": "패키징과 배포",
+          "id": "패키징과-배포"
+        },
+        {
+          "level": 2,
+          "text": "운영",
+          "id": "운영"
+        }
+      ]
+    },
+    "AI/mcp/tool-design.md": {
+      "title": "MCP 도구 설계",
+      "headings": [
+        {
+          "level": 1,
+          "text": "MCP 도구 설계",
+          "id": "mcp-도구-설계"
+        },
+        {
+          "level": 2,
+          "text": "작업 단위로 설계하기",
+          "id": "작업-단위로-설계하기"
+        },
+        {
+          "level": 2,
+          "text": "이름과 설명",
+          "id": "이름과-설명"
+        },
+        {
+          "level": 2,
+          "text": "입력 스키마",
+          "id": "입력-스키마"
+        },
+        {
+          "level": 2,
+          "text": "결과 형식",
+          "id": "결과-형식"
+        },
+        {
+          "level": 2,
+          "text": "오류 처리",
+          "id": "오류-처리"
+        },
+        {
+          "level": 2,
+          "text": "권한과 안전",
+          "id": "권한과-안전"
+        }
+      ]
+    },
+    "AI/prompting/README.md": {
+      "title": "Prompting",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Prompting",
+          "id": "prompting"
+        },
+        {
+          "level": 2,
+          "text": "학습 순서",
+          "id": "학습-순서"
+        },
+        {
+          "level": 2,
+          "text": "프롬프트가 할 수 있는 것과 없는 것",
+          "id": "프롬프트가-할-수-있는-것과-없는-것"
+        },
+        {
+          "level": 2,
+          "text": "먼저 기억할 것",
+          "id": "먼저-기억할-것"
+        }
+      ]
+    },
     "AI/prompting/prompting-tips.md": {
       "title": "Prompting Tips",
       "headings": [
@@ -1662,6 +2345,146 @@
           "level": 3,
           "text": "번역/교정",
           "id": "번역교정"
+        }
+      ]
+    },
+    "AI/prompting/system-prompts.md": {
+      "title": "시스템 프롬프트 설계",
+      "headings": [
+        {
+          "level": 1,
+          "text": "시스템 프롬프트 설계",
+          "id": "시스템-프롬프트-설계"
+        },
+        {
+          "level": 2,
+          "text": "기본 구조",
+          "id": "기본-구조"
+        },
+        {
+          "level": 2,
+          "text": "규칙 작성",
+          "id": "규칙-작성"
+        },
+        {
+          "level": 2,
+          "text": "우선순위와 충돌",
+          "id": "우선순위와-충돌"
+        },
+        {
+          "level": 2,
+          "text": "출력 형식 지정",
+          "id": "출력-형식-지정"
+        },
+        {
+          "level": 2,
+          "text": "문맥 정보 제공",
+          "id": "문맥-정보-제공"
+        },
+        {
+          "level": 2,
+          "text": "길이 관리",
+          "id": "길이-관리"
+        },
+        {
+          "level": 2,
+          "text": "예시 골격",
+          "id": "예시-골격"
+        }
+      ]
+    },
+    "AI/prompting/techniques.md": {
+      "title": "프롬프팅 기법과 원리",
+      "headings": [
+        {
+          "level": 1,
+          "text": "프롬프팅 기법과 원리",
+          "id": "프롬프팅-기법과-원리"
+        },
+        {
+          "level": 2,
+          "text": "기법 한눈에 보기",
+          "id": "기법-한눈에-보기"
+        },
+        {
+          "level": 2,
+          "text": "제로샷과 퓨샷",
+          "id": "제로샷과-퓨샷"
+        },
+        {
+          "level": 2,
+          "text": "단계적 사고",
+          "id": "단계적-사고"
+        },
+        {
+          "level": 2,
+          "text": "작업 분해",
+          "id": "작업-분해"
+        },
+        {
+          "level": 2,
+          "text": "역할과 관점",
+          "id": "역할과-관점"
+        },
+        {
+          "level": 2,
+          "text": "자기 검증과 수정",
+          "id": "자기-검증과-수정"
+        },
+        {
+          "level": 2,
+          "text": "환각 줄이기",
+          "id": "환각-줄이기"
+        },
+        {
+          "level": 2,
+          "text": "기법 선택 기준",
+          "id": "기법-선택-기준"
+        }
+      ]
+    },
+    "AI/prompting/testing-and-iteration.md": {
+      "title": "프롬프트 테스트와 반복 개선",
+      "headings": [
+        {
+          "level": 1,
+          "text": "프롬프트 테스트와 반복 개선",
+          "id": "프롬프트-테스트와-반복-개선"
+        },
+        {
+          "level": 2,
+          "text": "개선 순환",
+          "id": "개선-순환"
+        },
+        {
+          "level": 2,
+          "text": "평가 세트 만들기",
+          "id": "평가-세트-만들기"
+        },
+        {
+          "level": 2,
+          "text": "채점 방법",
+          "id": "채점-방법"
+        },
+        {
+          "level": 2,
+          "text": "실패 분석",
+          "id": "실패-분석"
+        },
+        {
+          "level": 2,
+          "text": "수정 원칙",
+          "id": "수정-원칙"
+        },
+        {
+          "level": 2,
+          "text": "변경 절차",
+          "id": "변경-절차"
+        },
+        {
+          "level": 2,
+          "text": "도구",
+          "id": "도구"
         }
       ]
     },
@@ -1937,6 +2760,196 @@
           "level": 2,
           "text": "운영",
           "id": "운영"
+        }
+      ]
+    },
+    "AI/security/README.md": {
+      "title": "AI 보안",
+      "headings": [
+        {
+          "level": 1,
+          "text": "AI 보안",
+          "id": "ai-보안"
+        },
+        {
+          "level": 2,
+          "text": "학습 순서",
+          "id": "학습-순서"
+        },
+        {
+          "level": 2,
+          "text": "기존 보안과의 관계",
+          "id": "기존-보안과의-관계"
+        },
+        {
+          "level": 2,
+          "text": "먼저 기억할 것",
+          "id": "먼저-기억할-것"
+        }
+      ]
+    },
+    "AI/security/data-and-output.md": {
+      "title": "데이터 보호와 출력 검증",
+      "headings": [
+        {
+          "level": 1,
+          "text": "데이터 보호와 출력 검증",
+          "id": "데이터-보호와-출력-검증"
+        },
+        {
+          "level": 2,
+          "text": "데이터가 흐르는 경로",
+          "id": "데이터가-흐르는-경로"
+        },
+        {
+          "level": 2,
+          "text": "민감 정보 분류",
+          "id": "민감-정보-분류"
+        },
+        {
+          "level": 2,
+          "text": "입력 측 보호",
+          "id": "입력-측-보호"
+        },
+        {
+          "level": 2,
+          "text": "공급자 데이터 정책",
+          "id": "공급자-데이터-정책"
+        },
+        {
+          "level": 2,
+          "text": "출력 측 검증",
+          "id": "출력-측-검증"
+        },
+        {
+          "level": 2,
+          "text": "가드레일",
+          "id": "가드레일"
+        },
+        {
+          "level": 2,
+          "text": "사고 대응",
+          "id": "사고-대응"
+        }
+      ]
+    },
+    "AI/security/owasp-llm-top-10.md": {
+      "title": "OWASP LLM Top 10",
+      "headings": [
+        {
+          "level": 1,
+          "text": "OWASP LLM Top 10",
+          "id": "owasp-llm-top-10"
+        },
+        {
+          "level": 2,
+          "text": "한눈에 보기",
+          "id": "한눈에-보기"
+        },
+        {
+          "level": 2,
+          "text": "항목별 정리",
+          "id": "항목별-정리"
+        },
+        {
+          "level": 3,
+          "text": "LLM01 프롬프트 주입(Prompt Injection)",
+          "id": "llm01-프롬프트-주입prompt-injection"
+        },
+        {
+          "level": 3,
+          "text": "LLM02 민감 정보 노출(Sensitive Information Disclosure)",
+          "id": "llm02-민감-정보-노출sensitive-information-disclosure"
+        },
+        {
+          "level": 3,
+          "text": "LLM03 공급망(Supply Chain)",
+          "id": "llm03-공급망supply-chain"
+        },
+        {
+          "level": 3,
+          "text": "LLM04 데이터·모델 오염(Data and Model Poisoning)",
+          "id": "llm04-데이터모델-오염data-and-model-poisoning"
+        },
+        {
+          "level": 3,
+          "text": "LLM05 부적절한 출력 처리(Improper Output Handling)",
+          "id": "llm05-부적절한-출력-처리improper-output-handling"
+        },
+        {
+          "level": 3,
+          "text": "LLM06 과도한 자율성(Excessive Agency)",
+          "id": "llm06-과도한-자율성excessive-agency"
+        },
+        {
+          "level": 3,
+          "text": "LLM07 시스템 프롬프트 유출(System Prompt Leakage)",
+          "id": "llm07-시스템-프롬프트-유출system-prompt-leakage"
+        },
+        {
+          "level": 3,
+          "text": "LLM08 벡터·임베딩 취약점(Vector and Embedding Weaknesses)",
+          "id": "llm08-벡터임베딩-취약점vector-and-embedding-weaknesses"
+        },
+        {
+          "level": 3,
+          "text": "LLM09 허위 정보(Misinformation)",
+          "id": "llm09-허위-정보misinformation"
+        },
+        {
+          "level": 3,
+          "text": "LLM10 무제한 소비(Unbounded Consumption)",
+          "id": "llm10-무제한-소비unbounded-consumption"
+        },
+        {
+          "level": 2,
+          "text": "점검 목록",
+          "id": "점검-목록"
+        }
+      ]
+    },
+    "AI/security/prompt-injection.md": {
+      "title": "프롬프트 주입",
+      "headings": [
+        {
+          "level": 1,
+          "text": "프롬프트 주입",
+          "id": "프롬프트-주입"
+        },
+        {
+          "level": 2,
+          "text": "직접 주입과 간접 주입",
+          "id": "직접-주입과-간접-주입"
+        },
+        {
+          "level": 2,
+          "text": "에이전트에서의 피해 유형",
+          "id": "에이전트에서의-피해-유형"
+        },
+        {
+          "level": 2,
+          "text": "방어 층",
+          "id": "방어-층"
+        },
+        {
+          "level": 2,
+          "text": "프롬프트 설계",
+          "id": "프롬프트-설계"
+        },
+        {
+          "level": 2,
+          "text": "도구 결과 처리",
+          "id": "도구-결과-처리"
+        },
+        {
+          "level": 2,
+          "text": "사람 승인 지점",
+          "id": "사람-승인-지점"
+        },
+        {
+          "level": 2,
+          "text": "테스트",
+          "id": "테스트"
         }
       ]
     },

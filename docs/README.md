@@ -8,7 +8,7 @@
 
 | 폴더                                                    | 설명                                               |
 | ------------------------------------------------------- | -------------------------------------------------- |
-| [AI](./AI/)                                             | LLM 기초·API, 프롬프팅, RAG, 에이전트 하네스, 에이전트의 개발 방법론 적용 |
+| [AI](./AI/)                                             | LLM 기초·API, 프롬프팅, RAG, MCP, 운영, 보안, 로컬 모델, 에이전트 하네스와 개발 방법론 적용 |
 | [Backend](./Backend/)                                   | API 설계, 인증, DB, 캐싱, 로깅, 메시징, 테스트     |
 | [Build](./Build/)                                       | 빌드 과정, 의존성, 도구 선택, 캐시, 오류 진단     |
 | [Frontend](./Frontend/)                                 | 상태 관리, TypeScript, 성능 최적화, PWA, 웹 접근성 |
@@ -26,11 +26,20 @@
 
 ### AI
 
-- [Prompting Tips](./AI/prompting/prompting-tips.md) - 프롬프팅 기법과 템플릿
+- [Prompting 학습 가이드](./AI/prompting/README.md) - 프롬프팅 팁, 기법과 원리, 시스템 프롬프트, 테스트와 반복 개선
+- [Prompting Tips](./AI/prompting/prompting-tips.md) | [기법과 원리](./AI/prompting/techniques.md) | [시스템 프롬프트 설계](./AI/prompting/system-prompts.md) | [테스트와 반복 개선](./AI/prompting/testing-and-iteration.md)
 - [LLM 기초와 API 활용](./AI/llm-basics/README.md) - 모델 동작, API 호출, 구조화 출력, 비용과 지연
 - [모델의 동작 원리](./AI/llm-basics/how-llms-work.md) | [API 호출 구조](./AI/llm-basics/api-usage.md) | [구조화 출력과 도구 호출](./AI/llm-basics/structured-output.md) | [비용과 지연](./AI/llm-basics/cost-and-latency.md)
 - [RAG와 지식 검색](./AI/rag/README.md) - 검색 결합 생성의 구조, 청킹, 저장소, 검색 전략, 평가
 - [전체 구조](./AI/rag/pipeline.md) | [청킹과 임베딩](./AI/rag/chunking-and-embedding.md) | [벡터 저장소](./AI/rag/vector-stores.md) | [검색 전략](./AI/rag/retrieval.md) | [평가와 실패 진단](./AI/rag/evaluation.md) | [RAG 도구](./AI/rag/tools.md)
+- [MCP 서버와 도구 설계](./AI/mcp/README.md) - MCP 구조, 도구 설계, 서버 만들기, 테스트와 배포
+- [MCP 개념](./AI/mcp/concepts.md) | [도구 설계](./AI/mcp/tool-design.md) | [서버 만들기](./AI/mcp/building-a-server.md) | [테스트와 배포](./AI/mcp/testing-and-distribution.md)
+- [LLM 애플리케이션 운영](./AI/llmops/README.md) - 아키텍처, 프롬프트 관리, 신뢰성, 관측과 비용
+- [아키텍처](./AI/llmops/architecture.md) | [프롬프트 관리](./AI/llmops/prompt-management.md) | [신뢰성](./AI/llmops/reliability.md) | [관측과 비용](./AI/llmops/observability-and-cost.md)
+- [AI 보안](./AI/security/README.md) - OWASP LLM Top 10, 프롬프트 주입, 데이터 보호와 출력 검증
+- [OWASP LLM Top 10](./AI/security/owasp-llm-top-10.md) | [프롬프트 주입](./AI/security/prompt-injection.md) | [데이터 보호와 출력 검증](./AI/security/data-and-output.md)
+- [로컬 모델 실행](./AI/local-models/README.md) - 런타임, 양자화와 하드웨어, 서빙과 연결
+- [런타임과 도구](./AI/local-models/runtimes.md) | [양자화와 하드웨어](./AI/local-models/quantization-and-hardware.md) | [서빙과 연결](./AI/local-models/serving-and-integration.md)
 - [Harness 학습 가이드](./AI/harness/README.md) - 에이전트 실행과 평가 환경의 역할
 - [Harness 개념](./AI/harness/concepts.md) | [실행 구조와 설계](./AI/harness/runtime-design.md) | [평가와 오류 진단](./AI/harness/evaluation.md)
 - [Agents 학습 가이드](./AI/agents/README.md) - 에이전트를 PM·개발·리뷰·QA·운영에 적용하는 방법
