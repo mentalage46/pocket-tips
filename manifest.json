@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T09:00:21.367Z",
+  "generatedAt": "2026-10-16T09:50:01.943Z",
   "root": "docs",
   "home": "README.md",
   "tree": [
@@ -1120,6 +1120,138 @@
               "name": "code-review.md",
               "path": "Utility/collaboration/code-review.md",
               "title": "Code Review Guide"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "dir",
+      "name": "UX",
+      "path": "UX",
+      "title": "UX",
+      "index": "UX/README.md",
+      "children": [
+        {
+          "type": "dir",
+          "name": "components",
+          "path": "UX/components",
+          "title": "components",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "components.md",
+              "path": "UX/components/components.md",
+              "title": "컴포넌트 규칙"
+            },
+            {
+              "type": "file",
+              "name": "feedback-and-states.md",
+              "path": "UX/components/feedback-and-states.md",
+              "title": "피드백과 상태"
+            },
+            {
+              "type": "file",
+              "name": "forms.md",
+              "path": "UX/components/forms.md",
+              "title": "폼 설계"
+            },
+            {
+              "type": "file",
+              "name": "microcopy.md",
+              "path": "UX/components/microcopy.md",
+              "title": "UX 라이팅"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "foundations",
+          "path": "UX/foundations",
+          "title": "foundations",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "information-architecture.md",
+              "path": "UX/foundations/information-architecture.md",
+              "title": "정보 구조(Information Architecture)"
+            },
+            {
+              "type": "file",
+              "name": "principles.md",
+              "path": "UX/foundations/principles.md",
+              "title": "사용성 원칙"
+            },
+            {
+              "type": "file",
+              "name": "research.md",
+              "path": "UX/foundations/research.md",
+              "title": "사용자 조사"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "process",
+          "path": "UX/process",
+          "title": "process",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "workflow.md",
+              "path": "UX/process/workflow.md",
+              "title": "협업과 측정"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "systems",
+          "path": "UX/systems",
+          "title": "systems",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "design-system.md",
+              "path": "UX/systems/design-system.md",
+              "title": "디자인 시스템"
+            },
+            {
+              "type": "file",
+              "name": "responsive-and-motion.md",
+              "path": "UX/systems/responsive-and-motion.md",
+              "title": "반응형과 모션"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "visual",
+          "path": "UX/visual",
+          "title": "visual",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "color.md",
+              "path": "UX/visual/color.md",
+              "title": "색상"
+            },
+            {
+              "type": "file",
+              "name": "layout-and-spacing.md",
+              "path": "UX/visual/layout-and-spacing.md",
+              "title": "레이아웃과 간격"
+            },
+            {
+              "type": "file",
+              "name": "typography.md",
+              "path": "UX/visual/typography.md",
+              "title": "타이포그래피"
             }
           ]
         }
@@ -8145,6 +8277,11 @@
         },
         {
           "level": 3,
+          "text": "UX",
+          "id": "ux"
+        },
+        {
+          "level": 3,
           "text": "Git",
           "id": "git"
         }
@@ -8367,6 +8504,621 @@
           "level": 2,
           "text": "🎯 보안 체크리스트",
           "id": "-보안-체크리스트"
+        }
+      ]
+    },
+    "UX/README.md": {
+      "title": "UX/UI",
+      "headings": [
+        {
+          "level": 1,
+          "text": "UX/UI",
+          "id": "uxui"
+        },
+        {
+          "level": 2,
+          "text": "학습 순서",
+          "id": "학습-순서"
+        },
+        {
+          "level": 2,
+          "text": "개발자에게 UX가 필요한 순간",
+          "id": "개발자에게-ux가-필요한-순간"
+        },
+        {
+          "level": 2,
+          "text": "먼저 기억할 것",
+          "id": "먼저-기억할-것"
+        }
+      ]
+    },
+    "UX/components/components.md": {
+      "title": "컴포넌트 규칙",
+      "headings": [
+        {
+          "level": 1,
+          "text": "컴포넌트 규칙",
+          "id": "컴포넌트-규칙"
+        },
+        {
+          "level": 2,
+          "text": "모든 상호작용 컴포넌트의 상태",
+          "id": "모든-상호작용-컴포넌트의-상태"
+        },
+        {
+          "level": 2,
+          "text": "버튼",
+          "id": "버튼"
+        },
+        {
+          "level": 2,
+          "text": "입력",
+          "id": "입력"
+        },
+        {
+          "level": 2,
+          "text": "선택",
+          "id": "선택"
+        },
+        {
+          "level": 2,
+          "text": "표와 목록",
+          "id": "표와-목록"
+        },
+        {
+          "level": 2,
+          "text": "오버레이",
+          "id": "오버레이"
+        },
+        {
+          "level": 2,
+          "text": "내비게이션 컴포넌트",
+          "id": "내비게이션-컴포넌트"
+        },
+        {
+          "level": 2,
+          "text": "접근성 공통",
+          "id": "접근성-공통"
+        }
+      ]
+    },
+    "UX/components/feedback-and-states.md": {
+      "title": "피드백과 상태",
+      "headings": [
+        {
+          "level": 1,
+          "text": "피드백과 상태",
+          "id": "피드백과-상태"
+        },
+        {
+          "level": 2,
+          "text": "화면의 상태 목록",
+          "id": "화면의-상태-목록"
+        },
+        {
+          "level": 2,
+          "text": "로딩",
+          "id": "로딩"
+        },
+        {
+          "level": 2,
+          "text": "빈 상태",
+          "id": "빈-상태"
+        },
+        {
+          "level": 2,
+          "text": "오류",
+          "id": "오류"
+        },
+        {
+          "level": 2,
+          "text": "성공과 확인",
+          "id": "성공과-확인"
+        },
+        {
+          "level": 3,
+          "text": "확인 대화상자",
+          "id": "확인-대화상자"
+        },
+        {
+          "level": 2,
+          "text": "알림 선택",
+          "id": "알림-선택"
+        }
+      ]
+    },
+    "UX/components/forms.md": {
+      "title": "폼 설계",
+      "headings": [
+        {
+          "level": 1,
+          "text": "폼 설계",
+          "id": "폼-설계"
+        },
+        {
+          "level": 2,
+          "text": "필드 줄이기",
+          "id": "필드-줄이기"
+        },
+        {
+          "level": 2,
+          "text": "구성",
+          "id": "구성"
+        },
+        {
+          "level": 2,
+          "text": "입력 보조",
+          "id": "입력-보조"
+        },
+        {
+          "level": 2,
+          "text": "검증 시점",
+          "id": "검증-시점"
+        },
+        {
+          "level": 2,
+          "text": "오류 메시지",
+          "id": "오류-메시지"
+        },
+        {
+          "level": 2,
+          "text": "긴 폼",
+          "id": "긴-폼"
+        },
+        {
+          "level": 2,
+          "text": "제출 후",
+          "id": "제출-후"
+        },
+        {
+          "level": 2,
+          "text": "접근성 점검",
+          "id": "접근성-점검"
+        }
+      ]
+    },
+    "UX/components/microcopy.md": {
+      "title": "UX 라이팅",
+      "headings": [
+        {
+          "level": 1,
+          "text": "UX 라이팅",
+          "id": "ux-라이팅"
+        },
+        {
+          "level": 2,
+          "text": "기본 원칙",
+          "id": "기본-원칙"
+        },
+        {
+          "level": 2,
+          "text": "톤",
+          "id": "톤"
+        },
+        {
+          "level": 2,
+          "text": "버튼과 동작",
+          "id": "버튼과-동작"
+        },
+        {
+          "level": 2,
+          "text": "라벨과 안내",
+          "id": "라벨과-안내"
+        },
+        {
+          "level": 2,
+          "text": "오류와 경고",
+          "id": "오류와-경고"
+        },
+        {
+          "level": 2,
+          "text": "확인과 알림",
+          "id": "확인과-알림"
+        },
+        {
+          "level": 2,
+          "text": "숫자·날짜·단위",
+          "id": "숫자날짜단위"
+        },
+        {
+          "level": 2,
+          "text": "용어집 운영",
+          "id": "용어집-운영"
+        },
+        {
+          "level": 2,
+          "text": "점검표",
+          "id": "점검표"
+        }
+      ]
+    },
+    "UX/foundations/information-architecture.md": {
+      "title": "정보 구조(Information Architecture)",
+      "headings": [
+        {
+          "level": 1,
+          "text": "정보 구조(Information Architecture)",
+          "id": "정보-구조information-architecture"
+        },
+        {
+          "level": 2,
+          "text": "구성 요소",
+          "id": "구성-요소"
+        },
+        {
+          "level": 2,
+          "text": "분류 기준",
+          "id": "분류-기준"
+        },
+        {
+          "level": 2,
+          "text": "구조 유형",
+          "id": "구조-유형"
+        },
+        {
+          "level": 2,
+          "text": "내비게이션 패턴",
+          "id": "내비게이션-패턴"
+        },
+        {
+          "level": 2,
+          "text": "라벨링",
+          "id": "라벨링"
+        },
+        {
+          "level": 2,
+          "text": "검색",
+          "id": "검색"
+        },
+        {
+          "level": 2,
+          "text": "사이트맵과 검증",
+          "id": "사이트맵과-검증"
+        }
+      ]
+    },
+    "UX/foundations/principles.md": {
+      "title": "사용성 원칙",
+      "headings": [
+        {
+          "level": 1,
+          "text": "사용성 원칙",
+          "id": "사용성-원칙"
+        },
+        {
+          "level": 2,
+          "text": "10가지 휴리스틱",
+          "id": "10가지-휴리스틱"
+        },
+        {
+          "level": 2,
+          "text": "인지 부하",
+          "id": "인지-부하"
+        },
+        {
+          "level": 2,
+          "text": "피드백과 응답 시간",
+          "id": "피드백과-응답-시간"
+        },
+        {
+          "level": 2,
+          "text": "점진적 공개",
+          "id": "점진적-공개"
+        },
+        {
+          "level": 2,
+          "text": "일관성의 수준",
+          "id": "일관성의-수준"
+        },
+        {
+          "level": 2,
+          "text": "평가 점검표",
+          "id": "평가-점검표"
+        }
+      ]
+    },
+    "UX/foundations/research.md": {
+      "title": "사용자 조사",
+      "headings": [
+        {
+          "level": 1,
+          "text": "사용자 조사",
+          "id": "사용자-조사"
+        },
+        {
+          "level": 2,
+          "text": "방법 선택",
+          "id": "방법-선택"
+        },
+        {
+          "level": 2,
+          "text": "인터뷰",
+          "id": "인터뷰"
+        },
+        {
+          "level": 2,
+          "text": "사용성 테스트",
+          "id": "사용성-테스트"
+        },
+        {
+          "level": 2,
+          "text": "페르소나와 여정 지도",
+          "id": "페르소나와-여정-지도"
+        },
+        {
+          "level": 2,
+          "text": "분석 데이터",
+          "id": "분석-데이터"
+        },
+        {
+          "level": 2,
+          "text": "조사 결과를 결정으로",
+          "id": "조사-결과를-결정으로"
+        }
+      ]
+    },
+    "UX/process/workflow.md": {
+      "title": "협업과 측정",
+      "headings": [
+        {
+          "level": 1,
+          "text": "협업과 측정",
+          "id": "협업과-측정"
+        },
+        {
+          "level": 2,
+          "text": "흐름",
+          "id": "흐름"
+        },
+        {
+          "level": 2,
+          "text": "산출물과 충실도",
+          "id": "산출물과-충실도"
+        },
+        {
+          "level": 2,
+          "text": "핸드오프 점검표",
+          "id": "핸드오프-점검표"
+        },
+        {
+          "level": 2,
+          "text": "디자인 QA",
+          "id": "디자인-qa"
+        },
+        {
+          "level": 2,
+          "text": "디자인 리뷰 진행",
+          "id": "디자인-리뷰-진행"
+        },
+        {
+          "level": 2,
+          "text": "UX 지표",
+          "id": "ux-지표"
+        },
+        {
+          "level": 2,
+          "text": "디자이너가 없을 때",
+          "id": "디자이너가-없을-때"
+        }
+      ]
+    },
+    "UX/systems/design-system.md": {
+      "title": "디자인 시스템",
+      "headings": [
+        {
+          "level": 1,
+          "text": "디자인 시스템",
+          "id": "디자인-시스템"
+        },
+        {
+          "level": 2,
+          "text": "구성",
+          "id": "구성"
+        },
+        {
+          "level": 2,
+          "text": "디자인 토큰",
+          "id": "디자인-토큰"
+        },
+        {
+          "level": 2,
+          "text": "컴포넌트 라이브러리",
+          "id": "컴포넌트-라이브러리"
+        },
+        {
+          "level": 2,
+          "text": "문서화",
+          "id": "문서화"
+        },
+        {
+          "level": 2,
+          "text": "운영",
+          "id": "운영"
+        },
+        {
+          "level": 2,
+          "text": "시작하는 순서",
+          "id": "시작하는-순서"
+        }
+      ]
+    },
+    "UX/systems/responsive-and-motion.md": {
+      "title": "반응형과 모션",
+      "headings": [
+        {
+          "level": 1,
+          "text": "반응형과 모션",
+          "id": "반응형과-모션"
+        },
+        {
+          "level": 2,
+          "text": "브레이크포인트",
+          "id": "브레이크포인트"
+        },
+        {
+          "level": 2,
+          "text": "레이아웃 적응 패턴",
+          "id": "레이아웃-적응-패턴"
+        },
+        {
+          "level": 2,
+          "text": "터치와 포인터",
+          "id": "터치와-포인터"
+        },
+        {
+          "level": 2,
+          "text": "플랫폼 관례",
+          "id": "플랫폼-관례"
+        },
+        {
+          "level": 2,
+          "text": "모션의 목적",
+          "id": "모션의-목적"
+        },
+        {
+          "level": 2,
+          "text": "지속 시간과 이징",
+          "id": "지속-시간과-이징"
+        },
+        {
+          "level": 2,
+          "text": "모션 접근성",
+          "id": "모션-접근성"
+        },
+        {
+          "level": 2,
+          "text": "점검표",
+          "id": "점검표"
+        }
+      ]
+    },
+    "UX/visual/color.md": {
+      "title": "색상",
+      "headings": [
+        {
+          "level": 1,
+          "text": "색상",
+          "id": "색상"
+        },
+        {
+          "level": 2,
+          "text": "팔레트 구성",
+          "id": "팔레트-구성"
+        },
+        {
+          "level": 2,
+          "text": "역할별 색",
+          "id": "역할별-색"
+        },
+        {
+          "level": 2,
+          "text": "대비",
+          "id": "대비"
+        },
+        {
+          "level": 2,
+          "text": "색에만 의존하지 않기",
+          "id": "색에만-의존하지-않기"
+        },
+        {
+          "level": 2,
+          "text": "다크 모드",
+          "id": "다크-모드"
+        },
+        {
+          "level": 2,
+          "text": "색 이름과 토큰",
+          "id": "색-이름과-토큰"
+        },
+        {
+          "level": 2,
+          "text": "도구",
+          "id": "도구"
+        }
+      ]
+    },
+    "UX/visual/layout-and-spacing.md": {
+      "title": "레이아웃과 간격",
+      "headings": [
+        {
+          "level": 1,
+          "text": "레이아웃과 간격",
+          "id": "레이아웃과-간격"
+        },
+        {
+          "level": 2,
+          "text": "간격 체계",
+          "id": "간격-체계"
+        },
+        {
+          "level": 2,
+          "text": "그리드",
+          "id": "그리드"
+        },
+        {
+          "level": 2,
+          "text": "시각 위계",
+          "id": "시각-위계"
+        },
+        {
+          "level": 2,
+          "text": "정렬",
+          "id": "정렬"
+        },
+        {
+          "level": 2,
+          "text": "콘텐츠 폭과 밀도",
+          "id": "콘텐츠-폭과-밀도"
+        },
+        {
+          "level": 2,
+          "text": "흔한 문제",
+          "id": "흔한-문제"
+        }
+      ]
+    },
+    "UX/visual/typography.md": {
+      "title": "타이포그래피",
+      "headings": [
+        {
+          "level": 1,
+          "text": "타이포그래피",
+          "id": "타이포그래피"
+        },
+        {
+          "level": 2,
+          "text": "서체 선택",
+          "id": "서체-선택"
+        },
+        {
+          "level": 2,
+          "text": "크기 체계",
+          "id": "크기-체계"
+        },
+        {
+          "level": 2,
+          "text": "행간과 자간",
+          "id": "행간과-자간"
+        },
+        {
+          "level": 2,
+          "text": "한글 조판 주의점",
+          "id": "한글-조판-주의점"
+        },
+        {
+          "level": 2,
+          "text": "대비와 색",
+          "id": "대비와-색"
+        },
+        {
+          "level": 2,
+          "text": "텍스트 처리",
+          "id": "텍스트-처리"
+        },
+        {
+          "level": 2,
+          "text": "웹 폰트 로딩",
+          "id": "웹-폰트-로딩"
         }
       ]
     },
