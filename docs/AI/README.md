@@ -12,6 +12,16 @@
 - [구조화 출력과 도구 호출](./llm-basics/structured-output.md) - JSON 스키마 출력, 검증 단계, 도구 호출 루프, 도구 정의 원칙
 - [비용과 지연](./llm-basics/cost-and-latency.md) - 과금 구조, TTFT, 프롬프트 캐싱, 절감 순서, 속도 제한, 관측 지표
 
+## RAG
+
+- [RAG와 지식 검색](./rag/README.md) - 검색 결합 생성의 역할, 해결하는 것과 못 하는 것, 학습 순서
+- [전체 구조](./rag/pipeline.md) - 색인·질의 경로, 구성 요소, 시작 구성, 변형 구조, 권한 경계
+- [청킹과 임베딩](./rag/chunking-and-embedding.md) - 청크 크기, 분할 전략, 메타데이터, 임베딩 모델 선택, 색인 갱신
+- [벡터 저장소](./rag/vector-stores.md) - 유사도·인덱스 종류, 저장소 선택, 메타데이터 필터링, 운영
+- [검색 전략](./rag/retrieval.md) - 키워드·벡터·하이브리드, 쿼리 변환, 재순위, 문맥 조립, 지연
+- [평가와 실패 진단](./rag/evaluation.md) - 평가 세트, 검색·생성 지표, 실패 원인 추적, 개선 순서
+- [RAG 도구와 생태계](./rag/tools.md) - 파싱, 청킹, 임베딩, 저장소, 검색·재순위, 프레임워크, 평가 도구
+
 ## Harness
 
 - [Harness 학습 가이드](./harness/README.md) - 에이전트 하네스와 평가 하네스의 역할, 학습 순서

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T08:07:24.619Z",
+  "generatedAt": "2026-10-16T08:07:33.378Z",
   "root": "docs",
   "home": "README.md",
   "tree": [
@@ -127,6 +127,51 @@
               "name": "prompting-tips.md",
               "path": "AI/prompting/prompting-tips.md",
               "title": "Prompting Tips"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "rag",
+          "path": "AI/rag",
+          "title": "rag",
+          "index": "AI/rag/README.md",
+          "children": [
+            {
+              "type": "file",
+              "name": "chunking-and-embedding.md",
+              "path": "AI/rag/chunking-and-embedding.md",
+              "title": "청킹과 임베딩"
+            },
+            {
+              "type": "file",
+              "name": "evaluation.md",
+              "path": "AI/rag/evaluation.md",
+              "title": "RAG 평가와 실패 진단"
+            },
+            {
+              "type": "file",
+              "name": "pipeline.md",
+              "path": "AI/rag/pipeline.md",
+              "title": "RAG 전체 구조"
+            },
+            {
+              "type": "file",
+              "name": "retrieval.md",
+              "path": "AI/rag/retrieval.md",
+              "title": "검색 전략"
+            },
+            {
+              "type": "file",
+              "name": "tools.md",
+              "path": "AI/rag/tools.md",
+              "title": "RAG 도구와 생태계"
+            },
+            {
+              "type": "file",
+              "name": "vector-stores.md",
+              "path": "AI/rag/vector-stores.md",
+              "title": "벡터 저장소"
             }
           ]
         }
@@ -880,6 +925,11 @@
         },
         {
           "level": 2,
+          "text": "RAG",
+          "id": "rag"
+        },
+        {
+          "level": 2,
           "text": "Harness",
           "id": "harness"
         },
@@ -1612,6 +1662,281 @@
           "level": 3,
           "text": "번역/교정",
           "id": "번역교정"
+        }
+      ]
+    },
+    "AI/rag/README.md": {
+      "title": "RAG와 지식 검색",
+      "headings": [
+        {
+          "level": 1,
+          "text": "RAG와 지식 검색",
+          "id": "rag와-지식-검색"
+        },
+        {
+          "level": 2,
+          "text": "학습 순서",
+          "id": "학습-순서"
+        },
+        {
+          "level": 2,
+          "text": "RAG가 해결하는 것과 못 하는 것",
+          "id": "rag가-해결하는-것과-못-하는-것"
+        },
+        {
+          "level": 2,
+          "text": "먼저 기억할 것",
+          "id": "먼저-기억할-것"
+        }
+      ]
+    },
+    "AI/rag/chunking-and-embedding.md": {
+      "title": "청킹과 임베딩",
+      "headings": [
+        {
+          "level": 1,
+          "text": "청킹과 임베딩",
+          "id": "청킹과-임베딩"
+        },
+        {
+          "level": 2,
+          "text": "청크 크기의 트레이드오프",
+          "id": "청크-크기의-트레이드오프"
+        },
+        {
+          "level": 2,
+          "text": "분할 전략",
+          "id": "분할-전략"
+        },
+        {
+          "level": 2,
+          "text": "메타데이터",
+          "id": "메타데이터"
+        },
+        {
+          "level": 2,
+          "text": "임베딩 모델 선택",
+          "id": "임베딩-모델-선택"
+        },
+        {
+          "level": 2,
+          "text": "임베딩 입력 구성",
+          "id": "임베딩-입력-구성"
+        },
+        {
+          "level": 2,
+          "text": "색인 갱신",
+          "id": "색인-갱신"
+        }
+      ]
+    },
+    "AI/rag/evaluation.md": {
+      "title": "RAG 평가와 실패 진단",
+      "headings": [
+        {
+          "level": 1,
+          "text": "RAG 평가와 실패 진단",
+          "id": "rag-평가와-실패-진단"
+        },
+        {
+          "level": 2,
+          "text": "평가 세트 만들기",
+          "id": "평가-세트-만들기"
+        },
+        {
+          "level": 2,
+          "text": "검색 지표",
+          "id": "검색-지표"
+        },
+        {
+          "level": 2,
+          "text": "생성 지표",
+          "id": "생성-지표"
+        },
+        {
+          "level": 2,
+          "text": "실패 원인 추적",
+          "id": "실패-원인-추적"
+        },
+        {
+          "level": 2,
+          "text": "개선 순서",
+          "id": "개선-순서"
+        },
+        {
+          "level": 2,
+          "text": "운영 중 모니터링",
+          "id": "운영-중-모니터링"
+        }
+      ]
+    },
+    "AI/rag/pipeline.md": {
+      "title": "RAG 전체 구조",
+      "headings": [
+        {
+          "level": 1,
+          "text": "RAG 전체 구조",
+          "id": "rag-전체-구조"
+        },
+        {
+          "level": 2,
+          "text": "두 경로",
+          "id": "두-경로"
+        },
+        {
+          "level": 2,
+          "text": "구성 요소",
+          "id": "구성-요소"
+        },
+        {
+          "level": 2,
+          "text": "시작할 때의 기본 구성",
+          "id": "시작할-때의-기본-구성"
+        },
+        {
+          "level": 2,
+          "text": "변형 구조",
+          "id": "변형-구조"
+        },
+        {
+          "level": 2,
+          "text": "권한과 데이터 경계",
+          "id": "권한과-데이터-경계"
+        }
+      ]
+    },
+    "AI/rag/retrieval.md": {
+      "title": "검색 전략",
+      "headings": [
+        {
+          "level": 1,
+          "text": "검색 전략",
+          "id": "검색-전략"
+        },
+        {
+          "level": 2,
+          "text": "검색 방식 비교",
+          "id": "검색-방식-비교"
+        },
+        {
+          "level": 2,
+          "text": "하이브리드 결합",
+          "id": "하이브리드-결합"
+        },
+        {
+          "level": 2,
+          "text": "질의 처리 단계",
+          "id": "질의-처리-단계"
+        },
+        {
+          "level": 3,
+          "text": "쿼리 변환",
+          "id": "쿼리-변환"
+        },
+        {
+          "level": 3,
+          "text": "재순위(Reranking)",
+          "id": "재순위reranking"
+        },
+        {
+          "level": 3,
+          "text": "결과 확장과 중복 제거",
+          "id": "결과-확장과-중복-제거"
+        },
+        {
+          "level": 2,
+          "text": "문맥 조립",
+          "id": "문맥-조립"
+        },
+        {
+          "level": 2,
+          "text": "지연과 비용",
+          "id": "지연과-비용"
+        }
+      ]
+    },
+    "AI/rag/tools.md": {
+      "title": "RAG 도구와 생태계",
+      "headings": [
+        {
+          "level": 1,
+          "text": "RAG 도구와 생태계",
+          "id": "rag-도구와-생태계"
+        },
+        {
+          "level": 2,
+          "text": "단계별 구분",
+          "id": "단계별-구분"
+        },
+        {
+          "level": 2,
+          "text": "수집·파싱",
+          "id": "수집파싱"
+        },
+        {
+          "level": 2,
+          "text": "청킹",
+          "id": "청킹"
+        },
+        {
+          "level": 2,
+          "text": "임베딩 모델",
+          "id": "임베딩-모델"
+        },
+        {
+          "level": 2,
+          "text": "벡터 저장소",
+          "id": "벡터-저장소"
+        },
+        {
+          "level": 2,
+          "text": "검색과 재순위",
+          "id": "검색과-재순위"
+        },
+        {
+          "level": 2,
+          "text": "프레임워크와 플랫폼",
+          "id": "프레임워크와-플랫폼"
+        },
+        {
+          "level": 2,
+          "text": "평가와 관측",
+          "id": "평가와-관측"
+        },
+        {
+          "level": 2,
+          "text": "조합 예",
+          "id": "조합-예"
+        }
+      ]
+    },
+    "AI/rag/vector-stores.md": {
+      "title": "벡터 저장소",
+      "headings": [
+        {
+          "level": 1,
+          "text": "벡터 저장소",
+          "id": "벡터-저장소"
+        },
+        {
+          "level": 2,
+          "text": "유사도와 인덱스",
+          "id": "유사도와-인덱스"
+        },
+        {
+          "level": 2,
+          "text": "저장소 선택",
+          "id": "저장소-선택"
+        },
+        {
+          "level": 2,
+          "text": "메타데이터 필터링",
+          "id": "메타데이터-필터링"
+        },
+        {
+          "level": 2,
+          "text": "운영",
+          "id": "운영"
         }
       ]
     },

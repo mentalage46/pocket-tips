@@ -8,7 +8,7 @@
 
 | 폴더                                                    | 설명                                               |
 | ------------------------------------------------------- | -------------------------------------------------- |
-| [AI](./AI/)                                             | LLM 기초·API, 프롬프팅, 에이전트 하네스, 에이전트의 개발 방법론 적용 |
+| [AI](./AI/)                                             | LLM 기초·API, 프롬프팅, RAG, 에이전트 하네스, 에이전트의 개발 방법론 적용 |
 | [Backend](./Backend/)                                   | API 설계, 인증, DB, 캐싱, 로깅, 메시징, 테스트     |
 | [Build](./Build/)                                       | 빌드 과정, 의존성, 도구 선택, 캐시, 오류 진단     |
 | [Frontend](./Frontend/)                                 | 상태 관리, TypeScript, 성능 최적화, PWA, 웹 접근성 |
@@ -29,6 +29,8 @@
 - [Prompting Tips](./AI/prompting/prompting-tips.md) - 프롬프팅 기법과 템플릿
 - [LLM 기초와 API 활용](./AI/llm-basics/README.md) - 모델 동작, API 호출, 구조화 출력, 비용과 지연
 - [모델의 동작 원리](./AI/llm-basics/how-llms-work.md) | [API 호출 구조](./AI/llm-basics/api-usage.md) | [구조화 출력과 도구 호출](./AI/llm-basics/structured-output.md) | [비용과 지연](./AI/llm-basics/cost-and-latency.md)
+- [RAG와 지식 검색](./AI/rag/README.md) - 검색 결합 생성의 구조, 청킹, 저장소, 검색 전략, 평가
+- [전체 구조](./AI/rag/pipeline.md) | [청킹과 임베딩](./AI/rag/chunking-and-embedding.md) | [벡터 저장소](./AI/rag/vector-stores.md) | [검색 전략](./AI/rag/retrieval.md) | [평가와 실패 진단](./AI/rag/evaluation.md) | [RAG 도구](./AI/rag/tools.md)
 - [Harness 학습 가이드](./AI/harness/README.md) - 에이전트 실행과 평가 환경의 역할
 - [Harness 개념](./AI/harness/concepts.md) | [실행 구조와 설계](./AI/harness/runtime-design.md) | [평가와 오류 진단](./AI/harness/evaluation.md)
 - [Agents 학습 가이드](./AI/agents/README.md) - 에이전트를 PM·개발·리뷰·QA·운영에 적용하는 방법
