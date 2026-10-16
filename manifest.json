@@ -1,0 +1,6776 @@
+{
+  "generatedAt": "2026-10-16T05:51:29.917Z",
+  "root": "docs",
+  "home": "README.md",
+  "tree": [
+    {
+      "type": "dir",
+      "name": "AI",
+      "path": "AI",
+      "title": "AI",
+      "index": "AI/README.md",
+      "children": [
+        {
+          "type": "dir",
+          "name": "harness",
+          "path": "AI/harness",
+          "title": "harness",
+          "index": "AI/harness/README.md",
+          "children": [
+            {
+              "type": "file",
+              "name": "concepts.md",
+              "path": "AI/harness/concepts.md",
+              "title": "Harness 개념과 용어"
+            },
+            {
+              "type": "file",
+              "name": "evaluation.md",
+              "path": "AI/harness/evaluation.md",
+              "title": "Harness 평가와 오류 진단"
+            },
+            {
+              "type": "file",
+              "name": "runtime-design.md",
+              "path": "AI/harness/runtime-design.md",
+              "title": "Harness 실행 구조와 설계"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "prompting",
+          "path": "AI/prompting",
+          "title": "prompting",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "prompting-tips.md",
+              "path": "AI/prompting/prompting-tips.md",
+              "title": "Prompting Tips"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "dir",
+      "name": "Backend",
+      "path": "Backend",
+      "title": "Backend",
+      "index": "Backend/README.md",
+      "children": [
+        {
+          "type": "dir",
+          "name": "api",
+          "path": "Backend/api",
+          "title": "api",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "api-design.md",
+              "path": "Backend/api/api-design.md",
+              "title": "API Design"
+            },
+            {
+              "type": "file",
+              "name": "rate-limiting.md",
+              "path": "Backend/api/rate-limiting.md",
+              "title": "Rate Limiting"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "auth",
+          "path": "Backend/auth",
+          "title": "auth",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "cookie.md",
+              "path": "Backend/auth/cookie.md",
+              "title": "Cookie (Auth 관점)"
+            },
+            {
+              "type": "file",
+              "name": "jwt.md",
+              "path": "Backend/auth/jwt.md",
+              "title": "JWT (JSON Web Token)"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "caching",
+          "path": "Backend/caching",
+          "title": "caching",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "redis.md",
+              "path": "Backend/caching/redis.md",
+              "title": "Caching (Redis)"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "database",
+          "path": "Backend/database",
+          "title": "database",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "connection-pool.md",
+              "path": "Backend/database/connection-pool.md",
+              "title": "Connection Pool"
+            },
+            {
+              "type": "file",
+              "name": "migration.md",
+              "path": "Backend/database/migration.md",
+              "title": "Database Migration"
+            },
+            {
+              "type": "file",
+              "name": "transaction.md",
+              "path": "Backend/database/transaction.md",
+              "title": "Transaction"
+            },
+            {
+              "type": "file",
+              "name": "view.md",
+              "path": "Backend/database/view.md",
+              "title": "Database View"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "exception",
+          "path": "Backend/exception",
+          "title": "exception",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "exception-handling-strategy.md",
+              "path": "Backend/exception/exception-handling-strategy.md",
+              "title": "Exception Strategy"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "logging",
+          "path": "Backend/logging",
+          "title": "logging",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "logging.md",
+              "path": "Backend/logging/logging.md",
+              "title": "Logging"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "messaging",
+          "path": "Backend/messaging",
+          "title": "messaging",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "message-queue.md",
+              "path": "Backend/messaging/message-queue.md",
+              "title": "Message Queue"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "testing",
+          "path": "Backend/testing",
+          "title": "testing",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "testing-strategy.md",
+              "path": "Backend/testing/testing-strategy.md",
+              "title": "Testing Strategy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "dir",
+      "name": "Build",
+      "path": "Build",
+      "title": "Build",
+      "index": "Build/README.md",
+      "children": [
+        {
+          "type": "file",
+          "name": "build-pipeline.md",
+          "path": "Build/build-pipeline.md",
+          "title": "빌드 과정과 용어"
+        },
+        {
+          "type": "file",
+          "name": "c-build-example.md",
+          "path": "Build/c-build-example.md",
+          "title": "C 프로젝트 빌드 실습"
+        },
+        {
+          "type": "file",
+          "name": "dependency-graph.md",
+          "path": "Build/dependency-graph.md",
+          "title": "의존성과 증분 빌드"
+        },
+        {
+          "type": "file",
+          "name": "javascript-modules.md",
+          "path": "Build/javascript-modules.md",
+          "title": "JavaScript 모듈과 번들링 원리"
+        },
+        {
+          "type": "file",
+          "name": "javascript-tools.md",
+          "path": "Build/javascript-tools.md",
+          "title": "JavaScript 빌드 도구의 역할과 선택"
+        },
+        {
+          "type": "file",
+          "name": "javascript-workflows.md",
+          "path": "Build/javascript-workflows.md",
+          "title": "JavaScript 개발·배포 빌드와 모노레포"
+        },
+        {
+          "type": "file",
+          "name": "reproducibility.md",
+          "path": "Build/reproducibility.md",
+          "title": "캐시와 재현 가능한 빌드"
+        },
+        {
+          "type": "file",
+          "name": "tools.md",
+          "path": "Build/tools.md",
+          "title": "빌드 도구의 역할과 선택"
+        },
+        {
+          "type": "file",
+          "name": "troubleshooting.md",
+          "path": "Build/troubleshooting.md",
+          "title": "빌드 오류 진단"
+        }
+      ]
+    },
+    {
+      "type": "dir",
+      "name": "Frontend",
+      "path": "Frontend",
+      "title": "Frontend",
+      "index": "Frontend/README.md",
+      "children": [
+        {
+          "type": "file",
+          "name": "accessibility.md",
+          "path": "Frontend/accessibility.md",
+          "title": "웹 접근성 (Web Accessibility) 가이드라인"
+        },
+        {
+          "type": "file",
+          "name": "pwa.md",
+          "path": "Frontend/pwa.md",
+          "title": "PWA (Progressive Web App)"
+        },
+        {
+          "type": "file",
+          "name": "state-management.md",
+          "path": "Frontend/state-management.md",
+          "title": "Frontend State Management"
+        },
+        {
+          "type": "file",
+          "name": "typescript.md",
+          "path": "Frontend/typescript.md",
+          "title": "TypeScript Tips"
+        },
+        {
+          "type": "file",
+          "name": "web-performance.md",
+          "path": "Frontend/web-performance.md",
+          "title": "Web Performance"
+        }
+      ]
+    },
+    {
+      "type": "dir",
+      "name": "Hardware",
+      "path": "Hardware",
+      "title": "Hardware",
+      "index": "Hardware/README.md",
+      "children": [
+        {
+          "type": "dir",
+          "name": "background",
+          "path": "Hardware/background",
+          "title": "background",
+          "index": "Hardware/background/README.md",
+          "children": [
+            {
+              "type": "file",
+              "name": "capacitance-and-timing.md",
+              "path": "Hardware/background/capacitance-and-timing.md",
+              "title": "정전용량과 신호 타이밍"
+            },
+            {
+              "type": "file",
+              "name": "power-and-noise.md",
+              "path": "Hardware/background/power-and-noise.md",
+              "title": "전원과 노이즈"
+            },
+            {
+              "type": "file",
+              "name": "pullups-and-drive.md",
+              "path": "Hardware/background/pullups-and-drive.md",
+              "title": "풀업과 출력 구동"
+            },
+            {
+              "type": "file",
+              "name": "register-side-effects.md",
+              "path": "Hardware/background/register-side-effects.md",
+              "title": "레지스터 접근의 부작용"
+            },
+            {
+              "type": "file",
+              "name": "sampling-and-error.md",
+              "path": "Hardware/background/sampling-and-error.md",
+              "title": "샘플링과 측정 오차"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "basics",
+          "path": "Hardware/basics",
+          "title": "basics",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "boards-and-pinouts.md",
+              "path": "Hardware/basics/boards-and-pinouts.md",
+              "title": "보드와 핀맵"
+            },
+            {
+              "type": "file",
+              "name": "components.md",
+              "path": "Hardware/basics/components.md",
+              "title": "기본 전자 부품"
+            },
+            {
+              "type": "file",
+              "name": "datasheet-basics.md",
+              "path": "Hardware/basics/datasheet-basics.md",
+              "title": "데이터시트 읽기"
+            },
+            {
+              "type": "file",
+              "name": "electrical-basics.md",
+              "path": "Hardware/basics/electrical-basics.md",
+              "title": "전기 기초"
+            },
+            {
+              "type": "file",
+              "name": "power-and-wiring.md",
+              "path": "Hardware/basics/power-and-wiring.md",
+              "title": "전원과 배선"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "debugging",
+          "path": "Hardware/debugging",
+          "title": "debugging",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "troubleshooting.md",
+              "path": "Hardware/debugging/troubleshooting.md",
+              "title": "하드웨어 문제 진단"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "firmware",
+          "path": "Hardware/firmware",
+          "title": "firmware",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "registers-and-bitwise.md",
+              "path": "Hardware/firmware/registers-and-bitwise.md",
+              "title": "레지스터와 비트 연산"
+            },
+            {
+              "type": "file",
+              "name": "timing-and-state.md",
+              "path": "Hardware/firmware/timing-and-state.md",
+              "title": "시간과 상태 관리"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "glossary",
+          "path": "Hardware/glossary",
+          "title": "glossary",
+          "index": "Hardware/glossary/README.md",
+          "children": [
+            {
+              "type": "file",
+              "name": "communication.md",
+              "path": "Hardware/glossary/communication.md",
+              "title": "통신 용어"
+            },
+            {
+              "type": "file",
+              "name": "electrical.md",
+              "path": "Hardware/glossary/electrical.md",
+              "title": "전기·전자 용어"
+            },
+            {
+              "type": "file",
+              "name": "firmware.md",
+              "path": "Hardware/glossary/firmware.md",
+              "title": "보드와 펌웨어 용어"
+            },
+            {
+              "type": "file",
+              "name": "signals.md",
+              "path": "Hardware/glossary/signals.md",
+              "title": "신호와 측정 용어"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "interfaces",
+          "path": "Hardware/interfaces",
+          "title": "interfaces",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "analog-and-pwm.md",
+              "path": "Hardware/interfaces/analog-and-pwm.md",
+              "title": "아날로그 입력과 PWM"
+            },
+            {
+              "type": "file",
+              "name": "gpio.md",
+              "path": "Hardware/interfaces/gpio.md",
+              "title": "GPIO"
+            },
+            {
+              "type": "file",
+              "name": "i2c.md",
+              "path": "Hardware/interfaces/i2c.md",
+              "title": "I2C"
+            },
+            {
+              "type": "file",
+              "name": "logic-levels.md",
+              "path": "Hardware/interfaces/logic-levels.md",
+              "title": "신호 전압과 레벨 변환"
+            },
+            {
+              "type": "file",
+              "name": "spi.md",
+              "path": "Hardware/interfaces/spi.md",
+              "title": "SPI"
+            },
+            {
+              "type": "file",
+              "name": "uart.md",
+              "path": "Hardware/interfaces/uart.md",
+              "title": "UART"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "modules",
+          "path": "Hardware/modules",
+          "title": "modules",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "actuator-basics.md",
+              "path": "Hardware/modules/actuator-basics.md",
+              "title": "출력 장치 기초"
+            },
+            {
+              "type": "file",
+              "name": "sensor-basics.md",
+              "path": "Hardware/modules/sensor-basics.md",
+              "title": "센서 기초"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "dir",
+      "name": "I18N",
+      "path": "I18N",
+      "title": "I18N",
+      "index": "I18N/README.md",
+      "children": [
+        {
+          "type": "file",
+          "name": "translation.md",
+          "path": "I18N/translation.md",
+          "title": "글로벌 번역 (i18n)"
+        }
+      ]
+    },
+    {
+      "type": "dir",
+      "name": "Infrastructure",
+      "path": "Infrastructure",
+      "title": "Infrastructure",
+      "index": "Infrastructure/README.md",
+      "children": [
+        {
+          "type": "dir",
+          "name": "cicd",
+          "path": "Infrastructure/cicd",
+          "title": "cicd",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "github-action.md",
+              "path": "Infrastructure/cicd/github-action.md",
+              "title": "GitHub Actions"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "docker",
+          "path": "Infrastructure/docker",
+          "title": "docker",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "docker-command.md",
+              "path": "Infrastructure/docker/docker-command.md",
+              "title": "Docker Commands"
+            },
+            {
+              "type": "file",
+              "name": "docker-compose.md",
+              "path": "Infrastructure/docker/docker-compose.md",
+              "title": "Docker Compose"
+            },
+            {
+              "type": "file",
+              "name": "docker.md",
+              "path": "Infrastructure/docker/docker.md",
+              "title": "Docker & Dockerfile"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "nginx",
+          "path": "Infrastructure/nginx",
+          "title": "nginx",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "nginx.md",
+              "path": "Infrastructure/nginx/nginx.md",
+              "title": "Nginx"
+            },
+            {
+              "type": "file",
+              "name": "ssl.md",
+              "path": "Infrastructure/nginx/ssl.md",
+              "title": "SSL 인증서 자동화 (Nginx + Let's Encrypt)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "dir",
+      "name": "Network",
+      "path": "Network",
+      "title": "Network",
+      "index": "Network/README.md",
+      "children": [
+        {
+          "type": "file",
+          "name": "gateway.md",
+          "path": "Network/gateway.md",
+          "title": "게이트웨이 (Gateway) - 실무 가이드"
+        },
+        {
+          "type": "file",
+          "name": "protocol.md",
+          "path": "Network/protocol.md",
+          "title": "네트워크 프로토콜 (Network Protocols) - 실무 가이드"
+        },
+        {
+          "type": "file",
+          "name": "router.md",
+          "path": "Network/router.md",
+          "title": "라우터 & 라우팅 테이블 (Router & Routing Table) - 실무 가이드"
+        },
+        {
+          "type": "file",
+          "name": "subnet.md",
+          "path": "Network/subnet.md",
+          "title": "서브넷 (Subnet) - 실무 가이드"
+        },
+        {
+          "type": "file",
+          "name": "topdown-network.md",
+          "path": "Network/topdown-network.md",
+          "title": "Top-down 네트워크 접근 방식 - 실무 분석"
+        }
+      ]
+    },
+    {
+      "type": "dir",
+      "name": "Security",
+      "path": "Security",
+      "title": "Security",
+      "index": "Security/README.md",
+      "children": [
+        {
+          "type": "file",
+          "name": "cors.md",
+          "path": "Security/cors.md",
+          "title": "CORS (Cross-Origin Resource Sharing)"
+        },
+        {
+          "type": "file",
+          "name": "env-management.md",
+          "path": "Security/env-management.md",
+          "title": "환경변수 관리"
+        },
+        {
+          "type": "file",
+          "name": "owasp-top-10.md",
+          "path": "Security/owasp-top-10.md",
+          "title": "OWASP Top 10"
+        }
+      ]
+    },
+    {
+      "type": "dir",
+      "name": "Utility",
+      "path": "Utility",
+      "title": "Utility",
+      "index": "Utility/README.md",
+      "children": [
+        {
+          "type": "file",
+          "name": "huskey.md",
+          "path": "Utility/huskey.md",
+          "title": "Husky"
+        },
+        {
+          "type": "file",
+          "name": "makefile.md",
+          "path": "Utility/makefile.md",
+          "title": "Makefile"
+        },
+        {
+          "type": "file",
+          "name": "yaml.md",
+          "path": "Utility/yaml.md",
+          "title": "YAML"
+        },
+        {
+          "type": "dir",
+          "name": "collaboration",
+          "path": "Utility/collaboration",
+          "title": "collaboration",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "code-review.md",
+              "path": "Utility/collaboration/code-review.md",
+              "title": "Code Review Guide"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "dir",
+      "name": "Version Control System",
+      "path": "Version Control System",
+      "title": "Version Control System",
+      "index": "Version Control System/README.md",
+      "children": [
+        {
+          "type": "dir",
+          "name": "git",
+          "path": "Version Control System/git",
+          "title": "git",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "cherry-pick.md",
+              "path": "Version Control System/git/cherry-pick.md",
+              "title": "Git Cherry-pick"
+            },
+            {
+              "type": "file",
+              "name": "public-key.md",
+              "path": "Version Control System/git/public-key.md",
+              "title": "Git Public Key - 다중 SSH 키 설정 가이드"
+            },
+            {
+              "type": "file",
+              "name": "rebase.md",
+              "path": "Version Control System/git/rebase.md",
+              "title": "Git Rebase"
+            },
+            {
+              "type": "file",
+              "name": "submodules.md",
+              "path": "Version Control System/git/submodules.md",
+              "title": "Git Submodules"
+            },
+            {
+              "type": "file",
+              "name": "tips.md",
+              "path": "Version Control System/git/tips.md",
+              "title": "Git 생산성 향상 팁"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "docs": {
+    "AI/README.md": {
+      "title": "AI",
+      "headings": [
+        {
+          "level": 1,
+          "text": "AI",
+          "id": "ai"
+        },
+        {
+          "level": 2,
+          "text": "Prompting",
+          "id": "prompting"
+        },
+        {
+          "level": 2,
+          "text": "Harness",
+          "id": "harness"
+        }
+      ]
+    },
+    "AI/harness/README.md": {
+      "title": "Harness",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Harness",
+          "id": "harness"
+        },
+        {
+          "level": 2,
+          "text": "학습 순서",
+          "id": "학습-순서"
+        },
+        {
+          "level": 2,
+          "text": "두 가지 주요 용례",
+          "id": "두-가지-주요-용례"
+        },
+        {
+          "level": 2,
+          "text": "먼저 기억할 것",
+          "id": "먼저-기억할-것"
+        }
+      ]
+    },
+    "AI/harness/concepts.md": {
+      "title": "Harness 개념과 용어",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Harness 개념과 용어",
+          "id": "harness-개념과-용어"
+        },
+        {
+          "level": 2,
+          "text": "모델·에이전트·하네스의 관계",
+          "id": "모델에이전트하네스의-관계"
+        },
+        {
+          "level": 2,
+          "text": "비슷한 용어와 구분",
+          "id": "비슷한-용어와-구분"
+        },
+        {
+          "level": 2,
+          "text": "같은 모델인데 결과가 달라지는 이유",
+          "id": "같은-모델인데-결과가-달라지는-이유"
+        },
+        {
+          "level": 2,
+          "text": "언제 도입하거나 확장할까?",
+          "id": "언제-도입하거나-확장할까"
+        }
+      ]
+    },
+    "AI/harness/evaluation.md": {
+      "title": "Harness 평가와 오류 진단",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Harness 평가와 오류 진단",
+          "id": "harness-평가와-오류-진단"
+        },
+        {
+          "level": 2,
+          "text": "평가 대상부터 정한다",
+          "id": "평가-대상부터-정한다"
+        },
+        {
+          "level": 2,
+          "text": "평가 실행 흐름",
+          "id": "평가-실행-흐름"
+        },
+        {
+          "level": 2,
+          "text": "완료 조건은 관찰 가능한 결과로 쓴다",
+          "id": "완료-조건은-관찰-가능한-결과로-쓴다"
+        },
+        {
+          "level": 2,
+          "text": "작은 평가 세트부터 만들기",
+          "id": "작은-평가-세트부터-만들기"
+        },
+        {
+          "level": 2,
+          "text": "기록할 지표",
+          "id": "기록할-지표"
+        },
+        {
+          "level": 2,
+          "text": "로그로 원인을 좁힌다",
+          "id": "로그로-원인을-좁힌다"
+        },
+        {
+          "level": 2,
+          "text": "참고 구현",
+          "id": "참고-구현"
+        }
+      ]
+    },
+    "AI/harness/runtime-design.md": {
+      "title": "Harness 실행 구조와 설계",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Harness 실행 구조와 설계",
+          "id": "harness-실행-구조와-설계"
+        },
+        {
+          "level": 2,
+          "text": "기본 실행 루프",
+          "id": "기본-실행-루프"
+        },
+        {
+          "level": 2,
+          "text": "도구는 계약으로 설계한다",
+          "id": "도구는-계약으로-설계한다"
+        },
+        {
+          "level": 2,
+          "text": "문맥과 상태를 구분한다",
+          "id": "문맥과-상태를-구분한다"
+        },
+        {
+          "level": 2,
+          "text": "권한과 실행 예산",
+          "id": "권한과-실행-예산"
+        },
+        {
+          "level": 2,
+          "text": "재시도와 장시간 작업 복구",
+          "id": "재시도와-장시간-작업-복구"
+        },
+        {
+          "level": 2,
+          "text": "구현 순서",
+          "id": "구현-순서"
+        }
+      ]
+    },
+    "AI/prompting/prompting-tips.md": {
+      "title": "Prompting Tips",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Prompting Tips",
+          "id": "prompting-tips"
+        },
+        {
+          "level": 2,
+          "text": "핵심 원칙",
+          "id": "핵심-원칙"
+        },
+        {
+          "level": 2,
+          "text": "효과적인 기법",
+          "id": "효과적인-기법"
+        },
+        {
+          "level": 2,
+          "text": "구조화 팁",
+          "id": "구조화-팁"
+        },
+        {
+          "level": 2,
+          "text": "자주 쓰는 표현",
+          "id": "자주-쓰는-표현"
+        },
+        {
+          "level": 2,
+          "text": "피해야 할 것",
+          "id": "피해야-할-것"
+        },
+        {
+          "level": 2,
+          "text": "📋 복사용 템플릿",
+          "id": "-복사용-템플릿"
+        },
+        {
+          "level": 3,
+          "text": "기본 템플릿",
+          "id": "기본-템플릿"
+        },
+        {
+          "level": 3,
+          "text": "코드 리뷰 요청",
+          "id": "코드-리뷰-요청"
+        },
+        {
+          "level": 3,
+          "text": "문서/글 작성",
+          "id": "문서글-작성"
+        },
+        {
+          "level": 3,
+          "text": "문제 해결/디버깅",
+          "id": "문제-해결디버깅"
+        },
+        {
+          "level": 3,
+          "text": "요약 요청",
+          "id": "요약-요청"
+        },
+        {
+          "level": 3,
+          "text": "번역/교정",
+          "id": "번역교정"
+        }
+      ]
+    },
+    "Backend/README.md": {
+      "title": "Backend",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Backend",
+          "id": "backend"
+        },
+        {
+          "level": 2,
+          "text": "API",
+          "id": "api"
+        },
+        {
+          "level": 2,
+          "text": "Auth",
+          "id": "auth"
+        },
+        {
+          "level": 2,
+          "text": "Caching",
+          "id": "caching"
+        },
+        {
+          "level": 2,
+          "text": "Database",
+          "id": "database"
+        },
+        {
+          "level": 2,
+          "text": "Exception",
+          "id": "exception"
+        },
+        {
+          "level": 2,
+          "text": "Logging",
+          "id": "logging"
+        },
+        {
+          "level": 2,
+          "text": "Messaging",
+          "id": "messaging"
+        },
+        {
+          "level": 2,
+          "text": "Testing",
+          "id": "testing"
+        }
+      ]
+    },
+    "Backend/api/api-design.md": {
+      "title": "API Design",
+      "headings": [
+        {
+          "level": 1,
+          "text": "API Design",
+          "id": "api-design"
+        },
+        {
+          "level": 2,
+          "text": "RESTful API 설계 원칙",
+          "id": "restful-api-설계-원칙"
+        },
+        {
+          "level": 2,
+          "text": "URL 설계",
+          "id": "url-설계"
+        },
+        {
+          "level": 3,
+          "text": "기본 규칙",
+          "id": "기본-규칙"
+        },
+        {
+          "level": 3,
+          "text": "계층 관계",
+          "id": "계층-관계"
+        },
+        {
+          "level": 2,
+          "text": "HTTP 메서드",
+          "id": "http-메서드"
+        },
+        {
+          "level": 3,
+          "text": "사용 예시",
+          "id": "사용-예시"
+        },
+        {
+          "level": 2,
+          "text": "상태 코드",
+          "id": "상태-코드"
+        },
+        {
+          "level": 3,
+          "text": "성공 (2xx)",
+          "id": "성공-2xx"
+        },
+        {
+          "level": 3,
+          "text": "클라이언트 에러 (4xx)",
+          "id": "클라이언트-에러-4xx"
+        },
+        {
+          "level": 3,
+          "text": "서버 에러 (5xx)",
+          "id": "서버-에러-5xx"
+        },
+        {
+          "level": 2,
+          "text": "에러 응답 형식",
+          "id": "에러-응답-형식"
+        },
+        {
+          "level": 3,
+          "text": "표준 형식",
+          "id": "표준-형식"
+        },
+        {
+          "level": 3,
+          "text": "유효성 검증 에러",
+          "id": "유효성-검증-에러"
+        },
+        {
+          "level": 2,
+          "text": "페이지네이션",
+          "id": "페이지네이션"
+        },
+        {
+          "level": 3,
+          "text": "Offset 기반 (단순)",
+          "id": "offset-기반-단순"
+        },
+        {
+          "level": 3,
+          "text": "Cursor 기반 (대규모 데이터)",
+          "id": "cursor-기반-대규모-데이터"
+        },
+        {
+          "level": 3,
+          "text": "🎯 페이지네이션 선택 체크리스트",
+          "id": "-페이지네이션-선택-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "필터링 & 정렬",
+          "id": "필터링-정렬"
+        },
+        {
+          "level": 2,
+          "text": "API 버전 관리",
+          "id": "api-버전-관리"
+        },
+        {
+          "level": 3,
+          "text": "URL Path (권장)",
+          "id": "url-path-권장"
+        },
+        {
+          "level": 3,
+          "text": "Header",
+          "id": "header"
+        },
+        {
+          "level": 3,
+          "text": "Query String",
+          "id": "query-string"
+        },
+        {
+          "level": 3,
+          "text": "🎯 버전 관리 선택 체크리스트",
+          "id": "-버전-관리-선택-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "응답 래핑",
+          "id": "응답-래핑"
+        },
+        {
+          "level": 3,
+          "text": "일관된 응답 구조",
+          "id": "일관된-응답-구조"
+        },
+        {
+          "level": 3,
+          "text": "또는 단순 구조",
+          "id": "또는-단순-구조"
+        },
+        {
+          "level": 2,
+          "text": "🎯 API 설계 체크리스트",
+          "id": "-api-설계-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "URL 설계",
+          "id": "url-설계-1"
+        },
+        {
+          "level": 3,
+          "text": "응답",
+          "id": "응답"
+        },
+        {
+          "level": 3,
+          "text": "보안",
+          "id": "보안"
+        },
+        {
+          "level": 3,
+          "text": "문서화",
+          "id": "문서화"
+        },
+        {
+          "level": 2,
+          "text": "참고",
+          "id": "참고"
+        }
+      ]
+    },
+    "Backend/api/rate-limiting.md": {
+      "title": "Rate Limiting",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Rate Limiting",
+          "id": "rate-limiting"
+        },
+        {
+          "level": 2,
+          "text": "Rate Limiting이란?",
+          "id": "rate-limiting이란"
+        },
+        {
+          "level": 2,
+          "text": "핵심 개념",
+          "id": "핵심-개념"
+        },
+        {
+          "level": 3,
+          "text": "응답 헤더 (표준)",
+          "id": "응답-헤더-표준"
+        },
+        {
+          "level": 2,
+          "text": "Rate Limiting 알고리즘",
+          "id": "rate-limiting-알고리즘"
+        },
+        {
+          "level": 3,
+          "text": "1. Fixed Window",
+          "id": "1-fixed-window"
+        },
+        {
+          "level": 3,
+          "text": "2. Sliding Window Log",
+          "id": "2-sliding-window-log"
+        },
+        {
+          "level": 3,
+          "text": "3. Sliding Window Counter ⭐",
+          "id": "3-sliding-window-counter-"
+        },
+        {
+          "level": 3,
+          "text": "4. Token Bucket",
+          "id": "4-token-bucket"
+        },
+        {
+          "level": 3,
+          "text": "5. Leaky Bucket",
+          "id": "5-leaky-bucket"
+        },
+        {
+          "level": 2,
+          "text": "🎯 알고리즘 선택 체크리스트",
+          "id": "-알고리즘-선택-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "구현 (Node.js)",
+          "id": "구현-nodejs"
+        },
+        {
+          "level": 3,
+          "text": "express-rate-limit",
+          "id": "express-rate-limit"
+        },
+        {
+          "level": 3,
+          "text": "Redis 기반 (분산 환경)",
+          "id": "redis-기반-분산-환경"
+        },
+        {
+          "level": 2,
+          "text": "Rate Limit 설계",
+          "id": "rate-limit-설계"
+        },
+        {
+          "level": 3,
+          "text": "식별자 (Key)",
+          "id": "식별자-key"
+        },
+        {
+          "level": 3,
+          "text": "엔드포인트별 차등 제한",
+          "id": "엔드포인트별-차등-제한"
+        },
+        {
+          "level": 3,
+          "text": "사용자 등급별 차등",
+          "id": "사용자-등급별-차등"
+        },
+        {
+          "level": 2,
+          "text": "분산 환경",
+          "id": "분산-환경"
+        },
+        {
+          "level": 3,
+          "text": "문제",
+          "id": "문제"
+        },
+        {
+          "level": 3,
+          "text": "해결: 중앙 저장소 (Redis)",
+          "id": "해결-중앙-저장소-redis"
+        },
+        {
+          "level": 2,
+          "text": "429 응답 처리 (클라이언트)",
+          "id": "429-응답-처리-클라이언트"
+        },
+        {
+          "level": 2,
+          "text": "🎯 Rate Limiting 설계 체크리스트",
+          "id": "-rate-limiting-설계-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "기본 설정",
+          "id": "기본-설정"
+        },
+        {
+          "level": 3,
+          "text": "세분화",
+          "id": "세분화"
+        },
+        {
+          "level": 3,
+          "text": "분산 환경",
+          "id": "분산-환경-1"
+        },
+        {
+          "level": 3,
+          "text": "모니터링",
+          "id": "모니터링"
+        },
+        {
+          "level": 2,
+          "text": "주의사항",
+          "id": "주의사항"
+        }
+      ]
+    },
+    "Backend/auth/cookie.md": {
+      "title": "Cookie (Auth 관점)",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Cookie (Auth 관점)",
+          "id": "cookie-auth-관점"
+        },
+        {
+          "level": 2,
+          "text": "Cookie란?",
+          "id": "cookie란"
+        },
+        {
+          "level": 2,
+          "text": "Cookie 주요 속성",
+          "id": "cookie-주요-속성"
+        },
+        {
+          "level": 2,
+          "text": "Client Cookie vs Server Cookie",
+          "id": "client-cookie-vs-server-cookie"
+        },
+        {
+          "level": 3,
+          "text": "Client Cookie (JS 접근 가능)",
+          "id": "client-cookie-js-접근-가능"
+        },
+        {
+          "level": 3,
+          "text": "Server Cookie (HttpOnly)",
+          "id": "server-cookie-httponly"
+        },
+        {
+          "level": 2,
+          "text": "SameSite 속성 상세",
+          "id": "samesite-속성-상세"
+        },
+        {
+          "level": 2,
+          "text": "인증 쿠키 설정 예시",
+          "id": "인증-쿠키-설정-예시"
+        },
+        {
+          "level": 3,
+          "text": "Refresh Token 저장 (권장)",
+          "id": "refresh-token-저장-권장"
+        },
+        {
+          "level": 3,
+          "text": "쿠키 삭제 (로그아웃)",
+          "id": "쿠키-삭제-로그아웃"
+        },
+        {
+          "level": 2,
+          "text": "🎯 Cookie 설정 체크리스트",
+          "id": "-cookie-설정-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "Server Cookie (인증 토큰)",
+          "id": "server-cookie-인증-토큰"
+        },
+        {
+          "level": 3,
+          "text": "Client Cookie (비민감 데이터)",
+          "id": "client-cookie-비민감-데이터"
+        },
+        {
+          "level": 3,
+          "text": "크로스 도메인 환경",
+          "id": "크로스-도메인-환경"
+        },
+        {
+          "level": 3,
+          "text": "보안 점검",
+          "id": "보안-점검"
+        },
+        {
+          "level": 2,
+          "text": "일반적인 구성",
+          "id": "일반적인-구성"
+        },
+        {
+          "level": 2,
+          "text": "주의사항",
+          "id": "주의사항"
+        },
+        {
+          "level": 2,
+          "text": "빠른 선택 가이드",
+          "id": "빠른-선택-가이드"
+        }
+      ]
+    },
+    "Backend/auth/jwt.md": {
+      "title": "JWT (JSON Web Token)",
+      "headings": [
+        {
+          "level": 1,
+          "text": "JWT (JSON Web Token)",
+          "id": "jwt-json-web-token"
+        },
+        {
+          "level": 2,
+          "text": "JWT란?",
+          "id": "jwt란"
+        },
+        {
+          "level": 2,
+          "text": "JWT 구조",
+          "id": "jwt-구조"
+        },
+        {
+          "level": 3,
+          "text": "주요 Claims",
+          "id": "주요-claims"
+        },
+        {
+          "level": 2,
+          "text": "일반적인 JWT 인증 흐름",
+          "id": "일반적인-jwt-인증-흐름"
+        },
+        {
+          "level": 3,
+          "text": "Access Token + Refresh Token 방식 ⭐",
+          "id": "access-token-refresh-token-방식-"
+        },
+        {
+          "level": 3,
+          "text": "토큰 역할",
+          "id": "토큰-역할"
+        },
+        {
+          "level": 2,
+          "text": "구현 체크리스트",
+          "id": "구현-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "토큰 발급",
+          "id": "토큰-발급"
+        },
+        {
+          "level": 3,
+          "text": "토큰 검증",
+          "id": "토큰-검증"
+        },
+        {
+          "level": 3,
+          "text": "보안",
+          "id": "보안"
+        },
+        {
+          "level": 2,
+          "text": "코드 예시",
+          "id": "코드-예시"
+        },
+        {
+          "level": 3,
+          "text": "헤더 포맷",
+          "id": "헤더-포맷"
+        },
+        {
+          "level": 3,
+          "text": "Node.js (jsonwebtoken)",
+          "id": "nodejs-jsonwebtoken"
+        },
+        {
+          "level": 2,
+          "text": "주의사항",
+          "id": "주의사항"
+        }
+      ]
+    },
+    "Backend/caching/redis.md": {
+      "title": "Caching (Redis)",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Caching (Redis)",
+          "id": "caching-redis"
+        },
+        {
+          "level": 2,
+          "text": "캐시란?",
+          "id": "캐시란"
+        },
+        {
+          "level": 2,
+          "text": "Redis 기본",
+          "id": "redis-기본"
+        },
+        {
+          "level": 3,
+          "text": "설치 & 실행",
+          "id": "설치-실행"
+        },
+        {
+          "level": 3,
+          "text": "기본 명령어",
+          "id": "기본-명령어"
+        },
+        {
+          "level": 3,
+          "text": "자료구조",
+          "id": "자료구조"
+        },
+        {
+          "level": 2,
+          "text": "캐싱 전략",
+          "id": "캐싱-전략"
+        },
+        {
+          "level": 3,
+          "text": "1. Cache-Aside (Lazy Loading) ⭐",
+          "id": "1-cache-aside-lazy-loading-"
+        },
+        {
+          "level": 3,
+          "text": "2. Write-Through",
+          "id": "2-write-through"
+        },
+        {
+          "level": 3,
+          "text": "3. Write-Behind (Write-Back)",
+          "id": "3-write-behind-write-back"
+        },
+        {
+          "level": 3,
+          "text": "🎯 캐싱 전략 선택 체크리스트",
+          "id": "-캐싱-전략-선택-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "캐시 무효화 (Invalidation)",
+          "id": "캐시-무효화-invalidation"
+        },
+        {
+          "level": 3,
+          "text": "시간 기반 (TTL)",
+          "id": "시간-기반-ttl"
+        },
+        {
+          "level": 3,
+          "text": "이벤트 기반",
+          "id": "이벤트-기반"
+        },
+        {
+          "level": 3,
+          "text": "패턴 삭제",
+          "id": "패턴-삭제"
+        },
+        {
+          "level": 2,
+          "text": "캐시 키 설계",
+          "id": "캐시-키-설계"
+        },
+        {
+          "level": 3,
+          "text": "네이밍 규칙",
+          "id": "네이밍-규칙"
+        },
+        {
+          "level": 3,
+          "text": "키 생성 함수",
+          "id": "키-생성-함수"
+        },
+        {
+          "level": 2,
+          "text": "캐시 패턴",
+          "id": "캐시-패턴"
+        },
+        {
+          "level": 3,
+          "text": "Thundering Herd 방지",
+          "id": "thundering-herd-방지"
+        },
+        {
+          "level": 3,
+          "text": "캐시 워밍업",
+          "id": "캐시-워밍업"
+        },
+        {
+          "level": 2,
+          "text": "Node.js 연동",
+          "id": "nodejs-연동"
+        },
+        {
+          "level": 3,
+          "text": "ioredis",
+          "id": "ioredis"
+        },
+        {
+          "level": 3,
+          "text": "캐시 서비스 래퍼",
+          "id": "캐시-서비스-래퍼"
+        },
+        {
+          "level": 2,
+          "text": "🎯 캐싱 체크리스트",
+          "id": "-캐싱-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "도입 전",
+          "id": "도입-전"
+        },
+        {
+          "level": 3,
+          "text": "구현 시",
+          "id": "구현-시"
+        },
+        {
+          "level": 3,
+          "text": "운영",
+          "id": "운영"
+        },
+        {
+          "level": 2,
+          "text": "주의사항",
+          "id": "주의사항"
+        }
+      ]
+    },
+    "Backend/database/connection-pool.md": {
+      "title": "Connection Pool",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Connection Pool",
+          "id": "connection-pool"
+        },
+        {
+          "level": 2,
+          "text": "Connection Pool이란?",
+          "id": "connection-pool이란"
+        },
+        {
+          "level": 2,
+          "text": "주요 설정값",
+          "id": "주요-설정값"
+        },
+        {
+          "level": 2,
+          "text": "Pool Size 조정 방법",
+          "id": "pool-size-조정-방법"
+        },
+        {
+          "level": 3,
+          "text": "1. 애플리케이션 설정",
+          "id": "1-애플리케이션-설정"
+        },
+        {
+          "level": 3,
+          "text": "2. DB 서버 설정",
+          "id": "2-db-서버-설정"
+        },
+        {
+          "level": 3,
+          "text": "3. 권장 계산 공식",
+          "id": "3-권장-계산-공식"
+        },
+        {
+          "level": 2,
+          "text": "Pool Size 적정값 가이드",
+          "id": "pool-size-적정값-가이드"
+        },
+        {
+          "level": 3,
+          "text": "CPU 코어 기반 공식 (HikariCP 권장)",
+          "id": "cpu-코어-기반-공식-hikaricp-권장"
+        },
+        {
+          "level": 3,
+          "text": "규모별 권장값",
+          "id": "규모별-권장값"
+        },
+        {
+          "level": 2,
+          "text": "🎯 Pool Size 조정 체크리스트",
+          "id": "-pool-size-조정-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "Pool 늘려야 하는 상황",
+          "id": "pool-늘려야-하는-상황"
+        },
+        {
+          "level": 3,
+          "text": "Pool 늘리기 전에 확인할 것",
+          "id": "pool-늘리기-전에-확인할-것"
+        },
+        {
+          "level": 3,
+          "text": "Pool 줄여야 하는 상황",
+          "id": "pool-줄여야-하는-상황"
+        },
+        {
+          "level": 2,
+          "text": "문제 진단",
+          "id": "문제-진단"
+        },
+        {
+          "level": 3,
+          "text": "커넥션 부족 증상",
+          "id": "커넥션-부족-증상"
+        },
+        {
+          "level": 3,
+          "text": "확인 방법",
+          "id": "확인-방법"
+        },
+        {
+          "level": 3,
+          "text": "커넥션 누수 의심 시",
+          "id": "커넥션-누수-의심-시"
+        },
+        {
+          "level": 2,
+          "text": "대규모 트래픽 대응",
+          "id": "대규모-트래픽-대응"
+        },
+        {
+          "level": 3,
+          "text": "Connection Pooler 사용",
+          "id": "connection-pooler-사용"
+        },
+        {
+          "level": 2,
+          "text": "요약",
+          "id": "요약"
+        }
+      ]
+    },
+    "Backend/database/migration.md": {
+      "title": "Database Migration",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Database Migration",
+          "id": "database-migration"
+        },
+        {
+          "level": 2,
+          "text": "Migration이란?",
+          "id": "migration이란"
+        },
+        {
+          "level": 2,
+          "text": "왜 Migration으로 버전 관리하는가?",
+          "id": "왜-migration으로-버전-관리하는가"
+        },
+        {
+          "level": 3,
+          "text": "1. 변경 이력 추적",
+          "id": "1-변경-이력-추적"
+        },
+        {
+          "level": 3,
+          "text": "2. 환경 간 일관성",
+          "id": "2-환경-간-일관성"
+        },
+        {
+          "level": 3,
+          "text": "3. 협업 충돌 방지",
+          "id": "3-협업-충돌-방지"
+        },
+        {
+          "level": 3,
+          "text": "4. 롤백 가능",
+          "id": "4-롤백-가능"
+        },
+        {
+          "level": 2,
+          "text": "Migration 활용 방법",
+          "id": "migration-활용-방법"
+        },
+        {
+          "level": 3,
+          "text": "1. CI/CD 파이프라인 연동",
+          "id": "1-cicd-파이프라인-연동"
+        },
+        {
+          "level": 3,
+          "text": "2. 환경별 시드 데이터",
+          "id": "2-환경별-시드-데이터"
+        },
+        {
+          "level": 3,
+          "text": "3. 스키마 문서 자동화",
+          "id": "3-스키마-문서-자동화"
+        },
+        {
+          "level": 3,
+          "text": "4. 데이터베이스 복제/복구",
+          "id": "4-데이터베이스-복제복구"
+        },
+        {
+          "level": 3,
+          "text": "5. 변경 영향도 분석",
+          "id": "5-변경-영향도-분석"
+        },
+        {
+          "level": 3,
+          "text": "6. 감사(Audit) 로그",
+          "id": "6-감사audit-로그"
+        },
+        {
+          "level": 2,
+          "text": "주요 도구별 명령어",
+          "id": "주요-도구별-명령어"
+        },
+        {
+          "level": 2,
+          "text": "🎯 Migration 작성 체크리스트",
+          "id": "-migration-작성-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "작성 시",
+          "id": "작성-시"
+        },
+        {
+          "level": 3,
+          "text": "적용 전",
+          "id": "적용-전"
+        },
+        {
+          "level": 3,
+          "text": "운영 적용",
+          "id": "운영-적용"
+        },
+        {
+          "level": 2,
+          "text": "주의사항",
+          "id": "주의사항"
+        }
+      ]
+    },
+    "Backend/database/transaction.md": {
+      "title": "Transaction",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Transaction",
+          "id": "transaction"
+        },
+        {
+          "level": 2,
+          "text": "트랜잭션이란?",
+          "id": "트랜잭션이란"
+        },
+        {
+          "level": 2,
+          "text": "Isolation Level 비교",
+          "id": "isolation-level-비교"
+        },
+        {
+          "level": 3,
+          "text": "문제 유형 설명",
+          "id": "문제-유형-설명"
+        },
+        {
+          "level": 2,
+          "text": "🎯 Isolation Level 선택 체크리스트",
+          "id": "-isolation-level-선택-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "READ UNCOMMITTED 선택",
+          "id": "read-uncommitted-선택"
+        },
+        {
+          "level": 3,
+          "text": "READ COMMITTED 선택 ⭐ (대부분의 기본값)",
+          "id": "read-committed-선택-대부분의-기본값"
+        },
+        {
+          "level": 3,
+          "text": "REPEATABLE READ 선택",
+          "id": "repeatable-read-선택"
+        },
+        {
+          "level": 3,
+          "text": "SERIALIZABLE 선택",
+          "id": "serializable-선택"
+        },
+        {
+          "level": 2,
+          "text": "빠른 선택 가이드",
+          "id": "빠른-선택-가이드"
+        },
+        {
+          "level": 2,
+          "text": "주의사항",
+          "id": "주의사항"
+        }
+      ]
+    },
+    "Backend/database/view.md": {
+      "title": "Database View",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Database View",
+          "id": "database-view"
+        },
+        {
+          "level": 2,
+          "text": "View란?",
+          "id": "view란"
+        },
+        {
+          "level": 2,
+          "text": "기본 문법",
+          "id": "기본-문법"
+        },
+        {
+          "level": 2,
+          "text": "View 종류",
+          "id": "view-종류"
+        },
+        {
+          "level": 3,
+          "text": "Materialized View",
+          "id": "materialized-view"
+        },
+        {
+          "level": 2,
+          "text": "주요 활용 사례",
+          "id": "주요-활용-사례"
+        },
+        {
+          "level": 3,
+          "text": "1. 복잡한 JOIN 단순화",
+          "id": "1-복잡한-join-단순화"
+        },
+        {
+          "level": 3,
+          "text": "2. 보안 (컬럼 제한)",
+          "id": "2-보안-컬럼-제한"
+        },
+        {
+          "level": 3,
+          "text": "3. 권한 분리",
+          "id": "3-권한-분리"
+        },
+        {
+          "level": 3,
+          "text": "4. 레거시 호환",
+          "id": "4-레거시-호환"
+        },
+        {
+          "level": 2,
+          "text": "🎯 View 도입 체크리스트",
+          "id": "-view-도입-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "일반 View 사용",
+          "id": "일반-view-사용"
+        },
+        {
+          "level": 3,
+          "text": "Materialized View 사용",
+          "id": "materialized-view-사용"
+        },
+        {
+          "level": 3,
+          "text": "View 사용 주의",
+          "id": "view-사용-주의"
+        },
+        {
+          "level": 2,
+          "text": "View vs Materialized View",
+          "id": "view-vs-materialized-view"
+        },
+        {
+          "level": 2,
+          "text": "주의사항",
+          "id": "주의사항"
+        },
+        {
+          "level": 2,
+          "text": "빠른 선택 가이드",
+          "id": "빠른-선택-가이드"
+        }
+      ]
+    },
+    "Backend/exception/exception-handling-strategy.md": {
+      "title": "Exception Strategy",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Exception Strategy",
+          "id": "exception-strategy"
+        },
+        {
+          "level": 2,
+          "text": "전략 1: HTTP 예외 직접 사용",
+          "id": "전략-1-http-예외-직접-사용"
+        },
+        {
+          "level": 3,
+          "text": "장점",
+          "id": "장점"
+        },
+        {
+          "level": 3,
+          "text": "단점",
+          "id": "단점"
+        },
+        {
+          "level": 3,
+          "text": "선택 체크리스트",
+          "id": "선택-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "전략 2: 커스텀 비즈니스 예외 + 전역 필터",
+          "id": "전략-2-커스텀-비즈니스-예외-전역-필터"
+        },
+        {
+          "level": 3,
+          "text": "장점",
+          "id": "장점-1"
+        },
+        {
+          "level": 3,
+          "text": "단점",
+          "id": "단점-1"
+        },
+        {
+          "level": 3,
+          "text": "선택 체크리스트",
+          "id": "선택-체크리스트-1"
+        },
+        {
+          "level": 2,
+          "text": "전략 3: Result/Either 패턴",
+          "id": "전략-3-resulteither-패턴"
+        },
+        {
+          "level": 3,
+          "text": "장점",
+          "id": "장점-2"
+        },
+        {
+          "level": 3,
+          "text": "단점",
+          "id": "단점-2"
+        },
+        {
+          "level": 3,
+          "text": "선택 체크리스트",
+          "id": "선택-체크리스트-2"
+        },
+        {
+          "level": 2,
+          "text": "전략 4: 에러 코드 Enum + 단일 예외 클래스",
+          "id": "전략-4-에러-코드-enum-단일-예외-클래스"
+        },
+        {
+          "level": 3,
+          "text": "장점",
+          "id": "장점-3"
+        },
+        {
+          "level": 3,
+          "text": "단점",
+          "id": "단점-3"
+        },
+        {
+          "level": 3,
+          "text": "선택 체크리스트",
+          "id": "선택-체크리스트-3"
+        },
+        {
+          "level": 2,
+          "text": "전략 비교 요약",
+          "id": "전략-비교-요약"
+        },
+        {
+          "level": 2,
+          "text": "빠른 선택 가이드",
+          "id": "빠른-선택-가이드"
+        }
+      ]
+    },
+    "Backend/logging/logging.md": {
+      "title": "Logging",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Logging",
+          "id": "logging"
+        },
+        {
+          "level": 2,
+          "text": "로깅이란?",
+          "id": "로깅이란"
+        },
+        {
+          "level": 2,
+          "text": "로깅 레벨",
+          "id": "로깅-레벨"
+        },
+        {
+          "level": 3,
+          "text": "환경별 레벨 설정",
+          "id": "환경별-레벨-설정"
+        },
+        {
+          "level": 2,
+          "text": "구조화된 로깅 (Structured Logging)",
+          "id": "구조화된-로깅-structured-logging"
+        },
+        {
+          "level": 3,
+          "text": "일반 로그 vs 구조화된 로그",
+          "id": "일반-로그-vs-구조화된-로그"
+        },
+        {
+          "level": 3,
+          "text": "장점",
+          "id": "장점"
+        },
+        {
+          "level": 2,
+          "text": "로깅 라이브러리",
+          "id": "로깅-라이브러리"
+        },
+        {
+          "level": 3,
+          "text": "Node.js - Winston",
+          "id": "nodejs---winston"
+        },
+        {
+          "level": 3,
+          "text": "Node.js - Pino (고성능)",
+          "id": "nodejs---pino-고성능"
+        },
+        {
+          "level": 2,
+          "text": "필수 로깅 항목",
+          "id": "필수-로깅-항목"
+        },
+        {
+          "level": 3,
+          "text": "요청/응답 로그",
+          "id": "요청응답-로그"
+        },
+        {
+          "level": 3,
+          "text": "에러 로그",
+          "id": "에러-로그"
+        },
+        {
+          "level": 3,
+          "text": "비즈니스 이벤트",
+          "id": "비즈니스-이벤트"
+        },
+        {
+          "level": 2,
+          "text": "Request ID (추적성)",
+          "id": "request-id-추적성"
+        },
+        {
+          "level": 2,
+          "text": "로그 수집 & 관리",
+          "id": "로그-수집-관리"
+        },
+        {
+          "level": 3,
+          "text": "로그 스택",
+          "id": "로그-스택"
+        },
+        {
+          "level": 3,
+          "text": "주요 도구",
+          "id": "주요-도구"
+        },
+        {
+          "level": 3,
+          "text": "Docker 로그 수집",
+          "id": "docker-로그-수집"
+        },
+        {
+          "level": 2,
+          "text": "🎯 로깅 전략 선택 체크리스트",
+          "id": "-로깅-전략-선택-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "로깅 레벨",
+          "id": "로깅-레벨-1"
+        },
+        {
+          "level": 3,
+          "text": "형식",
+          "id": "형식"
+        },
+        {
+          "level": 3,
+          "text": "수집",
+          "id": "수집"
+        },
+        {
+          "level": 2,
+          "text": "주의사항",
+          "id": "주의사항"
+        },
+        {
+          "level": 2,
+          "text": "요약",
+          "id": "요약"
+        }
+      ]
+    },
+    "Backend/messaging/message-queue.md": {
+      "title": "Message Queue",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Message Queue",
+          "id": "message-queue"
+        },
+        {
+          "level": 2,
+          "text": "메시지 큐란?",
+          "id": "메시지-큐란"
+        },
+        {
+          "level": 2,
+          "text": "사용 사례",
+          "id": "사용-사례"
+        },
+        {
+          "level": 2,
+          "text": "대표 도구 비교",
+          "id": "대표-도구-비교"
+        },
+        {
+          "level": 2,
+          "text": "RabbitMQ",
+          "id": "rabbitmq"
+        },
+        {
+          "level": 3,
+          "text": "기본 개념",
+          "id": "기본-개념"
+        },
+        {
+          "level": 3,
+          "text": "Node.js 예제 (amqplib)",
+          "id": "nodejs-예제-amqplib"
+        },
+        {
+          "level": 2,
+          "text": "Kafka",
+          "id": "kafka"
+        },
+        {
+          "level": 3,
+          "text": "기본 개념",
+          "id": "기본-개념-1"
+        },
+        {
+          "level": 3,
+          "text": "특징",
+          "id": "특징"
+        },
+        {
+          "level": 3,
+          "text": "Node.js 예제 (kafkajs)",
+          "id": "nodejs-예제-kafkajs"
+        },
+        {
+          "level": 2,
+          "text": "BullMQ (Node.js 추천)",
+          "id": "bullmq-nodejs-추천"
+        },
+        {
+          "level": 3,
+          "text": "특징",
+          "id": "특징-1"
+        },
+        {
+          "level": 3,
+          "text": "예제",
+          "id": "예제"
+        },
+        {
+          "level": 2,
+          "text": "메시지 패턴",
+          "id": "메시지-패턴"
+        },
+        {
+          "level": 3,
+          "text": "1. Work Queue (작업 분배)",
+          "id": "1-work-queue-작업-분배"
+        },
+        {
+          "level": 3,
+          "text": "2. Pub/Sub (구독)",
+          "id": "2-pubsub-구독"
+        },
+        {
+          "level": 3,
+          "text": "3. Request/Reply (RPC)",
+          "id": "3-requestreply-rpc"
+        },
+        {
+          "level": 2,
+          "text": "🎯 메시지 큐 선택 체크리스트",
+          "id": "-메시지-큐-선택-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "주의사항",
+          "id": "주의사항"
+        },
+        {
+          "level": 3,
+          "text": "멱등성 보장",
+          "id": "멱등성-보장"
+        },
+        {
+          "level": 2,
+          "text": "요약",
+          "id": "요약"
+        }
+      ]
+    },
+    "Backend/testing/testing-strategy.md": {
+      "title": "Testing Strategy",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Testing Strategy",
+          "id": "testing-strategy"
+        },
+        {
+          "level": 2,
+          "text": "테스트 피라미드",
+          "id": "테스트-피라미드"
+        },
+        {
+          "level": 2,
+          "text": "테스트 종류",
+          "id": "테스트-종류"
+        },
+        {
+          "level": 2,
+          "text": "단위 테스트 (Unit Test)",
+          "id": "단위-테스트-unit-test"
+        },
+        {
+          "level": 3,
+          "text": "기본 구조 (AAA 패턴)",
+          "id": "기본-구조-aaa-패턴"
+        },
+        {
+          "level": 3,
+          "text": "좋은 테스트 작성법",
+          "id": "좋은-테스트-작성법"
+        },
+        {
+          "level": 3,
+          "text": "테스트 케이스 분류",
+          "id": "테스트-케이스-분류"
+        },
+        {
+          "level": 2,
+          "text": "Mocking",
+          "id": "mocking"
+        },
+        {
+          "level": 3,
+          "text": "Mock vs Stub vs Spy",
+          "id": "mock-vs-stub-vs-spy"
+        },
+        {
+          "level": 3,
+          "text": "Jest Mock 예시",
+          "id": "jest-mock-예시"
+        },
+        {
+          "level": 3,
+          "text": "외부 의존성 Mock",
+          "id": "외부-의존성-mock"
+        },
+        {
+          "level": 2,
+          "text": "통합 테스트 (Integration Test)",
+          "id": "통합-테스트-integration-test"
+        },
+        {
+          "level": 3,
+          "text": "API 통합 테스트",
+          "id": "api-통합-테스트"
+        },
+        {
+          "level": 3,
+          "text": "DB 통합 테스트",
+          "id": "db-통합-테스트"
+        },
+        {
+          "level": 2,
+          "text": "E2E 테스트 (End-to-End)",
+          "id": "e2e-테스트-end-to-end"
+        },
+        {
+          "level": 3,
+          "text": "Playwright 예시",
+          "id": "playwright-예시"
+        },
+        {
+          "level": 2,
+          "text": "🎯 테스트 전략 선택 체크리스트",
+          "id": "-테스트-전략-선택-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "단위 테스트 우선",
+          "id": "단위-테스트-우선"
+        },
+        {
+          "level": 3,
+          "text": "통합 테스트 우선",
+          "id": "통합-테스트-우선"
+        },
+        {
+          "level": 3,
+          "text": "E2E 테스트 우선",
+          "id": "e2e-테스트-우선"
+        },
+        {
+          "level": 2,
+          "text": "테스트 커버리지",
+          "id": "테스트-커버리지"
+        },
+        {
+          "level": 3,
+          "text": "커버리지 종류",
+          "id": "커버리지-종류"
+        },
+        {
+          "level": 3,
+          "text": "권장 커버리지",
+          "id": "권장-커버리지"
+        },
+        {
+          "level": 2,
+          "text": "테스트 팁",
+          "id": "테스트-팁"
+        },
+        {
+          "level": 3,
+          "text": "Given-When-Then 패턴",
+          "id": "given-when-then-패턴"
+        },
+        {
+          "level": 3,
+          "text": "테스트 격리",
+          "id": "테스트-격리"
+        },
+        {
+          "level": 2,
+          "text": "🎯 테스트 작성 체크리스트",
+          "id": "-테스트-작성-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "작성 시",
+          "id": "작성-시"
+        },
+        {
+          "level": 3,
+          "text": "유지보수",
+          "id": "유지보수"
+        },
+        {
+          "level": 3,
+          "text": "CI/CD",
+          "id": "cicd"
+        }
+      ]
+    },
+    "Build/README.md": {
+      "title": "Build",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Build",
+          "id": "build"
+        },
+        {
+          "level": 2,
+          "text": "학습 순서",
+          "id": "학습-순서"
+        },
+        {
+          "level": 2,
+          "text": "JavaScript·TypeScript 빌드",
+          "id": "javascripttypescript-빌드"
+        },
+        {
+          "level": 2,
+          "text": "빠르게 구분하기",
+          "id": "빠르게-구분하기"
+        },
+        {
+          "level": 2,
+          "text": "관련 지식",
+          "id": "관련-지식"
+        }
+      ]
+    },
+    "Build/build-pipeline.md": {
+      "title": "빌드 과정과 용어",
+      "headings": [
+        {
+          "level": 1,
+          "text": "빌드 과정과 용어",
+          "id": "빌드-과정과-용어"
+        },
+        {
+          "level": 2,
+          "text": "C/C++에서 보는 빌드 단계",
+          "id": "cc에서-보는-빌드-단계"
+        },
+        {
+          "level": 3,
+          "text": "선언, 정의, 심볼",
+          "id": "선언-정의-심볼"
+        },
+        {
+          "level": 2,
+          "text": "라이브러리와 실행 시점",
+          "id": "라이브러리와-실행-시점"
+        },
+        {
+          "level": 2,
+          "text": "다른 생태계의 빌드",
+          "id": "다른-생태계의-빌드"
+        },
+        {
+          "level": 2,
+          "text": "빌드와 인접 작업 구분",
+          "id": "빌드와-인접-작업-구분"
+        }
+      ]
+    },
+    "Build/c-build-example.md": {
+      "title": "C 프로젝트 빌드 실습",
+      "headings": [
+        {
+          "level": 1,
+          "text": "C 프로젝트 빌드 실습",
+          "id": "c-프로젝트-빌드-실습"
+        },
+        {
+          "level": 2,
+          "text": "1. 소스 준비",
+          "id": "1-소스-준비"
+        },
+        {
+          "level": 2,
+          "text": "2. 컴파일과 링크를 따로 실행",
+          "id": "2-컴파일과-링크를-따로-실행"
+        },
+        {
+          "level": 2,
+          "text": "3. Make로 의존성과 명령 선언",
+          "id": "3-make로-의존성과-명령-선언"
+        },
+        {
+          "level": 2,
+          "text": "4. CMake로 타깃 정의",
+          "id": "4-cmake로-타깃-정의"
+        }
+      ]
+    },
+    "Build/dependency-graph.md": {
+      "title": "의존성과 증분 빌드",
+      "headings": [
+        {
+          "level": 1,
+          "text": "의존성과 증분 빌드",
+          "id": "의존성과-증분-빌드"
+        },
+        {
+          "level": 2,
+          "text": "그래프가 실행 순서를 정한다",
+          "id": "그래프가-실행-순서를-정한다"
+        },
+        {
+          "level": 2,
+          "text": "증분 빌드와 캐시",
+          "id": "증분-빌드와-캐시"
+        },
+        {
+          "level": 2,
+          "text": "올바른 의존성 선언",
+          "id": "올바른-의존성-선언"
+        },
+        {
+          "level": 3,
+          "text": "나열 순서와 실행 순서는 다르다",
+          "id": "나열-순서와-실행-순서는-다르다"
+        },
+        {
+          "level": 2,
+          "text": "확인 체크리스트",
+          "id": "확인-체크리스트"
+        }
+      ]
+    },
+    "Build/javascript-modules.md": {
+      "title": "JavaScript 모듈과 번들링 원리",
+      "headings": [
+        {
+          "level": 1,
+          "text": "JavaScript 모듈과 번들링 원리",
+          "id": "javascript-모듈과-번들링-원리"
+        },
+        {
+          "level": 2,
+          "text": "ESM과 CommonJS",
+          "id": "esm과-commonjs"
+        },
+        {
+          "level": 3,
+          "text": "패키지 이름은 어떻게 파일이 되는가?",
+          "id": "패키지-이름은-어떻게-파일이-되는가"
+        },
+        {
+          "level": 2,
+          "text": "변환과 폴리필",
+          "id": "변환과-폴리필"
+        },
+        {
+          "level": 2,
+          "text": "번들 최적화",
+          "id": "번들-최적화"
+        },
+        {
+          "level": 3,
+          "text": "Tree shaking과 부수 효과",
+          "id": "tree-shaking과-부수-효과"
+        },
+        {
+          "level": 3,
+          "text": "동적 import와 청크",
+          "id": "동적-import와-청크"
+        },
+        {
+          "level": 3,
+          "text": "External과 라이브러리 빌드",
+          "id": "external과-라이브러리-빌드"
+        },
+        {
+          "level": 2,
+          "text": "결과를 확인하는 방법",
+          "id": "결과를-확인하는-방법"
+        }
+      ]
+    },
+    "Build/javascript-tools.md": {
+      "title": "JavaScript 빌드 도구의 역할과 선택",
+      "headings": [
+        {
+          "level": 1,
+          "text": "JavaScript 빌드 도구의 역할과 선택",
+          "id": "javascript-빌드-도구의-역할과-선택"
+        },
+        {
+          "level": 2,
+          "text": "전체 흐름",
+          "id": "전체-흐름"
+        },
+        {
+          "level": 2,
+          "text": "도구별 책임",
+          "id": "도구별-책임"
+        },
+        {
+          "level": 2,
+          "text": "자주 비교하는 도구",
+          "id": "자주-비교하는-도구"
+        },
+        {
+          "level": 2,
+          "text": "목적별 시작점",
+          "id": "목적별-시작점"
+        },
+        {
+          "level": 2,
+          "text": "이어서 읽기",
+          "id": "이어서-읽기"
+        },
+        {
+          "level": 2,
+          "text": "공식 자료",
+          "id": "공식-자료"
+        }
+      ]
+    },
+    "Build/javascript-workflows.md": {
+      "title": "JavaScript 개발·배포 빌드와 모노레포",
+      "headings": [
+        {
+          "level": 1,
+          "text": "JavaScript 개발·배포 빌드와 모노레포",
+          "id": "javascript-개발배포-빌드와-모노레포"
+        },
+        {
+          "level": 2,
+          "text": "개발 서버와 배포 빌드",
+          "id": "개발-서버와-배포-빌드"
+        },
+        {
+          "level": 2,
+          "text": "Vite + TypeScript 스크립트 예시",
+          "id": "vite-typescript-스크립트-예시"
+        },
+        {
+          "level": 2,
+          "text": "의존성 설치와 CI",
+          "id": "의존성-설치와-ci"
+        },
+        {
+          "level": 2,
+          "text": "환경변수와 배포 대상",
+          "id": "환경변수와-배포-대상"
+        },
+        {
+          "level": 2,
+          "text": "Workspace와 작업 그래프",
+          "id": "workspace와-작업-그래프"
+        },
+        {
+          "level": 3,
+          "text": "Turborepo와 Nx",
+          "id": "turborepo와-nx"
+        },
+        {
+          "level": 3,
+          "text": "캐시 확인 체크리스트",
+          "id": "캐시-확인-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "흔한 문제",
+          "id": "흔한-문제"
+        }
+      ]
+    },
+    "Build/reproducibility.md": {
+      "title": "캐시와 재현 가능한 빌드",
+      "headings": [
+        {
+          "level": 1,
+          "text": "캐시와 재현 가능한 빌드",
+          "id": "캐시와-재현-가능한-빌드"
+        },
+        {
+          "level": 2,
+          "text": "캐시 종류 구분",
+          "id": "캐시-종류-구분"
+        },
+        {
+          "level": 2,
+          "text": "캐시 키에 포함할 입력",
+          "id": "캐시-키에-포함할-입력"
+        },
+        {
+          "level": 2,
+          "text": "재현성, 결정성, 격리",
+          "id": "재현성-결정성-격리"
+        },
+        {
+          "level": 3,
+          "text": "결과가 달라지는 흔한 원인",
+          "id": "결과가-달라지는-흔한-원인"
+        },
+        {
+          "level": 2,
+          "text": "Debug, Release, 크로스 컴파일",
+          "id": "debug-release-크로스-컴파일"
+        },
+        {
+          "level": 2,
+          "text": "CI 적용 순서",
+          "id": "ci-적용-순서"
+        }
+      ]
+    },
+    "Build/tools.md": {
+      "title": "빌드 도구의 역할과 선택",
+      "headings": [
+        {
+          "level": 1,
+          "text": "빌드 도구의 역할과 선택",
+          "id": "빌드-도구의-역할과-선택"
+        },
+        {
+          "level": 2,
+          "text": "역할별 비교",
+          "id": "역할별-비교"
+        },
+        {
+          "level": 2,
+          "text": "Make, Ninja, CMake의 관계",
+          "id": "make-ninja-cmake의-관계"
+        },
+        {
+          "level": 2,
+          "text": "프로젝트에 맞게 선택하기",
+          "id": "프로젝트에-맞게-선택하기"
+        },
+        {
+          "level": 2,
+          "text": "공식 자료",
+          "id": "공식-자료"
+        }
+      ]
+    },
+    "Build/troubleshooting.md": {
+      "title": "빌드 오류 진단",
+      "headings": [
+        {
+          "level": 1,
+          "text": "빌드 오류 진단",
+          "id": "빌드-오류-진단"
+        },
+        {
+          "level": 2,
+          "text": "단계별 점검",
+          "id": "단계별-점검"
+        },
+        {
+          "level": 2,
+          "text": "실제 실행 명령 확인",
+          "id": "실제-실행-명령-확인"
+        },
+        {
+          "level": 2,
+          "text": "원인을 좁히는 순서",
+          "id": "원인을-좁히는-순서"
+        },
+        {
+          "level": 2,
+          "text": "로컬에서는 되는데 CI에서 실패할 때",
+          "id": "로컬에서는-되는데-ci에서-실패할-때"
+        }
+      ]
+    },
+    "Frontend/README.md": {
+      "title": "Frontend",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Frontend",
+          "id": "frontend"
+        }
+      ]
+    },
+    "Frontend/accessibility.md": {
+      "title": "웹 접근성 (Web Accessibility) 가이드라인",
+      "headings": [
+        {
+          "level": 1,
+          "text": "웹 접근성 (Web Accessibility) 가이드라인",
+          "id": "웹-접근성-web-accessibility-가이드라인"
+        },
+        {
+          "level": 2,
+          "text": "1. 구현 방법",
+          "id": "1-구현-방법"
+        },
+        {
+          "level": 3,
+          "text": "1.1. 시맨틱 HTML (Semantic HTML)",
+          "id": "11-시맨틱-html-semantic-html"
+        },
+        {
+          "level": 3,
+          "text": "1.2. WAI-ARIA (Web Accessibility Initiative - Accessible Rich Internet Applications)",
+          "id": "12-wai-aria-web-accessibility-initiative---accessible-rich-internet-applications"
+        },
+        {
+          "level": 2,
+          "text": "2. 주요 고려사항",
+          "id": "2-주요-고려사항"
+        },
+        {
+          "level": 3,
+          "text": "2.1. 시각적 접근성",
+          "id": "21-시각적-접근성"
+        },
+        {
+          "level": 3,
+          "text": "2.2. 키보드 접근성",
+          "id": "22-키보드-접근성"
+        },
+        {
+          "level": 3,
+          "text": "2.3. 청각 및 인지적 접근성",
+          "id": "23-청각-및-인지적-접근성"
+        },
+        {
+          "level": 2,
+          "text": "3. 웹 접근성 체크리스트",
+          "id": "3-웹-접근성-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "유용한 도구",
+          "id": "유용한-도구"
+        }
+      ]
+    },
+    "Frontend/pwa.md": {
+      "title": "PWA (Progressive Web App)",
+      "headings": [
+        {
+          "level": 1,
+          "text": "PWA (Progressive Web App)",
+          "id": "pwa-progressive-web-app"
+        },
+        {
+          "level": 2,
+          "text": "PWA란?",
+          "id": "pwa란"
+        },
+        {
+          "level": 2,
+          "text": "필수 구성 요소",
+          "id": "필수-구성-요소"
+        },
+        {
+          "level": 3,
+          "text": "1. manifest.json",
+          "id": "1-manifestjson"
+        },
+        {
+          "level": 3,
+          "text": "2. Service Worker",
+          "id": "2-service-worker"
+        },
+        {
+          "level": 2,
+          "text": "캐싱 전략",
+          "id": "캐싱-전략"
+        },
+        {
+          "level": 2,
+          "text": "Workbox (구글 라이브러리)",
+          "id": "workbox-구글-라이브러리"
+        },
+        {
+          "level": 2,
+          "text": "Angular PWA",
+          "id": "angular-pwa"
+        },
+        {
+          "level": 3,
+          "text": "설치",
+          "id": "설치"
+        },
+        {
+          "level": 3,
+          "text": "ngsw-config.json",
+          "id": "ngsw-configjson"
+        },
+        {
+          "level": 3,
+          "text": "SwUpdate Service",
+          "id": "swupdate-service"
+        },
+        {
+          "level": 3,
+          "text": "푸시 알림 (Angular)",
+          "id": "푸시-알림-angular"
+        },
+        {
+          "level": 2,
+          "text": "🎯 PWA 체크리스트",
+          "id": "-pwa-체크리스트"
+        }
+      ]
+    },
+    "Frontend/state-management.md": {
+      "title": "Frontend State Management",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Frontend State Management",
+          "id": "frontend-state-management"
+        },
+        {
+          "level": 2,
+          "text": "상태 관리란?",
+          "id": "상태-관리란"
+        },
+        {
+          "level": 2,
+          "text": "상태의 종류",
+          "id": "상태의-종류"
+        },
+        {
+          "level": 2,
+          "text": "React 상태 관리",
+          "id": "react-상태-관리"
+        },
+        {
+          "level": 3,
+          "text": "1. useState (로컬)",
+          "id": "1-usestate-로컬"
+        },
+        {
+          "level": 3,
+          "text": "2. Context API (간단한 전역)",
+          "id": "2-context-api-간단한-전역"
+        },
+        {
+          "level": 3,
+          "text": "3. Zustand (권장 ⭐)",
+          "id": "3-zustand-권장-"
+        },
+        {
+          "level": 3,
+          "text": "4. Redux Toolkit",
+          "id": "4-redux-toolkit"
+        },
+        {
+          "level": 2,
+          "text": "Server State (React Query)",
+          "id": "server-state-react-query"
+        },
+        {
+          "level": 2,
+          "text": "Angular 상태 관리",
+          "id": "angular-상태-관리"
+        },
+        {
+          "level": 3,
+          "text": "1. Services (전통적 방식)",
+          "id": "1-services-전통적-방식"
+        },
+        {
+          "level": 3,
+          "text": "2. Signals (Angular 16+) ⭐",
+          "id": "2-signals-angular-16-"
+        },
+        {
+          "level": 3,
+          "text": "3. NgRx (대규모 앱)",
+          "id": "3-ngrx-대규모-앱"
+        },
+        {
+          "level": 3,
+          "text": "4. NgRx Component Store (로컬 상태)",
+          "id": "4-ngrx-component-store-로컬-상태"
+        },
+        {
+          "level": 3,
+          "text": "5. RxJS + BehaviorSubject",
+          "id": "5-rxjs-behaviorsubject"
+        },
+        {
+          "level": 2,
+          "text": "🎯 상태 관리 선택 체크리스트",
+          "id": "-상태-관리-선택-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "React vs Angular 상태 관리 비교",
+          "id": "react-vs-angular-상태-관리-비교"
+        },
+        {
+          "level": 2,
+          "text": "성능 최적화",
+          "id": "성능-최적화"
+        },
+        {
+          "level": 3,
+          "text": "1. React.memo",
+          "id": "1-reactmemo"
+        },
+        {
+          "level": 3,
+          "text": "2. useMemo / useCallback",
+          "id": "2-usememo-usecallback"
+        },
+        {
+          "level": 3,
+          "text": "3. 가상화 (Virtualization)",
+          "id": "3-가상화-virtualization"
+        },
+        {
+          "level": 3,
+          "text": "4. 코드 스플리팅",
+          "id": "4-코드-스플리팅"
+        },
+        {
+          "level": 3,
+          "text": "5. 이미지 최적화",
+          "id": "5-이미지-최적화"
+        },
+        {
+          "level": 2,
+          "text": "🎯 성능 최적화 체크리스트",
+          "id": "-성능-최적화-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "렌더링",
+          "id": "렌더링"
+        },
+        {
+          "level": 3,
+          "text": "번들 크기",
+          "id": "번들-크기"
+        },
+        {
+          "level": 3,
+          "text": "데이터",
+          "id": "데이터"
+        },
+        {
+          "level": 3,
+          "text": "에셋",
+          "id": "에셋"
+        },
+        {
+          "level": 2,
+          "text": "주의사항",
+          "id": "주의사항"
+        }
+      ]
+    },
+    "Frontend/typescript.md": {
+      "title": "TypeScript Tips",
+      "headings": [
+        {
+          "level": 1,
+          "text": "TypeScript Tips",
+          "id": "typescript-tips"
+        },
+        {
+          "level": 2,
+          "text": "타입 가드 (Type Guard)",
+          "id": "타입-가드-type-guard"
+        },
+        {
+          "level": 3,
+          "text": "typeof",
+          "id": "typeof"
+        },
+        {
+          "level": 3,
+          "text": "instanceof",
+          "id": "instanceof"
+        },
+        {
+          "level": 3,
+          "text": "in 연산자",
+          "id": "in-연산자"
+        },
+        {
+          "level": 3,
+          "text": "커스텀 타입 가드 ⭐",
+          "id": "커스텀-타입-가드-"
+        },
+        {
+          "level": 3,
+          "text": "Discriminated Union",
+          "id": "discriminated-union"
+        },
+        {
+          "level": 2,
+          "text": "유틸리티 타입",
+          "id": "유틸리티-타입"
+        },
+        {
+          "level": 3,
+          "text": "Partial",
+          "id": "partial"
+        },
+        {
+          "level": 3,
+          "text": "Required",
+          "id": "required"
+        },
+        {
+          "level": 3,
+          "text": "Pick",
+          "id": "pick"
+        },
+        {
+          "level": 3,
+          "text": "Omit",
+          "id": "omit"
+        },
+        {
+          "level": 3,
+          "text": "Record",
+          "id": "record"
+        },
+        {
+          "level": 3,
+          "text": "Readonly",
+          "id": "readonly"
+        },
+        {
+          "level": 3,
+          "text": "ReturnType",
+          "id": "returntype"
+        },
+        {
+          "level": 3,
+          "text": "Parameters",
+          "id": "parameters"
+        },
+        {
+          "level": 3,
+          "text": "NonNullable",
+          "id": "nonnullable"
+        },
+        {
+          "level": 2,
+          "text": "고급 타입",
+          "id": "고급-타입"
+        },
+        {
+          "level": 3,
+          "text": "조건부 타입 (Conditional Types)",
+          "id": "조건부-타입-conditional-types"
+        },
+        {
+          "level": 3,
+          "text": "infer",
+          "id": "infer"
+        },
+        {
+          "level": 3,
+          "text": "템플릿 리터럴 타입",
+          "id": "템플릿-리터럴-타입"
+        },
+        {
+          "level": 3,
+          "text": "Mapped Types",
+          "id": "mapped-types"
+        },
+        {
+          "level": 2,
+          "text": "실전 패턴",
+          "id": "실전-패턴"
+        },
+        {
+          "level": 3,
+          "text": "API 응답 타입",
+          "id": "api-응답-타입"
+        },
+        {
+          "level": 3,
+          "text": "객체 키 타입 안전하게 사용",
+          "id": "객체-키-타입-안전하게-사용"
+        },
+        {
+          "level": 3,
+          "text": "Branded Types",
+          "id": "branded-types"
+        },
+        {
+          "level": 2,
+          "text": "Angular 특화 패턴",
+          "id": "angular-특화-패턴"
+        },
+        {
+          "level": 3,
+          "text": "Dependency Injection 타입",
+          "id": "dependency-injection-타입"
+        },
+        {
+          "level": 3,
+          "text": "RxJS 타입 안전성",
+          "id": "rxjs-타입-안전성"
+        },
+        {
+          "level": 3,
+          "text": "Signal 타입",
+          "id": "signal-타입"
+        },
+        {
+          "level": 3,
+          "text": "Form 타입 (Typed Forms)",
+          "id": "form-타입-typed-forms"
+        },
+        {
+          "level": 3,
+          "text": "Component Input/Output 타입",
+          "id": "component-inputoutput-타입"
+        },
+        {
+          "level": 3,
+          "text": "Directive 타입",
+          "id": "directive-타입"
+        },
+        {
+          "level": 2,
+          "text": "🎯 TypeScript 체크리스트",
+          "id": "-typescript-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "기본",
+          "id": "기본"
+        },
+        {
+          "level": 3,
+          "text": "타입 정의",
+          "id": "타입-정의"
+        },
+        {
+          "level": 3,
+          "text": "고급",
+          "id": "고급"
+        },
+        {
+          "level": 2,
+          "text": "팁",
+          "id": "팁"
+        }
+      ]
+    },
+    "Frontend/web-performance.md": {
+      "title": "Web Performance",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Web Performance",
+          "id": "web-performance"
+        },
+        {
+          "level": 2,
+          "text": "Core Web Vitals",
+          "id": "core-web-vitals"
+        },
+        {
+          "level": 2,
+          "text": "LCP 최적화",
+          "id": "lcp-최적화"
+        },
+        {
+          "level": 2,
+          "text": "CLS 최적화",
+          "id": "cls-최적화"
+        },
+        {
+          "level": 2,
+          "text": "INP 최적화",
+          "id": "inp-최적화"
+        },
+        {
+          "level": 2,
+          "text": "로딩 최적화",
+          "id": "로딩-최적화"
+        },
+        {
+          "level": 2,
+          "text": "Angular 성능 최적화",
+          "id": "angular-성능-최적화"
+        },
+        {
+          "level": 3,
+          "text": "1. Lazy Loading (모듈 지연 로딩)",
+          "id": "1-lazy-loading-모듈-지연-로딩"
+        },
+        {
+          "level": 3,
+          "text": "2. OnPush Change Detection",
+          "id": "2-onpush-change-detection"
+        },
+        {
+          "level": 3,
+          "text": "3. TrackBy 함수",
+          "id": "3-trackby-함수"
+        },
+        {
+          "level": 3,
+          "text": "4. Virtual Scrolling",
+          "id": "4-virtual-scrolling"
+        },
+        {
+          "level": 3,
+          "text": "5. 번들 최적화",
+          "id": "5-번들-최적화"
+        },
+        {
+          "level": 3,
+          "text": "6. Preloading Strategy",
+          "id": "6-preloading-strategy"
+        },
+        {
+          "level": 3,
+          "text": "7. Pipe 메모이제이션",
+          "id": "7-pipe-메모이제이션"
+        },
+        {
+          "level": 3,
+          "text": "8. Defer (Angular 17+)",
+          "id": "8-defer-angular-17"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        }
+      ]
+    },
+    "Hardware/README.md": {
+      "title": "Hardware",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Hardware",
+          "id": "hardware"
+        },
+        {
+          "level": 2,
+          "text": "용어와 배경지식 찾아보기",
+          "id": "용어와-배경지식-찾아보기"
+        },
+        {
+          "level": 2,
+          "text": "1. 전기·전자와 보드 기초",
+          "id": "1-전기전자와-보드-기초"
+        },
+        {
+          "level": 2,
+          "text": "2. 입출력과 통신",
+          "id": "2-입출력과-통신"
+        },
+        {
+          "level": 2,
+          "text": "3. 제어 코드",
+          "id": "3-제어-코드"
+        },
+        {
+          "level": 2,
+          "text": "4. 모듈 제어와 문제 진단",
+          "id": "4-모듈-제어와-문제-진단"
+        },
+        {
+          "level": 2,
+          "text": "추천 실습 순서",
+          "id": "추천-실습-순서"
+        },
+        {
+          "level": 2,
+          "text": "새 모듈 문서 작성 형식",
+          "id": "새-모듈-문서-작성-형식"
+        },
+        {
+          "level": 2,
+          "text": "설명을 추가할 때의 기준",
+          "id": "설명을-추가할-때의-기준"
+        }
+      ]
+    },
+    "Hardware/background/README.md": {
+      "title": "하드웨어 배경지식",
+      "headings": [
+        {
+          "level": 1,
+          "text": "하드웨어 배경지식",
+          "id": "하드웨어-배경지식"
+        }
+      ]
+    },
+    "Hardware/background/capacitance-and-timing.md": {
+      "title": "정전용량과 신호 타이밍",
+      "headings": [
+        {
+          "level": 1,
+          "text": "정전용량과 신호 타이밍",
+          "id": "정전용량과-신호-타이밍"
+        },
+        {
+          "level": 2,
+          "text": "배선도 충전해야 한다",
+          "id": "배선도-충전해야-한다"
+        },
+        {
+          "level": 2,
+          "text": "RC 시정수와 상승 시간",
+          "id": "rc-시정수와-상승-시간"
+        },
+        {
+          "level": 2,
+          "text": "풀업을 무조건 작게 할 수 없는 이유",
+          "id": "풀업을-무조건-작게-할-수-없는-이유"
+        },
+        {
+          "level": 2,
+          "text": "ADC에서도 나타나는 충전 시간",
+          "id": "adc에서도-나타나는-충전-시간"
+        }
+      ]
+    },
+    "Hardware/background/power-and-noise.md": {
+      "title": "전원과 노이즈",
+      "headings": [
+        {
+          "level": 1,
+          "text": "전원과 노이즈",
+          "id": "전원과-노이즈"
+        },
+        {
+          "level": 2,
+          "text": "전원 장치의 전압과 부품의 전압은 다를 수 있다",
+          "id": "전원-장치의-전압과-부품의-전압은-다를-수-있다"
+        },
+        {
+          "level": 2,
+          "text": "GND도 완벽한 0V 선은 아니다",
+          "id": "gnd도-완벽한-0v-선은-아니다"
+        },
+        {
+          "level": 2,
+          "text": "디커플링 커패시터를 핀 가까이 두는 이유",
+          "id": "디커플링-커패시터를-핀-가까이-두는-이유"
+        },
+        {
+          "level": 2,
+          "text": "코일을 끄는 순간의 전압",
+          "id": "코일을-끄는-순간의-전압"
+        },
+        {
+          "level": 2,
+          "text": "증상을 해석하는 순서",
+          "id": "증상을-해석하는-순서"
+        }
+      ]
+    },
+    "Hardware/background/pullups-and-drive.md": {
+      "title": "풀업과 출력 구동",
+      "headings": [
+        {
+          "level": 1,
+          "text": "풀업과 출력 구동",
+          "id": "풀업과-출력-구동"
+        },
+        {
+          "level": 2,
+          "text": "입력 핀이 스스로 값을 정하지 않는 이유",
+          "id": "입력-핀이-스스로-값을-정하지-않는-이유"
+        },
+        {
+          "level": 2,
+          "text": "푸시풀과 오픈드레인이 다른 점",
+          "id": "푸시풀과-오픈드레인이-다른-점"
+        },
+        {
+          "level": 2,
+          "text": "소스 전류와 싱크 전류",
+          "id": "소스-전류와-싱크-전류"
+        },
+        {
+          "level": 2,
+          "text": "흔한 오해",
+          "id": "흔한-오해"
+        }
+      ]
+    },
+    "Hardware/background/register-side-effects.md": {
+      "title": "레지스터 접근의 부작용",
+      "headings": [
+        {
+          "level": 1,
+          "text": "레지스터 접근의 부작용",
+          "id": "레지스터-접근의-부작용"
+        },
+        {
+          "level": 2,
+          "text": "저장된 숫자를 읽고 쓰는 것 이상의 의미",
+          "id": "저장된-숫자를-읽고-쓰는-것-이상의-의미"
+        },
+        {
+          "level": 2,
+          "text": "W1C에서 비트 OR가 위험한 이유",
+          "id": "w1c에서-비트-or가-위험한-이유"
+        },
+        {
+          "level": 2,
+          "text": "읽기에도 부작용이 있을 수 있다",
+          "id": "읽기에도-부작용이-있을-수-있다"
+        },
+        {
+          "level": 2,
+          "text": "읽기와 쓰기 사이에 누가 값을 바꿀까",
+          "id": "읽기와-쓰기-사이에-누가-값을-바꿀까"
+        },
+        {
+          "level": 2,
+          "text": "volatile이 해결하는 범위",
+          "id": "volatile이-해결하는-범위"
+        }
+      ]
+    },
+    "Hardware/background/sampling-and-error.md": {
+      "title": "샘플링과 측정 오차",
+      "headings": [
+        {
+          "level": 1,
+          "text": "샘플링과 측정 오차",
+          "id": "샘플링과-측정-오차"
+        },
+        {
+          "level": 2,
+          "text": "시간을 고르는 것과 크기를 나누는 것",
+          "id": "시간을-고르는-것과-크기를-나누는-것"
+        },
+        {
+          "level": 2,
+          "text": "해상도가 정확도는 아니다",
+          "id": "해상도가-정확도는-아니다"
+        },
+        {
+          "level": 2,
+          "text": "앨리어싱은 왜 평균으로 해결되지 않을까",
+          "id": "앨리어싱은-왜-평균으로-해결되지-않을까"
+        },
+        {
+          "level": 2,
+          "text": "보정과 필터링의 역할",
+          "id": "보정과-필터링의-역할"
+        }
+      ]
+    },
+    "Hardware/basics/boards-and-pinouts.md": {
+      "title": "보드와 핀맵",
+      "headings": [
+        {
+          "level": 1,
+          "text": "보드와 핀맵",
+          "id": "보드와-핀맵"
+        },
+        {
+          "level": 2,
+          "text": "MCU와 SBC",
+          "id": "mcu와-sbc"
+        },
+        {
+          "level": 2,
+          "text": "세 가지 핀 표기",
+          "id": "세-가지-핀-표기"
+        },
+        {
+          "level": 2,
+          "text": "핀 기능과 멀티플렉싱",
+          "id": "핀-기능과-멀티플렉싱"
+        },
+        {
+          "level": 2,
+          "text": "연결표 작성 예시",
+          "id": "연결표-작성-예시"
+        }
+      ]
+    },
+    "Hardware/basics/components.md": {
+      "title": "기본 전자 부품",
+      "headings": [
+        {
+          "level": 1,
+          "text": "기본 전자 부품",
+          "id": "기본-전자-부품"
+        },
+        {
+          "level": 2,
+          "text": "자주 쓰는 부품",
+          "id": "자주-쓰는-부품"
+        },
+        {
+          "level": 2,
+          "text": "저항과 커패시터",
+          "id": "저항과-커패시터"
+        },
+        {
+          "level": 2,
+          "text": "다이오드와 LED",
+          "id": "다이오드와-led"
+        },
+        {
+          "level": 2,
+          "text": "트랜지스터를 스위치로 사용하기",
+          "id": "트랜지스터를-스위치로-사용하기"
+        }
+      ]
+    },
+    "Hardware/basics/datasheet-basics.md": {
+      "title": "데이터시트 읽기",
+      "headings": [
+        {
+          "level": 1,
+          "text": "데이터시트 읽기",
+          "id": "데이터시트-읽기"
+        },
+        {
+          "level": 2,
+          "text": "처음 읽을 순서",
+          "id": "처음-읽을-순서"
+        },
+        {
+          "level": 2,
+          "text": "정격과 동작 조건을 구분하기",
+          "id": "정격과-동작-조건을-구분하기"
+        },
+        {
+          "level": 2,
+          "text": "공급 전압과 신호 전압은 다를 수 있다",
+          "id": "공급-전압과-신호-전압은-다를-수-있다"
+        },
+        {
+          "level": 2,
+          "text": "통신 예제를 읽을 때",
+          "id": "통신-예제를-읽을-때"
+        },
+        {
+          "level": 2,
+          "text": "기록하면 좋은 정보",
+          "id": "기록하면-좋은-정보"
+        }
+      ]
+    },
+    "Hardware/basics/electrical-basics.md": {
+      "title": "전기 기초",
+      "headings": [
+        {
+          "level": 1,
+          "text": "전기 기초",
+          "id": "전기-기초"
+        },
+        {
+          "level": 2,
+          "text": "기본 물리량",
+          "id": "기본-물리량"
+        },
+        {
+          "level": 2,
+          "text": "옴의 법칙과 전력",
+          "id": "옴의-법칙과-전력"
+        },
+        {
+          "level": 3,
+          "text": "LED 저항 계산",
+          "id": "led-저항-계산"
+        },
+        {
+          "level": 2,
+          "text": "직렬과 병렬",
+          "id": "직렬과-병렬"
+        },
+        {
+          "level": 2,
+          "text": "확인할 점",
+          "id": "확인할-점"
+        }
+      ]
+    },
+    "Hardware/basics/power-and-wiring.md": {
+      "title": "전원과 배선",
+      "headings": [
+        {
+          "level": 1,
+          "text": "전원과 배선",
+          "id": "전원과-배선"
+        },
+        {
+          "level": 2,
+          "text": "전원 전압과 전류 용량",
+          "id": "전원-전압과-전류-용량"
+        },
+        {
+          "level": 2,
+          "text": "GPIO는 전원 핀이 아니다",
+          "id": "gpio는-전원-핀이-아니다"
+        },
+        {
+          "level": 2,
+          "text": "공통 GND",
+          "id": "공통-gnd"
+        },
+        {
+          "level": 2,
+          "text": "배선 순서",
+          "id": "배선-순서"
+        },
+        {
+          "level": 2,
+          "text": "흔한 실수",
+          "id": "흔한-실수"
+        }
+      ]
+    },
+    "Hardware/debugging/troubleshooting.md": {
+      "title": "하드웨어 문제 진단",
+      "headings": [
+        {
+          "level": 1,
+          "text": "하드웨어 문제 진단",
+          "id": "하드웨어-문제-진단"
+        },
+        {
+          "level": 2,
+          "text": "기본 도구",
+          "id": "기본-도구"
+        },
+        {
+          "level": 2,
+          "text": "멀티미터 사용 기초",
+          "id": "멀티미터-사용-기초"
+        },
+        {
+          "level": 2,
+          "text": "단계별 진단",
+          "id": "단계별-진단"
+        },
+        {
+          "level": 3,
+          "text": "1. 전원",
+          "id": "1-전원"
+        },
+        {
+          "level": 3,
+          "text": "2. 배선",
+          "id": "2-배선"
+        },
+        {
+          "level": 3,
+          "text": "3. 신호",
+          "id": "3-신호"
+        },
+        {
+          "level": 3,
+          "text": "4. 통신과 데이터",
+          "id": "4-통신과-데이터"
+        },
+        {
+          "level": 2,
+          "text": "증상별 빠른 점검",
+          "id": "증상별-빠른-점검"
+        },
+        {
+          "level": 2,
+          "text": "재현 기록",
+          "id": "재현-기록"
+        }
+      ]
+    },
+    "Hardware/firmware/registers-and-bitwise.md": {
+      "title": "레지스터와 비트 연산",
+      "headings": [
+        {
+          "level": 1,
+          "text": "레지스터와 비트 연산",
+          "id": "레지스터와-비트-연산"
+        },
+        {
+          "level": 2,
+          "text": "2진수와 16진수",
+          "id": "2진수와-16진수"
+        },
+        {
+          "level": 2,
+          "text": "마스크로 비트 다루기",
+          "id": "마스크로-비트-다루기"
+        },
+        {
+          "level": 2,
+          "text": "여러 비트로 이루어진 필드",
+          "id": "여러-비트로-이루어진-필드"
+        },
+        {
+          "level": 2,
+          "text": "바이트 순서와 부호",
+          "id": "바이트-순서와-부호"
+        },
+        {
+          "level": 2,
+          "text": "실제 레지스터에서 주의할 점",
+          "id": "실제-레지스터에서-주의할-점"
+        }
+      ]
+    },
+    "Hardware/firmware/timing-and-state.md": {
+      "title": "시간과 상태 관리",
+      "headings": [
+        {
+          "level": 1,
+          "text": "시간과 상태 관리",
+          "id": "시간과-상태-관리"
+        },
+        {
+          "level": 2,
+          "text": "폴링과 인터럽트",
+          "id": "폴링과-인터럽트"
+        },
+        {
+          "level": 2,
+          "text": "블로킹 지연과 주기 실행",
+          "id": "블로킹-지연과-주기-실행"
+        },
+        {
+          "level": 2,
+          "text": "시간 카운터의 래핑",
+          "id": "시간-카운터의-래핑"
+        },
+        {
+          "level": 2,
+          "text": "센서 상태 머신 예시",
+          "id": "센서-상태-머신-예시"
+        }
+      ]
+    },
+    "Hardware/glossary/README.md": {
+      "title": "하드웨어 용어 색인",
+      "headings": [
+        {
+          "level": 1,
+          "text": "하드웨어 용어 색인",
+          "id": "하드웨어-용어-색인"
+        },
+        {
+          "level": 2,
+          "text": "전기·전자",
+          "id": "전기전자"
+        },
+        {
+          "level": 2,
+          "text": "신호와 측정",
+          "id": "신호와-측정"
+        },
+        {
+          "level": 2,
+          "text": "통신",
+          "id": "통신"
+        },
+        {
+          "level": 2,
+          "text": "보드와 펌웨어",
+          "id": "보드와-펌웨어"
+        }
+      ]
+    },
+    "Hardware/glossary/communication.md": {
+      "title": "통신 용어",
+      "headings": [
+        {
+          "level": 1,
+          "text": "통신 용어",
+          "id": "통신-용어"
+        },
+        {
+          "level": 2,
+          "text": "연결과 데이터 단위",
+          "id": "연결과-데이터-단위"
+        },
+        {
+          "level": 2,
+          "text": "UART",
+          "id": "uart"
+        },
+        {
+          "level": 2,
+          "text": "I2C",
+          "id": "i2c"
+        },
+        {
+          "level": 2,
+          "text": "SPI",
+          "id": "spi"
+        }
+      ]
+    },
+    "Hardware/glossary/electrical.md": {
+      "title": "전기·전자 용어",
+      "headings": [
+        {
+          "level": 1,
+          "text": "전기·전자 용어",
+          "id": "전기전자-용어"
+        },
+        {
+          "level": 2,
+          "text": "전압과 전원",
+          "id": "전압과-전원"
+        },
+        {
+          "level": 2,
+          "text": "저항과 정전용량",
+          "id": "저항과-정전용량"
+        },
+        {
+          "level": 2,
+          "text": "전류와 구동",
+          "id": "전류와-구동"
+        }
+      ]
+    },
+    "Hardware/glossary/firmware.md": {
+      "title": "보드와 펌웨어 용어",
+      "headings": [
+        {
+          "level": 1,
+          "text": "보드와 펌웨어 용어",
+          "id": "보드와-펌웨어-용어"
+        },
+        {
+          "level": 2,
+          "text": "보드와 실행 환경",
+          "id": "보드와-실행-환경"
+        },
+        {
+          "level": 2,
+          "text": "데이터와 레지스터",
+          "id": "데이터와-레지스터"
+        },
+        {
+          "level": 2,
+          "text": "시간과 동시성",
+          "id": "시간과-동시성"
+        }
+      ]
+    },
+    "Hardware/glossary/signals.md": {
+      "title": "신호와 측정 용어",
+      "headings": [
+        {
+          "level": 1,
+          "text": "신호와 측정 용어",
+          "id": "신호와-측정-용어"
+        },
+        {
+          "level": 2,
+          "text": "논리 신호",
+          "id": "논리-신호"
+        },
+        {
+          "level": 2,
+          "text": "시간과 파형",
+          "id": "시간과-파형"
+        },
+        {
+          "level": 2,
+          "text": "변환과 측정",
+          "id": "변환과-측정"
+        }
+      ]
+    },
+    "Hardware/interfaces/analog-and-pwm.md": {
+      "title": "아날로그 입력과 PWM",
+      "headings": [
+        {
+          "level": 1,
+          "text": "아날로그 입력과 PWM",
+          "id": "아날로그-입력과-pwm"
+        },
+        {
+          "level": 2,
+          "text": "ADC: 전압을 숫자로 읽기",
+          "id": "adc-전압을-숫자로-읽기"
+        },
+        {
+          "level": 3,
+          "text": "측정값이 흔들리는 이유",
+          "id": "측정값이-흔들리는-이유"
+        },
+        {
+          "level": 2,
+          "text": "샘플링",
+          "id": "샘플링"
+        },
+        {
+          "level": 2,
+          "text": "PWM: 켜짐 비율 바꾸기",
+          "id": "pwm-켜짐-비율-바꾸기"
+        },
+        {
+          "level": 2,
+          "text": "DAC와의 차이",
+          "id": "dac와의-차이"
+        }
+      ]
+    },
+    "Hardware/interfaces/gpio.md": {
+      "title": "GPIO",
+      "headings": [
+        {
+          "level": 1,
+          "text": "GPIO",
+          "id": "gpio"
+        },
+        {
+          "level": 2,
+          "text": "입력과 출력",
+          "id": "입력과-출력"
+        },
+        {
+          "level": 2,
+          "text": "플로팅과 풀업·풀다운",
+          "id": "플로팅과-풀업풀다운"
+        },
+        {
+          "level": 2,
+          "text": "버튼 디바운싱",
+          "id": "버튼-디바운싱"
+        },
+        {
+          "level": 2,
+          "text": "출력 초기 상태",
+          "id": "출력-초기-상태"
+        }
+      ]
+    },
+    "Hardware/interfaces/i2c.md": {
+      "title": "I2C",
+      "headings": [
+        {
+          "level": 1,
+          "text": "I2C",
+          "id": "i2c"
+        },
+        {
+          "level": 2,
+          "text": "배선과 풀업",
+          "id": "배선과-풀업"
+        },
+        {
+          "level": 2,
+          "text": "주소와 ACK/NACK",
+          "id": "주소와-acknack"
+        },
+        {
+          "level": 2,
+          "text": "레지스터 읽기의 전형적인 흐름",
+          "id": "레지스터-읽기의-전형적인-흐름"
+        },
+        {
+          "level": 2,
+          "text": "장치가 여러 개일 때",
+          "id": "장치가-여러-개일-때"
+        },
+        {
+          "level": 2,
+          "text": "점검 항목",
+          "id": "점검-항목"
+        }
+      ]
+    },
+    "Hardware/interfaces/logic-levels.md": {
+      "title": "신호 전압과 레벨 변환",
+      "headings": [
+        {
+          "level": 1,
+          "text": "신호 전압과 레벨 변환",
+          "id": "신호-전압과-레벨-변환"
+        },
+        {
+          "level": 2,
+          "text": "입력과 출력의 호환성",
+          "id": "입력과-출력의-호환성"
+        },
+        {
+          "level": 2,
+          "text": "푸시풀과 오픈드레인",
+          "id": "푸시풀과-오픈드레인"
+        },
+        {
+          "level": 2,
+          "text": "변환 방식 선택",
+          "id": "변환-방식-선택"
+        },
+        {
+          "level": 2,
+          "text": "연결 전 확인",
+          "id": "연결-전-확인"
+        }
+      ]
+    },
+    "Hardware/interfaces/spi.md": {
+      "title": "SPI",
+      "headings": [
+        {
+          "level": 1,
+          "text": "SPI",
+          "id": "spi"
+        },
+        {
+          "level": 2,
+          "text": "주요 신호",
+          "id": "주요-신호"
+        },
+        {
+          "level": 2,
+          "text": "클록 모드",
+          "id": "클록-모드"
+        },
+        {
+          "level": 2,
+          "text": "읽기 동작",
+          "id": "읽기-동작"
+        },
+        {
+          "level": 2,
+          "text": "여러 장치 연결",
+          "id": "여러-장치-연결"
+        },
+        {
+          "level": 2,
+          "text": "UART·I2C·SPI 비교",
+          "id": "uarti2cspi-비교"
+        }
+      ]
+    },
+    "Hardware/interfaces/uart.md": {
+      "title": "UART",
+      "headings": [
+        {
+          "level": 1,
+          "text": "UART",
+          "id": "uart"
+        },
+        {
+          "level": 2,
+          "text": "기본 연결",
+          "id": "기본-연결"
+        },
+        {
+          "level": 2,
+          "text": "통신 설정",
+          "id": "통신-설정"
+        },
+        {
+          "level": 2,
+          "text": "UART와 전기 규격 구분",
+          "id": "uart와-전기-규격-구분"
+        },
+        {
+          "level": 2,
+          "text": "바이트 스트림에 메시지 경계 만들기",
+          "id": "바이트-스트림에-메시지-경계-만들기"
+        },
+        {
+          "level": 2,
+          "text": "자주 발생하는 문제",
+          "id": "자주-발생하는-문제"
+        }
+      ]
+    },
+    "Hardware/modules/actuator-basics.md": {
+      "title": "출력 장치 기초",
+      "headings": [
+        {
+          "level": 1,
+          "text": "출력 장치 기초",
+          "id": "출력-장치-기초"
+        },
+        {
+          "level": 2,
+          "text": "장치별 제어 방식",
+          "id": "장치별-제어-방식"
+        },
+        {
+          "level": 2,
+          "text": "모터 전원과 드라이버",
+          "id": "모터-전원과-드라이버"
+        },
+        {
+          "level": 2,
+          "text": "유도성 부하와 보호",
+          "id": "유도성-부하와-보호"
+        },
+        {
+          "level": 2,
+          "text": "PWM과 서보 펄스의 차이",
+          "id": "pwm과-서보-펄스의-차이"
+        },
+        {
+          "level": 2,
+          "text": "최소 DC 모터 제어 흐름",
+          "id": "최소-dc-모터-제어-흐름"
+        },
+        {
+          "level": 2,
+          "text": "실습 확인 항목",
+          "id": "실습-확인-항목"
+        }
+      ]
+    },
+    "Hardware/modules/sensor-basics.md": {
+      "title": "센서 기초",
+      "headings": [
+        {
+          "level": 1,
+          "text": "센서 기초",
+          "id": "센서-기초"
+        },
+        {
+          "level": 2,
+          "text": "출력 방식에 따른 구분",
+          "id": "출력-방식에-따른-구분"
+        },
+        {
+          "level": 2,
+          "text": "연결 전에 기록할 정보",
+          "id": "연결-전에-기록할-정보"
+        },
+        {
+          "level": 3,
+          "text": "I2C 센서 배선 개념",
+          "id": "i2c-센서-배선-개념"
+        },
+        {
+          "level": 2,
+          "text": "최소 측정 흐름",
+          "id": "최소-측정-흐름"
+        },
+        {
+          "level": 2,
+          "text": "단위 변환 예시",
+          "id": "단위-변환-예시"
+        },
+        {
+          "level": 2,
+          "text": "보정과 필터링",
+          "id": "보정과-필터링"
+        },
+        {
+          "level": 2,
+          "text": "흔한 문제",
+          "id": "흔한-문제"
+        }
+      ]
+    },
+    "I18N/README.md": {
+      "title": "I18N (Internationalization)",
+      "headings": [
+        {
+          "level": 1,
+          "text": "I18N (Internationalization)",
+          "id": "i18n-internationalization"
+        }
+      ]
+    },
+    "I18N/translation.md": {
+      "title": "글로벌 번역 (i18n)",
+      "headings": [
+        {
+          "level": 1,
+          "text": "글로벌 번역 (i18n)",
+          "id": "글로벌-번역-i18n"
+        },
+        {
+          "level": 2,
+          "text": "번역 파일 관리",
+          "id": "번역-파일-관리"
+        },
+        {
+          "level": 3,
+          "text": "디렉토리 구조",
+          "id": "디렉토리-구조"
+        },
+        {
+          "level": 3,
+          "text": "파일 분리 전략",
+          "id": "파일-분리-전략"
+        },
+        {
+          "level": 4,
+          "text": "✅ 권장: 도메인/기능별 분리",
+          "id": "-권장-도메인기능별-분리"
+        },
+        {
+          "level": 4,
+          "text": "❌ 비권장: 단일 파일",
+          "id": "-비권장-단일-파일"
+        },
+        {
+          "level": 3,
+          "text": "네임스페이스 규칙",
+          "id": "네임스페이스-규칙"
+        },
+        {
+          "level": 2,
+          "text": "React 번역 구현",
+          "id": "react-번역-구현"
+        },
+        {
+          "level": 3,
+          "text": "1. i18next + react-i18next",
+          "id": "1-i18next-react-i18next"
+        },
+        {
+          "level": 4,
+          "text": "설치",
+          "id": "설치"
+        },
+        {
+          "level": 4,
+          "text": "설정",
+          "id": "설정"
+        },
+        {
+          "level": 4,
+          "text": "사용",
+          "id": "사용"
+        },
+        {
+          "level": 4,
+          "text": "동적 값 삽입",
+          "id": "동적-값-삽입"
+        },
+        {
+          "level": 4,
+          "text": "Pluralization (복수형)",
+          "id": "pluralization-복수형"
+        },
+        {
+          "level": 2,
+          "text": "Angular 번역 구현",
+          "id": "angular-번역-구현"
+        },
+        {
+          "level": 3,
+          "text": "1. ngx-translate",
+          "id": "1-ngx-translate"
+        },
+        {
+          "level": 4,
+          "text": "설치",
+          "id": "설치-1"
+        },
+        {
+          "level": 4,
+          "text": "설정",
+          "id": "설정-1"
+        },
+        {
+          "level": 4,
+          "text": "사용",
+          "id": "사용-1"
+        },
+        {
+          "level": 4,
+          "text": "Signal 기반 동적 번역 (Angular 16+)",
+          "id": "signal-기반-동적-번역-angular-16"
+        },
+        {
+          "level": 2,
+          "text": "UI 관리",
+          "id": "ui-관리"
+        },
+        {
+          "level": 3,
+          "text": "1. 언어 전환 UI",
+          "id": "1-언어-전환-ui"
+        },
+        {
+          "level": 4,
+          "text": "드롭다운",
+          "id": "드롭다운"
+        },
+        {
+          "level": 4,
+          "text": "버튼 토글",
+          "id": "버튼-토글"
+        },
+        {
+          "level": 3,
+          "text": "2. 로딩 상태 처리",
+          "id": "2-로딩-상태-처리"
+        },
+        {
+          "level": 3,
+          "text": "3. 레이아웃 변경 대응",
+          "id": "3-레이아웃-변경-대응"
+        },
+        {
+          "level": 4,
+          "text": "RTL (Right-to-Left) 지원",
+          "id": "rtl-right-to-left-지원"
+        },
+        {
+          "level": 4,
+          "text": "텍스트 길이 대응",
+          "id": "텍스트-길이-대응"
+        },
+        {
+          "level": 3,
+          "text": "4. 날짜/숫자 포맷팅",
+          "id": "4-날짜숫자-포맷팅"
+        },
+        {
+          "level": 2,
+          "text": "번역 파일 관리 베스트 프랙티스",
+          "id": "번역-파일-관리-베스트-프랙티스"
+        },
+        {
+          "level": 3,
+          "text": "1. 키 네이밍 컨벤션",
+          "id": "1-키-네이밍-컨벤션"
+        },
+        {
+          "level": 3,
+          "text": "2. 번역 누락 감지",
+          "id": "2-번역-누락-감지"
+        },
+        {
+          "level": 3,
+          "text": "3. 타입 안전성 (TypeScript)",
+          "id": "3-타입-안전성-typescript"
+        },
+        {
+          "level": 3,
+          "text": "4. 번역 자동화",
+          "id": "4-번역-자동화"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "파일 관리",
+          "id": "파일-관리"
+        },
+        {
+          "level": 3,
+          "text": "UI 관리",
+          "id": "ui-관리-1"
+        },
+        {
+          "level": 3,
+          "text": "성능",
+          "id": "성능"
+        },
+        {
+          "level": 3,
+          "text": "개발 경험",
+          "id": "개발-경험"
+        },
+        {
+          "level": 2,
+          "text": "팁",
+          "id": "팁"
+        }
+      ]
+    },
+    "Infrastructure/README.md": {
+      "title": "Infrastructure",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Infrastructure",
+          "id": "infrastructure"
+        },
+        {
+          "level": 2,
+          "text": "CI/CD",
+          "id": "cicd"
+        },
+        {
+          "level": 2,
+          "text": "Docker",
+          "id": "docker"
+        },
+        {
+          "level": 2,
+          "text": "Nginx",
+          "id": "nginx"
+        }
+      ]
+    },
+    "Infrastructure/cicd/github-action.md": {
+      "title": "GitHub Actions",
+      "headings": [
+        {
+          "level": 1,
+          "text": "GitHub Actions",
+          "id": "github-actions"
+        },
+        {
+          "level": 2,
+          "text": "GitHub Actions란?",
+          "id": "github-actions란"
+        },
+        {
+          "level": 2,
+          "text": "기본 구조",
+          "id": "기본-구조"
+        },
+        {
+          "level": 3,
+          "text": "주요 개념",
+          "id": "주요-개념"
+        },
+        {
+          "level": 2,
+          "text": "GitHub Secrets 연동",
+          "id": "github-secrets-연동"
+        },
+        {
+          "level": 3,
+          "text": "Secrets 설정",
+          "id": "secrets-설정"
+        },
+        {
+          "level": 3,
+          "text": "Secrets 사용",
+          "id": "secrets-사용"
+        },
+        {
+          "level": 3,
+          "text": "Environment Secrets (환경별 분리)",
+          "id": "environment-secrets-환경별-분리"
+        },
+        {
+          "level": 2,
+          "text": "Docker 연동 CI/CD",
+          "id": "docker-연동-cicd"
+        },
+        {
+          "level": 3,
+          "text": "기본 흐름",
+          "id": "기본-흐름"
+        },
+        {
+          "level": 2,
+          "text": "환경별 CI/CD 구성",
+          "id": "환경별-cicd-구성"
+        },
+        {
+          "level": 3,
+          "text": "Develop 환경",
+          "id": "develop-환경"
+        },
+        {
+          "level": 3,
+          "text": "Production 환경",
+          "id": "production-환경"
+        },
+        {
+          "level": 2,
+          "text": "서버 docker-compose.yml 예시",
+          "id": "서버-docker-composeyml-예시"
+        },
+        {
+          "level": 2,
+          "text": "통합 워크플로우 (환경 분기)",
+          "id": "통합-워크플로우-환경-분기"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "초기 설정",
+          "id": "초기-설정"
+        },
+        {
+          "level": 3,
+          "text": "보안",
+          "id": "보안"
+        },
+        {
+          "level": 3,
+          "text": "운영",
+          "id": "운영"
+        },
+        {
+          "level": 2,
+          "text": "유용한 액션",
+          "id": "유용한-액션"
+        },
+        {
+          "level": 2,
+          "text": "요약",
+          "id": "요약"
+        }
+      ]
+    },
+    "Infrastructure/docker/docker-command.md": {
+      "title": "Docker Commands",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Docker Commands",
+          "id": "docker-commands"
+        },
+        {
+          "level": 2,
+          "text": "이미지 관련",
+          "id": "이미지-관련"
+        },
+        {
+          "level": 2,
+          "text": "컨테이너 관련",
+          "id": "컨테이너-관련"
+        },
+        {
+          "level": 2,
+          "text": "자주 쓰는 조합",
+          "id": "자주-쓰는-조합"
+        },
+        {
+          "level": 2,
+          "text": "시스템 관리",
+          "id": "시스템-관리"
+        },
+        {
+          "level": 2,
+          "text": "🎯 자주 쓰는 명령어 Quick Reference",
+          "id": "-자주-쓰는-명령어-quick-reference"
+        },
+        {
+          "level": 2,
+          "text": "트러블슈팅",
+          "id": "트러블슈팅"
+        }
+      ]
+    },
+    "Infrastructure/docker/docker-compose.md": {
+      "title": "Docker Compose",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Docker Compose",
+          "id": "docker-compose"
+        },
+        {
+          "level": 2,
+          "text": "Docker Compose란?",
+          "id": "docker-compose란"
+        },
+        {
+          "level": 2,
+          "text": "기본 구조",
+          "id": "기본-구조"
+        },
+        {
+          "level": 2,
+          "text": "주요 옵션",
+          "id": "주요-옵션"
+        },
+        {
+          "level": 3,
+          "text": "services 옵션",
+          "id": "services-옵션"
+        },
+        {
+          "level": 3,
+          "text": "네트워크 & 볼륨",
+          "id": "네트워크-볼륨"
+        },
+        {
+          "level": 2,
+          "text": "환경별 구성",
+          "id": "환경별-구성"
+        },
+        {
+          "level": 3,
+          "text": "개발 환경 (docker-compose.yml)",
+          "id": "개발-환경-docker-composeyml"
+        },
+        {
+          "level": 3,
+          "text": "운영 환경 (docker-compose.prod.yml)",
+          "id": "운영-환경-docker-composeprodyml"
+        },
+        {
+          "level": 3,
+          "text": "환경별 실행",
+          "id": "환경별-실행"
+        },
+        {
+          "level": 2,
+          "text": "주요 명령어",
+          "id": "주요-명령어"
+        },
+        {
+          "level": 2,
+          "text": "🎯 Docker Compose 체크리스트",
+          "id": "-docker-compose-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "작성 시",
+          "id": "작성-시"
+        },
+        {
+          "level": 3,
+          "text": "개발 환경",
+          "id": "개발-환경"
+        },
+        {
+          "level": 3,
+          "text": "운영 환경",
+          "id": "운영-환경"
+        },
+        {
+          "level": 3,
+          "text": "보안",
+          "id": "보안"
+        },
+        {
+          "level": 2,
+          "text": "실전 예시: 풀스택 앱",
+          "id": "실전-예시-풀스택-앱"
+        }
+      ]
+    },
+    "Infrastructure/docker/docker.md": {
+      "title": "Docker & Dockerfile",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Docker & Dockerfile",
+          "id": "docker-dockerfile"
+        },
+        {
+          "level": 2,
+          "text": "Docker란?",
+          "id": "docker란"
+        },
+        {
+          "level": 2,
+          "text": "Dockerfile 기본 구조",
+          "id": "dockerfile-기본-구조"
+        },
+        {
+          "level": 2,
+          "text": "주요 명령어",
+          "id": "주요-명령어"
+        },
+        {
+          "level": 2,
+          "text": "Multi-stage Build (권장)",
+          "id": "multi-stage-build-권장"
+        },
+        {
+          "level": 2,
+          "text": ".dockerignore",
+          "id": "dockerignore"
+        },
+        {
+          "level": 2,
+          "text": "이미지 최적화 팁",
+          "id": "이미지-최적화-팁"
+        },
+        {
+          "level": 3,
+          "text": "1. 작은 베이스 이미지",
+          "id": "1-작은-베이스-이미지"
+        },
+        {
+          "level": 3,
+          "text": "2. 레이어 캐시 활용",
+          "id": "2-레이어-캐시-활용"
+        },
+        {
+          "level": 3,
+          "text": "3. 불필요한 파일 제외",
+          "id": "3-불필요한-파일-제외"
+        },
+        {
+          "level": 2,
+          "text": "🎯 Dockerfile 체크리스트",
+          "id": "-dockerfile-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "작성 시",
+          "id": "작성-시"
+        },
+        {
+          "level": 3,
+          "text": "보안",
+          "id": "보안"
+        },
+        {
+          "level": 3,
+          "text": "최적화",
+          "id": "최적화"
+        },
+        {
+          "level": 2,
+          "text": "non-root 사용자 실행 (보안)",
+          "id": "non-root-사용자-실행-보안"
+        }
+      ]
+    },
+    "Infrastructure/nginx/nginx.md": {
+      "title": "Nginx",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Nginx",
+          "id": "nginx"
+        },
+        {
+          "level": 2,
+          "text": "Nginx란?",
+          "id": "nginx란"
+        },
+        {
+          "level": 2,
+          "text": "기본 구조",
+          "id": "기본-구조"
+        },
+        {
+          "level": 2,
+          "text": "리버스 프록시 설정",
+          "id": "리버스-프록시-설정"
+        },
+        {
+          "level": 3,
+          "text": "기본 리버스 프록시",
+          "id": "기본-리버스-프록시"
+        },
+        {
+          "level": 3,
+          "text": "Docker 환경 (서비스명 사용)",
+          "id": "docker-환경-서비스명-사용"
+        },
+        {
+          "level": 2,
+          "text": "SSL/HTTPS 설정",
+          "id": "sslhttps-설정"
+        },
+        {
+          "level": 2,
+          "text": "로드 밸런싱",
+          "id": "로드-밸런싱"
+        },
+        {
+          "level": 2,
+          "text": "정적 파일 서빙",
+          "id": "정적-파일-서빙"
+        },
+        {
+          "level": 2,
+          "text": "WebSocket 지원",
+          "id": "websocket-지원"
+        },
+        {
+          "level": 2,
+          "text": "보안 헤더",
+          "id": "보안-헤더"
+        },
+        {
+          "level": 2,
+          "text": "주요 명령어",
+          "id": "주요-명령어"
+        },
+        {
+          "level": 2,
+          "text": "🎯 Nginx 체크리스트",
+          "id": "-nginx-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "기본 설정",
+          "id": "기본-설정"
+        },
+        {
+          "level": 3,
+          "text": "리버스 프록시",
+          "id": "리버스-프록시"
+        },
+        {
+          "level": 3,
+          "text": "SSL/HTTPS",
+          "id": "sslhttps"
+        },
+        {
+          "level": 3,
+          "text": "보안",
+          "id": "보안"
+        },
+        {
+          "level": 3,
+          "text": "성능",
+          "id": "성능"
+        },
+        {
+          "level": 2,
+          "text": "Docker + Nginx 예시",
+          "id": "docker-nginx-예시"
+        },
+        {
+          "level": 2,
+          "text": "설정 디버깅",
+          "id": "설정-디버깅"
+        }
+      ]
+    },
+    "Infrastructure/nginx/ssl.md": {
+      "title": "SSL 인증서 자동화 (Nginx + Let's Encrypt)",
+      "headings": [
+        {
+          "level": 1,
+          "text": "SSL 인증서 자동화 (Nginx + Let's Encrypt)",
+          "id": "ssl-인증서-자동화-nginx-lets-encrypt"
+        },
+        {
+          "level": 2,
+          "text": "개요",
+          "id": "개요"
+        },
+        {
+          "level": 2,
+          "text": "방법 1: Certbot 직접 설치",
+          "id": "방법-1-certbot-직접-설치"
+        },
+        {
+          "level": 3,
+          "text": "1. Certbot 설치",
+          "id": "1-certbot-설치"
+        },
+        {
+          "level": 3,
+          "text": "2. 인증서 발급",
+          "id": "2-인증서-발급"
+        },
+        {
+          "level": 3,
+          "text": "3. 자동 갱신 설정",
+          "id": "3-자동-갱신-설정"
+        },
+        {
+          "level": 3,
+          "text": "4. 생성되는 파일",
+          "id": "4-생성되는-파일"
+        },
+        {
+          "level": 3,
+          "text": "5. Nginx 설정",
+          "id": "5-nginx-설정"
+        },
+        {
+          "level": 2,
+          "text": "방법 2: Docker + Certbot (권장)",
+          "id": "방법-2-docker-certbot-권장"
+        },
+        {
+          "level": 3,
+          "text": "구조",
+          "id": "구조"
+        },
+        {
+          "level": 3,
+          "text": "docker-compose.yml",
+          "id": "docker-composeyml"
+        },
+        {
+          "level": 3,
+          "text": "Nginx 설정 (초기 - HTTP만)",
+          "id": "nginx-설정-초기---http만"
+        },
+        {
+          "level": 3,
+          "text": "초기 인증서 발급 스크립트",
+          "id": "초기-인증서-발급-스크립트"
+        },
+        {
+          "level": 3,
+          "text": "Nginx 설정 (인증서 발급 후 - HTTPS)",
+          "id": "nginx-설정-인증서-발급-후---https"
+        },
+        {
+          "level": 2,
+          "text": "방법 3: nginx-proxy + acme-companion (가장 자동화)",
+          "id": "방법-3-nginx-proxy-acme-companion-가장-자동화"
+        },
+        {
+          "level": 2,
+          "text": "자동 갱신 확인",
+          "id": "자동-갱신-확인"
+        },
+        {
+          "level": 2,
+          "text": "🎯 SSL 자동화 체크리스트",
+          "id": "-ssl-자동화-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "초기 설정",
+          "id": "초기-설정"
+        },
+        {
+          "level": 3,
+          "text": "Nginx 설정",
+          "id": "nginx-설정"
+        },
+        {
+          "level": 3,
+          "text": "자동 갱신",
+          "id": "자동-갱신"
+        },
+        {
+          "level": 3,
+          "text": "모니터링",
+          "id": "모니터링"
+        },
+        {
+          "level": 2,
+          "text": "주의사항",
+          "id": "주의사항"
+        },
+        {
+          "level": 2,
+          "text": "요약",
+          "id": "요약"
+        }
+      ]
+    },
+    "Network/README.md": {
+      "title": "Network",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Network",
+          "id": "network"
+        }
+      ]
+    },
+    "Network/gateway.md": {
+      "title": "게이트웨이 (Gateway) - 실무 가이드",
+      "headings": [
+        {
+          "level": 1,
+          "text": "게이트웨이 (Gateway) - 실무 가이드",
+          "id": "게이트웨이-gateway---실무-가이드"
+        },
+        {
+          "level": 2,
+          "text": "1. 게이트웨이 유형 비교",
+          "id": "1-게이트웨이-유형-비교"
+        },
+        {
+          "level": 2,
+          "text": "2. Internet Gateway vs NAT Gateway",
+          "id": "2-internet-gateway-vs-nat-gateway"
+        },
+        {
+          "level": 3,
+          "text": "2.1. 주요 차이점",
+          "id": "21-주요-차이점"
+        },
+        {
+          "level": 3,
+          "text": "2.2. 아키텍처 다이어그램 (텍스트)",
+          "id": "22-아키텍처-다이어그램-텍스트"
+        },
+        {
+          "level": 2,
+          "text": "3. API Gateway (L7) 실무 활용",
+          "id": "3-api-gateway-l7-실무-활용"
+        },
+        {
+          "level": 2,
+          "text": "4. 실무 코드 예시",
+          "id": "4-실무-코드-예시"
+        },
+        {
+          "level": 3,
+          "text": "4.1. AWS CLI",
+          "id": "41-aws-cli"
+        },
+        {
+          "level": 3,
+          "text": "4.2. Terraform",
+          "id": "42-terraform"
+        },
+        {
+          "level": 3,
+          "text": "4.3. API Gateway (Terraform - REST API 예시)",
+          "id": "43-api-gateway-terraform---rest-api-예시"
+        }
+      ]
+    },
+    "Network/protocol.md": {
+      "title": "네트워크 프로토콜 (Network Protocols) - 실무 가이드",
+      "headings": [
+        {
+          "level": 1,
+          "text": "네트워크 프로토콜 (Network Protocols) - 실무 가이드",
+          "id": "네트워크-프로토콜-network-protocols---실무-가이드"
+        },
+        {
+          "level": 2,
+          "text": "1. HTTP/HTTPS: 애플리케이션의 핵심",
+          "id": "1-httphttps-애플리케이션의-핵심"
+        },
+        {
+          "level": 3,
+          "text": "1.1. 실무에서 중요한 HTTP 헤더",
+          "id": "11-실무에서-중요한-http-헤더"
+        },
+        {
+          "level": 3,
+          "text": "1.2. 실제 API 요청/응답 예시 (Raw)",
+          "id": "12-실제-api-요청응답-예시-raw"
+        },
+        {
+          "level": 2,
+          "text": "2. 전송 계층: TCP vs UDP 소켓 통신",
+          "id": "2-전송-계층-tcp-vs-udp-소켓-통신"
+        },
+        {
+          "level": 3,
+          "text": "2.1. TCP (신뢰성 중심)",
+          "id": "21-tcp-신뢰성-중심"
+        },
+        {
+          "level": 3,
+          "text": "2.2. UDP (속도 중심)",
+          "id": "22-udp-속도-중심"
+        },
+        {
+          "level": 2,
+          "text": "3. DNS (Domain Name System) 실무 팁",
+          "id": "3-dns-domain-name-system-실무-팁"
+        }
+      ]
+    },
+    "Network/router.md": {
+      "title": "라우터 & 라우팅 테이블 (Router & Routing Table) - 실무 가이드",
+      "headings": [
+        {
+          "level": 1,
+          "text": "라우터 & 라우팅 테이블 (Router & Routing Table) - 실무 가이드",
+          "id": "라우터-라우팅-테이블-router-routing-table---실무-가이드"
+        },
+        {
+          "level": 2,
+          "text": "1. 라우팅 테이블 동작 원리",
+          "id": "1-라우팅-테이블-동작-원리"
+        },
+        {
+          "level": 3,
+          "text": "1.1. 라우팅 테이블 구조",
+          "id": "11-라우팅-테이블-구조"
+        },
+        {
+          "level": 2,
+          "text": "2. 정적 라우팅 vs 동적 라우팅",
+          "id": "2-정적-라우팅-vs-동적-라우팅"
+        },
+        {
+          "level": 2,
+          "text": "3. 실무 코드 예시",
+          "id": "3-실무-코드-예시"
+        },
+        {
+          "level": 3,
+          "text": "3.1. AWS CLI",
+          "id": "31-aws-cli"
+        },
+        {
+          "level": 3,
+          "text": "3.2. Terraform",
+          "id": "32-terraform"
+        }
+      ]
+    },
+    "Network/subnet.md": {
+      "title": "서브넷 (Subnet) - 실무 가이드",
+      "headings": [
+        {
+          "level": 1,
+          "text": "서브넷 (Subnet) - 실무 가이드",
+          "id": "서브넷-subnet---실무-가이드"
+        },
+        {
+          "level": 2,
+          "text": "1. CIDR 표기법과 서브넷 마스크",
+          "id": "1-cidr-표기법과-서브넷-마스크"
+        },
+        {
+          "level": 3,
+          "text": "1.1. CIDR (Classless Inter-Domain Routing)",
+          "id": "11-cidr-classless-inter-domain-routing"
+        },
+        {
+          "level": 3,
+          "text": "1.2. 서브넷 계산 예시 (JavaScript)",
+          "id": "12-서브넷-계산-예시-javascript"
+        },
+        {
+          "level": 2,
+          "text": "2. Public vs Private 서브넷",
+          "id": "2-public-vs-private-서브넷"
+        },
+        {
+          "level": 2,
+          "text": "3. 실무 코드 예시",
+          "id": "3-실무-코드-예시"
+        },
+        {
+          "level": 3,
+          "text": "3.1. AWS CLI",
+          "id": "31-aws-cli"
+        },
+        {
+          "level": 3,
+          "text": "3.2. Terraform",
+          "id": "32-terraform"
+        }
+      ]
+    },
+    "Network/topdown-network.md": {
+      "title": "Top-down 네트워크 접근 방식 - 실무 분석",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Top-down 네트워크 접근 방식 - 실무 분석",
+          "id": "top-down-네트워크-접근-방식---실무-분석"
+        },
+        {
+          "level": 2,
+          "text": "1. Request Flow: \"google.com\"을 입력하면 생기는 일",
+          "id": "1-request-flow-googlecom을-입력하면-생기는-일"
+        },
+        {
+          "level": 2,
+          "text": "2. 데이터 캡슐화 (Encapsulation) - 코드 구조 관점",
+          "id": "2-데이터-캡슐화-encapsulation---코드-구조-관점"
+        },
+        {
+          "level": 2,
+          "text": "3. 실무 인프라와의 연결 (Cloud/VPC)",
+          "id": "3-실무-인프라와의-연결-cloudvpc"
+        }
+      ]
+    },
+    "README.md": {
+      "title": "Pocket Tips 📚",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Pocket Tips 📚",
+          "id": "pocket-tips-"
+        },
+        {
+          "level": 2,
+          "text": "📁 카테고리",
+          "id": "-카테고리"
+        },
+        {
+          "level": 2,
+          "text": "🚀 Quick Links",
+          "id": "-quick-links"
+        },
+        {
+          "level": 3,
+          "text": "AI",
+          "id": "ai"
+        },
+        {
+          "level": 3,
+          "text": "Backend",
+          "id": "backend"
+        },
+        {
+          "level": 3,
+          "text": "Build",
+          "id": "build"
+        },
+        {
+          "level": 3,
+          "text": "Frontend",
+          "id": "frontend"
+        },
+        {
+          "level": 3,
+          "text": "Hardware",
+          "id": "hardware"
+        },
+        {
+          "level": 3,
+          "text": "I18N",
+          "id": "i18n"
+        },
+        {
+          "level": 3,
+          "text": "Network",
+          "id": "network"
+        },
+        {
+          "level": 3,
+          "text": "Infrastructure",
+          "id": "infrastructure"
+        },
+        {
+          "level": 3,
+          "text": "Security",
+          "id": "security"
+        },
+        {
+          "level": 3,
+          "text": "Git",
+          "id": "git"
+        }
+      ]
+    },
+    "Security/README.md": {
+      "title": "Security",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Security",
+          "id": "security"
+        }
+      ]
+    },
+    "Security/cors.md": {
+      "title": "CORS (Cross-Origin Resource Sharing)",
+      "headings": [
+        {
+          "level": 1,
+          "text": "CORS (Cross-Origin Resource Sharing)",
+          "id": "cors-cross-origin-resource-sharing"
+        },
+        {
+          "level": 2,
+          "text": "CORS란?",
+          "id": "cors란"
+        },
+        {
+          "level": 2,
+          "text": "동작 방식",
+          "id": "동작-방식"
+        },
+        {
+          "level": 3,
+          "text": "Simple Request",
+          "id": "simple-request"
+        },
+        {
+          "level": 3,
+          "text": "Preflight Request",
+          "id": "preflight-request"
+        },
+        {
+          "level": 2,
+          "text": "응답 헤더",
+          "id": "응답-헤더"
+        },
+        {
+          "level": 2,
+          "text": "Express 설정",
+          "id": "express-설정"
+        },
+        {
+          "level": 2,
+          "text": "Nginx 설정",
+          "id": "nginx-설정"
+        },
+        {
+          "level": 2,
+          "text": "🎯 CORS 설정 체크리스트",
+          "id": "-cors-설정-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "개발",
+          "id": "개발"
+        },
+        {
+          "level": 3,
+          "text": "프로덕션",
+          "id": "프로덕션"
+        },
+        {
+          "level": 2,
+          "text": "흔한 에러",
+          "id": "흔한-에러"
+        }
+      ]
+    },
+    "Security/env-management.md": {
+      "title": "환경변수 관리",
+      "headings": [
+        {
+          "level": 1,
+          "text": "환경변수 관리",
+          "id": "환경변수-관리"
+        },
+        {
+          "level": 2,
+          "text": "왜 중요한가?",
+          "id": "왜-중요한가"
+        },
+        {
+          "level": 2,
+          "text": "dotenv",
+          "id": "dotenv"
+        },
+        {
+          "level": 3,
+          "text": ".env 파일",
+          "id": "env-파일"
+        },
+        {
+          "level": 3,
+          "text": "사용",
+          "id": "사용"
+        },
+        {
+          "level": 3,
+          "text": ".env.example (Git 포함)",
+          "id": "envexample-git-포함"
+        },
+        {
+          "level": 2,
+          "text": "환경별 분리",
+          "id": "환경별-분리"
+        },
+        {
+          "level": 2,
+          "text": "클라우드 Secret Manager",
+          "id": "클라우드-secret-manager"
+        },
+        {
+          "level": 3,
+          "text": "AWS Secrets Manager",
+          "id": "aws-secrets-manager"
+        },
+        {
+          "level": 3,
+          "text": "GCP Secret Manager",
+          "id": "gcp-secret-manager"
+        },
+        {
+          "level": 2,
+          "text": "Docker 환경",
+          "id": "docker-환경"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "개발",
+          "id": "개발"
+        },
+        {
+          "level": 3,
+          "text": "프로덕션",
+          "id": "프로덕션"
+        },
+        {
+          "level": 2,
+          "text": "주의사항",
+          "id": "주의사항"
+        }
+      ]
+    },
+    "Security/owasp-top-10.md": {
+      "title": "OWASP Top 10",
+      "headings": [
+        {
+          "level": 1,
+          "text": "OWASP Top 10",
+          "id": "owasp-top-10"
+        },
+        {
+          "level": 2,
+          "text": "1. Broken Access Control (접근 제어 실패)",
+          "id": "1-broken-access-control-접근-제어-실패"
+        },
+        {
+          "level": 2,
+          "text": "2. Cryptographic Failures (암호화 실패)",
+          "id": "2-cryptographic-failures-암호화-실패"
+        },
+        {
+          "level": 2,
+          "text": "3. Injection",
+          "id": "3-injection"
+        },
+        {
+          "level": 2,
+          "text": "4. Insecure Design",
+          "id": "4-insecure-design"
+        },
+        {
+          "level": 2,
+          "text": "5. Security Misconfiguration",
+          "id": "5-security-misconfiguration"
+        },
+        {
+          "level": 2,
+          "text": "6. Vulnerable Components",
+          "id": "6-vulnerable-components"
+        },
+        {
+          "level": 2,
+          "text": "7. Auth Failures (인증 실패)",
+          "id": "7-auth-failures-인증-실패"
+        },
+        {
+          "level": 2,
+          "text": "8. Software Integrity Failures",
+          "id": "8-software-integrity-failures"
+        },
+        {
+          "level": 2,
+          "text": "9. Logging & Monitoring Failures",
+          "id": "9-logging-monitoring-failures"
+        },
+        {
+          "level": 2,
+          "text": "10. SSRF (Server-Side Request Forgery)",
+          "id": "10-ssrf-server-side-request-forgery"
+        },
+        {
+          "level": 2,
+          "text": "🎯 보안 체크리스트",
+          "id": "-보안-체크리스트"
+        }
+      ]
+    },
+    "Utility/README.md": {
+      "title": "Utility",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Utility",
+          "id": "utility"
+        },
+        {
+          "level": 2,
+          "text": "Collaboration",
+          "id": "collaboration"
+        }
+      ]
+    },
+    "Utility/collaboration/code-review.md": {
+      "title": "Code Review Guide",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Code Review Guide",
+          "id": "code-review-guide"
+        },
+        {
+          "level": 2,
+          "text": "코드 리뷰의 목적",
+          "id": "코드-리뷰의-목적"
+        },
+        {
+          "level": 2,
+          "text": "리뷰어 가이드",
+          "id": "리뷰어-가이드"
+        },
+        {
+          "level": 3,
+          "text": "리뷰 관점",
+          "id": "리뷰-관점"
+        },
+        {
+          "level": 3,
+          "text": "좋은 코멘트 작성법",
+          "id": "좋은-코멘트-작성법"
+        },
+        {
+          "level": 3,
+          "text": "코멘트 접두사 (선택)",
+          "id": "코멘트-접두사-선택"
+        },
+        {
+          "level": 3,
+          "text": "리뷰 우선순위",
+          "id": "리뷰-우선순위"
+        },
+        {
+          "level": 2,
+          "text": "작성자 가이드",
+          "id": "작성자-가이드"
+        },
+        {
+          "level": 3,
+          "text": "PR 작성 시",
+          "id": "pr-작성-시"
+        },
+        {
+          "level": 3,
+          "text": "PR 크기",
+          "id": "pr-크기"
+        },
+        {
+          "level": 3,
+          "text": "Self-Review",
+          "id": "self-review"
+        },
+        {
+          "level": 2,
+          "text": "리뷰 체크리스트",
+          "id": "리뷰-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "기능",
+          "id": "기능"
+        },
+        {
+          "level": 3,
+          "text": "설계",
+          "id": "설계"
+        },
+        {
+          "level": 3,
+          "text": "가독성",
+          "id": "가독성"
+        },
+        {
+          "level": 3,
+          "text": "성능",
+          "id": "성능"
+        },
+        {
+          "level": 3,
+          "text": "보안",
+          "id": "보안"
+        },
+        {
+          "level": 3,
+          "text": "테스트",
+          "id": "테스트"
+        },
+        {
+          "level": 2,
+          "text": "피드백 받을 때",
+          "id": "피드백-받을-때"
+        },
+        {
+          "level": 3,
+          "text": "Do's",
+          "id": "dos"
+        },
+        {
+          "level": 3,
+          "text": "Don'ts",
+          "id": "donts"
+        },
+        {
+          "level": 2,
+          "text": "리뷰 문화",
+          "id": "리뷰-문화"
+        },
+        {
+          "level": 3,
+          "text": "좋은 문화",
+          "id": "좋은-문화"
+        },
+        {
+          "level": 3,
+          "text": "리뷰 시간 관리",
+          "id": "리뷰-시간-관리"
+        },
+        {
+          "level": 2,
+          "text": "🎯 상황별 리뷰 체크리스트",
+          "id": "-상황별-리뷰-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "새로운 기능",
+          "id": "새로운-기능"
+        },
+        {
+          "level": 3,
+          "text": "버그 수정",
+          "id": "버그-수정"
+        },
+        {
+          "level": 3,
+          "text": "리팩토링",
+          "id": "리팩토링"
+        },
+        {
+          "level": 3,
+          "text": "성능 개선",
+          "id": "성능-개선"
+        },
+        {
+          "level": 2,
+          "text": "리뷰 도구 활용",
+          "id": "리뷰-도구-활용"
+        },
+        {
+          "level": 3,
+          "text": "GitHub PR 코멘트",
+          "id": "github-pr-코멘트"
+        },
+        {
+          "level": 3,
+          "text": "리뷰 상태",
+          "id": "리뷰-상태"
+        },
+        {
+          "level": 2,
+          "text": "요약",
+          "id": "요약"
+        }
+      ]
+    },
+    "Utility/huskey.md": {
+      "title": "Husky",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Husky",
+          "id": "husky"
+        },
+        {
+          "level": 2,
+          "text": "Husky란?",
+          "id": "husky란"
+        },
+        {
+          "level": 2,
+          "text": "설치 및 초기화",
+          "id": "설치-및-초기화"
+        },
+        {
+          "level": 3,
+          "text": "생성되는 구조",
+          "id": "생성되는-구조"
+        },
+        {
+          "level": 2,
+          "text": "주요 Git Hooks",
+          "id": "주요-git-hooks"
+        },
+        {
+          "level": 2,
+          "text": "기본 설정",
+          "id": "기본-설정"
+        },
+        {
+          "level": 3,
+          "text": "pre-commit (커밋 전 검사)",
+          "id": "pre-commit-커밋-전-검사"
+        },
+        {
+          "level": 3,
+          "text": "lint-staged와 함께 (변경된 파일만)",
+          "id": "lint-staged와-함께-변경된-파일만"
+        },
+        {
+          "level": 3,
+          "text": "commit-msg (커밋 메시지 규칙)",
+          "id": "commit-msg-커밋-메시지-규칙"
+        },
+        {
+          "level": 3,
+          "text": "pre-push (푸시 전 테스트)",
+          "id": "pre-push-푸시-전-테스트"
+        },
+        {
+          "level": 2,
+          "text": "완전한 설정 예시",
+          "id": "완전한-설정-예시"
+        },
+        {
+          "level": 3,
+          "text": "package.json",
+          "id": "packagejson"
+        },
+        {
+          "level": 3,
+          "text": ".husky/pre-commit",
+          "id": "huskypre-commit"
+        },
+        {
+          "level": 3,
+          "text": ".husky/commit-msg",
+          "id": "huskycommit-msg"
+        },
+        {
+          "level": 3,
+          "text": ".husky/pre-push",
+          "id": "huskypre-push"
+        },
+        {
+          "level": 2,
+          "text": "Hook 건너뛰기 (긴급 시)",
+          "id": "hook-건너뛰기-긴급-시"
+        },
+        {
+          "level": 2,
+          "text": "CI 환경에서 건너뛰기",
+          "id": "ci-환경에서-건너뛰기"
+        },
+        {
+          "level": 2,
+          "text": "🎯 Husky 설정 체크리스트",
+          "id": "-husky-설정-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "초기 설정",
+          "id": "초기-설정"
+        },
+        {
+          "level": 3,
+          "text": "pre-commit",
+          "id": "pre-commit"
+        },
+        {
+          "level": 3,
+          "text": "commit-msg",
+          "id": "commit-msg"
+        },
+        {
+          "level": 3,
+          "text": "팀 협업",
+          "id": "팀-협업"
+        },
+        {
+          "level": 2,
+          "text": "트러블슈팅",
+          "id": "트러블슈팅"
+        },
+        {
+          "level": 3,
+          "text": "Hook 실행 안됨",
+          "id": "hook-실행-안됨"
+        },
+        {
+          "level": 3,
+          "text": "Windows에서 에러",
+          "id": "windows에서-에러"
+        },
+        {
+          "level": 2,
+          "text": "요약",
+          "id": "요약"
+        }
+      ]
+    },
+    "Utility/makefile.md": {
+      "title": "Makefile",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Makefile",
+          "id": "makefile"
+        },
+        {
+          "level": 2,
+          "text": "Makefile이란?",
+          "id": "makefile이란"
+        },
+        {
+          "level": 2,
+          "text": "기본 문법",
+          "id": "기본-문법"
+        },
+        {
+          "level": 3,
+          "text": "자주 쓰는 기능",
+          "id": "자주-쓰는-기능"
+        },
+        {
+          "level": 2,
+          "text": "주요 기능",
+          "id": "주요-기능"
+        },
+        {
+          "level": 2,
+          "text": "실제 활용 예시",
+          "id": "실제-활용-예시"
+        },
+        {
+          "level": 3,
+          "text": "개발 환경",
+          "id": "개발-환경"
+        },
+        {
+          "level": 3,
+          "text": "Docker/배포",
+          "id": "docker배포"
+        },
+        {
+          "level": 3,
+          "text": "데이터베이스",
+          "id": "데이터베이스"
+        },
+        {
+          "level": 2,
+          "text": "🎯 Makefile 도입 체크리스트",
+          "id": "-makefile-도입-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "도입하면 좋은 경우",
+          "id": "도입하면-좋은-경우"
+        },
+        {
+          "level": 3,
+          "text": "도입 안해도 되는 경우",
+          "id": "도입-안해도-되는-경우"
+        },
+        {
+          "level": 2,
+          "text": "Makefile vs package.json scripts",
+          "id": "makefile-vs-packagejson-scripts"
+        },
+        {
+          "level": 3,
+          "text": "권장 조합",
+          "id": "권장-조합"
+        },
+        {
+          "level": 2,
+          "text": "팁",
+          "id": "팁"
+        }
+      ]
+    },
+    "Utility/yaml.md": {
+      "title": "YAML",
+      "headings": [
+        {
+          "level": 1,
+          "text": "YAML",
+          "id": "yaml"
+        },
+        {
+          "level": 2,
+          "text": "YAML이란?",
+          "id": "yaml이란"
+        },
+        {
+          "level": 2,
+          "text": "기본 문법",
+          "id": "기본-문법"
+        },
+        {
+          "level": 3,
+          "text": "키-값",
+          "id": "키-값"
+        },
+        {
+          "level": 3,
+          "text": "문자열",
+          "id": "문자열"
+        },
+        {
+          "level": 3,
+          "text": "리스트 (배열)",
+          "id": "리스트-배열"
+        },
+        {
+          "level": 3,
+          "text": "중첩 객체",
+          "id": "중첩-객체"
+        },
+        {
+          "level": 3,
+          "text": "인라인 표기",
+          "id": "인라인-표기"
+        },
+        {
+          "level": 2,
+          "text": "고급 기능",
+          "id": "고급-기능"
+        },
+        {
+          "level": 3,
+          "text": "앵커 & 참조 (재사용)",
+          "id": "앵커-참조-재사용"
+        },
+        {
+          "level": 3,
+          "text": "환경변수",
+          "id": "환경변수"
+        },
+        {
+          "level": 3,
+          "text": "주석",
+          "id": "주석"
+        },
+        {
+          "level": 2,
+          "text": "자주 쓰는 패턴",
+          "id": "자주-쓰는-패턴"
+        },
+        {
+          "level": 3,
+          "text": "docker-compose.yml",
+          "id": "docker-composeyml"
+        },
+        {
+          "level": 3,
+          "text": "GitHub Actions",
+          "id": "github-actions"
+        },
+        {
+          "level": 3,
+          "text": "Kubernetes",
+          "id": "kubernetes"
+        },
+        {
+          "level": 2,
+          "text": "주의사항",
+          "id": "주의사항"
+        },
+        {
+          "level": 3,
+          "text": "들여쓰기",
+          "id": "들여쓰기"
+        },
+        {
+          "level": 3,
+          "text": "특수문자",
+          "id": "특수문자"
+        },
+        {
+          "level": 3,
+          "text": "타입 주의",
+          "id": "타입-주의"
+        },
+        {
+          "level": 2,
+          "text": "🎯 YAML 체크리스트",
+          "id": "-yaml-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "작성 시",
+          "id": "작성-시"
+        },
+        {
+          "level": 3,
+          "text": "검증",
+          "id": "검증"
+        },
+        {
+          "level": 2,
+          "text": "유용한 도구",
+          "id": "유용한-도구"
+        }
+      ]
+    },
+    "Version Control System/README.md": {
+      "title": "Version Control System",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Version Control System",
+          "id": "version-control-system"
+        },
+        {
+          "level": 2,
+          "text": "Git",
+          "id": "git"
+        }
+      ]
+    },
+    "Version Control System/git/cherry-pick.md": {
+      "title": "Git Cherry-pick",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Git Cherry-pick",
+          "id": "git-cherry-pick"
+        },
+        {
+          "level": 2,
+          "text": "Cherry-pick이란?",
+          "id": "cherry-pick이란"
+        },
+        {
+          "level": 2,
+          "text": "기본 사용법",
+          "id": "기본-사용법"
+        },
+        {
+          "level": 3,
+          "text": "단일 커밋 cherry-pick",
+          "id": "단일-커밋-cherry-pick"
+        },
+        {
+          "level": 3,
+          "text": "여러 커밋 cherry-pick",
+          "id": "여러-커밋-cherry-pick"
+        },
+        {
+          "level": 3,
+          "text": "옵션",
+          "id": "옵션"
+        },
+        {
+          "level": 2,
+          "text": "충돌 해결",
+          "id": "충돌-해결"
+        },
+        {
+          "level": 2,
+          "text": "실전 예시",
+          "id": "실전-예시"
+        },
+        {
+          "level": 3,
+          "text": "핫픽스 적용",
+          "id": "핫픽스-적용"
+        },
+        {
+          "level": 3,
+          "text": "잘못된 브랜치 커밋 옮기기",
+          "id": "잘못된-브랜치-커밋-옮기기"
+        },
+        {
+          "level": 3,
+          "text": "특정 기능만 가져오기",
+          "id": "특정-기능만-가져오기"
+        },
+        {
+          "level": 2,
+          "text": "커밋 해시 찾기",
+          "id": "커밋-해시-찾기"
+        },
+        {
+          "level": 2,
+          "text": "cherry-pick vs 다른 방법",
+          "id": "cherry-pick-vs-다른-방법"
+        },
+        {
+          "level": 2,
+          "text": "🎯 Cherry-pick 체크리스트",
+          "id": "-cherry-pick-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "사용 전",
+          "id": "사용-전"
+        },
+        {
+          "level": 3,
+          "text": "적용 후",
+          "id": "적용-후"
+        },
+        {
+          "level": 3,
+          "text": "팀 협업",
+          "id": "팀-협업"
+        },
+        {
+          "level": 2,
+          "text": "주의사항",
+          "id": "주의사항"
+        },
+        {
+          "level": 2,
+          "text": "고급: 범위 지정",
+          "id": "고급-범위-지정"
+        },
+        {
+          "level": 2,
+          "text": "요약",
+          "id": "요약"
+        }
+      ]
+    },
+    "Version Control System/git/public-key.md": {
+      "title": "Git Public Key - 다중 SSH 키 설정 가이드",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Git Public Key - 다중 SSH 키 설정 가이드",
+          "id": "git-public-key---다중-ssh-키-설정-가이드"
+        },
+        {
+          "level": 2,
+          "text": "1. SSH 키 생성 (RSA)",
+          "id": "1-ssh-키-생성-rsa"
+        },
+        {
+          "level": 2,
+          "text": "2. GitHub에 Public Key 등록",
+          "id": "2-github에-public-key-등록"
+        },
+        {
+          "level": 2,
+          "text": "3. SSH Config 설정",
+          "id": "3-ssh-config-설정"
+        },
+        {
+          "level": 3,
+          "text": "SSH 연결 테스트",
+          "id": "ssh-연결-테스트"
+        },
+        {
+          "level": 2,
+          "text": "4. Git Repository 설정",
+          "id": "4-git-repository-설정"
+        },
+        {
+          "level": 3,
+          "text": "방법 1: Clone 시 호스트 별칭 사용",
+          "id": "방법-1-clone-시-호스트-별칭-사용"
+        },
+        {
+          "level": 3,
+          "text": "방법 2: 기존 저장소 remote URL 변경",
+          "id": "방법-2-기존-저장소-remote-url-변경"
+        },
+        {
+          "level": 2,
+          "text": "5. Git Config 설정",
+          "id": "5-git-config-설정"
+        },
+        {
+          "level": 3,
+          "text": "저장소별 사용자 정보 설정 (권장)",
+          "id": "저장소별-사용자-정보-설정-권장"
+        },
+        {
+          "level": 3,
+          "text": "디렉토리 기반 자동 설정 (고급)",
+          "id": "디렉토리-기반-자동-설정-고급"
+        },
+        {
+          "level": 2,
+          "text": "6. SSH Agent에 키 등록 (선택)",
+          "id": "6-ssh-agent에-키-등록-선택"
+        },
+        {
+          "level": 3,
+          "text": "Windows에서 ssh-agent 자동 시작",
+          "id": "windows에서-ssh-agent-자동-시작"
+        },
+        {
+          "level": 2,
+          "text": "7. 문제 해결",
+          "id": "7-문제-해결"
+        },
+        {
+          "level": 3,
+          "text": "잘못된 키가 사용되는 경우",
+          "id": "잘못된-키가-사용되는-경우"
+        },
+        {
+          "level": 3,
+          "text": "Permission denied 오류",
+          "id": "permission-denied-오류"
+        },
+        {
+          "level": 3,
+          "text": "현재 설정 확인",
+          "id": "현재-설정-확인"
+        },
+        {
+          "level": 2,
+          "text": "요약",
+          "id": "요약"
+        }
+      ]
+    },
+    "Version Control System/git/rebase.md": {
+      "title": "Git Rebase",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Git Rebase",
+          "id": "git-rebase"
+        },
+        {
+          "level": 2,
+          "text": "Rebase란?",
+          "id": "rebase란"
+        },
+        {
+          "level": 2,
+          "text": "기본 사용법",
+          "id": "기본-사용법"
+        },
+        {
+          "level": 3,
+          "text": "브랜치 rebase",
+          "id": "브랜치-rebase"
+        },
+        {
+          "level": 3,
+          "text": "rebase 후 push",
+          "id": "rebase-후-push"
+        },
+        {
+          "level": 2,
+          "text": "Interactive Rebase (강력한 기능)",
+          "id": "interactive-rebase-강력한-기능"
+        },
+        {
+          "level": 3,
+          "text": "에디터에서 선택",
+          "id": "에디터에서-선택"
+        },
+        {
+          "level": 3,
+          "text": "자주 쓰는 패턴",
+          "id": "자주-쓰는-패턴"
+        },
+        {
+          "level": 4,
+          "text": "커밋 합치기 (squash)",
+          "id": "커밋-합치기-squash"
+        },
+        {
+          "level": 4,
+          "text": "커밋 메시지 수정",
+          "id": "커밋-메시지-수정"
+        },
+        {
+          "level": 4,
+          "text": "커밋 순서 변경",
+          "id": "커밋-순서-변경"
+        },
+        {
+          "level": 2,
+          "text": "Rebase 충돌 해결",
+          "id": "rebase-충돌-해결"
+        },
+        {
+          "level": 2,
+          "text": "실전 워크플로우",
+          "id": "실전-워크플로우"
+        },
+        {
+          "level": 3,
+          "text": "PR 전 커밋 정리",
+          "id": "pr-전-커밋-정리"
+        },
+        {
+          "level": 3,
+          "text": "main에서 최신 코드 가져오기",
+          "id": "main에서-최신-코드-가져오기"
+        },
+        {
+          "level": 2,
+          "text": "Rebase vs Merge",
+          "id": "rebase-vs-merge"
+        },
+        {
+          "level": 3,
+          "text": "언제 사용?",
+          "id": "언제-사용"
+        },
+        {
+          "level": 2,
+          "text": "🎯 Rebase 체크리스트",
+          "id": "-rebase-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "사용 전",
+          "id": "사용-전"
+        },
+        {
+          "level": 3,
+          "text": "Interactive Rebase",
+          "id": "interactive-rebase"
+        },
+        {
+          "level": 3,
+          "text": "Push",
+          "id": "push"
+        },
+        {
+          "level": 2,
+          "text": "주의사항",
+          "id": "주의사항"
+        },
+        {
+          "level": 2,
+          "text": "요약",
+          "id": "요약"
+        }
+      ]
+    },
+    "Version Control System/git/submodules.md": {
+      "title": "Git Submodules",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Git Submodules",
+          "id": "git-submodules"
+        },
+        {
+          "level": 2,
+          "text": "Submodule이란?",
+          "id": "submodule이란"
+        },
+        {
+          "level": 2,
+          "text": "기본 명령어",
+          "id": "기본-명령어"
+        },
+        {
+          "level": 3,
+          "text": "서브모듈 추가",
+          "id": "서브모듈-추가"
+        },
+        {
+          "level": 3,
+          "text": "서브모듈 포함 저장소 클론",
+          "id": "서브모듈-포함-저장소-클론"
+        },
+        {
+          "level": 3,
+          "text": "서브모듈 업데이트",
+          "id": "서브모듈-업데이트"
+        },
+        {
+          "level": 3,
+          "text": "서브모듈 삭제",
+          "id": "서브모듈-삭제"
+        },
+        {
+          "level": 2,
+          "text": ".gitmodules 파일",
+          "id": "gitmodules-파일"
+        },
+        {
+          "level": 2,
+          "text": "서브모듈 작업 흐름",
+          "id": "서브모듈-작업-흐름"
+        },
+        {
+          "level": 3,
+          "text": "서브모듈 내부에서 작업",
+          "id": "서브모듈-내부에서-작업"
+        },
+        {
+          "level": 3,
+          "text": "서브모듈 변경사항 확인",
+          "id": "서브모듈-변경사항-확인"
+        },
+        {
+          "level": 2,
+          "text": "유용한 설정",
+          "id": "유용한-설정"
+        },
+        {
+          "level": 2,
+          "text": "자주 쓰는 명령어",
+          "id": "자주-쓰는-명령어"
+        },
+        {
+          "level": 2,
+          "text": "🎯 Submodule 체크리스트",
+          "id": "-submodule-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "추가 시",
+          "id": "추가-시"
+        },
+        {
+          "level": 3,
+          "text": "클론/협업",
+          "id": "클론협업"
+        },
+        {
+          "level": 3,
+          "text": "업데이트",
+          "id": "업데이트"
+        },
+        {
+          "level": 2,
+          "text": "주의사항",
+          "id": "주의사항"
+        },
+        {
+          "level": 2,
+          "text": "Submodule vs Subtree vs npm",
+          "id": "submodule-vs-subtree-vs-npm"
+        }
+      ]
+    },
+    "Version Control System/git/tips.md": {
+      "title": "Git 생산성 향상 팁",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Git 생산성 향상 팁",
+          "id": "git-생산성-향상-팁"
+        },
+        {
+          "level": 2,
+          "text": "1. git rebase -i: 커밋 내역 정리",
+          "id": "1-git-rebase--i-커밋-내역-정리"
+        },
+        {
+          "level": 2,
+          "text": "2. git reflog: HEAD 이동 추적",
+          "id": "2-git-reflog-head-이동-추적"
+        },
+        {
+          "level": 2,
+          "text": "3. git worktree: 브랜치 전환 없이 동시 작업",
+          "id": "3-git-worktree-브랜치-전환-없이-동시-작업"
+        },
+        {
+          "level": 2,
+          "text": "4. git bisect: 버그 커밋 자동 탐색",
+          "id": "4-git-bisect-버그-커밋-자동-탐색"
+        },
+        {
+          "level": 3,
+          "text": "자동화 (테스트 스크립트 사용)",
+          "id": "자동화-테스트-스크립트-사용"
+        },
+        {
+          "level": 2,
+          "text": "5. git format-patch & git am: 패치 파일 생성/적용",
+          "id": "5-git-format-patch-git-am-패치-파일-생성적용"
+        },
+        {
+          "level": 2,
+          "text": "6. git bundle: 저장소 전체 백업",
+          "id": "6-git-bundle-저장소-전체-백업"
+        },
+        {
+          "level": 2,
+          "text": "7. git archive: 소스 코드 압축 배포",
+          "id": "7-git-archive-소스-코드-압축-배포"
+        },
+        {
+          "level": 2,
+          "text": "8. git commit --amend: 마지막 커밋 수정",
+          "id": "8-git-commit---amend-마지막-커밋-수정"
+        },
+        {
+          "level": 2,
+          "text": "9. git clean: 추적되지 않는 파일 삭제",
+          "id": "9-git-clean-추적되지-않는-파일-삭제"
+        },
+        {
+          "level": 2,
+          "text": "10. 유용한 조합 & 팁",
+          "id": "10-유용한-조합-팁"
+        },
+        {
+          "level": 3,
+          "text": "실수 복구 패턴",
+          "id": "실수-복구-패턴"
+        },
+        {
+          "level": 3,
+          "text": "커밋 정리 후 push",
+          "id": "커밋-정리-후-push"
+        },
+        {
+          "level": 3,
+          "text": "빠른 stash",
+          "id": "빠른-stash"
+        },
+        {
+          "level": 2,
+          "text": "🎯 Quick Reference",
+          "id": "-quick-reference"
+        },
+        {
+          "level": 2,
+          "text": "참고",
+          "id": "참고"
+        }
+      ]
+    }
+  }
+}

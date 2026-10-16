@@ -1,0 +1,14 @@
+{
+  "name": "pocket-tips",
+  "private": true,
+  "description": "Markdown static viewer for the Pocket Tips docs",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-manifest.mjs docs manifest.json",
+    "serve": "node scripts/serve.mjs",
+    "dev": "npm run build && npm run serve",
+    "check-links": "node scripts/check-links.mjs docs",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=20" }
+}

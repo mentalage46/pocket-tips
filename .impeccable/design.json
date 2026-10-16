@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-16T05:40:00Z",
+  "title": "Design System: Pocket Tips",
+  "extensions": {
+    "colorMeta": {
+      "ink-blue": { "role": "primary", "displayName": "잉크 블루 (Ink Blue)", "canonical": "#0969da", "tonalRamp": ["oklch(22% 0.09 255)", "oklch(32% 0.13 255)", "oklch(42% 0.16 255)", "oklch(52% 0.18 255)", "oklch(62% 0.16 255)", "oklch(74% 0.11 255)", "oklch(86% 0.06 255)", "oklch(95% 0.02 255)"] },
+      "ink-blue-dark": { "role": "primary", "displayName": "잉크 블루 · 다크", "canonical": "#4493f8", "tonalRamp": ["oklch(22% 0.09 255)", "oklch(32% 0.13 255)", "oklch(42% 0.16 255)", "oklch(52% 0.18 255)", "oklch(64% 0.16 255)", "oklch(74% 0.11 255)", "oklch(86% 0.06 255)", "oklch(95% 0.02 255)"] },
+      "ink-wash": { "role": "primary", "displayName": "잉크 번짐 (Ink Wash)", "canonical": "#ddf4ff", "tonalRamp": ["oklch(25% 0.06 235)", "oklch(40% 0.08 235)", "oklch(55% 0.09 235)", "oklch(68% 0.08 235)", "oklch(80% 0.06 235)", "oklch(88% 0.045 235)", "oklch(94% 0.03 235)", "oklch(97% 0.015 235)"] },
+      "ink-wash-dark": { "role": "primary", "displayName": "잉크 번짐 · 다크", "canonical": "#122a45", "tonalRamp": ["oklch(18% 0.04 250)", "oklch(26% 0.06 250)", "oklch(36% 0.08 250)", "oklch(48% 0.09 250)", "oklch(60% 0.08 250)", "oklch(74% 0.06 250)", "oklch(86% 0.04 250)", "oklch(95% 0.015 250)"] },
+      "paper": { "role": "neutral", "displayName": "종이 (Paper)", "canonical": "#ffffff", "tonalRamp": ["oklch(16% 0.01 250)", "oklch(28% 0.01 250)", "oklch(42% 0.01 250)", "oklch(56% 0.01 250)", "oklch(70% 0.008 250)", "oklch(84% 0.006 250)", "oklch(94% 0.004 250)", "oklch(100% 0 0)"] },
+      "paper-soft": { "role": "neutral", "displayName": "연한 종이 (Paper Soft)", "canonical": "#f6f8fa", "tonalRamp": ["oklch(16% 0.01 250)", "oklch(28% 0.01 250)", "oklch(42% 0.01 250)", "oklch(56% 0.01 250)", "oklch(70% 0.008 250)", "oklch(84% 0.006 250)", "oklch(92% 0.005 250)", "oklch(97.5% 0.004 250)"] },
+      "paper-dark": { "role": "neutral", "displayName": "종이 · 다크", "canonical": "#0d1117", "tonalRamp": ["oklch(16% 0.015 260)", "oklch(22% 0.015 260)", "oklch(30% 0.015 260)", "oklch(42% 0.012 260)", "oklch(56% 0.01 260)", "oklch(70% 0.008 260)", "oklch(84% 0.006 260)", "oklch(95% 0.004 260)"] },
+      "paper-soft-dark": { "role": "neutral", "displayName": "연한 종이 · 다크", "canonical": "#161b22", "tonalRamp": ["oklch(16% 0.015 260)", "oklch(22% 0.015 260)", "oklch(30% 0.015 260)", "oklch(42% 0.012 260)", "oklch(56% 0.01 260)", "oklch(70% 0.008 260)", "oklch(84% 0.006 260)", "oklch(95% 0.004 260)"] },
+      "pencil": { "role": "neutral", "displayName": "연필 (Pencil)", "canonical": "#1f2328", "tonalRamp": ["oklch(16% 0.008 250)", "oklch(24% 0.008 250)", "oklch(34% 0.008 250)", "oklch(46% 0.008 250)", "oklch(58% 0.008 250)", "oklch(72% 0.006 250)", "oklch(86% 0.004 250)", "oklch(95% 0.002 250)"] },
+      "pencil-light": { "role": "neutral", "displayName": "옅은 연필 (Pencil Light)", "canonical": "#59636e", "tonalRamp": ["oklch(16% 0.008 250)", "oklch(26% 0.01 250)", "oklch(36% 0.012 250)", "oklch(48% 0.014 250)", "oklch(60% 0.012 250)", "oklch(72% 0.01 250)", "oklch(86% 0.006 250)", "oklch(95% 0.003 250)"] },
+      "pencil-dark": { "role": "neutral", "displayName": "연필 · 다크", "canonical": "#e6edf3", "tonalRamp": ["oklch(16% 0.008 250)", "oklch(28% 0.008 250)", "oklch(42% 0.008 250)", "oklch(56% 0.008 250)", "oklch(70% 0.008 250)", "oklch(84% 0.006 250)", "oklch(94% 0.005 250)", "oklch(98% 0.003 250)"] },
+      "pencil-light-dark": { "role": "neutral", "displayName": "옅은 연필 · 다크", "canonical": "#9198a1", "tonalRamp": ["oklch(16% 0.008 250)", "oklch(28% 0.01 250)", "oklch(40% 0.012 250)", "oklch(52% 0.012 250)", "oklch(66% 0.01 250)", "oklch(78% 0.008 250)", "oklch(88% 0.005 250)", "oklch(95% 0.003 250)"] },
+      "rule-line": { "role": "neutral", "displayName": "괘선 (Rule Line)", "canonical": "#d1d9e0", "tonalRamp": ["oklch(16% 0.01 240)", "oklch(28% 0.012 240)", "oklch(42% 0.014 240)", "oklch(56% 0.014 240)", "oklch(70% 0.012 240)", "oklch(80% 0.01 240)", "oklch(88% 0.008 240)", "oklch(95% 0.004 240)"] },
+      "rule-line-dark": { "role": "neutral", "displayName": "괘선 · 다크", "canonical": "#30363d", "tonalRamp": ["oklch(16% 0.01 250)", "oklch(24% 0.01 250)", "oklch(32% 0.01 250)", "oklch(44% 0.01 250)", "oklch(56% 0.01 250)", "oklch(70% 0.008 250)", "oklch(84% 0.006 250)", "oklch(95% 0.003 250)"] },
+      "highlighter": { "role": "tertiary", "displayName": "형광펜 (Highlighter)", "canonical": "#fff8c5", "tonalRamp": ["oklch(25% 0.06 95)", "oklch(40% 0.09 95)", "oklch(55% 0.12 95)", "oklch(70% 0.13 95)", "oklch(82% 0.12 95)", "oklch(90% 0.09 95)", "oklch(95% 0.06 95)", "oklch(98% 0.03 95)"] },
+      "highlighter-dark": { "role": "tertiary", "displayName": "형광펜 · 다크", "canonical": "#3a2f00", "tonalRamp": ["oklch(20% 0.05 95)", "oklch(30% 0.07 95)", "oklch(42% 0.09 95)", "oklch(55% 0.11 95)", "oklch(68% 0.12 95)", "oklch(80% 0.11 95)", "oklch(90% 0.08 95)", "oklch(96% 0.04 95)"] },
+      "red-pen": { "role": "error", "displayName": "빨간 펜 (Red Pen)", "canonical": "#d1242f", "tonalRamp": ["oklch(22% 0.09 25)", "oklch(32% 0.13 25)", "oklch(44% 0.17 25)", "oklch(55% 0.20 25)", "oklch(65% 0.17 25)", "oklch(76% 0.12 25)", "oklch(87% 0.06 25)", "oklch(95% 0.02 25)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "문서 제목 h1. 아래 괘선. 모바일 1.6em." },
+      "headline": { "displayName": "Headline", "purpose": "섹션 제목 h2. 아래 괘선. 모바일 1.3em." },
+      "title": { "displayName": "Title", "purpose": "소제목 h3(1.25em)·h4(1.05em). 밑줄 없음." },
+      "body": { "displayName": "Body", "purpose": "본문. 최대 860px 폭." },
+      "nav": { "displayName": "Nav", "purpose": "사이드바 트리. 폴더와 현재 문서는 600." },
+      "label": { "displayName": "Label", "purpose": "'이 페이지' 같은 구역 이름. 대문자, 자간 0.06em. 유일하게 자간을 벌리는 자리." },
+      "code": { "displayName": "Code", "purpose": "인라인 코드와 코드 블록. 블록 안에서는 0.85em." }
+    },
+    "shadows": [
+      { "name": "drawer", "value": "0 8px 24px rgba(31, 35, 40, .12)", "purpose": "900px 이하 모바일 드로어가 열렸을 때만. 시스템의 유일한 그림자. 다크: 0 8px 24px rgba(0, 0, 0, .5)." }
+    ],
+    "motion": [
+      { "name": "drawer-slide", "value": "transform .2s ease", "purpose": "모바일 사이드바 드로어 열고 닫기." },
+      { "name": "chevron-turn", "value": "transform .15s ease", "purpose": "트리 토글 셰브론 90도 회전." },
+      { "name": "reveal", "value": "opacity .15s", "purpose": "코드 블록 복사 버튼이 hover에서 나타남." },
+      { "name": "anchor-flash", "value": "flash 1.6s ease-out (background: highlighter → transparent)", "purpose": "앵커로 이동한 헤딩 강조." },
+      { "name": "reduced-motion", "value": "transition: none", "purpose": "prefers-reduced-motion에서 드로어·셰브론 전환 제거." }
+    ],
+    "breakpoints": [
+      { "name": "toc-hidden", "value": "1200px", "purpose": "이하에서 오른쪽 페이지 목차 숨김, 2단." },
+      { "name": "mobile", "value": "900px", "purpose": "이하에서 사이드바가 드로어로 바뀌고 메뉴 버튼 표시, 1단." }
+    ],
+    "layout": {
+      "topbarHeight": "56px",
+      "sidebarWidth": "290px",
+      "tocWidth": "230px",
+      "contentMaxWidth": "860px",
+      "contentPadding": "24px 40px 80px",
+      "treeRowHeight": "30px",
+      "treeIndent": "14px"
+    }
+  },
+  "components": [
+    {
+      "name": "Icon Button",
+      "kind": "button",
+      "refersTo": "icon-button",
+      "description": "상단 바의 메뉴·테마 버튼. 기본은 투명, hover에서 연한 종이 배경과 괘선이 드러남.",
+      "html": "<button class=\"ds-icon-btn\" aria-label=\"테마 전환\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4\"/></svg></button>",
+      "css": ".ds-icon-btn { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border: 1px solid transparent; border-radius: 8px; background: transparent; cursor: pointer; color: var(--fg-muted, #59636e); } .ds-icon-btn:hover { background: var(--bg-soft, #f6f8fa); color: var(--fg, #1f2328); border-color: var(--border, #d1d9e0); } .ds-icon-btn:focus-visible { outline: 2px solid var(--accent, #0969da); outline-offset: -1px; }"
+    },
+    {
+      "name": "Search Input",
+      "kind": "input",
+      "refersTo": "search-input",
+      "description": "상단 바 검색창. 연한 종이 바탕에 돋보기, 포커스에서 흰 종이와 잉크 블루 아웃라인.",
+      "html": "<div class=\"ds-search\"><svg class=\"ds-search-icon\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-3.5-3.5\"/></svg><input class=\"ds-search-input\" type=\"search\" placeholder=\"문서 검색  ( / )\" aria-label=\"문서 검색\"></div>",
+      "css": ".ds-search { position: relative; width: 320px; max-width: 100%; } .ds-search-icon { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: var(--fg-muted, #59636e); pointer-events: none; } .ds-search-input { width: 100%; height: 36px; padding: 0 12px 0 32px; border-radius: 8px; border: 1px solid var(--border, #d1d9e0); background: var(--bg-soft, #f6f8fa); color: var(--fg, #1f2328); font: inherit; font-size: 14px; } .ds-search-input:focus { outline: 2px solid var(--accent, #0969da); outline-offset: -1px; background: var(--bg, #ffffff); }"
+    },
+    {
+      "name": "Tree Rows",
+      "kind": "nav",
+      "refersTo": "tree-row",
+      "description": "사이드바 문서 트리. 폴더(토글+600 이름+문서 수), 파일, 현재 문서(잉크 번짐 배경)와 하위 그룹 괘선.",
+      "html": "<ul class=\"ds-tree\"><li class=\"ds-tree-dir\"><div class=\"ds-tree-row\"><button class=\"ds-tree-toggle\" aria-expanded=\"true\" aria-label=\"펼치기/접기\"><svg width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m9 6 6 6-6 6\"/></svg></button><a class=\"ds-tree-label ds-tree-dirname\" href=\"#\">Hardware</a><span class=\"ds-tree-count\">28</span></div><ul class=\"ds-tree\"><li><div class=\"ds-tree-row ds-tree-active\"><span class=\"ds-tree-spacer\"></span><a class=\"ds-tree-label\" href=\"#\">GPIO</a></div></li><li><div class=\"ds-tree-row\"><span class=\"ds-tree-spacer\"></span><a class=\"ds-tree-label\" href=\"#\">I2C</a></div></li><li><div class=\"ds-tree-row\"><span class=\"ds-tree-spacer\"></span><a class=\"ds-tree-label\" href=\"#\">SPI</a></div></li></ul></li></ul>",
+      "css": ".ds-tree { list-style: none; margin: 0; padding: 0; font-size: 14px; width: 260px; } .ds-tree .ds-tree { padding-left: 14px; margin-left: 9px; border-left: 1px solid var(--border, #d1d9e0); } .ds-tree-row { display: flex; align-items: center; gap: 2px; border-radius: 6px; min-height: 30px; } .ds-tree-row:hover { background: var(--bg-soft, #f6f8fa); } .ds-tree-active { background: var(--accent-soft, #ddf4ff); } .ds-tree-active > .ds-tree-label { color: var(--accent, #0969da); font-weight: 600; } .ds-tree-toggle { flex: none; width: 22px; height: 22px; border: 0; background: transparent; border-radius: 4px; cursor: pointer; color: var(--fg-muted, #59636e); display: inline-flex; align-items: center; justify-content: center; margin-left: 2px; } .ds-tree-toggle svg { transition: transform .15s ease; } .ds-tree-toggle[aria-expanded=\"true\"] svg { transform: rotate(90deg); } .ds-tree-spacer { flex: none; width: 24px; } .ds-tree-label { flex: 1; min-width: 0; padding: 4px 8px 4px 2px; color: var(--fg, #1f2328); text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } .ds-tree-dirname { font-weight: 600; } .ds-tree-count { color: var(--fg-muted, #59636e); font-size: 11px; margin-right: 8px; }"
+    },
+    {
+      "name": "Breadcrumb",
+      "kind": "nav",
+      "refersTo": "",
+      "description": "현재 위치. 상위 경로는 잉크 블루, 구분자는 반투명, 현재 문서는 연필색.",
+      "html": "<nav class=\"ds-crumb\" aria-label=\"현재 위치\"><a href=\"#\">홈</a><span class=\"ds-crumb-sep\">/</span><a href=\"#\">Hardware</a><span class=\"ds-crumb-sep\">/</span><a href=\"#\">glossary</a><span class=\"ds-crumb-sep\">/</span><span class=\"ds-crumb-current\">전기·전자 용어</span></nav>",
+      "css": ".ds-crumb { font-size: 13px; color: var(--fg-muted, #59636e); display: flex; flex-wrap: wrap; align-items: center; gap: 4px; } .ds-crumb a { color: var(--accent, #0969da); text-decoration: none; } .ds-crumb a:hover { text-decoration: underline; } .ds-crumb-sep { opacity: .5; } .ds-crumb-current { color: var(--fg, #1f2328); }"
+    },
+    {
+      "name": "Page TOC",
+      "kind": "nav",
+      "refersTo": "",
+      "description": "오른쪽 '이 페이지' 목차. 왼쪽 괘선, 현재 섹션은 잉크 블루 글자와 2px 선.",
+      "html": "<aside class=\"ds-toc\"><h4>이 페이지</h4><ul><li><a href=\"#\">배선과 풀업</a></li><li><a class=\"ds-toc-active\" href=\"#\">주소와 ACK</a></li><li class=\"ds-toc-d3\"><a href=\"#\">레지스터 읽기</a></li><li><a href=\"#\">자주 겪는 문제</a></li></ul></aside>",
+      "css": ".ds-toc { font-size: 13px; width: 200px; } .ds-toc h4 { margin: 0 0 8px; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--fg-muted, #59636e); font-weight: 400; } .ds-toc ul { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--border, #d1d9e0); } .ds-toc a { display: block; padding: 3px 0 3px 12px; color: var(--fg-muted, #59636e); text-decoration: none; border-left: 2px solid transparent; margin-left: -1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .ds-toc-d3 a { padding-left: 24px; } .ds-toc a:hover { color: var(--fg, #1f2328); } .ds-toc-active { color: var(--accent, #0969da) !important; border-left-color: var(--accent, #0969da) !important; }"
+    },
+    {
+      "name": "Code Block",
+      "kind": "card",
+      "refersTo": "code-block",
+      "description": "연한 종이 배경과 괘선 테두리의 코드 블록. hover에서 복사 버튼이 나타남.",
+      "html": "<pre class=\"ds-pre\"><code>git rebase -i HEAD~3\n# 최근 3개 커밋 정리</code><button class=\"ds-copy\" type=\"button\">복사</button></pre>",
+      "css": ".ds-pre { position: relative; margin: 0; background: var(--code-bg, #f6f8fa); border: 1px solid var(--border, #d1d9e0); border-radius: 8px; padding: 14px 16px; overflow: auto; line-height: 1.5; font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; font-size: 13.6px; color: var(--fg, #1f2328); } .ds-copy { position: absolute; top: 8px; right: 8px; padding: 2px 8px; font: inherit; font-family: inherit; font-size: 12px; border-radius: 6px; cursor: pointer; border: 1px solid var(--border, #d1d9e0); background: var(--bg-raised, #ffffff); color: var(--fg-muted, #59636e); opacity: 0; transition: opacity .15s; } .ds-pre:hover .ds-copy, .ds-copy:focus-visible { opacity: 1; }"
+    },
+    {
+      "name": "Links",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "본문 링크 세 가지: 내부(잉크 블루), 외부(↗ 표시, 새 탭), 깨진 링크(빨간 펜 점선 취소선).",
+      "html": "<p class=\"ds-links\"><a href=\"#\">내부 문서 링크</a> · <a class=\"ds-external\" href=\"#\">외부 링크</a> · <a class=\"ds-missing\" title=\"문서를 찾을 수 없습니다\">깨진 링크</a> · <code class=\"ds-code\">inline code</code></p>",
+      "css": ".ds-links { font-size: 16px; line-height: 1.6; color: var(--fg, #1f2328); margin: 0; } .ds-links a { color: var(--accent, #0969da); text-decoration: none; } .ds-links a:hover { text-decoration: underline; } .ds-external::after { content: '↗'; font-size: .75em; margin-left: .2em; opacity: .7; } .ds-missing { color: #d1242f !important; text-decoration: line-through dotted !important; cursor: help; } .ds-code { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; font-size: .875em; background: var(--code-bg, #f6f8fa); padding: .15em .4em; border-radius: 6px; }"
+    },
+    {
+      "name": "Search Result",
+      "kind": "chip",
+      "refersTo": "",
+      "description": "트리 자리에 나타나는 검색 결과 항목. 제목·경로·일치 헤딩, 일치 글자는 형광펜.",
+      "html": "<div class=\"ds-results\"><div class=\"ds-results-summary\">4개 문서</div><a class=\"ds-hit\" href=\"#\"><div class=\"ds-hit-t\"><mark>I2C</mark></div><div class=\"ds-hit-p\">Hardware/interfaces/i2c.md</div></a><a class=\"ds-hit\" href=\"#\"><div class=\"ds-hit-t\">통신 용어</div><div class=\"ds-hit-p\">Hardware/glossary/communication.md</div><div class=\"ds-hit-h\"><mark>I2C</mark></div></a></div>",
+      "css": ".ds-results { width: 260px; font-size: 14px; padding: 4px; } .ds-results-summary { padding: 6px 8px; color: var(--fg-muted, #59636e); font-size: 12px; } .ds-hit { display: block; padding: 6px 8px; border-radius: 6px; color: var(--fg, #1f2328); text-decoration: none; } .ds-hit:hover, .ds-hit:focus-visible { background: var(--bg-soft, #f6f8fa); } .ds-hit-t { font-weight: 600; } .ds-hit-p { font-size: 12px; color: var(--fg-muted, #59636e); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } .ds-hit-h { font-size: 12px; color: var(--fg-muted, #59636e); padding-left: 10px; } .ds-hit-h::before { content: '# '; } .ds-results mark { background: var(--mark, #fff8c5); color: inherit; border-radius: 2px; padding: 0 1px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "포켓 수첩 (The Pocket Notebook)",
+    "overview": "주머니에서 꺼내 바로 펼치는 개인 수첩입니다. 화면은 종이 한 장이고, 글자는 연필과 잉크입니다. 뷰어의 인터페이스는 수첩의 여백과 탭 색인처럼 본문 곁에 조용히 머물고, 읽는 사람의 시선은 언제나 본문에 있습니다. 분위기는 조용하고 집중된 쪽입니다. 장식으로 눈길을 끌지 않고, 1px 경계선과 배경 톤 차이만으로 영역을 나누며, 색은 \"여기가 링크다\", \"지금 여기를 읽고 있다\"를 알리는 잉크 블루 한 가지만 씁니다.\n\n밀도는 참고 자료에 맞게 촘촘합니다. 사이드바 트리는 30px 행 높이로 95개 문서를 스크롤 한두 번 안에 담고, 본문은 860px 폭에서 16px/1.6 행간으로 한글 표와 코드 블록을 편하게 읽을 수 있게 둡니다. 라이트와 다크는 같은 구조에 종이 색만 바뀐 두 벌의 수첩이며, 다크에서도 그림자를 쓰지 않고 경계선 색으로만 깊이를 표현합니다.\n\nGitHub의 Markdown 렌더링과 눈에 익은 비율을 공유하지만, 그것을 복제하는 것이 목표는 아닙니다. 문서가 GitHub에서 읽히던 모습과 어긋나지 않으면서, 트리·목차·검색이 수첩의 색인 탭처럼 붙어 있는 것이 이 시스템의 정체성입니다.",
+    "keyCharacteristics": [
+      "종이 위 연필과 잉크: 흰 종이 배경, 짙은 회색 글자, 잉크 블루 한 가지 강조색",
+      "경계선 기반 평면: 그림자 없음, 1px 선과 톤 차이로만 구분 (예외는 모바일 드로어 하나)",
+      "참고 자료 밀도: 좁은 행 높이, 넓지 않은 여백, 긴 표와 코드 블록 우선",
+      "시스템 서체: 플랫폼 기본 산세리프와 Noto Sans KR, 코드는 시스템 모노스페이스",
+      "인터페이스는 hover에서만 드러남: 복사 버튼, 헤딩 앵커, 행 배경이 손을 올렸을 때만 나타남"
+    ],
+    "rules": [
+      { "name": "The One Ink Rule", "body": "강조색은 잉크 블루 하나입니다. 화면 어디서든 파란 것은 \"누르면 이동한다\" 또는 \"지금 여기\"를 뜻하고, 그 두 의미 외에는 파란색을 쓰지 않습니다.", "section": "colors" },
+      { "name": "The Paper Tone Rule", "body": "면의 구분은 종이와 연한 종이, 두 톤으로만 합니다. 세 번째 회색 면을 만들지 말고, 더 구분이 필요하면 괘선을 긋습니다.", "section": "colors" },
+      { "name": "The Heading Rule-Line Rule", "body": "h1과 h2에만 밑줄을 긋습니다. h3 이하는 크기와 굵기로만 구분하며, 밑줄로 위계를 흉내 내지 않습니다.", "section": "typography" },
+      { "name": "The System Font Rule", "body": "웹폰트를 추가하지 않습니다. 가독성이 부족하면 크기·행간·여백으로 해결합니다.", "section": "typography" },
+      { "name": "The Flat Paper Rule", "body": "종이 위에 놓인 것은 종이와 같은 높이에 있습니다. 그림자는 종이를 떠난 드로어에만 허용되고, 카드·버튼·입력창·팝오버에는 쓰지 않습니다.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do 색은 잉크 블루 한 가지로 \"이동\"과 \"현재 위치\"만 표시한다 (The One Ink Rule).",
+      "Do 면 구분은 종이·연한 종이 두 톤과 1px 괘선으로만 한다 (The Paper Tone Rule).",
+      "Do 조작 요소는 hover·focus에서만 드러나게 하고, 기본 상태는 본문과 같은 종이 위에 조용히 둔다.",
+      "Do 간격은 4px 배수를 지키고, 트리 행 30px, 상단 바 56px, 사이드바 290px, 본문 최대 860px을 유지한다.",
+      "Do 라이트와 다크를 같은 토큰 이름으로 짝지어 두고, 다크에서도 그림자 대신 괘선 색을 바꾼다.",
+      "Do 한글 헤딩·긴 표·코드 블록이 흔하므로 표는 가로 스크롤 래퍼에, 코드는 복사 버튼과 함께 둔다."
+    ],
+    "donts": [
+      "Don't 카드·버튼·입력창·팝오버에 그림자를 쓰지 않는다. 그림자는 모바일 드로어뿐이다 (The Flat Paper Rule).",
+      "Don't 웹폰트를 추가하지 않는다. 시스템 서체 스택만 쓴다 (The System Font Rule).",
+      "Don't h3 이하 헤딩에 밑줄을 긋지 않는다 (The Heading Rule-Line Rule).",
+      "Don't 두 번째 강조색이나 그라데이션, 장식용 아이콘을 더하지 않는다. 빨간 펜은 깨진 링크에만 쓴다.",
+      "Don't 원형·알약 모서리를 쓰지 않는다. 모서리는 4·6·8px 중 하나다.",
+      "Don't 본문 위에 떠 있는 토스트, 배너, 고정 CTA를 두지 않는다. 읽는 흐름을 가로막는 요소는 이 시스템에 없다."
+    ]
+  }
+}
