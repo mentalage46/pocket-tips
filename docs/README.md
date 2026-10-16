@@ -9,6 +9,7 @@
 | 폴더                                                    | 설명                                               |
 | ------------------------------------------------------- | -------------------------------------------------- |
 | [AI](./AI/)                                             | LLM 기초·API, 프롬프팅, RAG, MCP, 운영, 보안, 로컬 모델, 에이전트 하네스와 개발 방법론 적용 |
+| [Architecture](./Architecture/)                         | 설계 원칙, 아키텍처 스타일, 도메인 모델링, 품질 속성, ADR |
 | [Backend](./Backend/)                                   | API 설계, 인증, DB, 캐싱, 로깅, 메시징, 테스트     |
 | [Build](./Build/)                                       | 빌드 과정, 의존성, 도구 선택, 캐시, 오류 진단     |
 | [Frontend](./Frontend/)                                 | 상태 관리, TypeScript, 성능 최적화, PWA, 웹 접근성 |
@@ -45,6 +46,15 @@
 - [Agents 학습 가이드](./AI/agents/README.md) - 에이전트를 PM·개발·리뷰·QA·운영에 적용하는 방법
 - [에이전트 개념](./AI/agents/concepts.md) | [개발 방법론과 역할](./AI/agents/sdlc-roles.md) | [실무 워크플로](./AI/agents/workflows.md)
 - [문맥과 지식 축적](./AI/agents/context-and-knowledge.md) | [도구와 생태계](./AI/agents/tools.md) | [운영과 안전](./AI/agents/operations.md)
+
+### Architecture
+
+- [학습 순서와 전체 목차](./Architecture/README.md)
+- [모듈성과 경계](./Architecture/principles/modularity.md) | [의존성과 추상화](./Architecture/principles/dependencies.md)
+- [계층형과 헥사고날](./Architecture/styles/layered-and-hexagonal.md) | [모놀리스와 마이크로서비스](./Architecture/styles/monolith-vs-microservices.md) | [이벤트 기반](./Architecture/styles/event-driven.md)
+- [도메인 모델링](./Architecture/patterns/domain-modeling.md) | [경계 설계](./Architecture/patterns/boundaries.md) | [안티패턴](./Architecture/patterns/anti-patterns.md)
+- [품질 속성](./Architecture/quality/quality-attributes.md) | [피트니스 함수](./Architecture/quality/fitness-functions.md)
+- [ADR](./Architecture/process/adr.md) | [다이어그램](./Architecture/process/diagrams.md) | [마이그레이션과 기술 부채](./Architecture/process/migration-and-debt.md)
 
 ### Backend
 

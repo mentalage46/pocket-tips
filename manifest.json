@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T08:39:02.791Z",
+  "generatedAt": "2026-10-16T09:00:21.367Z",
   "root": "docs",
   "home": "README.md",
   "tree": [
@@ -310,6 +310,138 @@
               "name": "prompt-injection.md",
               "path": "AI/security/prompt-injection.md",
               "title": "프롬프트 주입"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "dir",
+      "name": "Architecture",
+      "path": "Architecture",
+      "title": "Architecture",
+      "index": "Architecture/README.md",
+      "children": [
+        {
+          "type": "dir",
+          "name": "patterns",
+          "path": "Architecture/patterns",
+          "title": "patterns",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "anti-patterns.md",
+              "path": "Architecture/patterns/anti-patterns.md",
+              "title": "아키텍처 안티패턴"
+            },
+            {
+              "type": "file",
+              "name": "boundaries.md",
+              "path": "Architecture/patterns/boundaries.md",
+              "title": "경계 설계"
+            },
+            {
+              "type": "file",
+              "name": "domain-modeling.md",
+              "path": "Architecture/patterns/domain-modeling.md",
+              "title": "도메인 모델링"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "principles",
+          "path": "Architecture/principles",
+          "title": "principles",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "dependencies.md",
+              "path": "Architecture/principles/dependencies.md",
+              "title": "의존성과 추상화"
+            },
+            {
+              "type": "file",
+              "name": "modularity.md",
+              "path": "Architecture/principles/modularity.md",
+              "title": "모듈성과 경계"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "process",
+          "path": "Architecture/process",
+          "title": "process",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "adr.md",
+              "path": "Architecture/process/adr.md",
+              "title": "ADR(Architecture Decision Record)"
+            },
+            {
+              "type": "file",
+              "name": "diagrams.md",
+              "path": "Architecture/process/diagrams.md",
+              "title": "아키텍처 다이어그램"
+            },
+            {
+              "type": "file",
+              "name": "migration-and-debt.md",
+              "path": "Architecture/process/migration-and-debt.md",
+              "title": "마이그레이션과 기술 부채"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "quality",
+          "path": "Architecture/quality",
+          "title": "quality",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "fitness-functions.md",
+              "path": "Architecture/quality/fitness-functions.md",
+              "title": "아키텍처 피트니스 함수"
+            },
+            {
+              "type": "file",
+              "name": "quality-attributes.md",
+              "path": "Architecture/quality/quality-attributes.md",
+              "title": "품질 속성과 트레이드오프"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "styles",
+          "path": "Architecture/styles",
+          "title": "styles",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "event-driven.md",
+              "path": "Architecture/styles/event-driven.md",
+              "title": "이벤트 기반 아키텍처"
+            },
+            {
+              "type": "file",
+              "name": "layered-and-hexagonal.md",
+              "path": "Architecture/styles/layered-and-hexagonal.md",
+              "title": "계층형과 헥사고날 아키텍처"
+            },
+            {
+              "type": "file",
+              "name": "monolith-vs-microservices.md",
+              "path": "Architecture/styles/monolith-vs-microservices.md",
+              "title": "모놀리스와 마이크로서비스"
             }
           ]
         }
@@ -2950,6 +3082,576 @@
           "level": 2,
           "text": "테스트",
           "id": "테스트"
+        }
+      ]
+    },
+    "Architecture/README.md": {
+      "title": "Software Architecture",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Software Architecture",
+          "id": "software-architecture"
+        },
+        {
+          "level": 2,
+          "text": "학습 순서",
+          "id": "학습-순서"
+        },
+        {
+          "level": 2,
+          "text": "아키텍처가 다루는 것과 다루지 않는 것",
+          "id": "아키텍처가-다루는-것과-다루지-않는-것"
+        },
+        {
+          "level": 2,
+          "text": "먼저 기억할 것",
+          "id": "먼저-기억할-것"
+        }
+      ]
+    },
+    "Architecture/patterns/anti-patterns.md": {
+      "title": "아키텍처 안티패턴",
+      "headings": [
+        {
+          "level": 1,
+          "text": "아키텍처 안티패턴",
+          "id": "아키텍처-안티패턴"
+        },
+        {
+          "level": 2,
+          "text": "한눈에 보기",
+          "id": "한눈에-보기"
+        },
+        {
+          "level": 2,
+          "text": "항목별",
+          "id": "항목별"
+        },
+        {
+          "level": 3,
+          "text": "큰 진흙 덩어리(Big Ball of Mud)",
+          "id": "큰-진흙-덩어리big-ball-of-mud"
+        },
+        {
+          "level": 3,
+          "text": "분산 모놀리스",
+          "id": "분산-모놀리스"
+        },
+        {
+          "level": 3,
+          "text": "공유 데이터베이스",
+          "id": "공유-데이터베이스"
+        },
+        {
+          "level": 3,
+          "text": "빈 계층(Lasagna)",
+          "id": "빈-계층lasagna"
+        },
+        {
+          "level": 3,
+          "text": "신 객체·신 서비스",
+          "id": "신-객체신-서비스"
+        },
+        {
+          "level": 3,
+          "text": "순환 의존",
+          "id": "순환-의존"
+        },
+        {
+          "level": 3,
+          "text": "골든 해머와 이력서 주도 설계",
+          "id": "골든-해머와-이력서-주도-설계"
+        },
+        {
+          "level": 3,
+          "text": "추측성 일반화",
+          "id": "추측성-일반화"
+        },
+        {
+          "level": 3,
+          "text": "분산 트랜잭션 의존",
+          "id": "분산-트랜잭션-의존"
+        },
+        {
+          "level": 2,
+          "text": "구조 문제를 드러내는 지표",
+          "id": "구조-문제를-드러내는-지표"
+        }
+      ]
+    },
+    "Architecture/patterns/boundaries.md": {
+      "title": "경계 설계",
+      "headings": [
+        {
+          "level": 1,
+          "text": "경계 설계",
+          "id": "경계-설계"
+        },
+        {
+          "level": 2,
+          "text": "데이터 소유권",
+          "id": "데이터-소유권"
+        },
+        {
+          "level": 2,
+          "text": "트랜잭션 경계",
+          "id": "트랜잭션-경계"
+        },
+        {
+          "level": 2,
+          "text": "일관성 모델 선택",
+          "id": "일관성-모델-선택"
+        },
+        {
+          "level": 2,
+          "text": "API 경계와 계약",
+          "id": "api-경계와-계약"
+        },
+        {
+          "level": 2,
+          "text": "경계를 넘는 호출의 처리",
+          "id": "경계를-넘는-호출의-처리"
+        },
+        {
+          "level": 2,
+          "text": "공통 코드의 경계",
+          "id": "공통-코드의-경계"
+        }
+      ]
+    },
+    "Architecture/patterns/domain-modeling.md": {
+      "title": "도메인 모델링",
+      "headings": [
+        {
+          "level": 1,
+          "text": "도메인 모델링",
+          "id": "도메인-모델링"
+        },
+        {
+          "level": 2,
+          "text": "유비쿼터스 언어",
+          "id": "유비쿼터스-언어"
+        },
+        {
+          "level": 2,
+          "text": "바운디드 컨텍스트",
+          "id": "바운디드-컨텍스트"
+        },
+        {
+          "level": 2,
+          "text": "전술적 요소",
+          "id": "전술적-요소"
+        },
+        {
+          "level": 2,
+          "text": "애그리거트 설계",
+          "id": "애그리거트-설계"
+        },
+        {
+          "level": 2,
+          "text": "빈약한 모델과 풍부한 모델",
+          "id": "빈약한-모델과-풍부한-모델"
+        },
+        {
+          "level": 2,
+          "text": "모델링 절차",
+          "id": "모델링-절차"
+        }
+      ]
+    },
+    "Architecture/principles/dependencies.md": {
+      "title": "의존성과 추상화",
+      "headings": [
+        {
+          "level": 1,
+          "text": "의존성과 추상화",
+          "id": "의존성과-추상화"
+        },
+        {
+          "level": 2,
+          "text": "의존성 방향",
+          "id": "의존성-방향"
+        },
+        {
+          "level": 2,
+          "text": "SOLID",
+          "id": "solid"
+        },
+        {
+          "level": 2,
+          "text": "의존성 역전의 실제",
+          "id": "의존성-역전의-실제"
+        },
+        {
+          "level": 2,
+          "text": "추상화의 비용",
+          "id": "추상화의-비용"
+        },
+        {
+          "level": 2,
+          "text": "의존성 규칙 지키기",
+          "id": "의존성-규칙-지키기"
+        },
+        {
+          "level": 2,
+          "text": "외부 의존성",
+          "id": "외부-의존성"
+        }
+      ]
+    },
+    "Architecture/principles/modularity.md": {
+      "title": "모듈성과 경계",
+      "headings": [
+        {
+          "level": 1,
+          "text": "모듈성과 경계",
+          "id": "모듈성과-경계"
+        },
+        {
+          "level": 2,
+          "text": "응집도와 결합도",
+          "id": "응집도와-결합도"
+        },
+        {
+          "level": 2,
+          "text": "결합의 종류",
+          "id": "결합의-종류"
+        },
+        {
+          "level": 2,
+          "text": "경계를 긋는 기준",
+          "id": "경계를-긋는-기준"
+        },
+        {
+          "level": 2,
+          "text": "인터페이스 설계",
+          "id": "인터페이스-설계"
+        },
+        {
+          "level": 2,
+          "text": "모듈 크기",
+          "id": "모듈-크기"
+        },
+        {
+          "level": 2,
+          "text": "정보 은닉",
+          "id": "정보-은닉"
+        }
+      ]
+    },
+    "Architecture/process/adr.md": {
+      "title": "ADR(Architecture Decision Record)",
+      "headings": [
+        {
+          "level": 1,
+          "text": "ADR(Architecture Decision Record)",
+          "id": "adrarchitecture-decision-record"
+        },
+        {
+          "level": 2,
+          "text": "무엇을 기록하는가",
+          "id": "무엇을-기록하는가"
+        },
+        {
+          "level": 2,
+          "text": "형식",
+          "id": "형식"
+        },
+        {
+          "level": 2,
+          "text": "운영",
+          "id": "운영"
+        },
+        {
+          "level": 2,
+          "text": "흔한 문제",
+          "id": "흔한-문제"
+        },
+        {
+          "level": 2,
+          "text": "AI 에이전트와 ADR",
+          "id": "ai-에이전트와-adr"
+        }
+      ]
+    },
+    "Architecture/process/diagrams.md": {
+      "title": "아키텍처 다이어그램",
+      "headings": [
+        {
+          "level": 1,
+          "text": "아키텍처 다이어그램",
+          "id": "아키텍처-다이어그램"
+        },
+        {
+          "level": 2,
+          "text": "C4 모델",
+          "id": "c4-모델"
+        },
+        {
+          "level": 2,
+          "text": "질문별 다이어그램",
+          "id": "질문별-다이어그램"
+        },
+        {
+          "level": 2,
+          "text": "코드로 그리기",
+          "id": "코드로-그리기"
+        },
+        {
+          "level": 2,
+          "text": "그리는 규칙",
+          "id": "그리는-규칙"
+        },
+        {
+          "level": 2,
+          "text": "유지 관리",
+          "id": "유지-관리"
+        }
+      ]
+    },
+    "Architecture/process/migration-and-debt.md": {
+      "title": "마이그레이션과 기술 부채",
+      "headings": [
+        {
+          "level": 1,
+          "text": "마이그레이션과 기술 부채",
+          "id": "마이그레이션과-기술-부채"
+        },
+        {
+          "level": 2,
+          "text": "빅뱅 재작성이 실패하는 이유",
+          "id": "빅뱅-재작성이-실패하는-이유"
+        },
+        {
+          "level": 2,
+          "text": "스트랭글러 패턴",
+          "id": "스트랭글러-패턴"
+        },
+        {
+          "level": 2,
+          "text": "데이터 이전",
+          "id": "데이터-이전"
+        },
+        {
+          "level": 2,
+          "text": "모듈 추출 절차",
+          "id": "모듈-추출-절차"
+        },
+        {
+          "level": 2,
+          "text": "기술 부채",
+          "id": "기술-부채"
+        },
+        {
+          "level": 2,
+          "text": "전환 중 유지할 것",
+          "id": "전환-중-유지할-것"
+        }
+      ]
+    },
+    "Architecture/quality/fitness-functions.md": {
+      "title": "아키텍처 피트니스 함수",
+      "headings": [
+        {
+          "level": 1,
+          "text": "아키텍처 피트니스 함수",
+          "id": "아키텍처-피트니스-함수"
+        },
+        {
+          "level": 2,
+          "text": "종류",
+          "id": "종류"
+        },
+        {
+          "level": 2,
+          "text": "구조 규칙 검사",
+          "id": "구조-규칙-검사"
+        },
+        {
+          "level": 2,
+          "text": "품질 속성 검사",
+          "id": "품질-속성-검사"
+        },
+        {
+          "level": 2,
+          "text": "운영 중 지속 측정",
+          "id": "운영-중-지속-측정"
+        },
+        {
+          "level": 2,
+          "text": "도입 절차",
+          "id": "도입-절차"
+        },
+        {
+          "level": 2,
+          "text": "주의",
+          "id": "주의"
+        }
+      ]
+    },
+    "Architecture/quality/quality-attributes.md": {
+      "title": "품질 속성과 트레이드오프",
+      "headings": [
+        {
+          "level": 1,
+          "text": "품질 속성과 트레이드오프",
+          "id": "품질-속성과-트레이드오프"
+        },
+        {
+          "level": 2,
+          "text": "주요 품질 속성",
+          "id": "주요-품질-속성"
+        },
+        {
+          "level": 2,
+          "text": "대표적 트레이드오프",
+          "id": "대표적-트레이드오프"
+        },
+        {
+          "level": 2,
+          "text": "품질 속성 시나리오",
+          "id": "품질-속성-시나리오"
+        },
+        {
+          "level": 2,
+          "text": "우선순위 정하기",
+          "id": "우선순위-정하기"
+        },
+        {
+          "level": 2,
+          "text": "결정 평가",
+          "id": "결정-평가"
+        }
+      ]
+    },
+    "Architecture/styles/event-driven.md": {
+      "title": "이벤트 기반 아키텍처",
+      "headings": [
+        {
+          "level": 1,
+          "text": "이벤트 기반 아키텍처",
+          "id": "이벤트-기반-아키텍처"
+        },
+        {
+          "level": 2,
+          "text": "명령, 이벤트, 쿼리",
+          "id": "명령-이벤트-쿼리"
+        },
+        {
+          "level": 2,
+          "text": "기본 구조",
+          "id": "기본-구조"
+        },
+        {
+          "level": 2,
+          "text": "이벤트 설계",
+          "id": "이벤트-설계"
+        },
+        {
+          "level": 2,
+          "text": "신뢰성 보장",
+          "id": "신뢰성-보장"
+        },
+        {
+          "level": 2,
+          "text": "결과적 일관성",
+          "id": "결과적-일관성"
+        },
+        {
+          "level": 2,
+          "text": "사가(Saga)",
+          "id": "사가saga"
+        },
+        {
+          "level": 2,
+          "text": "CQRS와 이벤트 소싱",
+          "id": "cqrs와-이벤트-소싱"
+        },
+        {
+          "level": 2,
+          "text": "도입 신호와 주의",
+          "id": "도입-신호와-주의"
+        }
+      ]
+    },
+    "Architecture/styles/layered-and-hexagonal.md": {
+      "title": "계층형과 헥사고날 아키텍처",
+      "headings": [
+        {
+          "level": 1,
+          "text": "계층형과 헥사고날 아키텍처",
+          "id": "계층형과-헥사고날-아키텍처"
+        },
+        {
+          "level": 2,
+          "text": "계층형(Layered)",
+          "id": "계층형layered"
+        },
+        {
+          "level": 2,
+          "text": "헥사고날(포트와 어댑터)",
+          "id": "헥사고날포트와-어댑터"
+        },
+        {
+          "level": 2,
+          "text": "클린 아키텍처·어니언 아키텍처",
+          "id": "클린-아키텍처어니언-아키텍처"
+        },
+        {
+          "level": 2,
+          "text": "폴더 구조 예",
+          "id": "폴더-구조-예"
+        },
+        {
+          "level": 2,
+          "text": "선택 기준",
+          "id": "선택-기준"
+        }
+      ]
+    },
+    "Architecture/styles/monolith-vs-microservices.md": {
+      "title": "모놀리스와 마이크로서비스",
+      "headings": [
+        {
+          "level": 1,
+          "text": "모놀리스와 마이크로서비스",
+          "id": "모놀리스와-마이크로서비스"
+        },
+        {
+          "level": 2,
+          "text": "세 가지 형태",
+          "id": "세-가지-형태"
+        },
+        {
+          "level": 2,
+          "text": "모듈러 모놀리스",
+          "id": "모듈러-모놀리스"
+        },
+        {
+          "level": 2,
+          "text": "마이크로서비스의 비용",
+          "id": "마이크로서비스의-비용"
+        },
+        {
+          "level": 2,
+          "text": "분리할 이유와 아닌 이유",
+          "id": "분리할-이유와-아닌-이유"
+        },
+        {
+          "level": 2,
+          "text": "분리 단위 정하기",
+          "id": "분리-단위-정하기"
+        },
+        {
+          "level": 2,
+          "text": "서비스 간 통신",
+          "id": "서비스-간-통신"
+        },
+        {
+          "level": 2,
+          "text": "전환 경로",
+          "id": "전환-경로"
         }
       ]
     },
@@ -7395,6 +8097,11 @@
           "level": 3,
           "text": "AI",
           "id": "ai"
+        },
+        {
+          "level": 3,
+          "text": "Architecture",
+          "id": "architecture"
         },
         {
           "level": 3,
