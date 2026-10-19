@@ -101,6 +101,10 @@ OWASP가 정리한 LLM 애플리케이션의 주요 위협 10가지입니다. 20
 | 비용 | 사용자·기능별 상한과 알림이 있는가 |
 | 사람 | 파괴적 작업과 중요 결정에 승인 단계가 있는가 |
 
-추가 읽기: [OWASP Top 10 for LLM Applications](https://genai.owasp.org/)
+## 참고 자료
+
+- [OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org/llm-top-10/) - 항목과 순서를 대조함
+
+확인일: 2026-10-16
 
 다음: [프롬프트 주입](./prompt-injection.md)

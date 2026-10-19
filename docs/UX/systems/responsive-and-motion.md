@@ -41,7 +41,7 @@ flowchart LR
 
 | 항목 | 터치 | 마우스 |
 | --- | --- | --- |
-| 목표 크기 | 44×44px 이상, 간격 8px | 24px 이상 |
+| 목표 크기 | 44×44px 권장(Apple HIG 44pt, Material 48dp), WCAG 2.2 AA 최소 24×24px, 간격 8px | 24px 이상 |
 | 호버 | 없음. 호버에만 의존한 기능 금지 | 가능 |
 | 제스처 | 스와이프·길게 누르기는 보조. 보이는 대안 필수 | - |
 | 엄지 영역 | 주요 동작은 화면 하단·중앙 | - |
@@ -108,11 +108,17 @@ flowchart LR
 | 질문 |
 | --- |
 | 320px 폭에서 가로 스크롤 없이 모든 기능이 되는가 |
-| 터치 목표가 44px 이상인가 |
+| 터치 목표가 44px 이상인가(최소 24px, WCAG 2.2 2.5.8) |
 | 호버 없이 모든 기능에 접근 가능한가 |
 | 가상 키보드가 열렸을 때 입력 필드가 보이는가 |
 | 동작 줄이기 설정에서 콘텐츠가 멈추는가 |
 | 애니메이션이 transform·opacity만 쓰는가 |
+
+## 참고 자료
+
+- [WCAG 2.2 Target Size (Minimum) 2.5.8](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html) - AA 24px, AAA(2.5.5) 44px
+
+확인일: 2026-10-16 (목표 크기 항목만 확인)
 
 관련: [레이아웃과 간격](../visual/layout-and-spacing.md), [웹 성능](../../Frontend/web-performance.md), [PWA](../../Frontend/pwa.md), [웹 접근성](../../Frontend/accessibility.md)
 

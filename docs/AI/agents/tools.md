@@ -19,7 +19,7 @@ flowchart TB
 
 | 형태 | 예 | 적합한 역할 |
 | --- | --- | --- |
-| 터미널 CLI | Claude Code, Codex CLI, Gemini CLI, Aider | 개발자 작업 전반, 스크립트·CI 연동 |
+| 터미널 CLI | Claude Code, Codex CLI, Antigravity CLI(Google, 2026년 6월 Gemini CLI 개인 요금제 종료 후 후속), OpenCode, Aider(2025년 후반부터 유지 보수 위주) | 개발자 작업 전반, 스크립트·CI 연동 |
 | IDE 통합 | Cursor, Windsurf, GitHub Copilot, Cline, Claude Code IDE 확장 | 편집 중 보조, 파일 단위 수정 |
 | 저장소·PR 봇 | GitHub Copilot coding agent, Claude Code GitHub Actions, Devin, OpenHands | 이슈 할당 → PR 생성, 자동 리뷰 |
 | 브라우저·클라우드 세션 | 각 제품의 웹 환경 | 로컬 환경 없이 위임형 작업 |
@@ -40,8 +40,8 @@ flowchart TB
 | --- | --- | --- |
 | 모델 제공사 SDK | Claude Agent SDK, OpenAI Agents SDK, Google ADK | 해당 모델·도구 생태계와 밀접. 제품과 같은 실행 루프를 코드로 사용 |
 | 그래프·워크플로 | LangGraph | 상태 그래프로 분기·체크포인트를 명시. 복잡한 흐름 제어 |
-| 역할 기반 멀티 에이전트 | CrewAI, AutoGen(AG2) | 역할·팀 단위 구성. 빠른 실험 |
-| 기업용 통합 | Semantic Kernel | .NET·Java 환경, 기존 시스템 통합 |
+| 역할 기반 멀티 에이전트 | CrewAI, AG2(AutoGen 커뮤니티 분기) | 역할·팀 단위 구성. 빠른 실험 |
+| 기업용 통합 | Microsoft Agent Framework(2026년 4월 1.0, AutoGen과 Semantic Kernel의 후속. Semantic Kernel은 유지 보수 모드) | .NET·Python 환경, 기존 시스템 통합 |
 | 직접 구현 | 모델 API + 수십 줄의 루프 | 의존성 없음. 작은 범위에서 가장 이해하기 쉬움 |
 
 | 선택 기준 | 설명 |
@@ -58,7 +58,7 @@ flowchart TB
 | 규약 | 역할 | 비고 |
 | --- | --- | --- |
 | MCP(Model Context Protocol) | 에이전트가 외부 도구·데이터(저장소, 이슈 트래커, DB, 브라우저)에 접근하는 표준 서버·클라이언트 규약 | 여러 제품이 지원. 서버 하나를 만들면 여러 에이전트에서 재사용 |
-| A2A(Agent2Agent) | 서로 다른 에이전트가 작업을 주고받는 규약 | 조직 간·제품 간 에이전트 협업 |
+| A2A(Agent2Agent) | 서로 다른 에이전트가 작업을 주고받는 규약. Linux Foundation 산하, 2026년 3월 1.0 | 조직 간·제품 간 에이전트 협업 |
 | 함수 호출(Function/Tool calling) | 모델 API 수준의 도구 호출 형식 | 모든 상위 규약의 기반 |
 
 MCP 서버를 도입할 때는 **어떤 권한으로 무엇을 할 수 있는지**를 먼저 봅니다. 읽기 전용 서버와 쓰기 가능한 서버를 구분하고, 쓰기는 승인형으로 둡니다.
@@ -94,3 +94,11 @@ MCP 서버를 도입할 때는 **어떤 권한으로 무엇을 할 수 있는지
 | 자체 에이전트 제품 | 모델 SDK 또는 그래프 프레임워크 + MCP 서버 + 추적 + 평가 하네스 |
 
 관련: [운영과 안전](./operations.md), [Harness 평가와 오류 진단](../harness/evaluation.md), [Docker](../../Infrastructure/docker/docker.md), [GitHub Actions](../../Infrastructure/cicd/github-action.md)
+
+## 참고 자료
+
+- [Transitioning Gemini CLI to Antigravity CLI](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/)
+- [Microsoft Agent Framework](https://labs.ai.azure.com/?p=1155)
+- [Aider GitHub](https://github.com/Aider-AI/aider)
+
+확인일: 2026-10-16 (제품 상태만 확인. 나머지 제품명은 미확인)

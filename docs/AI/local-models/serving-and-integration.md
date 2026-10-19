@@ -26,13 +26,13 @@ client = OpenAI(base_url="http://localhost:11434/v1", api_key="local")
 res = client.chat.completions.create(model="<model>", messages=[{"role": "user", "content": "..."}])
 ```
 
-공급자별 고유 기능(프롬프트 캐싱 제어, 특정 도구 형식)은 호환 API에 없을 수 있습니다. [LLM 계층](../llmops/architecture.md)에서 차이를 흡수합니다.
+Ollama는 기본 포트 11434에서 `/v1/chat/completions`, `/v1/completions`, `/v1/models`, `/v1/embeddings`를 제공하며, 호환 API는 실험적 기능으로 표시되어 있어 전체 기능은 네이티브 API를 권장합니다. 공급자별 고유 기능(프롬프트 캐싱 제어, 특정 도구 형식)은 호환 API에 없을 수 있습니다. [LLM 계층](../llmops/architecture.md)에서 차이를 흡수합니다.
 
 ## 기능 지원 확인
 
 | 기능 | 확인할 것 |
 | --- | --- |
-| 도구 호출 | 모델이 도구 호출 학습이 되어 있는지, 런타임이 도구 형식을 지원하는지 |
+| 도구 호출 | 모델이 도구 호출 학습이 되어 있는지, 런타임이 도구 형식을 지원하는지. 예: Ollama의 OpenAI 호환 API는 `tools`를 지원하지만 `tool_choice`와 스트리밍 도구 호출은 미지원(확인 시점 기준) |
 | 구조화 출력 | JSON 스키마 제약 지원 여부(llama.cpp 문법, vLLM·SGLang 가이드 디코딩) |
 | 스트리밍 | 대부분 지원 |
 | 긴 문맥 | 모델의 학습 문맥 길이와 런타임 설정 모두 확인 |
@@ -53,8 +53,9 @@ res = client.chat.completions.create(model="<model>", messages=[{"role": "user",
 | 비용 | 전기 | GPU 서버 상각 vs API 비용 비교 |
 
 ```bash
-# vLLM 예: OpenAI 호환 서버
-docker run --gpus all -p 8000:8000 vllm/vllm-openai --model <hf-model-id> --max-model-len 16384
+# vLLM 예: OpenAI 호환 서버 (기본 포트 8000, 모델 캐시는 호스트 디렉터리 마운트)
+docker run --runtime nvidia --gpus all -v ~/.cache/huggingface:/root/.cache/huggingface \
+  -p 8000:8000 --ipc=host vllm/vllm-openai:latest --model <hf-model-id> --max-model-len 16384
 ```
 
 ## 운영 점검
@@ -84,5 +85,12 @@ docker run --gpus all -p 8000:8000 vllm/vllm-openai --model <hf-model-id> --max-
 | 로컬 소형 + API 상위 | 분류·추출·초안은 로컬, 어려운 요청만 API로 라우팅 |
 | 로컬 임베딩 + API 생성 | 문서는 외부로 보내지 않고 질문·요약만 전송 |
 | 전부 로컬 | 규제 환경. 품질 한계를 평가 세트로 확인 후 수용 |
+
+## 참고 자료
+
+- [Ollama OpenAI 호환 API](https://ollama.readthedocs.io/en/openai/)
+- [vLLM Docker 배포](https://docs.vllm.ai/en/latest/deployment/docker.html)
+
+확인일: 2026-10-16
 
 관련: [아키텍처](../llmops/architecture.md), [신뢰성](../llmops/reliability.md), [Docker Compose](../../Infrastructure/docker/docker-compose.md), [Nginx](../../Infrastructure/nginx/nginx.md)

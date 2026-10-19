@@ -25,7 +25,7 @@ flowchart LR
 | 사용자·기능·테넌트 | 비용 배분, 이상 사용 탐지 |
 | 사용자 피드백 | 품질 지표의 근거 |
 
-OpenTelemetry의 생성형 AI 의미 규약(semantic conventions)을 따르면 기존 APM과 추적을 연결할 수 있습니다.
+OpenTelemetry의 생성형 AI 의미 규약(semantic conventions)을 따르면 기존 APM과 추적을 연결할 수 있습니다. 다만 이 규약은 2026년 중반 기준 아직 "Development" 상태로 별도 저장소로 분리되어 속성 이름이 바뀔 수 있으므로, 계측 라이브러리 버전을 고정합니다.
 
 ## 지표
 

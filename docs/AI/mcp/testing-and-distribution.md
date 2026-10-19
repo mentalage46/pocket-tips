@@ -20,8 +20,15 @@ flowchart LR
 | 평가 세트 | 대표 요청 20~50개와 기대 도구 호출 | 설명·스키마 변경의 효과 측정 |
 
 ```bash
-# Inspector로 stdio 서버 띄우기 (예)
-npx @modelcontextprotocol/inspector python server.py
+# Inspector 웹 UI
+npx @modelcontextprotocol/inspector
+
+# Inspector CLI로 도구 목록 확인 (최신 프로토콜과 2025년식 핸드셰이크를 각각 검사)
+npx @modelcontextprotocol/inspector --cli node build/index.js --protocol-era modern --method tools/list
+npx @modelcontextprotocol/inspector --cli node build/index.js --protocol-era legacy --method tools/list
+
+# Python SDK: 개발 모드로 Inspector에 연결
+uv run mcp dev server.py
 ```
 
 ## 흔한 문제
@@ -40,10 +47,15 @@ npx @modelcontextprotocol/inspector python server.py
 
 | 호스트 | 방법(예) |
 | --- | --- |
-| Claude Code | `claude mcp add <name> -- <command>` 또는 프로젝트의 `.mcp.json` |
+| Claude Code | `claude mcp add --transport stdio <name> -- <command> [args]`, HTTP는 `claude mcp add --transport http <name> <url>`. 프로젝트 공유는 `--scope project`로 `.mcp.json`에 기록 |
 | Claude Desktop | 설정 파일의 `mcpServers` 항목 |
 | Cursor, Windsurf 등 | 각 제품의 MCP 설정 파일 또는 UI |
 | 자체 에이전트 | SDK 클라이언트로 연결하고 도구 목록을 모델 API 형식으로 변환 |
+
+```bash
+# 환경 변수는 --env (또는 -e)로. 옵션은 이름 앞에, -- 뒤는 서버 명령 그대로 전달
+claude mcp add --env TRACKER_TOKEN=xxx --transport stdio issues -- uvx my-issues-mcp
+```
 
 ```json
 {
@@ -52,12 +64,13 @@ npx @modelcontextprotocol/inspector python server.py
       "command": "uvx",
       "args": ["my-issues-mcp"],
       "env": { "TRACKER_TOKEN": "${TRACKER_TOKEN}" }
-    }
+    },
+    "shared-api": { "type": "http", "url": "https://example.com/mcp" }
   }
 }
 ```
 
-설정 파일 형식과 범위(사용자·프로젝트)는 호스트마다 다릅니다. 프로젝트 공유 설정에는 비밀을 넣지 않고 환경 변수 참조로 둡니다.
+`.mcp.json`의 `env`·`url`·`headers`는 `${VAR}`, `${VAR:-기본값}` 형태로 셸 환경을 참조할 수 있습니다. 설정 파일 형식과 범위(사용자·프로젝트)는 호스트마다 다릅니다. 프로젝트 공유 설정에는 비밀을 넣지 않고 환경 변수 참조로 둡니다.
 
 ## 패키징과 배포
 
@@ -75,7 +88,7 @@ npx @modelcontextprotocol/inspector python server.py
 | 의존성 고정 | 락 파일, 최소 런타임 버전 명시 |
 | 설정 문서 | 필요한 환경 변수, 권한, 예시 설정 |
 | 보안 | 비밀 미포함, 허용 범위 기본값이 보수적인지 |
-| 호환성 | 지원 프로토콜 버전, 주요 호스트에서 동작 확인 |
+| 호환성 | 지원 프로토콜 버전(최신 SDK는 2025년식 `initialize` 클라이언트와 2026-07-28 클라이언트 모두 처리), 주요 호스트에서 동작 확인 |
 
 ## 운영
 
@@ -86,5 +99,12 @@ npx @modelcontextprotocol/inspector python server.py
 | 외부 API 변경 | 통합 테스트를 주기적으로 실행 |
 | 서드파티 서버 사용 | 출처·권한 검토. 서버는 모델에 지시를 주입할 수 있는 위치 |
 | 비용 | 도구 결과 길이가 모델 입력 토큰으로 이어짐 |
+
+## 참고 자료
+
+- [MCP Inspector](https://github.com/modelcontextprotocol/inspector)
+- [Claude Code MCP 설정](https://code.claude.com/docs/en/mcp)
+
+확인일: 2026-10-16
 
 관련: [GitHub Actions](../../Infrastructure/cicd/github-action.md), [Docker](../../Infrastructure/docker/docker.md), [테스트 전략](../../Backend/testing/testing-strategy.md), [AI 보안](../security/README.md)
