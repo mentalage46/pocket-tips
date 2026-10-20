@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T01:14:08.750Z",
+  "generatedAt": "2026-10-20T02:37:53.742Z",
   "root": "docs",
   "home": "README.md",
   "tree": [
@@ -957,13 +957,43 @@
           "name": "cicd",
           "path": "Infrastructure/cicd",
           "title": "cicd",
-          "index": null,
+          "index": "Infrastructure/cicd/README.md",
           "children": [
+            {
+              "type": "file",
+              "name": "cicd-basics.md",
+              "path": "Infrastructure/cicd/cicd-basics.md",
+              "title": "CI/CD 기초와 파이프라인 설계"
+            },
+            {
+              "type": "file",
+              "name": "deployment-strategies.md",
+              "path": "Infrastructure/cicd/deployment-strategies.md",
+              "title": "배포 전략과 롤백"
+            },
             {
               "type": "file",
               "name": "github-action.md",
               "path": "Infrastructure/cicd/github-action.md",
               "title": "GitHub Actions"
+            },
+            {
+              "type": "file",
+              "name": "pipeline-security.md",
+              "path": "Infrastructure/cicd/pipeline-security.md",
+              "title": "CI/CD 파이프라인 보안"
+            },
+            {
+              "type": "file",
+              "name": "release-automation.md",
+              "path": "Infrastructure/cicd/release-automation.md",
+              "title": "릴리스·의존성 자동화"
+            },
+            {
+              "type": "file",
+              "name": "solo-dev-tools.md",
+              "path": "Infrastructure/cicd/solo-dev-tools.md",
+              "title": "1인·소규모 팀을 위한 CI/CD 도구 선택"
             }
           ]
         },
@@ -7487,6 +7517,121 @@
         }
       ]
     },
+    "Infrastructure/cicd/README.md": {
+      "title": "CI/CD",
+      "headings": [
+        {
+          "level": 1,
+          "text": "CI/CD",
+          "id": "cicd"
+        },
+        {
+          "level": 2,
+          "text": "학습 순서",
+          "id": "학습-순서"
+        },
+        {
+          "level": 2,
+          "text": "관련 지식",
+          "id": "관련-지식"
+        }
+      ]
+    },
+    "Infrastructure/cicd/cicd-basics.md": {
+      "title": "CI/CD 기초와 파이프라인 설계",
+      "headings": [
+        {
+          "level": 1,
+          "text": "CI/CD 기초와 파이프라인 설계",
+          "id": "cicd-기초와-파이프라인-설계"
+        },
+        {
+          "level": 2,
+          "text": "용어 구분",
+          "id": "용어-구분"
+        },
+        {
+          "level": 2,
+          "text": "파이프라인 단계",
+          "id": "파이프라인-단계"
+        },
+        {
+          "level": 3,
+          "text": "설계 원칙",
+          "id": "설계-원칙"
+        },
+        {
+          "level": 2,
+          "text": "브랜치 전략과의 관계",
+          "id": "브랜치-전략과의-관계"
+        },
+        {
+          "level": 2,
+          "text": "속도 개선 방법",
+          "id": "속도-개선-방법"
+        },
+        {
+          "level": 2,
+          "text": "측정: DORA 지표",
+          "id": "측정-dora-지표"
+        },
+        {
+          "level": 2,
+          "text": "점검표",
+          "id": "점검표"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Infrastructure/cicd/deployment-strategies.md": {
+      "title": "배포 전략과 롤백",
+      "headings": [
+        {
+          "level": 1,
+          "text": "배포 전략과 롤백",
+          "id": "배포-전략과-롤백"
+        },
+        {
+          "level": 2,
+          "text": "전략 비교",
+          "id": "전략-비교"
+        },
+        {
+          "level": 2,
+          "text": "1인·소규모에서의 선택",
+          "id": "1인소규모에서의-선택"
+        },
+        {
+          "level": 2,
+          "text": "롤백 설계",
+          "id": "롤백-설계"
+        },
+        {
+          "level": 3,
+          "text": "DB 마이그레이션: 확장-축소(Expand-Contract)",
+          "id": "db-마이그레이션-확장-축소expand-contract"
+        },
+        {
+          "level": 2,
+          "text": "배포 후 확인",
+          "id": "배포-후-확인"
+        },
+        {
+          "level": 2,
+          "text": "점검표",
+          "id": "점검표"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
     "Infrastructure/cicd/github-action.md": {
       "title": "GitHub Actions",
       "headings": [
@@ -7557,8 +7702,8 @@
         },
         {
           "level": 2,
-          "text": "서버 docker-compose.yml 예시",
-          "id": "서버-docker-composeyml-예시"
+          "text": "서버 compose.yaml 예시",
+          "id": "서버-composeyaml-예시"
         },
         {
           "level": 2,
@@ -7594,6 +7739,196 @@
           "level": 2,
           "text": "요약",
           "id": "요약"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Infrastructure/cicd/pipeline-security.md": {
+      "title": "CI/CD 파이프라인 보안",
+      "headings": [
+        {
+          "level": 1,
+          "text": "CI/CD 파이프라인 보안",
+          "id": "cicd-파이프라인-보안"
+        },
+        {
+          "level": 2,
+          "text": "위협 모델",
+          "id": "위협-모델"
+        },
+        {
+          "level": 2,
+          "text": "1. GITHUB_TOKEN 권한 최소화",
+          "id": "1-github_token-권한-최소화"
+        },
+        {
+          "level": 2,
+          "text": "2. 장기 비밀값 대신 OIDC",
+          "id": "2-장기-비밀값-대신-oidc"
+        },
+        {
+          "level": 2,
+          "text": "3. 서드파티 액션 고정",
+          "id": "3-서드파티-액션-고정"
+        },
+        {
+          "level": 2,
+          "text": "4. 스크립트 인젝션 방지",
+          "id": "4-스크립트-인젝션-방지"
+        },
+        {
+          "level": 2,
+          "text": "5. 포크 PR과 pullrequesttarget",
+          "id": "5-포크-pr과-pullrequesttarget"
+        },
+        {
+          "level": 2,
+          "text": "6. 운영 배포 보호",
+          "id": "6-운영-배포-보호"
+        },
+        {
+          "level": 2,
+          "text": "7. 아티팩트 증명과 SLSA",
+          "id": "7-아티팩트-증명과-slsa"
+        },
+        {
+          "level": 2,
+          "text": "8. 그 밖의 습관",
+          "id": "8-그-밖의-습관"
+        },
+        {
+          "level": 2,
+          "text": "점검표",
+          "id": "점검표"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Infrastructure/cicd/release-automation.md": {
+      "title": "릴리스·의존성 자동화",
+      "headings": [
+        {
+          "level": 1,
+          "text": "릴리스·의존성 자동화",
+          "id": "릴리스의존성-자동화"
+        },
+        {
+          "level": 2,
+          "text": "Conventional Commits",
+          "id": "conventional-commits"
+        },
+        {
+          "level": 2,
+          "text": "릴리스 도구 비교",
+          "id": "릴리스-도구-비교"
+        },
+        {
+          "level": 3,
+          "text": "release-please 예시",
+          "id": "release-please-예시"
+        },
+        {
+          "level": 2,
+          "text": "의존성 자동 업데이트",
+          "id": "의존성-자동-업데이트"
+        },
+        {
+          "level": 2,
+          "text": "점검표",
+          "id": "점검표"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Infrastructure/cicd/solo-dev-tools.md": {
+      "title": "1인·소규모 팀을 위한 CI/CD 도구 선택",
+      "headings": [
+        {
+          "level": 1,
+          "text": "1인·소규모 팀을 위한 CI/CD 도구 선택",
+          "id": "1인소규모-팀을-위한-cicd-도구-선택"
+        },
+        {
+          "level": 2,
+          "text": "먼저 정할 것",
+          "id": "먼저-정할-것"
+        },
+        {
+          "level": 2,
+          "text": "CI 서비스 비교",
+          "id": "ci-서비스-비교"
+        },
+        {
+          "level": 3,
+          "text": "GitHub Actions 비용 감각",
+          "id": "github-actions-비용-감각"
+        },
+        {
+          "level": 2,
+          "text": "자체 호스팅 CI",
+          "id": "자체-호스팅-ci"
+        },
+        {
+          "level": 2,
+          "text": "배포 대상 비교",
+          "id": "배포-대상-비교"
+        },
+        {
+          "level": 3,
+          "text": "관리형 플랫폼(git push로 배포)",
+          "id": "관리형-플랫폼git-push로-배포"
+        },
+        {
+          "level": 3,
+          "text": "VPS + 자체 호스팅 PaaS",
+          "id": "vps-자체-호스팅-paas"
+        },
+        {
+          "level": 3,
+          "text": "선택 기준",
+          "id": "선택-기준"
+        },
+        {
+          "level": 2,
+          "text": "이미지 레지스트리",
+          "id": "이미지-레지스트리"
+        },
+        {
+          "level": 2,
+          "text": "로컬·보조 도구",
+          "id": "로컬보조-도구"
+        },
+        {
+          "level": 2,
+          "text": "성장 단계별 추천 조합",
+          "id": "성장-단계별-추천-조합"
+        },
+        {
+          "level": 2,
+          "text": "예시: GitHub Actions → GHCR → VPS(Docker Compose)",
+          "id": "예시-github-actions-ghcr-vpsdocker-compose"
+        },
+        {
+          "level": 2,
+          "text": "점검표",
+          "id": "점검표"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
         }
       ]
     },

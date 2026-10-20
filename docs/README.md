@@ -16,7 +16,7 @@
 | [Hardware](./Hardware/)                                 | 전기·전자 기초, GPIO, 통신, 센서·모터 제어         |
 | [I18N](./I18N/)                                         | 다국어 번역 파일 관리, React & Angular 구현        |
 | [Network](./Network/)                                   | 프로토콜, 서브넷, 라우터, 게이트웨이               |
-| [Infrastructure](./Infrastructure/)                     | Docker, CI/CD, Nginx                               |
+| [Infrastructure](./Infrastructure/)                     | Docker, CI/CD(배포 전략, 파이프라인 보안, 1인·소규모 도구), Nginx |
 | [Security](./Security/)                                 | OWASP, 환경변수, CORS                              |
 | [UX](./UX/)                                             | 사용성 원칙, 사용자 조사, 시각 요소, 컴포넌트, 디자인 시스템 |
 | [Utility](./Utility/)                                   | Makefile, YAML, Husky, 코드 리뷰                   |
@@ -94,8 +94,9 @@
 
 ### Infrastructure
 
-- [Docker](./Infrastructure/docker/docker.md) | [Docker Compose](./Infrastructure/docker/docker-compose.md)
-- [GitHub Actions](./Infrastructure/cicd/github-action.md) | [Nginx](./Infrastructure/nginx/nginx.md)
+- [Docker](./Infrastructure/docker/docker.md) | [Docker Compose](./Infrastructure/docker/docker-compose.md) | [Nginx](./Infrastructure/nginx/nginx.md)
+- [CI/CD 학습 순서](./Infrastructure/cicd/README.md) | [CI/CD 기초](./Infrastructure/cicd/cicd-basics.md) | [배포 전략](./Infrastructure/cicd/deployment-strategies.md) | [파이프라인 보안](./Infrastructure/cicd/pipeline-security.md)
+- [1인·소규모 도구 선택](./Infrastructure/cicd/solo-dev-tools.md) | [릴리스·의존성 자동화](./Infrastructure/cicd/release-automation.md) | [GitHub Actions](./Infrastructure/cicd/github-action.md)
 
 ### Security
 
