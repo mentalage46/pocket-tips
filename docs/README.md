@@ -10,6 +10,7 @@
 | ------------------------------------------------------- | -------------------------------------------------- |
 | [AI](./AI/)                                             | LLM 기초·API, 프롬프팅, RAG, MCP, 운영, 보안, 로컬 모델, 에이전트 하네스와 개발 방법론 적용 |
 | [Architecture](./Architecture/)                         | 설계 원칙, 아키텍처 스타일, 도메인 모델링, 품질 속성, ADR |
+| [Automation](./Automation/)                             | PLC 구조, IEC 61131-3·래더, 산업 통신, HMI·SCADA, 기능 안전·OT 보안, 제조사 비교 |
 | [Backend](./Backend/)                                   | API 설계, 인증, DB, 캐싱, 로깅, 메시징, 테스트     |
 | [Build](./Build/)                                       | 빌드 과정, 의존성, 도구 선택, 캐시, 오류 진단     |
 | [Frontend](./Frontend/)                                 | 상태 관리, TypeScript, 성능 최적화, PWA, 웹 접근성 |
@@ -56,6 +57,16 @@
 - [도메인 모델링](./Architecture/patterns/domain-modeling.md) | [경계 설계](./Architecture/patterns/boundaries.md) | [안티패턴](./Architecture/patterns/anti-patterns.md)
 - [품질 속성](./Architecture/quality/quality-attributes.md) | [피트니스 함수](./Architecture/quality/fitness-functions.md)
 - [ADR](./Architecture/process/adr.md) | [다이어그램](./Architecture/process/diagrams.md) | [마이그레이션과 기술 부채](./Architecture/process/migration-and-debt.md)
+
+### Automation
+
+- [학습 순서와 전체 목차](./Automation/README.md) | [용어집](./Automation/glossary/README.md)
+- [PLC 구성과 형태](./Automation/basics/plc-architecture.md) | [스캔 사이클](./Automation/basics/scan-cycle.md) | [I/O 결선](./Automation/basics/io-wiring.md)
+- [IEC 61131-3](./Automation/programming/iec-61131-3.md) | [래더 기초](./Automation/programming/ladder-basics.md) | [시퀀스 패턴](./Automation/programming/sequence-patterns.md) | [최신 개발 방식](./Automation/programming/modern-practices.md)
+- [산업 통신 개요](./Automation/communication/fieldbus-overview.md) | [Modbus](./Automation/communication/modbus.md) | [산업 이더넷](./Automation/communication/industrial-ethernet.md) | [OPC UA·MQTT](./Automation/communication/opc-ua-and-mqtt.md)
+- [HMI 설계](./Automation/hmi-scada/hmi-design.md) | [알람 관리](./Automation/hmi-scada/alarm-management.md) | [태그와 SCADA 구조](./Automation/hmi-scada/tags-and-architecture.md)
+- [기능 안전](./Automation/safety/functional-safety.md) | [비상정지와 인터록](./Automation/safety/emergency-stop-and-interlock.md) | [OT 보안](./Automation/safety/ot-security.md)
+- [제조사 비교](./Automation/vendors/vendor-comparison.md) | [주소 체계와 도구](./Automation/vendors/addressing-and-tools.md)
 
 ### Backend
 
