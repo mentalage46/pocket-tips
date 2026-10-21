@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T02:37:53.742Z",
+  "generatedAt": "2026-10-21T07:56:40.596Z",
   "root": "docs",
   "home": "README.md",
   "tree": [
@@ -442,6 +442,228 @@
               "name": "monolith-vs-microservices.md",
               "path": "Architecture/styles/monolith-vs-microservices.md",
               "title": "모놀리스와 마이크로서비스"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "dir",
+      "name": "Automation",
+      "path": "Automation",
+      "title": "Automation",
+      "index": "Automation/README.md",
+      "children": [
+        {
+          "type": "dir",
+          "name": "basics",
+          "path": "Automation/basics",
+          "title": "basics",
+          "index": "Automation/basics/README.md",
+          "children": [
+            {
+              "type": "file",
+              "name": "io-wiring.md",
+              "path": "Automation/basics/io-wiring.md",
+              "title": "I/O 결선과 신호"
+            },
+            {
+              "type": "file",
+              "name": "plc-architecture.md",
+              "path": "Automation/basics/plc-architecture.md",
+              "title": "PLC 구조와 형태"
+            },
+            {
+              "type": "file",
+              "name": "scan-cycle.md",
+              "path": "Automation/basics/scan-cycle.md",
+              "title": "스캔 사이클과 응답 시간"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "communication",
+          "path": "Automation/communication",
+          "title": "communication",
+          "index": "Automation/communication/README.md",
+          "children": [
+            {
+              "type": "file",
+              "name": "fieldbus-overview.md",
+              "path": "Automation/communication/fieldbus-overview.md",
+              "title": "필드버스와 산업 통신 개요"
+            },
+            {
+              "type": "file",
+              "name": "industrial-ethernet.md",
+              "path": "Automation/communication/industrial-ethernet.md",
+              "title": "산업 이더넷"
+            },
+            {
+              "type": "file",
+              "name": "modbus.md",
+              "path": "Automation/communication/modbus.md",
+              "title": "Modbus"
+            },
+            {
+              "type": "file",
+              "name": "opc-ua-and-mqtt.md",
+              "path": "Automation/communication/opc-ua-and-mqtt.md",
+              "title": "OPC UA와 MQTT"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "glossary",
+          "path": "Automation/glossary",
+          "title": "glossary",
+          "index": "Automation/glossary/README.md",
+          "children": [
+            {
+              "type": "file",
+              "name": "basics.md",
+              "path": "Automation/glossary/basics.md",
+              "title": "PLC 기초 용어"
+            },
+            {
+              "type": "file",
+              "name": "communication.md",
+              "path": "Automation/glossary/communication.md",
+              "title": "산업 통신 용어"
+            },
+            {
+              "type": "file",
+              "name": "hmi-scada.md",
+              "path": "Automation/glossary/hmi-scada.md",
+              "title": "HMI·SCADA 용어"
+            },
+            {
+              "type": "file",
+              "name": "programming.md",
+              "path": "Automation/glossary/programming.md",
+              "title": "프로그래밍 용어"
+            },
+            {
+              "type": "file",
+              "name": "safety.md",
+              "path": "Automation/glossary/safety.md",
+              "title": "안전·보안 용어"
+            },
+            {
+              "type": "file",
+              "name": "vendors.md",
+              "path": "Automation/glossary/vendors.md",
+              "title": "제조사·도구 용어"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "hmi-scada",
+          "path": "Automation/hmi-scada",
+          "title": "hmi-scada",
+          "index": "Automation/hmi-scada/README.md",
+          "children": [
+            {
+              "type": "file",
+              "name": "alarm-management.md",
+              "path": "Automation/hmi-scada/alarm-management.md",
+              "title": "알람 관리"
+            },
+            {
+              "type": "file",
+              "name": "hmi-design.md",
+              "path": "Automation/hmi-scada/hmi-design.md",
+              "title": "HMI 화면 설계"
+            },
+            {
+              "type": "file",
+              "name": "tags-and-architecture.md",
+              "path": "Automation/hmi-scada/tags-and-architecture.md",
+              "title": "태그와 SCADA 구성"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "programming",
+          "path": "Automation/programming",
+          "title": "programming",
+          "index": "Automation/programming/README.md",
+          "children": [
+            {
+              "type": "file",
+              "name": "iec-61131-3.md",
+              "path": "Automation/programming/iec-61131-3.md",
+              "title": "IEC 61131-3 개요"
+            },
+            {
+              "type": "file",
+              "name": "ladder-basics.md",
+              "path": "Automation/programming/ladder-basics.md",
+              "title": "래더 기초"
+            },
+            {
+              "type": "file",
+              "name": "modern-practices.md",
+              "path": "Automation/programming/modern-practices.md",
+              "title": "최신 실무: 버전 관리·테스트·AI"
+            },
+            {
+              "type": "file",
+              "name": "sequence-patterns.md",
+              "path": "Automation/programming/sequence-patterns.md",
+              "title": "시퀀스 패턴"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "safety",
+          "path": "Automation/safety",
+          "title": "safety",
+          "index": "Automation/safety/README.md",
+          "children": [
+            {
+              "type": "file",
+              "name": "emergency-stop-and-interlock.md",
+              "path": "Automation/safety/emergency-stop-and-interlock.md",
+              "title": "비상정지와 인터록"
+            },
+            {
+              "type": "file",
+              "name": "functional-safety.md",
+              "path": "Automation/safety/functional-safety.md",
+              "title": "기능 안전 기초"
+            },
+            {
+              "type": "file",
+              "name": "ot-security.md",
+              "path": "Automation/safety/ot-security.md",
+              "title": "OT 보안"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "vendors",
+          "path": "Automation/vendors",
+          "title": "vendors",
+          "index": "Automation/vendors/README.md",
+          "children": [
+            {
+              "type": "file",
+              "name": "addressing-and-tools.md",
+              "path": "Automation/vendors/addressing-and-tools.md",
+              "title": "주소 체계와 엔지니어링 툴"
+            },
+            {
+              "type": "file",
+              "name": "vendor-comparison.md",
+              "path": "Automation/vendors/vendor-comparison.md",
+              "title": "주요 PLC 제조사·플랫폼 비교"
             }
           ]
         }
@@ -3859,6 +4081,1926 @@
           "level": 2,
           "text": "전환 경로",
           "id": "전환-경로"
+        }
+      ]
+    },
+    "Automation/README.md": {
+      "title": "Automation",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Automation",
+          "id": "automation"
+        },
+        {
+          "level": 2,
+          "text": "학습 순서",
+          "id": "학습-순서"
+        },
+        {
+          "level": 2,
+          "text": "추천 실습 순서",
+          "id": "추천-실습-순서"
+        },
+        {
+          "level": 2,
+          "text": "관련 지식",
+          "id": "관련-지식"
+        }
+      ]
+    },
+    "Automation/basics/README.md": {
+      "title": "PLC 기초",
+      "headings": [
+        {
+          "level": 1,
+          "text": "PLC 기초",
+          "id": "plc-기초"
+        },
+        {
+          "level": 2,
+          "text": "학습 순서",
+          "id": "학습-순서"
+        },
+        {
+          "level": 2,
+          "text": "다음 단계",
+          "id": "다음-단계"
+        },
+        {
+          "level": 2,
+          "text": "관련 지식",
+          "id": "관련-지식"
+        }
+      ]
+    },
+    "Automation/basics/io-wiring.md": {
+      "title": "I/O 결선과 신호",
+      "headings": [
+        {
+          "level": 1,
+          "text": "I/O 결선과 신호",
+          "id": "io-결선과-신호"
+        },
+        {
+          "level": 2,
+          "text": "24V DC 디지털 입력",
+          "id": "24v-dc-디지털-입력"
+        },
+        {
+          "level": 3,
+          "text": "IEC 61131-2 입력 타입",
+          "id": "iec-61131-2-입력-타입"
+        },
+        {
+          "level": 3,
+          "text": "입력 필터",
+          "id": "입력-필터"
+        },
+        {
+          "level": 2,
+          "text": "싱크와 소스",
+          "id": "싱크와-소스"
+        },
+        {
+          "level": 2,
+          "text": "NPN·PNP 센서와 2선·3선",
+          "id": "npnpnp-센서와-2선3선"
+        },
+        {
+          "level": 2,
+          "text": "디지털 출력 종류",
+          "id": "디지털-출력-종류"
+        },
+        {
+          "level": 2,
+          "text": "유도성 부하와 서지 보호",
+          "id": "유도성-부하와-서지-보호"
+        },
+        {
+          "level": 2,
+          "text": "아날로그 신호",
+          "id": "아날로그-신호"
+        },
+        {
+          "level": 3,
+          "text": "라이브 제로와 고장 신호",
+          "id": "라이브-제로와-고장-신호"
+        },
+        {
+          "level": 3,
+          "text": "2선식과 4선식 트랜스미터",
+          "id": "2선식과-4선식-트랜스미터"
+        },
+        {
+          "level": 2,
+          "text": "공통(COM) 결선",
+          "id": "공통com-결선"
+        },
+        {
+          "level": 2,
+          "text": "a접점·b접점과 페일세이프",
+          "id": "a접점b접점과-페일세이프"
+        },
+        {
+          "level": 2,
+          "text": "노이즈·접지·실드",
+          "id": "노이즈접지실드"
+        },
+        {
+          "level": 2,
+          "text": "배선 점검 순서",
+          "id": "배선-점검-순서"
+        },
+        {
+          "level": 2,
+          "text": "흔한 실수",
+          "id": "흔한-실수"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Automation/basics/plc-architecture.md": {
+      "title": "PLC 구조와 형태",
+      "headings": [
+        {
+          "level": 1,
+          "text": "PLC 구조와 형태",
+          "id": "plc-구조와-형태"
+        },
+        {
+          "level": 2,
+          "text": "릴레이 반에서 PLC로",
+          "id": "릴레이-반에서-plc로"
+        },
+        {
+          "level": 2,
+          "text": "구성 요소",
+          "id": "구성-요소"
+        },
+        {
+          "level": 3,
+          "text": "메모리",
+          "id": "메모리"
+        },
+        {
+          "level": 2,
+          "text": "형태",
+          "id": "형태"
+        },
+        {
+          "level": 2,
+          "text": "PLC vs MCU vs 산업용 PC",
+          "id": "plc-vs-mcu-vs-산업용-pc"
+        },
+        {
+          "level": 2,
+          "text": "선정 점검표",
+          "id": "선정-점검표"
+        },
+        {
+          "level": 2,
+          "text": "최신 동향 (2026년 기준)",
+          "id": "최신-동향-2026년-기준"
+        },
+        {
+          "level": 2,
+          "text": "흔한 실수",
+          "id": "흔한-실수"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Automation/basics/scan-cycle.md": {
+      "title": "스캔 사이클과 응답 시간",
+      "headings": [
+        {
+          "level": 1,
+          "text": "스캔 사이클과 응답 시간",
+          "id": "스캔-사이클과-응답-시간"
+        },
+        {
+          "level": 2,
+          "text": "기본 스캔 사이클",
+          "id": "기본-스캔-사이클"
+        },
+        {
+          "level": 2,
+          "text": "프로세스 이미지",
+          "id": "프로세스-이미지"
+        },
+        {
+          "level": 2,
+          "text": "스캔 타임",
+          "id": "스캔-타임"
+        },
+        {
+          "level": 2,
+          "text": "응답 시간 계산",
+          "id": "응답-시간-계산"
+        },
+        {
+          "level": 3,
+          "text": "계산 예시",
+          "id": "계산-예시"
+        },
+        {
+          "level": 3,
+          "text": "놓치는 펄스",
+          "id": "놓치는-펄스"
+        },
+        {
+          "level": 2,
+          "text": "워치독(사이클 감시)",
+          "id": "워치독사이클-감시"
+        },
+        {
+          "level": 2,
+          "text": "태스크 종류",
+          "id": "태스크-종류"
+        },
+        {
+          "level": 2,
+          "text": "직접 I/O 접근",
+          "id": "직접-io-접근"
+        },
+        {
+          "level": 2,
+          "text": "실행 순서로 인한 흔한 버그",
+          "id": "실행-순서로-인한-흔한-버그"
+        },
+        {
+          "level": 3,
+          "text": "듀얼 코일(이중 코일)",
+          "id": "듀얼-코일이중-코일"
+        },
+        {
+          "level": 3,
+          "text": "그 밖의 순서 버그",
+          "id": "그-밖의-순서-버그"
+        },
+        {
+          "level": 2,
+          "text": "점검표",
+          "id": "점검표"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Automation/communication/README.md": {
+      "title": "산업 통신",
+      "headings": [
+        {
+          "level": 1,
+          "text": "산업 통신",
+          "id": "산업-통신"
+        },
+        {
+          "level": 2,
+          "text": "학습 순서",
+          "id": "학습-순서"
+        },
+        {
+          "level": 2,
+          "text": "한눈에 보는 위치",
+          "id": "한눈에-보는-위치"
+        },
+        {
+          "level": 2,
+          "text": "관련 지식",
+          "id": "관련-지식"
+        }
+      ]
+    },
+    "Automation/communication/fieldbus-overview.md": {
+      "title": "필드버스와 산업 통신 개요",
+      "headings": [
+        {
+          "level": 1,
+          "text": "필드버스와 산업 통신 개요",
+          "id": "필드버스와-산업-통신-개요"
+        },
+        {
+          "level": 2,
+          "text": "왜 산업 통신이 따로 있나",
+          "id": "왜-산업-통신이-따로-있나"
+        },
+        {
+          "level": 2,
+          "text": "통신 계층과 Purdue 모델",
+          "id": "통신-계층과-purdue-모델"
+        },
+        {
+          "level": 2,
+          "text": "기술 흐름: 시리얼 필드버스 → 산업 이더넷 → TSN",
+          "id": "기술-흐름-시리얼-필드버스-산업-이더넷-tsn"
+        },
+        {
+          "level": 3,
+          "text": "대표 시리얼 필드버스",
+          "id": "대표-시리얼-필드버스"
+        },
+        {
+          "level": 2,
+          "text": "IO-Link: 센서 레벨 점대점 통신",
+          "id": "io-link-센서-레벨-점대점-통신"
+        },
+        {
+          "level": 2,
+          "text": "최신 동향: 단일 쌍 이더넷(SPE)과 Ethernet-APL",
+          "id": "최신-동향-단일-쌍-이더넷spe과-ethernet-apl"
+        },
+        {
+          "level": 2,
+          "text": "주요 프로토콜 비교",
+          "id": "주요-프로토콜-비교"
+        },
+        {
+          "level": 2,
+          "text": "선택 기준",
+          "id": "선택-기준"
+        },
+        {
+          "level": 2,
+          "text": "흔한 실수",
+          "id": "흔한-실수"
+        },
+        {
+          "level": 2,
+          "text": "점검표",
+          "id": "점검표"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Automation/communication/industrial-ethernet.md": {
+      "title": "산업 이더넷",
+      "headings": [
+        {
+          "level": 1,
+          "text": "산업 이더넷",
+          "id": "산업-이더넷"
+        },
+        {
+          "level": 2,
+          "text": "실시간을 만드는 세 가지 방법",
+          "id": "실시간을-만드는-세-가지-방법"
+        },
+        {
+          "level": 2,
+          "text": "EtherNet/IP",
+          "id": "ethernetip"
+        },
+        {
+          "level": 2,
+          "text": "PROFINET",
+          "id": "profinet"
+        },
+        {
+          "level": 2,
+          "text": "EtherCAT",
+          "id": "ethercat"
+        },
+        {
+          "level": 2,
+          "text": "CC-Link IE (TSN / Field)",
+          "id": "cc-link-ie-tsn-field"
+        },
+        {
+          "level": 2,
+          "text": "POWERLINK",
+          "id": "powerlink"
+        },
+        {
+          "level": 2,
+          "text": "비교표",
+          "id": "비교표"
+        },
+        {
+          "level": 2,
+          "text": "토폴로지와 스위치 선택",
+          "id": "토폴로지와-스위치-선택"
+        },
+        {
+          "level": 2,
+          "text": "TSN(Time-Sensitive Networking)",
+          "id": "tsntime-sensitive-networking"
+        },
+        {
+          "level": 2,
+          "text": "설계·진단 점검표",
+          "id": "설계진단-점검표"
+        },
+        {
+          "level": 2,
+          "text": "흔한 실수",
+          "id": "흔한-실수"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Automation/communication/modbus.md": {
+      "title": "Modbus",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Modbus",
+          "id": "modbus"
+        },
+        {
+          "level": 2,
+          "text": "변형과 용어",
+          "id": "변형과-용어"
+        },
+        {
+          "level": 2,
+          "text": "데이터 모델",
+          "id": "데이터-모델"
+        },
+        {
+          "level": 2,
+          "text": "주소 오프셋: 가장 흔한 혼란",
+          "id": "주소-오프셋-가장-흔한-혼란"
+        },
+        {
+          "level": 2,
+          "text": "함수 코드",
+          "id": "함수-코드"
+        },
+        {
+          "level": 3,
+          "text": "예외 응답",
+          "id": "예외-응답"
+        },
+        {
+          "level": 2,
+          "text": "32비트 정수·실수와 워드 순서",
+          "id": "32비트-정수실수와-워드-순서"
+        },
+        {
+          "level": 2,
+          "text": "Modbus RTU 프레임",
+          "id": "modbus-rtu-프레임"
+        },
+        {
+          "level": 3,
+          "text": "RS-485 배선 요점",
+          "id": "rs-485-배선-요점"
+        },
+        {
+          "level": 2,
+          "text": "Modbus TCP: MBAP 헤더",
+          "id": "modbus-tcp-mbap-헤더"
+        },
+        {
+          "level": 2,
+          "text": "Modbus/TCP Security",
+          "id": "modbustcp-security"
+        },
+        {
+          "level": 2,
+          "text": "디버깅 도구",
+          "id": "디버깅-도구"
+        },
+        {
+          "level": 2,
+          "text": "pymodbus 클라이언트 예제",
+          "id": "pymodbus-클라이언트-예제"
+        },
+        {
+          "level": 2,
+          "text": "흔한 실수",
+          "id": "흔한-실수"
+        },
+        {
+          "level": 2,
+          "text": "점검표",
+          "id": "점검표"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Automation/communication/opc-ua-and-mqtt.md": {
+      "title": "OPC UA와 MQTT",
+      "headings": [
+        {
+          "level": 1,
+          "text": "OPC UA와 MQTT",
+          "id": "opc-ua와-mqtt"
+        },
+        {
+          "level": 2,
+          "text": "OPC UA",
+          "id": "opc-ua"
+        },
+        {
+          "level": 3,
+          "text": "주소 공간과 노드",
+          "id": "주소-공간과-노드"
+        },
+        {
+          "level": 3,
+          "text": "보안",
+          "id": "보안"
+        },
+        {
+          "level": 3,
+          "text": "PubSub",
+          "id": "pubsub"
+        },
+        {
+          "level": 3,
+          "text": "OPC UA FX(Field eXchange)",
+          "id": "opc-ua-fxfield-exchange"
+        },
+        {
+          "level": 2,
+          "text": "MQTT",
+          "id": "mqtt"
+        },
+        {
+          "level": 3,
+          "text": "QoS, retained, LWT",
+          "id": "qos-retained-lwt"
+        },
+        {
+          "level": 3,
+          "text": "MQTT 5에서 추가된 것",
+          "id": "mqtt-5에서-추가된-것"
+        },
+        {
+          "level": 2,
+          "text": "Sparkplug B",
+          "id": "sparkplug-b"
+        },
+        {
+          "level": 3,
+          "text": "토픽 구조",
+          "id": "토픽-구조"
+        },
+        {
+          "level": 2,
+          "text": "Unified Namespace(UNS)",
+          "id": "unified-namespaceuns"
+        },
+        {
+          "level": 2,
+          "text": "IT/OT 연결 아키텍처 예시",
+          "id": "itot-연결-아키텍처-예시"
+        },
+        {
+          "level": 2,
+          "text": "OPC UA vs MQTT 선택",
+          "id": "opc-ua-vs-mqtt-선택"
+        },
+        {
+          "level": 2,
+          "text": "보안 주의점",
+          "id": "보안-주의점"
+        },
+        {
+          "level": 2,
+          "text": "흔한 실수",
+          "id": "흔한-실수"
+        },
+        {
+          "level": 2,
+          "text": "점검표",
+          "id": "점검표"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Automation/glossary/README.md": {
+      "title": "PLC·자동화 용어 색인",
+      "headings": [
+        {
+          "level": 1,
+          "text": "PLC·자동화 용어 색인",
+          "id": "plc자동화-용어-색인"
+        },
+        {
+          "level": 2,
+          "text": "PLC 기초",
+          "id": "plc-기초"
+        },
+        {
+          "level": 2,
+          "text": "프로그래밍",
+          "id": "프로그래밍"
+        },
+        {
+          "level": 2,
+          "text": "산업 통신",
+          "id": "산업-통신"
+        },
+        {
+          "level": 2,
+          "text": "HMI·SCADA",
+          "id": "hmiscada"
+        },
+        {
+          "level": 2,
+          "text": "안전과 보안",
+          "id": "안전과-보안"
+        },
+        {
+          "level": 2,
+          "text": "제조사와 도구",
+          "id": "제조사와-도구"
+        }
+      ]
+    },
+    "Automation/glossary/basics.md": {
+      "title": "PLC 기초 용어",
+      "headings": [
+        {
+          "level": 1,
+          "text": "PLC 기초 용어",
+          "id": "plc-기초-용어"
+        },
+        {
+          "level": 2,
+          "text": "PLC 구성과 형태",
+          "id": "plc-구성과-형태"
+        },
+        {
+          "level": 2,
+          "text": "스캔과 실행",
+          "id": "스캔과-실행"
+        },
+        {
+          "level": 2,
+          "text": "입출력과 결선",
+          "id": "입출력과-결선"
+        },
+        {
+          "level": 2,
+          "text": "아날로그 신호",
+          "id": "아날로그-신호"
+        }
+      ]
+    },
+    "Automation/glossary/communication.md": {
+      "title": "산업 통신 용어",
+      "headings": [
+        {
+          "level": 1,
+          "text": "산업 통신 용어",
+          "id": "산업-통신-용어"
+        },
+        {
+          "level": 2,
+          "text": "통신 기본 개념",
+          "id": "통신-기본-개념"
+        },
+        {
+          "level": 2,
+          "text": "필드버스와 IO-Link",
+          "id": "필드버스와-io-link"
+        },
+        {
+          "level": 2,
+          "text": "Modbus",
+          "id": "modbus"
+        },
+        {
+          "level": 2,
+          "text": "산업 이더넷",
+          "id": "산업-이더넷"
+        },
+        {
+          "level": 2,
+          "text": "OPC UA와 MQTT",
+          "id": "opc-ua와-mqtt"
+        }
+      ]
+    },
+    "Automation/glossary/hmi-scada.md": {
+      "title": "HMI·SCADA 용어",
+      "headings": [
+        {
+          "level": 1,
+          "text": "HMI·SCADA 용어",
+          "id": "hmiscada-용어"
+        },
+        {
+          "level": 2,
+          "text": "HMI 설계",
+          "id": "hmi-설계"
+        },
+        {
+          "level": 2,
+          "text": "알람 관리",
+          "id": "알람-관리"
+        },
+        {
+          "level": 2,
+          "text": "태그와 데이터",
+          "id": "태그와-데이터"
+        }
+      ]
+    },
+    "Automation/glossary/programming.md": {
+      "title": "프로그래밍 용어",
+      "headings": [
+        {
+          "level": 1,
+          "text": "프로그래밍 용어",
+          "id": "프로그래밍-용어"
+        },
+        {
+          "level": 2,
+          "text": "표준과 언어",
+          "id": "표준과-언어"
+        },
+        {
+          "level": 2,
+          "text": "프로그램 구조와 데이터",
+          "id": "프로그램-구조와-데이터"
+        },
+        {
+          "level": 2,
+          "text": "래더와 기본 명령",
+          "id": "래더와-기본-명령"
+        },
+        {
+          "level": 2,
+          "text": "시퀀스와 상태",
+          "id": "시퀀스와-상태"
+        },
+        {
+          "level": 2,
+          "text": "개발 도구와 검증",
+          "id": "개발-도구와-검증"
+        }
+      ]
+    },
+    "Automation/glossary/safety.md": {
+      "title": "안전·보안 용어",
+      "headings": [
+        {
+          "level": 1,
+          "text": "안전·보안 용어",
+          "id": "안전보안-용어"
+        },
+        {
+          "level": 2,
+          "text": "기능 안전",
+          "id": "기능-안전"
+        },
+        {
+          "level": 2,
+          "text": "비상정지와 인터록",
+          "id": "비상정지와-인터록"
+        },
+        {
+          "level": 2,
+          "text": "OT 보안",
+          "id": "ot-보안"
+        }
+      ]
+    },
+    "Automation/glossary/vendors.md": {
+      "title": "제조사·도구 용어",
+      "headings": [
+        {
+          "level": 1,
+          "text": "제조사·도구 용어",
+          "id": "제조사도구-용어"
+        },
+        {
+          "level": 2,
+          "text": "주소 체계",
+          "id": "주소-체계"
+        },
+        {
+          "level": 2,
+          "text": "제조사와 제품",
+          "id": "제조사와-제품"
+        },
+        {
+          "level": 2,
+          "text": "엔지니어링 도구",
+          "id": "엔지니어링-도구"
+        }
+      ]
+    },
+    "Automation/hmi-scada/README.md": {
+      "title": "HMI·SCADA",
+      "headings": [
+        {
+          "level": 1,
+          "text": "HMI·SCADA",
+          "id": "hmiscada"
+        },
+        {
+          "level": 2,
+          "text": "학습 순서",
+          "id": "학습-순서"
+        },
+        {
+          "level": 2,
+          "text": "관련 지식",
+          "id": "관련-지식"
+        }
+      ]
+    },
+    "Automation/hmi-scada/alarm-management.md": {
+      "title": "알람 관리",
+      "headings": [
+        {
+          "level": 1,
+          "text": "알람 관리",
+          "id": "알람-관리"
+        },
+        {
+          "level": 2,
+          "text": "관련 표준",
+          "id": "관련-표준"
+        },
+        {
+          "level": 2,
+          "text": "알람의 정의",
+          "id": "알람의-정의"
+        },
+        {
+          "level": 2,
+          "text": "생애주기",
+          "id": "생애주기"
+        },
+        {
+          "level": 2,
+          "text": "알람 철학 문서",
+          "id": "알람-철학-문서"
+        },
+        {
+          "level": 2,
+          "text": "우선순위",
+          "id": "우선순위"
+        },
+        {
+          "level": 2,
+          "text": "성능 지표",
+          "id": "성능-지표"
+        },
+        {
+          "level": 2,
+          "text": "알람 상태",
+          "id": "알람-상태"
+        },
+        {
+          "level": 2,
+          "text": "알람 합리화",
+          "id": "알람-합리화"
+        },
+        {
+          "level": 2,
+          "text": "PLC 측 구현 팁",
+          "id": "plc-측-구현-팁"
+        },
+        {
+          "level": 2,
+          "text": "HMI 표시",
+          "id": "hmi-표시"
+        },
+        {
+          "level": 2,
+          "text": "흔한 실수",
+          "id": "흔한-실수"
+        },
+        {
+          "level": 2,
+          "text": "점검표",
+          "id": "점검표"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Automation/hmi-scada/hmi-design.md": {
+      "title": "HMI 화면 설계",
+      "headings": [
+        {
+          "level": 1,
+          "text": "HMI 화면 설계",
+          "id": "hmi-화면-설계"
+        },
+        {
+          "level": 2,
+          "text": "HMI·SCADA·MES 구분",
+          "id": "hmiscadames-구분"
+        },
+        {
+          "level": 2,
+          "text": "관련 표준",
+          "id": "관련-표준"
+        },
+        {
+          "level": 2,
+          "text": "HMI 생애주기와 문서 3종",
+          "id": "hmi-생애주기와-문서-3종"
+        },
+        {
+          "level": 2,
+          "text": "고성능 HMI 원칙",
+          "id": "고성능-hmi-원칙"
+        },
+        {
+          "level": 3,
+          "text": "아날로그 표시기 예",
+          "id": "아날로그-표시기-예"
+        },
+        {
+          "level": 2,
+          "text": "화면 계층(Level 1~4)",
+          "id": "화면-계층level-14"
+        },
+        {
+          "level": 2,
+          "text": "내비게이션",
+          "id": "내비게이션"
+        },
+        {
+          "level": 2,
+          "text": "운전자 조작 설계",
+          "id": "운전자-조작-설계"
+        },
+        {
+          "level": 3,
+          "text": "권한",
+          "id": "권한"
+        },
+        {
+          "level": 2,
+          "text": "터치 패널과 현장 환경",
+          "id": "터치-패널과-현장-환경"
+        },
+        {
+          "level": 2,
+          "text": "색각 이상과 색 외 수단",
+          "id": "색각-이상과-색-외-수단"
+        },
+        {
+          "level": 2,
+          "text": "다국어",
+          "id": "다국어"
+        },
+        {
+          "level": 2,
+          "text": "흔한 안티패턴",
+          "id": "흔한-안티패턴"
+        },
+        {
+          "level": 2,
+          "text": "점검표",
+          "id": "점검표"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Automation/hmi-scada/tags-and-architecture.md": {
+      "title": "태그와 SCADA 구성",
+      "headings": [
+        {
+          "level": 1,
+          "text": "태그와 SCADA 구성",
+          "id": "태그와-scada-구성"
+        },
+        {
+          "level": 2,
+          "text": "태그 개념",
+          "id": "태그-개념"
+        },
+        {
+          "level": 2,
+          "text": "명명 규칙",
+          "id": "명명-규칙"
+        },
+        {
+          "level": 3,
+          "text": "ISA-5.1 계기 태그 읽기",
+          "id": "isa-51-계기-태그-읽기"
+        },
+        {
+          "level": 3,
+          "text": "계층형과 UNS",
+          "id": "계층형과-uns"
+        },
+        {
+          "level": 3,
+          "text": "명명 규칙 정하기",
+          "id": "명명-규칙-정하기"
+        },
+        {
+          "level": 2,
+          "text": "UDT와 템플릿",
+          "id": "udt와-템플릿"
+        },
+        {
+          "level": 2,
+          "text": "스케일링과 단위",
+          "id": "스케일링과-단위"
+        },
+        {
+          "level": 2,
+          "text": "품질 코드",
+          "id": "품질-코드"
+        },
+        {
+          "level": 2,
+          "text": "SCADA 구성",
+          "id": "scada-구성"
+        },
+        {
+          "level": 3,
+          "text": "이중화 방식",
+          "id": "이중화-방식"
+        },
+        {
+          "level": 2,
+          "text": "히스토리안과 압축",
+          "id": "히스토리안과-압축"
+        },
+        {
+          "level": 2,
+          "text": "웹 기반 HMI",
+          "id": "웹-기반-hmi"
+        },
+        {
+          "level": 2,
+          "text": "주요 플랫폼 현황",
+          "id": "주요-플랫폼-현황"
+        },
+        {
+          "level": 2,
+          "text": "클라우드·엣지 동향",
+          "id": "클라우드엣지-동향"
+        },
+        {
+          "level": 2,
+          "text": "선택 기준표",
+          "id": "선택-기준표"
+        },
+        {
+          "level": 2,
+          "text": "흔한 실수",
+          "id": "흔한-실수"
+        },
+        {
+          "level": 2,
+          "text": "점검표",
+          "id": "점검표"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Automation/programming/README.md": {
+      "title": "PLC 프로그래밍",
+      "headings": [
+        {
+          "level": 1,
+          "text": "PLC 프로그래밍",
+          "id": "plc-프로그래밍"
+        },
+        {
+          "level": 2,
+          "text": "학습 순서",
+          "id": "학습-순서"
+        },
+        {
+          "level": 2,
+          "text": "관련 지식",
+          "id": "관련-지식"
+        }
+      ]
+    },
+    "Automation/programming/iec-61131-3.md": {
+      "title": "IEC 61131-3 개요",
+      "headings": [
+        {
+          "level": 1,
+          "text": "IEC 61131-3 개요",
+          "id": "iec-61131-3-개요"
+        },
+        {
+          "level": 2,
+          "text": "판(edition) 역사",
+          "id": "판edition-역사"
+        },
+        {
+          "level": 2,
+          "text": "5개 언어 비교",
+          "id": "5개-언어-비교"
+        },
+        {
+          "level": 3,
+          "text": "언제 무엇을 쓰나 (경험칙)",
+          "id": "언제-무엇을-쓰나-경험칙"
+        },
+        {
+          "level": 2,
+          "text": "POU (Program Organization Unit)",
+          "id": "pou-program-organization-unit"
+        },
+        {
+          "level": 2,
+          "text": "구성·리소스·태스크",
+          "id": "구성리소스태스크"
+        },
+        {
+          "level": 2,
+          "text": "데이터 타입",
+          "id": "데이터-타입"
+        },
+        {
+          "level": 2,
+          "text": "변수 섹션",
+          "id": "변수-섹션"
+        },
+        {
+          "level": 2,
+          "text": "직접 주소와 심볼릭 주소",
+          "id": "직접-주소와-심볼릭-주소"
+        },
+        {
+          "level": 2,
+          "text": "ST 예제: 모터 기능 블록",
+          "id": "st-예제-모터-기능-블록"
+        },
+        {
+          "level": 2,
+          "text": "IEC 61499와의 관계",
+          "id": "iec-61499와의-관계"
+        },
+        {
+          "level": 2,
+          "text": "흔한 실수",
+          "id": "흔한-실수"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Automation/programming/ladder-basics.md": {
+      "title": "래더 기초",
+      "headings": [
+        {
+          "level": 1,
+          "text": "래더 기초",
+          "id": "래더-기초"
+        },
+        {
+          "level": 2,
+          "text": "래더 읽는 법",
+          "id": "래더-읽는-법"
+        },
+        {
+          "level": 2,
+          "text": "접점과 코일",
+          "id": "접점과-코일"
+        },
+        {
+          "level": 3,
+          "text": "물리 b접점과 프로그램 b접점은 다릅니다",
+          "id": "물리-b접점과-프로그램-b접점은-다릅니다"
+        },
+        {
+          "level": 2,
+          "text": "자기유지 회로",
+          "id": "자기유지-회로"
+        },
+        {
+          "level": 2,
+          "text": "SET/RESET",
+          "id": "setreset"
+        },
+        {
+          "level": 2,
+          "text": "상승·하강 엣지",
+          "id": "상승하강-엣지"
+        },
+        {
+          "level": 2,
+          "text": "타이머",
+          "id": "타이머"
+        },
+        {
+          "level": 2,
+          "text": "카운터",
+          "id": "카운터"
+        },
+        {
+          "level": 2,
+          "text": "비교·이동 명령",
+          "id": "비교이동-명령"
+        },
+        {
+          "level": 2,
+          "text": "예제: 모터 정역 운전 인터록",
+          "id": "예제-모터-정역-운전-인터록"
+        },
+        {
+          "level": 2,
+          "text": "듀얼 코일 문제",
+          "id": "듀얼-코일-문제"
+        },
+        {
+          "level": 2,
+          "text": "래더 ↔ ST 대응표",
+          "id": "래더-st-대응표"
+        },
+        {
+          "level": 2,
+          "text": "흔한 실수",
+          "id": "흔한-실수"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Automation/programming/modern-practices.md": {
+      "title": "최신 실무: 버전 관리·테스트·AI",
+      "headings": [
+        {
+          "level": 1,
+          "text": "최신 실무: 버전 관리·테스트·AI",
+          "id": "최신-실무-버전-관리테스트ai"
+        },
+        {
+          "level": 2,
+          "text": "왜 PLC 코드 버전 관리가 어려운가",
+          "id": "왜-plc-코드-버전-관리가-어려운가"
+        },
+        {
+          "level": 3,
+          "text": "PLCopen XML (IEC 61131-10)",
+          "id": "plcopen-xml-iec-61131-10"
+        },
+        {
+          "level": 2,
+          "text": "제조사별 현재 상태",
+          "id": "제조사별-현재-상태"
+        },
+        {
+          "level": 2,
+          "text": "단위 테스트",
+          "id": "단위-테스트"
+        },
+        {
+          "level": 2,
+          "text": "시뮬레이션과 가상 시운전",
+          "id": "시뮬레이션과-가상-시운전"
+        },
+        {
+          "level": 2,
+          "text": "PLC를 위한 CI/CD",
+          "id": "plc를-위한-cicd"
+        },
+        {
+          "level": 2,
+          "text": "IEC 61499와 UniversalAutomation.org",
+          "id": "iec-61499와-universalautomationorg"
+        },
+        {
+          "level": 2,
+          "text": "가상 PLC",
+          "id": "가상-plc"
+        },
+        {
+          "level": 2,
+          "text": "생성형 AI 엔지니어링 코파일럿",
+          "id": "생성형-ai-엔지니어링-코파일럿"
+        },
+        {
+          "level": 2,
+          "text": "실무 도입 순서 (경험칙)",
+          "id": "실무-도입-순서-경험칙"
+        },
+        {
+          "level": 2,
+          "text": "주의점",
+          "id": "주의점"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Automation/programming/sequence-patterns.md": {
+      "title": "시퀀스 패턴",
+      "headings": [
+        {
+          "level": 1,
+          "text": "시퀀스 패턴",
+          "id": "시퀀스-패턴"
+        },
+        {
+          "level": 2,
+          "text": "스텝 시퀀스: 정수 스텝 번호",
+          "id": "스텝-시퀀스-정수-스텝-번호"
+        },
+        {
+          "level": 2,
+          "text": "상태 머신: ST CASE 문",
+          "id": "상태-머신-st-case-문"
+        },
+        {
+          "level": 2,
+          "text": "SFC 개념",
+          "id": "sfc-개념"
+        },
+        {
+          "level": 2,
+          "text": "전이 조건과 타임아웃",
+          "id": "전이-조건과-타임아웃"
+        },
+        {
+          "level": 2,
+          "text": "인터록과 허가 조건",
+          "id": "인터록과-허가-조건"
+        },
+        {
+          "level": 2,
+          "text": "수동·자동·원점 복귀 모드",
+          "id": "수동자동원점-복귀-모드"
+        },
+        {
+          "level": 2,
+          "text": "알람과 비상정지 후 복구 흐름",
+          "id": "알람과-비상정지-후-복구-흐름"
+        },
+        {
+          "level": 2,
+          "text": "ISA-88: 배치 제어 모델",
+          "id": "isa-88-배치-제어-모델"
+        },
+        {
+          "level": 2,
+          "text": "PackML: 기계 상태 모델",
+          "id": "packml-기계-상태-모델"
+        },
+        {
+          "level": 2,
+          "text": "점검표",
+          "id": "점검표"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Automation/safety/README.md": {
+      "title": "안전과 보안",
+      "headings": [
+        {
+          "level": 1,
+          "text": "안전과 보안",
+          "id": "안전과-보안"
+        },
+        {
+          "level": 2,
+          "text": "학습 순서",
+          "id": "학습-순서"
+        },
+        {
+          "level": 2,
+          "text": "먼저 알면 좋은 것",
+          "id": "먼저-알면-좋은-것"
+        },
+        {
+          "level": 2,
+          "text": "관련 지식",
+          "id": "관련-지식"
+        }
+      ]
+    },
+    "Automation/safety/emergency-stop-and-interlock.md": {
+      "title": "비상정지와 인터록",
+      "headings": [
+        {
+          "level": 1,
+          "text": "비상정지와 인터록",
+          "id": "비상정지와-인터록"
+        },
+        {
+          "level": 2,
+          "text": "1. 비상정지 원칙 (ISO 13850)",
+          "id": "1-비상정지-원칙-iso-13850"
+        },
+        {
+          "level": 2,
+          "text": "2. 정지 카테고리 (IEC 60204-1)",
+          "id": "2-정지-카테고리-iec-60204-1"
+        },
+        {
+          "level": 2,
+          "text": "3. 안전 릴레이 동작",
+          "id": "3-안전-릴레이-동작"
+        },
+        {
+          "level": 2,
+          "text": "4. 안전 PLC, 안전 I/O, 안전 통신",
+          "id": "4-안전-plc-안전-io-안전-통신"
+        },
+        {
+          "level": 2,
+          "text": "5. 인터록 장치 (ISO 14119)",
+          "id": "5-인터록-장치-iso-14119"
+        },
+        {
+          "level": 3,
+          "text": "무력화 방지",
+          "id": "무력화-방지"
+        },
+        {
+          "level": 3,
+          "text": "가드 잠금(guard locking)",
+          "id": "가드-잠금guard-locking"
+        },
+        {
+          "level": 2,
+          "text": "6. 라이트 커튼과 안전 거리 (ISO 13855)",
+          "id": "6-라이트-커튼과-안전-거리-iso-13855"
+        },
+        {
+          "level": 2,
+          "text": "7. 안전 토크 오프 STO (IEC 61800-5-2)",
+          "id": "7-안전-토크-오프-sto-iec-61800-5-2"
+        },
+        {
+          "level": 2,
+          "text": "흔한 실수",
+          "id": "흔한-실수"
+        },
+        {
+          "level": 2,
+          "text": "점검표",
+          "id": "점검표"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Automation/safety/functional-safety.md": {
+      "title": "기능 안전 기초",
+      "headings": [
+        {
+          "level": 1,
+          "text": "기능 안전 기초",
+          "id": "기능-안전-기초"
+        },
+        {
+          "level": 2,
+          "text": "1. 기본 개념",
+          "id": "1-기본-개념"
+        },
+        {
+          "level": 2,
+          "text": "2. 리스크 평가: ISO 12100 흐름",
+          "id": "2-리스크-평가-iso-12100-흐름"
+        },
+        {
+          "level": 2,
+          "text": "3. 표준 지도와 선택",
+          "id": "3-표준-지도와-선택"
+        },
+        {
+          "level": 2,
+          "text": "4. ISO 13849-1 핵심",
+          "id": "4-iso-13849-1-핵심"
+        },
+        {
+          "level": 3,
+          "text": "4.1 PLr 결정: 위험 그래프",
+          "id": "41-plr-결정-위험-그래프"
+        },
+        {
+          "level": 3,
+          "text": "4.2 달성 PL을 구성하는 요소",
+          "id": "42-달성-pl을-구성하는-요소"
+        },
+        {
+          "level": 2,
+          "text": "5. SIL과 PL 대응",
+          "id": "5-sil과-pl-대응"
+        },
+        {
+          "level": 2,
+          "text": "6. 검증과 문서화 도구",
+          "id": "6-검증과-문서화-도구"
+        },
+        {
+          "level": 2,
+          "text": "7. 안전 PLC를 쓸 때 주의점",
+          "id": "7-안전-plc를-쓸-때-주의점"
+        },
+        {
+          "level": 2,
+          "text": "8. 최신 동향",
+          "id": "8-최신-동향"
+        },
+        {
+          "level": 3,
+          "text": "EU 기계 규정 (Regulation (EU) 2023/1230)",
+          "id": "eu-기계-규정-regulation-eu-20231230"
+        },
+        {
+          "level": 3,
+          "text": "AI 법과의 관계",
+          "id": "ai-법과의-관계"
+        },
+        {
+          "level": 3,
+          "text": "표준 개정",
+          "id": "표준-개정"
+        },
+        {
+          "level": 2,
+          "text": "흔한 실수",
+          "id": "흔한-실수"
+        },
+        {
+          "level": 2,
+          "text": "점검표",
+          "id": "점검표"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Automation/safety/ot-security.md": {
+      "title": "OT 보안",
+      "headings": [
+        {
+          "level": 1,
+          "text": "OT 보안",
+          "id": "ot-보안"
+        },
+        {
+          "level": 2,
+          "text": "1. IT와 OT의 우선순위 차이",
+          "id": "1-it와-ot의-우선순위-차이"
+        },
+        {
+          "level": 2,
+          "text": "2. Purdue 모델과 DMZ",
+          "id": "2-purdue-모델과-dmz"
+        },
+        {
+          "level": 2,
+          "text": "3. IEC 62443 시리즈",
+          "id": "3-iec-62443-시리즈"
+        },
+        {
+          "level": 3,
+          "text": "존과 콘딧",
+          "id": "존과-콘딧"
+        },
+        {
+          "level": 3,
+          "text": "보안 레벨(SL)",
+          "id": "보안-레벨sl"
+        },
+        {
+          "level": 2,
+          "text": "4. 주요 사례",
+          "id": "4-주요-사례"
+        },
+        {
+          "level": 2,
+          "text": "5. 실무 대책",
+          "id": "5-실무-대책"
+        },
+        {
+          "level": 2,
+          "text": "6. 규제와 프레임워크 동향",
+          "id": "6-규제와-프레임워크-동향"
+        },
+        {
+          "level": 3,
+          "text": "EU 사이버 복원력법 (CRA, Regulation (EU) 2024/2847)",
+          "id": "eu-사이버-복원력법-cra-regulation-eu-20242847"
+        },
+        {
+          "level": 3,
+          "text": "NIS2 (Directive (EU) 2022/2555)",
+          "id": "nis2-directive-eu-20222555"
+        },
+        {
+          "level": 3,
+          "text": "미국 CISA",
+          "id": "미국-cisa"
+        },
+        {
+          "level": 3,
+          "text": "MITRE ATT&CK for ICS",
+          "id": "mitre-attck-for-ics"
+        },
+        {
+          "level": 3,
+          "text": "한국",
+          "id": "한국"
+        },
+        {
+          "level": 2,
+          "text": "흔한 실수",
+          "id": "흔한-실수"
+        },
+        {
+          "level": 2,
+          "text": "점검표",
+          "id": "점검표"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Automation/vendors/README.md": {
+      "title": "제조사·플랫폼",
+      "headings": [
+        {
+          "level": 1,
+          "text": "제조사·플랫폼",
+          "id": "제조사플랫폼"
+        },
+        {
+          "level": 2,
+          "text": "학습 순서",
+          "id": "학습-순서"
+        },
+        {
+          "level": 2,
+          "text": "먼저 읽으면 좋은 문서",
+          "id": "먼저-읽으면-좋은-문서"
+        },
+        {
+          "level": 2,
+          "text": "새 제조사 문서 작성 형식",
+          "id": "새-제조사-문서-작성-형식"
+        },
+        {
+          "level": 2,
+          "text": "관련 지식",
+          "id": "관련-지식"
+        }
+      ]
+    },
+    "Automation/vendors/addressing-and-tools.md": {
+      "title": "주소 체계와 엔지니어링 툴",
+      "headings": [
+        {
+          "level": 1,
+          "text": "주소 체계와 엔지니어링 툴",
+          "id": "주소-체계와-엔지니어링-툴"
+        },
+        {
+          "level": 2,
+          "text": "주소를 정하는 세 가지 방식",
+          "id": "주소를-정하는-세-가지-방식"
+        },
+        {
+          "level": 2,
+          "text": "IEC 직접 주소",
+          "id": "iec-직접-주소"
+        },
+        {
+          "level": 2,
+          "text": "Mitsubishi Electric(MELSEC)",
+          "id": "mitsubishi-electricmelsec"
+        },
+        {
+          "level": 2,
+          "text": "LS ELECTRIC",
+          "id": "ls-electric"
+        },
+        {
+          "level": 3,
+          "text": "XGK·XBM·XBC: 디바이스 방식",
+          "id": "xgkxbmxbc-디바이스-방식"
+        },
+        {
+          "level": 3,
+          "text": "XGI·XGR·XEC: IEC 방식",
+          "id": "xgixgrxec-iec-방식"
+        },
+        {
+          "level": 2,
+          "text": "Siemens(S7-1200·S7-1500)",
+          "id": "siemenss7-1200s7-1500"
+        },
+        {
+          "level": 2,
+          "text": "Rockwell Automation(Logix)",
+          "id": "rockwell-automationlogix"
+        },
+        {
+          "level": 2,
+          "text": "Omron",
+          "id": "omron"
+        },
+        {
+          "level": 3,
+          "text": "CJ·CP(CX-Programmer): 메모리 영역 방식",
+          "id": "cjcpcx-programmer-메모리-영역-방식"
+        },
+        {
+          "level": 3,
+          "text": "NJ·NX(Sysmac Studio): 변수 방식",
+          "id": "njnxsysmac-studio-변수-방식"
+        },
+        {
+          "level": 2,
+          "text": "대응표",
+          "id": "대응표"
+        },
+        {
+          "level": 2,
+          "text": "툴 공통 작업 흐름",
+          "id": "툴-공통-작업-흐름"
+        },
+        {
+          "level": 3,
+          "text": "시뮬레이터·에뮬레이터",
+          "id": "시뮬레이터에뮬레이터"
+        },
+        {
+          "level": 2,
+          "text": "현장 작업 시 주의",
+          "id": "현장-작업-시-주의"
+        },
+        {
+          "level": 2,
+          "text": "흔한 실수",
+          "id": "흔한-실수"
+        },
+        {
+          "level": 2,
+          "text": "점검표",
+          "id": "점검표"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Automation/vendors/vendor-comparison.md": {
+      "title": "주요 PLC 제조사·플랫폼 비교",
+      "headings": [
+        {
+          "level": 1,
+          "text": "주요 PLC 제조사·플랫폼 비교",
+          "id": "주요-plc-제조사플랫폼-비교"
+        },
+        {
+          "level": 2,
+          "text": "먼저 정할 것",
+          "id": "먼저-정할-것"
+        },
+        {
+          "level": 2,
+          "text": "한눈에 보기",
+          "id": "한눈에-보기"
+        },
+        {
+          "level": 2,
+          "text": "툴·언어·라이선스",
+          "id": "툴언어라이선스"
+        },
+        {
+          "level": 2,
+          "text": "제조사별 메모",
+          "id": "제조사별-메모"
+        },
+        {
+          "level": 3,
+          "text": "LS ELECTRIC",
+          "id": "ls-electric"
+        },
+        {
+          "level": 3,
+          "text": "Mitsubishi Electric",
+          "id": "mitsubishi-electric"
+        },
+        {
+          "level": 3,
+          "text": "Siemens",
+          "id": "siemens"
+        },
+        {
+          "level": 3,
+          "text": "Rockwell Automation",
+          "id": "rockwell-automation"
+        },
+        {
+          "level": 3,
+          "text": "Omron",
+          "id": "omron"
+        },
+        {
+          "level": 3,
+          "text": "Beckhoff",
+          "id": "beckhoff"
+        },
+        {
+          "level": 3,
+          "text": "CODESYS",
+          "id": "codesys"
+        },
+        {
+          "level": 3,
+          "text": "Schneider Electric",
+          "id": "schneider-electric"
+        },
+        {
+          "level": 3,
+          "text": "오픈소스: OpenPLC",
+          "id": "오픈소스-openplc"
+        },
+        {
+          "level": 2,
+          "text": "선택 기준",
+          "id": "선택-기준"
+        },
+        {
+          "level": 2,
+          "text": "2025~2026 동향(확인한 항목만)",
+          "id": "20252026-동향확인한-항목만"
+        },
+        {
+          "level": 2,
+          "text": "흔한 실수",
+          "id": "흔한-실수"
+        },
+        {
+          "level": 2,
+          "text": "점검표",
+          "id": "점검표"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
         }
       ]
     },
@@ -8614,6 +10756,11 @@
           "level": 3,
           "text": "Architecture",
           "id": "architecture"
+        },
+        {
+          "level": 3,
+          "text": "Automation",
+          "id": "automation"
         },
         {
           "level": 3,
