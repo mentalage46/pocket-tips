@@ -16,9 +16,9 @@
 | [Frontend](./Frontend/)                                 | 상태 관리, TypeScript, 성능 최적화, PWA, 웹 접근성 |
 | [Hardware](./Hardware/)                                 | 전기·전자 기초, GPIO, 통신, 센서·모터 제어         |
 | [I18N](./I18N/)                                         | 다국어 번역 파일 관리, React & Angular 구현        |
-| [Network](./Network/)                                   | 프로토콜, 서브넷, 라우터, 게이트웨이               |
+| [Network](./Network/)                                   | 프로토콜, DNS, TLS, HTTP 버전, 서브넷·라우팅, 로드 밸런싱, 진단 명령 |
 | [Infrastructure](./Infrastructure/)                     | Docker, CI/CD(배포 전략, 파이프라인 보안, 1인·소규모 도구), Nginx |
-| [Security](./Security/)                                 | OWASP, 환경변수, CORS                              |
+| [Security](./Security/)                                 | OWASP Top 10:2025, 인증·비밀번호, XSS·CSRF·보안 헤더, 공급망, CORS, 환경변수 |
 | [UX](./UX/)                                             | 사용성 원칙, 사용자 조사, 시각 요소, 컴포넌트, 디자인 시스템 |
 | [Utility](./Utility/)                                   | Makefile, YAML, Husky, 코드 리뷰                   |
 | [Version Control System](./Version%20Control%20System/) | Git 명령어, Rebase, Cherry-pick                    |
@@ -101,7 +101,9 @@
 ### Network
 
 - [Protocol](./Network/protocol.md) | [Top-down Network](./Network/topdown-network.md)
-- [Subnet](./Network/subnet.md) | [Router](./Network/router.md) | [Gateway](./Network/gateway.md)
+- [DNS](./Network/dns.md) | [TLS와 인증서](./Network/tls.md) | [HTTP 버전](./Network/http-versions.md)
+- [Subnet](./Network/subnet.md) | [Router](./Network/router.md) | [Gateway](./Network/gateway.md) | [로드 밸런싱](./Network/load-balancing.md)
+- [진단 명령](./Network/diagnostics.md)
 
 ### Infrastructure
 
@@ -111,7 +113,8 @@
 
 ### Security
 
-- [OWASP Top 10](./Security/owasp-top-10.md) | [CORS](./Security/cors.md)
+- [OWASP Top 10](./Security/owasp-top-10.md) | [인증과 비밀번호](./Security/auth-and-passwords.md) | [웹 공격과 방어](./Security/web-attacks.md)
+- [공급망 보안](./Security/supply-chain.md) | [CORS](./Security/cors.md) | [환경변수 관리](./Security/env-management.md)
 
 ### UX
 

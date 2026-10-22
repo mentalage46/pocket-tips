@@ -1,5 +1,92 @@
 # TypeScript Tips
 
+## 개념: TypeScript가 보장하는 것과 보장하지 않는 것
+
+TypeScript는 **컴파일할 때 코드의 모순을 찾아 주는 정적 검사기**입니다. 검사가 끝나면 타입은 지워지고(타입 소거) 일반 JavaScript만 실행됩니다. 이 한 가지를 이해하면 아래 규칙이 모두 설명됩니다.
+
+### 1. 타입은 런타임에 존재하지 않는다
+
+```typescript
+interface User { id: number; name: string }
+
+const u = JSON.parse('{"id":"abc"}') as User; // JSON.parse는 any를 반환
+const id: number = u.id;                       // 컴파일 통과, 실제 값은 "abc"
+```
+
+- **API 응답, `JSON.parse`, 폼 입력, `localStorage`** 같은 외부 데이터는 타입이 "맞다고 선언"했을 뿐 검증된 것이 아닙니다.
+- 경계(네트워크, 저장소, 사용자 입력)에서는 **런타임 검증**(스키마 검증 라이브러리, 직접 작성한 타입 가드)을 하고, 통과한 뒤에야 타입을 믿습니다.
+- `as`(타입 단언)는 검사가 아니라 **컴파일러에게 "내가 책임진다"고 말하는 것**입니다. 틀려도 컴파일러는 모릅니다.
+
+### 2. 구조적 타이핑: 이름이 아니라 모양으로 호환된다
+
+```typescript
+interface Point { x: number; y: number }
+const p3 = { x: 1, y: 2, z: 3 };
+const p: Point = p3; // OK: x, y가 있으면 호환 (변수로 넘긴 경우 여분의 속성은 허용)
+```
+
+- 같은 모양이면 서로 다른 이름의 타입도 대입됩니다. `UserId`와 `OrderId`가 둘 다 `number`면 서로 바꿔 넣어도 오류가 없습니다. 이를 막으려는 것이 아래 [Branded Types](#branded-types)입니다.
+
+### 3. `any`, `unknown`, `never`
+
+| 타입 | 의미 | 쓰는 곳 |
+| --- | --- | --- |
+| `any` | **검사를 끈다.** 무엇이든 대입, 호출, 접근 가능. 전염됨 | 가능하면 쓰지 않음 |
+| `unknown` | 무엇이든 담을 수 있지만 **쓰기 전에 좁혀야** 함 | 외부 입력, `catch (e)` |
+| `never` | 값이 존재할 수 없음 | 도달 불가 분기, 철저성 검사 |
+
+### 4. 철저성 검사(exhaustiveness): 새 케이스를 빠뜨리면 컴파일 오류
+
+```typescript
+type Shape =
+  | { kind: "circle"; r: number }
+  | { kind: "square"; s: number };
+
+function area(s: Shape): number {
+  switch (s.kind) {
+    case "circle": return Math.PI * s.r ** 2;
+    case "square": return s.s ** 2;
+    default: {
+      const _exhaustive: never = s; // 모든 경우를 처리했다면 s는 never
+      return _exhaustive;
+    }
+  }
+}
+// Shape에 { kind: "tri"; b: number }를 추가하면
+// _exhaustive 줄에서 "'{ kind: "tri" ... }' is not assignable to type 'never'" 오류 → 처리 누락을 찾아 줌
+```
+
+[Discriminated Union](#discriminated-union)과 함께 쓰는 가장 실용적인 패턴입니다.
+
+### 5. `strict`는 무엇을 켜는가
+
+`strict`는 엄격한 검사 묶음을 한 번에 켭니다.
+
+| 플래그 | 막아 주는 것 |
+| --- | --- |
+| `noImplicitAny` | 타입을 추론하지 못해 조용히 `any`가 되는 경우 |
+| `strictNullChecks` | `null`/`undefined`를 값처럼 쓰는 실수 (`o.a`에서 `o`가 undefined일 수 있음) |
+| `strictFunctionTypes` | 함수 매개변수 타입의 잘못된 호환 |
+| `strictPropertyInitialization` | 클래스 속성을 생성자에서 초기화하지 않은 경우 |
+| `useUnknownInCatchVariables` | `catch (e)`의 `e`를 `any` 대신 `unknown`으로 |
+| `noImplicitThis`, `strictBindCallApply`, `alwaysStrict`, `strictBuiltinIteratorReturn` | 그 밖의 엄격 검사 |
+
+- 공식 문서는 `strict`의 기본값을 `true`로 표기하며, 새 버전에서 엄격 검사가 추가될 수 있어 **업그레이드 시 새 오류가 생길 수 있다**고 경고합니다. TypeScript 7.0.2에서 `tsconfig` 없이 컴파일해도 암묵적 `any`와 `null` 대입이 오류로 잡히는 것을 확인했습니다.
+- **기존 프로젝트는 `tsconfig.json`에 `"strict": true`를 명시**해 두는 편이 안전합니다(오래된 버전은 기본값이 `false`였음. 바뀐 버전은 미확인).
+- 이미 느슨한 코드베이스는 `strict`를 한 번에 켜지 말고 `strictNullChecks`처럼 플래그 하나씩 켜 가며 오류를 줄입니다.
+
+### 6. `interface` vs `type`
+
+| | `interface` | `type` |
+| --- | --- | --- |
+| 객체 모양 | 가능 | 가능 |
+| 유니언·조건부·매핑 타입 | 불가 | 가능 |
+| 같은 이름 재선언(병합) | 가능 | 불가 |
+
+객체 모양은 둘 중 하나를 프로젝트 안에서 **일관되게** 쓰면 충분합니다. 유니언이나 유틸리티 타입 조합이 필요하면 `type`입니다.
+
+---
+
 ## 타입 가드 (Type Guard)
 
 > 런타임에 타입을 좁히는 기법
@@ -230,10 +317,11 @@ type ElementOf<T> = T extends (infer E)[] ? E : never;
 
 type Nums = ElementOf<number[]>; // number
 
-// Promise 내부 타입 추출
-type Awaited<T> = T extends Promise<infer U> ? U : T;
+// Promise 내부 타입 추출 (내장 Awaited<T>가 이미 있음. 아래는 원리를 보여 주는 단순화 버전)
+type MyAwaited<T> = T extends Promise<infer U> ? U : T;
 
-type Result = Awaited<Promise<string>>; // string
+type Result = MyAwaited<Promise<string>>; // string
+// 내장 Awaited는 Promise<Promise<string>>도 string으로 풀지만, 위 단순화 버전은 Promise<string>이 됨
 ```
 
 ### 템플릿 리터럴 타입
@@ -535,9 +623,16 @@ const value = obj?.prop ?? "default";
 // ❌ (value as string).toUpperCase()
 // ✅ typeof value === 'string' && value.toUpperCase()
 
-// ✅ satisfies (TypeScript 4.9+)
+// ✅ satisfies (TypeScript 4.9+): 타입을 "검사"하되 추론된 타입은 유지
 const config = {
-  apiUrl: "https://api.example.com",
-} satisfies Record<string, string>;
-// config.apiUrl은 string이 아닌 'https://...' 리터럴 타입 유지
+  mode: "dev",
+} satisfies Record<string, "dev" | "prod">;
+// config.mode의 타입은 "dev" (리터럴 유지). 제약이 Record<string, string>이면 string으로 넓혀짐
+// 오타·잘못된 값(mode: "stg")은 컴파일 오류
 ```
+
+## 참고 자료
+
+- [TypeScript TSConfig Reference: strict](https://www.typescriptlang.org/tsconfig/#strict) - `strict`가 켜는 플래그 목록, 기본값 `true`, 업그레이드 시 새 오류 경고
+
+확인일: 2026-10-22 (`strict` 플래그 목록·기본값은 공식 문서, 위 개념 섹션의 모든 코드 예시와 `satisfies`·`Awaited` 동작은 TypeScript 7.0.2 `tsc`로 컴파일해 확인. `interface`/`type` 비교, 타입 소거·구조적 타이핑 설명은 일반 개념. 아래 Angular 섹션 예시는 미확인)

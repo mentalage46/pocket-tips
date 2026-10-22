@@ -4,6 +4,108 @@
 
 ---
 
+## 개념: 전략을 고르기 전에 "어떤 실패인가"부터 나눈다
+
+### 예상된 실패와 예상하지 못한 결함
+
+| 구분 | 예 | 호출자가 | 응답 | 로그 |
+| --- | --- | --- | --- | --- |
+| **예상된 실패** (비즈니스·입력) | 사용자 없음, 중복 이메일, 검증 실패 | 알아서 복구·안내 가능 | **4xx** + 안정적인 에러 코드 | `INFO`/`WARN`, 스택 불필요 |
+| **예상하지 못한 결함** (버그·인프라) | null 참조, DB 연결 끊김, 외부 API 장애 | 고칠 수 없음 | **5xx** + 일반 메시지(내부 정보 숨김) | `ERROR` + 스택, 알림 대상 |
+
+- 이 구분이 아래 네 가지 전략보다 먼저입니다. 전략은 "예상된 실패를 어떻게 표현하는가"의 차이이고, 예상하지 못한 결함은 **어떤 전략에서도 마지막 안전망**(전역 핸들러)이 500으로 처리해야 합니다.
+- 구분하지 않으면 **정상적인 로그인 실패가 `ERROR`로 쌓여 알림이 소음**이 되거나, 반대로 **500 응답에 스택 트레이스·SQL이 노출**됩니다([로깅 레벨 기준](../logging/logging.md#로그는-무기도-된다-인젝션과-민감정보), [OWASP A10](../../Security/owasp-top-10.md#a10-mishandling-of-exceptional-conditions-예외-상황-처리-실패)).
+
+### 어디서 잡는가: 경계에서 한 번
+
+예외는 **발생한 곳에서 던지고, 변환·로그·응답은 경계(전역 필터, 에러 미들웨어)에서 한 번만** 합니다.
+
+```
+Controller → Service → Repository
+   ↑            ↑           ↑ 예외는 위로 전파
+   └── 전역 필터/미들웨어에서 한 번: 로그 + HTTP 상태/본문 변환
+```
+
+중간 계층에서 `catch`가 정당한 경우는 세 가지뿐입니다.
+
+1. **복구할 수 있을 때**: 기본값 사용, 재시도, 대체 경로
+2. **맥락을 더해 다시 던질 때**: 어떤 작업이 실패했는지 덧붙이고 **원인(cause)을 보존**
+3. **자원 정리**: `finally`
+
+**하지 말 것**: 빈 `catch`로 삼키기(실패가 조용히 사라짐), `catch` → 로그 → 다시 throw(한 장애가 로그 여러 줄이 됨).
+
+### 원인 보존: `Error`의 `cause`
+
+```javascript
+try {
+  JSON.parse(raw);
+} catch (e) {
+  throw new AppError("설정 파일을 읽을 수 없습니다", { cause: e }); // ES2022
+}
+```
+
+원인을 보존하는 것은 좋지만, 로그에 남길 때 함정이 있습니다(Node 24에서 확인).
+
+| 방법 | `cause`가 보이는가 |
+| --- | --- |
+| `err.stack` | **아니오** — 스택 문자열에 원인이 없음 |
+| `JSON.stringify(err)` | **아니오** — 결과가 `{}` (`Error`의 속성은 열거되지 않음) |
+| `util.inspect(err)` / `console.log(err)` | 예 — `[cause]`로 표시 |
+
+로깅 라이브러리에 `err`를 넘길 때 **에러 직렬화**가 `cause`와 `code` 같은 속성을 포함하는지 확인합니다(라이브러리별 동작은 미확인). 에러 코드처럼 클라이언트와 로그가 모두 쓰는 값은 명시적인 필드로 둡니다.
+
+### 에러 코드는 API 계약이다
+
+`USER_NOT_FOUND` 같은 코드는 클라이언트가 분기(화면 문구, 재시도 여부)에 사용하므로 **바꾸면 깨지는 변경**입니다([API 설계: 호환성](../api/api-design.md#개념-api는-바꾸기-어려운-계약이다)). 이름을 한 번 공개하면 유지하고, 응답 본문은 표준 형식(RFC 9457 Problem Details)으로 통일하는 것을 검토합니다([에러 응답](../api/api-design.md#표준-형식-rfc-9457-problem-details)).
+
+### Node.js·프레임워크의 현실
+
+**Express 5**(공식 문서 기준)
+
+| 상황 | 동작 |
+| --- | --- |
+| 동기 핸들러에서 throw | 자동으로 에러 처리기로 전달 |
+| **Promise를 반환하는(`async`) 핸들러가 reject/throw** | 자동으로 `next(err)` 호출 |
+| Promise 체인을 `return` 하지 않음 | Express가 못 봄 → **미처리 거부로 프로세스가 종료**될 수 있음 |
+| 콜백·타이머 안의 오류 | 직접 `next(err)` 호출 필요 |
+
+- 에러 처리 미들웨어는 **인자 4개** `(err, req, res, next)`이고 다른 `app.use()`·라우트 **뒤에** 정의합니다. 시그니처에 `next`가 있어야 에러 처리기로 인식됩니다.
+- 응답을 이미 보내기 시작했다면(`res.headersSent`) 직접 응답하지 말고 `next(err)`로 기본 처리기에 넘깁니다.
+- Express의 **기본 처리기는 `NODE_ENV`가 `production`이 아니면 스택 트레이스를 응답에 포함**합니다. 운영에서는 `NODE_ENV=production`을 반드시 설정합니다([환경변수 관리](../../Security/env-management.md)).
+- (Express 4의 동작은 이 문서에서 확인하지 않았습니다. 미확인)
+
+**NestJS**(공식 문서 기준)
+
+- 내장 예외 계층이 처리하지 않은 예외를 응답으로 바꾸며, **`HttpException`이 아닌 예외는 `500 Internal server error`** 로 응답합니다. 이것이 "예상하지 못한 결함"의 안전망입니다.
+- `@Catch()`를 인자 없이 쓰면 **모든 예외**를 잡습니다. catch-all 필터와 특정 예외 필터를 함께 쓸 때는 **catch-all을 먼저 선언**해야 특정 필터가 자기 예외를 처리할 수 있습니다.
+- 전역 필터는 `app.useGlobalFilters()`(의존성 주입 **불가**) 또는 `APP_FILTER` 프로바이더(주입 가능)로 등록합니다.
+
+**프로세스 수준**
+
+- Node는 처리되지 않은 Promise 거부를 기본적으로(`--unhandled-rejections=throw`) **uncaught exception으로 승격**합니다. 실제로 `async` 함수 안의 `throw`를 처리하지 않으면 프로세스가 **종료 코드 1로 종료**됐습니다(Node 24에서 확인).
+- `process.on('uncaughtException')`은 공식 문서가 **최후의 수단**이라 부르며, 올바른 용도는 **동기적으로 자원을 정리한 뒤 종료**하는 것입니다. 이후 **정상 실행을 계속하는 것은 안전하지 않습니다**(상태를 알 수 없음). 재시작은 프로세스 관리자·컨테이너 오케스트레이터가 맡습니다.
+
+### 예외와 트랜잭션
+
+예외는 트랜잭션의 롤백 여부를 정하는 신호이기도 합니다. Spring은 `@Transactional`에서 **`RuntimeException`과 `Error`만 롤백**하고 **체크 예외는 기본적으로 롤백하지 않습니다**(공식 문서). 체크 예외에서도 롤백하려면 `rollbackFor`를 지정합니다.
+
+```java
+@Transactional(rollbackFor = Exception.class)   // 체크 예외도 롤백
+```
+
+예외를 중간에서 삼키면 트랜잭션 경계 안에서 **실패했는데 커밋**되는 일이 생길 수 있습니다(일반 개념). 롤백이 필요한 실패는 반드시 트랜잭션 경계까지 전파합니다.
+
+### 전략은 섞어서 쓸 수 있다
+
+| 대상 | 표현 방식 |
+| --- | --- |
+| 예상된 실패 (검증, 조회 없음) | 도메인 예외 또는 `Result` 값 |
+| 예상하지 못한 결함 | 일반 예외를 그대로 던져 전역 핸들러가 500 처리 |
+
+아래 전략 중 하나만 고집하기보다, **예상된 실패는 명시적으로, 결함은 예외로** 나누는 혼합이 흔합니다.
+
+---
+
 ## 전략 1: HTTP 예외 직접 사용
 
 > 프레임워크 제공 HTTP 예외 클래스를 그대로 사용
@@ -98,10 +200,15 @@ function findUser(id: string): Result<User, "NOT_FOUND" | "INVALID_ID"> {
   return { ok: true, value: user };
 }
 
-// 컨트롤러
+// 컨트롤러: 에러 종류마다 알맞은 HTTP 상태로 변환
 const result = findUser(id);
 if (!result.ok) {
-  throw new NotFoundException(result.error);
+  switch (result.error) {
+    case "INVALID_ID":
+      throw new BadRequestException(result.error); // 400
+    case "NOT_FOUND":
+      throw new NotFoundException(result.error); // 404
+  }
 }
 ```
 
@@ -118,6 +225,8 @@ if (!result.ok) {
 - ❌ 팀원 학습 곡선
 - ❌ 기존 프레임워크 패턴과 다름
 - ❌ 중첩 시 처리 복잡
+
+> 기존 예시는 `INVALID_ID`까지 `NotFoundException`(404)으로 변환해 잘못된 입력과 없는 리소스를 구분하지 못했습니다. `Result`의 장점은 컴파일러가 **모든 에러 종류의 처리를 강제**하게 할 수 있다는 것입니다(`switch`에서 한 종류를 빠뜨리면 타입 오류가 나도록 `never` 검사를 추가).
 
 ### 선택 체크리스트
 
@@ -194,3 +303,12 @@ throw new AppException(ErrorCode.USER_NOT_FOUND, 404);
     ├── 일반적 → 커스텀 예외 + 전역 필터 ⭐
     └── 함수형 선호 → Result 패턴
 ```
+
+## 참고 자료
+
+- [Express: Error Handling](https://expressjs.com/en/guide/error-handling.html) - Express 5의 동기/Promise 오류 처리, 에러 미들웨어 시그니처, 기본 처리기의 스택 노출
+- [NestJS: Exception filters](https://docs.nestjs.com/exception-filters) - 내장 예외 계층, 비 `HttpException`의 500 응답, `@Catch()`, 전역 필터 등록
+- [Spring: Rolling Back a Declarative Transaction](https://docs.spring.io/spring-framework/reference/data-access/transaction/declarative/rolling-back.html) - 기본 롤백 규칙(런타임 예외·`Error`), `rollbackFor`
+- [Node.js: process 이벤트 `uncaughtException`](https://nodejs.org/api/process.html#event-uncaughtexception) - 최후의 수단, 정리 후 종료, 정상 실행 재개는 안전하지 않음
+
+확인일: 2026-10-22 (Express 5·NestJS·Spring·Node 공식 문서 확인. 미처리 거부의 종료 코드 1과 `Error`의 `cause`가 `stack`·`JSON.stringify`에 나타나지 않고 `util.inspect`에는 나타나는 것은 Node 24.13에서 직접 실행해 확인. 예상된 실패와 결함의 구분, 경계에서 한 번 처리, 트랜잭션 중 예외 삼킴 위험, 혼합 전략은 일반 개념·경험칙. Express 4의 동작, 로깅 라이브러리별 `cause` 직렬화, Spring 외 프레임워크의 롤백 규칙은 미확인)
