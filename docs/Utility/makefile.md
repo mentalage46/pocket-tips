@@ -113,20 +113,20 @@ push: build
 	docker push $(IMAGE):$(TAG)
 
 up:
-	docker-compose up -d
+	docker compose up -d
 
 down:
-	docker-compose down
+	docker compose down
 
 logs:
-	docker-compose logs -f
+	docker compose logs -f
 ```
 
 ### 데이터베이스
 
 ```makefile
 db-up:
-	docker-compose up -d postgres
+	docker compose up -d postgres
 
 db-migrate:
 	npm run migrate
