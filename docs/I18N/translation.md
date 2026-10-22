@@ -1,5 +1,103 @@
 # 글로벌 번역 (i18n)
 
+## 개념: 번역 문자열 교체가 아니라 "문화권별 표현"
+
+| 용어 | 의미 |
+| --- | --- |
+| i18n (국제화) | 코드를 **여러 언어·지역을 받을 수 있게 설계**하는 일. 문자열 분리, 포맷 처리, 레이아웃 대비 |
+| l10n (현지화) | 실제 언어·지역에 **맞춰 채우는** 일. 번역, 날짜·통화 형식, 이미지·색 의미 |
+| locale | 언어 + 지역 조합. `ko-KR`, `en-US`, `en-GB`, `pt-BR` (BCP 47 태그) |
+
+- **언어와 로케일은 다릅니다.** `en-US`와 `en-GB`는 같은 영어지만 날짜(10/22 vs 22/10), 철자(color/colour), 단위가 다릅니다. `pt-BR`과 `pt-PT`도 다릅니다. 지역이 필요 없으면 `en`처럼 언어만 써도 됩니다.
+- **번역은 문자열을 바꾸는 일이 아니라 문장 구조가 달라지는 일입니다.** 그래서 아래 규칙을 지켜야 합니다.
+
+### 문자열을 이어 붙이지 않는다
+
+```typescript
+// ❌ 어순이 언어마다 다름
+const msg = t("hello") + ", " + userName + t("님");
+// 영어: "Hello, Kim"   한국어: "김 님, 안녕하세요" 처럼 어순이 달라 조립 불가
+
+// ✅ 문장 전체를 하나의 키로 두고 자리표시자 사용
+// ko: "{{name}}님, 안녕하세요"   en: "Hello, {{name}}"
+t("greeting", { name: userName });
+```
+
+### 복수형은 언어마다 규칙이 다르다
+
+영어는 `1개 / 여러 개` 둘이지만 언어에 따라 형태가 다릅니다. Unicode CLDR은 복수 범주를 `zero`, `one`, `two`, `few`, `many`, `other`로 정의하고, 언어마다 쓰는 범주가 다릅니다. `Intl.PluralRules`로 확인한 결과입니다.
+
+| 언어 | 사용하는 범주 | 예 |
+| --- | --- | --- |
+| 한국어(`ko`), 일본어(`ja`) | `other` | 단·복수 구분 없음 |
+| 영어(`en`) | `one`, `other` | 1 → one, 그 외 → other |
+| 러시아어(`ru`) | `one`, `few`, `many`, `other` | 1·21 → one, 2 → few, 5 → many |
+| 아랍어(`ar`) | `zero`, `one`, `two`, `few`, `many`, `other` | 6가지 모두 |
+
+```json
+// en/common.json — i18next v4 JSON 형식: 키 이름 뒤에 _범주
+{
+  "item_one": "{{count}} item",
+  "item_other": "{{count}} items"
+}
+```
+
+```typescript
+t("item", { count: 5 }); // 변수 이름은 반드시 count
+```
+
+- `if (n === 1)`로 직접 분기하지 않습니다. 번역가가 언어별 범주를 채울 수 있도록 **라이브러리의 복수형 기능**을 씁니다.
+- i18next는 `count`를 빼면 `key`로 되돌아가지(fallback) 않으므로 항상 넘깁니다. 복수형은 `Intl.PluralRules` 지원이 필요합니다.
+- i18next v21부터 복수형 키 접미사가 바뀌었습니다(`_plural` → `_one`/`_other` 등). 오래된 예제를 그대로 쓰면 동작하지 않습니다.
+
+### 날짜·숫자·통화·정렬은 직접 만들지 않고 `Intl`을 쓴다
+
+같은 값도 로케일마다 표기가 다릅니다.
+
+```typescript
+new Intl.NumberFormat("ko-KR", { style: "currency", currency: "KRW" }).format(1234567);
+// "₩1,234,567"
+new Intl.NumberFormat("de-DE", { style: "currency", currency: "EUR" }).format(1234567.5);
+// "1.234.567,50 €"
+
+new Intl.DateTimeFormat("en-US", { dateStyle: "medium" }).format(date); // "Oct 22, 2026"
+new Intl.DateTimeFormat("ko-KR", { dateStyle: "medium" }).format(date); // "2026. 10. 22."
+
+new Intl.ListFormat("ko", { type: "conjunction" }).format(["사과", "배", "귤"]); // "사과, 배 및 귤"
+new Intl.ListFormat("en", { type: "conjunction" }).format(["a", "b", "c"]);     // "a, b, and c"
+
+// 정렬도 로케일 규칙을 따름: 독일어는 a,ä,z / 스웨덴어는 a,z,ä
+["ä", "z", "a"].sort(new Intl.Collator("de").compare);
+```
+
+- 서버에는 **UTC**로 저장하고, 표시할 때 사용자의 시간대와 로케일로 변환합니다.
+- 통화는 **금액과 통화 코드를 함께** 저장합니다. 로케일이 통화를 정하는 것이 아닙니다(한국어 사용자가 달러를 볼 수 있음).
+
+### 로케일을 정하고 대체(fallback)하는 순서
+
+```
+1. 사용자가 직접 선택한 언어 (저장된 설정)
+2. 브라우저 설정 (Accept-Language, navigator.languages)
+3. 서비스 기본 언어
+번역이 없는 키: ko-KR → ko → 기본 언어(en) → 키 이름 그대로 (누락 경고)
+```
+
+### 번역과 UI 설계에서 놓치기 쉬운 것
+
+| 항목 | 이유 |
+| --- | --- |
+| 텍스트 길이 변화 | 독일어 등은 영어보다 길어 버튼·메뉴가 넘칠 수 있음. 고정 너비를 피함 |
+| RTL(오른쪽→왼쪽) 언어 | 아랍어·히브리어는 레이아웃 방향이 반대. `dir="rtl"`과 CSS 논리 속성(`margin-inline-start`) 사용 |
+| 문맥 없는 키 | "Open"이 동사(열기)인지 형용사(열린)인지 번역가가 모름. 키 이름과 설명(context)을 남김 |
+| 이미지 속 텍스트 | 번역할 수 없음. 텍스트는 이미지가 아니라 UI로 |
+| 번역 값에 HTML 포함 | 아래 보안 주의 참고 |
+
+### 보안: 번역 문자열을 `innerHTML`로 넣지 않는다
+
+번역 파일은 외부 번역가·번역 플랫폼이 수정할 수 있고, 값에 사용자 입력이 섞이기도 합니다. `[innerHTML]`·`dangerouslySetInnerHTML`로 번역 문자열을 삽입하면 XSS 경로가 됩니다. 링크 같은 마크업이 필요하면 `<Trans components={...}>`처럼 **허용한 태그만 컴포넌트로 치환**하는 방식을 씁니다([웹 공격과 방어](../Security/web-attacks.md#xss-cross-site-scripting)).
+
+---
+
 ## 번역 파일 관리
 
 ### 디렉토리 구조
@@ -645,3 +743,11 @@ t('validation.required', { field: '이메일' })
 // Angular
 <p [innerHTML]="'notice' | translate"></p>
 ```
+
+## 참고 자료
+
+- [Unicode CLDR: Plural rules](https://cldr.unicode.org/index/cldr-spec/plural-rules) - 복수 범주 `zero`, `one`, `two`, `few`, `many`, `other`
+- [i18next: Plurals](https://www.i18next.com/translation-function/plurals) - `_one`/`_other` 접미사, `count` 필수, v21 형식 변경, `Intl.PluralRules` 요구
+- [MDN: Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) - `NumberFormat`, `DateTimeFormat`, `PluralRules`, `ListFormat`, `Collator`
+
+확인일: 2026-10-22 (CLDR 범주, i18next 복수형 규칙, 언어별 범주와 포맷 예시는 Node 24.13의 `Intl`로 실행 확인. i18n·l10n 정의, 어순·RTL·fallback 순서·보안 주의는 일반 개념·경험칙. 아래 React·Angular 구현 예시는 미확인)
