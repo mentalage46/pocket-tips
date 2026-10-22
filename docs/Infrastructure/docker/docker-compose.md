@@ -10,14 +10,18 @@
 - 개발 환경 구성
 - 로컬 테스트 환경
 
+> **현재 형식 요약**
+>
+> - 명령은 `docker compose`(Docker CLI 플러그인, Compose v2 이후)입니다. 하이픈이 붙은 `docker-compose`는 지원이 끝난 v1 명령입니다.
+> - 기본 파일 이름은 `compose.yaml`(권장) 또는 `compose.yml`입니다. 예전 이름 `docker-compose.yml`도 계속 읽습니다.
+> - 최상위 `version:` 키는 쓰지 않습니다. 넣어도 무시되고 "obsolete" 경고만 나옵니다.
+
 ---
 
 ## 기본 구조
 
 ```yaml
 # docker-compose.yml
-version: "3.8"
-
 services:
   app:
     build: .
@@ -59,7 +63,7 @@ volumes:
 services:
   app:
     # 이미지 사용
-    image: node:20-alpine
+    image: node:24-alpine
 
     # 또는 빌드
     build:
@@ -139,8 +143,6 @@ volumes:
 ### 개발 환경 (docker-compose.yml)
 
 ```yaml
-version: "3.8"
-
 services:
   app:
     build:
@@ -176,8 +178,6 @@ volumes:
 ### 운영 환경 (docker-compose.prod.yml)
 
 ```yaml
-version: "3.8"
-
 services:
   app:
     image: myrepo/myapp:${IMAGE_TAG:-latest}
@@ -215,13 +215,13 @@ services:
 
 ```bash
 # 개발
-docker-compose up -d
+docker compose up -d
 
 # 운영
-docker-compose -f docker-compose.prod.yml up -d
+docker compose -f docker-compose.prod.yml up -d
 
 # 오버라이드 조합
-docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
 ```
 
 ---
@@ -230,40 +230,40 @@ docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
 
 ```bash
 # 시작
-docker-compose up
-docker-compose up -d              # 백그라운드
-docker-compose up --build         # 리빌드
+docker compose up
+docker compose up -d              # 백그라운드
+docker compose up --build         # 리빌드
 
 # 중지
-docker-compose down
-docker-compose down -v            # 볼륨도 삭제
-docker-compose down --rmi all     # 이미지도 삭제
+docker compose down
+docker compose down -v            # 볼륨도 삭제
+docker compose down --rmi all     # 이미지도 삭제
 
 # 로그
-docker-compose logs
-docker-compose logs -f app        # 특정 서비스 실시간
+docker compose logs
+docker compose logs -f app        # 특정 서비스 실시간
 
 # 상태
-docker-compose ps
+docker compose ps
 
 # 특정 서비스만 실행
-docker-compose up -d db
+docker compose up -d db
 
 # 스케일
-docker-compose up -d --scale app=3
+docker compose up -d --scale app=3
 
 # 재시작
-docker-compose restart app
+docker compose restart app
 
 # 서비스 내 명령 실행
-docker-compose exec app /bin/sh
-docker-compose exec app npm run migrate
+docker compose exec app /bin/sh
+docker compose exec app npm run migrate
 
 # 이미지 빌드만
-docker-compose build
+docker compose build
 
 # 설정 확인 (문법 검증)
-docker-compose config
+docker compose config
 ```
 
 ---
@@ -302,8 +302,6 @@ docker-compose config
 ## 실전 예시: 풀스택 앱
 
 ```yaml
-version: "3.8"
-
 services:
   # 프론트엔드
   frontend:
@@ -356,3 +354,12 @@ volumes:
   postgres_data:
   redis_data:
 ```
+
+## 참고 자료
+
+- [Compose 파일 `version`과 `name`](https://docs.docker.com/reference/compose-file/version-and-name/) - `version` 키는 참고용이며 사용 시 obsolete 경고
+- [Compose 버전 역사](https://docs.docker.com/compose/intro/history/) - v2부터 `docker compose`로 실행, 지원 버전
+- [Compose 애플리케이션 모델](https://docs.docker.com/compose/intro/compose-application-model/) - 기본 파일 이름
+- [services 요소](https://docs.docker.com/reference/compose-file/services/) - `depends_on`의 `condition` 값
+
+확인일: 2026-10-22 (명령 형식·파일 이름·`version` 키·`depends_on` 조건. 이미지 태그와 개별 옵션은 미확인)
