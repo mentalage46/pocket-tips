@@ -18,4 +18,4 @@
 
 - [PLC 기초](../basics/README.md), [통신](../communication/README.md), [안전](../safety/README.md)
 - [색상](../../UX/visual/color.md), [피드백과 상태](../../UX/components/feedback-and-states.md), [디자인 시스템](../../UX/systems/design-system.md)
-- [로깅](../../Backend/logging/logging.md), [메시지 큐](../../Backend/messaging/message-queue.md)
+- [로깅](../../Observability/logging.md), [메시지 큐](../../Data/messaging/message-queue.md)

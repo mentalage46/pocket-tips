@@ -198,7 +198,7 @@ async function canAccess(user, resource) {
 ✅ 자원 한도(메모리, 파일 핸들, 타임아웃) 초과 시 동작 정의
 ```
 
-예외 처리 설계는 [예외 처리 전략](../Backend/exception/exception-handling-strategy.md)을 참고합니다.
+예외 처리 설계는 [예외 처리 전략](../Quality/exception-handling-strategy.md)을 참고합니다.
 
 ---
 

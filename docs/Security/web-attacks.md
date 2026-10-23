@@ -2,7 +2,7 @@
 
 > 브라우저를 통해 들어오는 공격과, 서버가 응답 헤더로 막을 수 있는 것
 
-CORS는 [CORS](./cors.md), 쿠키 `SameSite`는 [Cookie](../Backend/auth/cookie.md#samesite-속성-상세)를 참고합니다.
+CORS는 [CORS](./cors.md), 쿠키 `SameSite`는 [Cookie](./cookie.md#samesite-속성-상세)를 참고합니다.
 
 ---
 

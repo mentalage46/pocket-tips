@@ -115,6 +115,6 @@
 | 포커스 | 보이는 포커스 링, 모달 열림·닫힘 시 포커스 이동 |
 | 상태 전달 | `aria-expanded`, `aria-selected`, `aria-invalid` |
 
-관련: [웹 접근성](../../Frontend/accessibility.md), [폼 설계](./forms.md), [디자인 시스템](../systems/design-system.md)
+관련: [웹 접근성](../../Web/accessibility.md), [폼 설계](./forms.md), [디자인 시스템](../systems/design-system.md)
 
 다음: [폼 설계](./forms.md)

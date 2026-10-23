@@ -103,6 +103,6 @@ src/
 
 어느 쪽이든 **도메인 로직이 DB·HTTP를 직접 알지 않게** 하는 것이 핵심이며, 나머지는 정도의 차이입니다.
 
-관련: [의존성과 추상화](../principles/dependencies.md), [도메인 모델링](../patterns/domain-modeling.md), [테스트 전략](../../Backend/testing/testing-strategy.md)
+관련: [의존성과 추상화](../principles/dependencies.md), [도메인 모델링](../patterns/domain-modeling.md), [테스트 전략](../../Quality/testing-strategy.md)
 
 다음: [모놀리스와 마이크로서비스](./monolith-vs-microservices.md)

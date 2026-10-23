@@ -29,4 +29,4 @@
 - 도구를 많이 노출할수록 모델의 선택 정확도가 떨어집니다. 적고 명확한 도구가 낫습니다.
 - 공식 명세와 SDK는 계속 바뀝니다. 이 문서는 명세 2026-07-28과 그 시점의 SDK 기준이며, 전송 방식·인가·SDK API는 공식 문서로 현재 버전을 확인합니다.
 
-관련: [구조화 출력과 도구 호출](../llm-basics/structured-output.md), [에이전트 도구와 생태계](../agents/tools.md), [API 설계](../../Backend/api/api-design.md)
+관련: [구조화 출력과 도구 호출](../llm-basics/structured-output.md), [에이전트 도구와 생태계](../agents/tools.md), [API 설계](../../API/api-design.md)

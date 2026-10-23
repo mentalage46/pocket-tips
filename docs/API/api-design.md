@@ -218,7 +218,7 @@ Content-Type: application/problem+json
 
 - 필드를 **추가(확장)** 할 수 있으므로 유효성 검증 오류 목록(`errors: [...]`)이나 `balance` 같은 값을 얹을 수 있습니다.
 - 위의 `error.code` 방식은 널리 쓰이지만 팀마다 모양이 달라지기 쉽습니다. 새 API라면 표준을 따르는 편이 클라이언트 라이브러리와 문서화 도구를 재사용하기 좋습니다(권장 사항).
-- 에러 본문에는 스택 트레이스, SQL, 내부 경로 같은 **내부 정보를 넣지 않습니다**([OWASP A10](../../Security/owasp-top-10.md#a10-mishandling-of-exceptional-conditions-예외-상황-처리-실패)).
+- 에러 본문에는 스택 트레이스, SQL, 내부 경로 같은 **내부 정보를 넣지 않습니다**([OWASP A10](../Security/owasp-top-10.md#a10-mishandling-of-exceptional-conditions-예외-상황-처리-실패)).
 
 ### 유효성 검증 에러
 

@@ -338,6 +338,6 @@ PLC 제조사별 비교는 [제조사 비교](../vendors/vendor-comparison.md)�
 
 확인일: 2026-10-21 (ISA-5.1 판, Sparkplug ISO 번호, OPC UA StatusCode 비트, PI 압축 설정 이름, 플랫폼 버전·라이선스 모델 확인. WinCC Unified의 PowerTags 단위는 주문 번호·대리점 표기 기준, FactoryTalk Optix 최신 버전 번호는 문서 경로 기준. UNS는 표준이 아닌 업계 용어. 명명 접미사·히스토리안 데드밴드 시작값은 경험칙)
 
-관련: [알람 관리](./alarm-management.md), [OPC UA와 MQTT](../communication/opc-ua-and-mqtt.md), [메시지 큐](../../Backend/messaging/message-queue.md), [이벤트 기반 아키텍처](../../Architecture/styles/event-driven.md)
+관련: [알람 관리](./alarm-management.md), [OPC UA와 MQTT](../communication/opc-ua-and-mqtt.md), [메시지 큐](../../Data/messaging/message-queue.md), [이벤트 기반 아키텍처](../../Architecture/styles/event-driven.md)
 
 다음: [기능 안전](../safety/functional-safety.md)

@@ -82,7 +82,7 @@ flowchart LR
 | 동시 요청 수 | 동시에 열린 연결 | 세마포어로 상한 고정 |
 | 일일·월간 예산 | 비용 | 사용량 모니터링, 상한 도달 시 차단 또는 소형 모델 전환 |
 
-429 응답은 지수 백오프로 재시도하되, 재시도 폭주가 한도를 더 소모하지 않도록 동시성 자체를 줄입니다. 재시도 규칙은 [Rate Limiting](../../Backend/api/rate-limiting.md)과 [API 호출 구조](./api-usage.md)를 참고합니다.
+429 응답은 지수 백오프로 재시도하되, 재시도 폭주가 한도를 더 소모하지 않도록 동시성 자체를 줄입니다. 재시도 규칙은 [Rate Limiting](../../API/rate-limiting.md)과 [API 호출 구조](./api-usage.md)를 참고합니다.
 
 ## 관측할 지표
 
@@ -96,7 +96,7 @@ flowchart LR
 
 이 지표는 [API 호출 구조](./api-usage.md)의 호출 래퍼에서 한 번에 기록하는 것이 가장 쉽습니다. 에이전트 수준의 비용 통제는 [운영과 안전](../agents/operations.md)을 참고합니다.
 
-관련: [Redis 캐싱](../../Backend/caching/redis.md), [웹 성능](../../Frontend/web-performance.md)
+관련: [Redis 캐싱](../../Data/caching/redis.md), [웹 성능](../../Web/web-performance.md)
 
 ## 참고 자료
 

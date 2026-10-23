@@ -9,19 +9,23 @@
 | 폴더                                                    | 설명                                               |
 | ------------------------------------------------------- | -------------------------------------------------- |
 | [AI](./AI/)                                             | LLM 기초·API, 프롬프팅, RAG, MCP, 운영, 보안, 로컬 모델, 에이전트 하네스와 개발 방법론 적용 |
+| [API](./API/)                                           | API 설계, 호환성, 상태 코드, 페이지네이션, 레이트 리밋 |
 | [Architecture](./Architecture/)                         | 설계 원칙, 아키텍처 스타일, 도메인 모델링, 품질 속성, ADR |
 | [Automation](./Automation/)                             | PLC 구조, IEC 61131-3·래더, 산업 통신, HMI·SCADA, 기능 안전·OT 보안, 제조사 비교 |
-| [Backend](./Backend/)                                   | API 설계, 인증, DB, 캐싱, 로깅, 메시징, 테스트     |
 | [Build](./Build/)                                       | 빌드 과정, 의존성, 도구 선택, 캐시, 오류 진단     |
-| [Frontend](./Frontend/)                                 | 상태 관리, TypeScript, 성능 최적화, PWA, 웹 접근성 |
+| [Data](./Data/)                                         | DB(커넥션 풀, 트랜잭션, View), 캐싱, 메시지 큐        |
 | [Hardware](./Hardware/)                                 | 전기·전자 기초, GPIO, 통신, 센서·모터 제어         |
 | [I18N](./I18N/)                                         | 다국어 번역 파일 관리, React & Angular 구현        |
 | [Network](./Network/)                                   | 프로토콜, DNS, TLS, HTTP 버전, 서브넷·라우팅, 로드 밸런싱, 진단 명령 |
 | [Infrastructure](./Infrastructure/)                     | Docker, CI/CD(배포 전략, 파이프라인 보안, 1인·소규모 도구), Nginx |
-| [Security](./Security/)                                 | OWASP Top 10:2025, 인증·비밀번호, XSS·CSRF·보안 헤더, 공급망, CORS, 환경변수 |
+| [Observability](./Observability/)                       | 로깅, 로그·메트릭·트레이스                         |
+| [Programming](./Programming/)                           | TypeScript 등 언어와 코드 작성의 개념              |
+| [Quality](./Quality/)                                   | 테스트 전략, 예외 처리, 코드 리뷰                  |
+| [Security](./Security/)                                 | OWASP Top 10:2025, 인증·비밀번호, JWT·쿠키, XSS·CSRF·보안 헤더, 공급망, CORS, 환경변수 |
 | [UX](./UX/)                                             | 사용성 원칙, 사용자 조사, 시각 요소, 컴포넌트, 디자인 시스템 |
-| [Utility](./Utility/)                                   | Makefile, YAML, Husky, 코드 리뷰                   |
-| [Version Control System](./Version%20Control%20System/) | Git 명령어, Rebase, Cherry-pick                    |
+| [Utility](./Utility/)                                   | Makefile, YAML, Husky                              |
+| [Version Control System](./Version%20Control%20System/) | Git 명령어, Rebase, Cherry-pick, 서브모듈, SSH 키   |
+| [Web](./Web/)                                           | 웹 성능, PWA, 상태 관리, 접근성                    |
 
 ---
 
@@ -68,11 +72,9 @@
 - [기능 안전](./Automation/safety/functional-safety.md) | [비상정지와 인터록](./Automation/safety/emergency-stop-and-interlock.md) | [OT 보안](./Automation/safety/ot-security.md)
 - [제조사 비교](./Automation/vendors/vendor-comparison.md) | [주소 체계와 도구](./Automation/vendors/addressing-and-tools.md)
 
-### Backend
+### API
 
-- [API Design](./Backend/api/api-design.md) | [Rate Limiting](./Backend/api/rate-limiting.md)
-- [JWT](./Backend/auth/jwt.md) | [Cookie](./Backend/auth/cookie.md)
-- [Redis](./Backend/caching/redis.md) | [Testing](./Backend/testing/testing-strategy.md)
+- [API Design](./API/api-design.md) | [Rate Limiting](./API/rate-limiting.md)
 
 ### Build
 
@@ -81,11 +83,10 @@
 - [C 빌드 실습](./Build/c-build-example.md) | [캐시와 재현성](./Build/reproducibility.md) | [오류 진단](./Build/troubleshooting.md)
 - [JavaScript 빌드 도구](./Build/javascript-tools.md) | [모듈과 번들링](./Build/javascript-modules.md) | [JS 빌드·모노레포](./Build/javascript-workflows.md)
 
-### Frontend
+### Data
 
-- [State Management](./Frontend/state-management.md) | [TypeScript](./Frontend/typescript.md)
-- [Web Performance](./Frontend/web-performance.md) | [PWA](./Frontend/pwa.md)
-- [Accessibility](./Frontend/accessibility.md)
+- [Connection Pool](./Data/database/connection-pool.md) | [Transaction](./Data/database/transaction.md) | [Migration](./Data/database/migration.md) | [View](./Data/database/view.md)
+- [Redis](./Data/caching/redis.md) | [Message Queue](./Data/messaging/message-queue.md)
 
 ### Hardware
 
@@ -111,10 +112,22 @@
 - [CI/CD 학습 순서](./Infrastructure/cicd/README.md) | [CI/CD 기초](./Infrastructure/cicd/cicd-basics.md) | [배포 전략](./Infrastructure/cicd/deployment-strategies.md) | [파이프라인 보안](./Infrastructure/cicd/pipeline-security.md)
 - [1인·소규모 도구 선택](./Infrastructure/cicd/solo-dev-tools.md) | [릴리스·의존성 자동화](./Infrastructure/cicd/release-automation.md) | [GitHub Actions](./Infrastructure/cicd/github-action.md)
 
+### Observability
+
+- [Logging](./Observability/logging.md)
+
+### Programming
+
+- [TypeScript](./Programming/typescript.md)
+
+### Quality
+
+- [Testing Strategy](./Quality/testing-strategy.md) | [Exception Handling](./Quality/exception-handling-strategy.md) | [Code Review](./Quality/code-review.md)
+
 ### Security
 
 - [OWASP Top 10](./Security/owasp-top-10.md) | [인증과 비밀번호](./Security/auth-and-passwords.md) | [웹 공격과 방어](./Security/web-attacks.md)
-- [공급망 보안](./Security/supply-chain.md) | [CORS](./Security/cors.md) | [환경변수 관리](./Security/env-management.md)
+- [JWT](./Security/jwt.md) | [Cookie](./Security/cookie.md) | [공급망 보안](./Security/supply-chain.md) | [CORS](./Security/cors.md) | [환경변수 관리](./Security/env-management.md)
 
 ### UX
 
@@ -127,4 +140,9 @@
 ### Git
 
 - [Rebase](./Version%20Control%20System/git/rebase.md) | [Cherry-pick](./Version%20Control%20System/git/cherry-pick.md)
-- [Tips](./Version%20Control%20System/git/tips.md)
+- [Tips](./Version%20Control%20System/git/tips.md) | [Submodules](./Version%20Control%20System/git/submodules.md) | [SSH 키](./Version%20Control%20System/git/public-key.md)
+
+### Web
+
+- [Web Performance](./Web/web-performance.md) | [PWA](./Web/pwa.md)
+- [상태 관리](./Web/state-management.md) | [Accessibility](./Web/accessibility.md)

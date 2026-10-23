@@ -52,7 +52,7 @@ flowchart LR
 | 플레이스홀더만으로 라벨 대체 | 라벨 필수, 플레이스홀더도 3:1 이상 |
 | 흰 배경 위 연한 테두리 입력 | 테두리 3:1 이상 |
 
-대비 검사 도구는 [웹 접근성](../../Frontend/accessibility.md)을 참고합니다.
+대비 검사 도구는 [웹 접근성](../../Web/accessibility.md)을 참고합니다.
 
 ## 색에만 의존하지 않기
 
@@ -108,6 +108,6 @@ flowchart LR
 | 색각 시뮬레이션 | Chrome 렌더링 탭, Stark |
 | 지각 균일 색 공간 | OKLCH로 명도 단계를 고르게 |
 
-관련: [웹 접근성](../../Frontend/accessibility.md), [디자인 시스템](../systems/design-system.md)
+관련: [웹 접근성](../../Web/accessibility.md), [디자인 시스템](../systems/design-system.md)
 
 다음: [컴포넌트 규칙](../components/components.md)

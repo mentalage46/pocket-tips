@@ -91,6 +91,6 @@ flowchart LR
 | 후속 처리의 실패가 원 작업을 막으면 안 됨 | 즉시 일관성이 필요한 곳에 적용 |
 | 모듈 간 결합을 줄여야 함 | 흐름 추적·디버깅 도구 없이 도입 |
 
-관련: [메시지 큐](../../Backend/messaging/message-queue.md), [트랜잭션](../../Backend/database/transaction.md), [경계 설계](../patterns/boundaries.md)
+관련: [메시지 큐](../../Data/messaging/message-queue.md), [트랜잭션](../../Data/database/transaction.md), [경계 설계](../patterns/boundaries.md)
 
 다음: [도메인 모델링](../patterns/domain-modeling.md)

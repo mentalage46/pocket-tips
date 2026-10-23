@@ -118,6 +118,6 @@ flowchart TB
 
 확인일: 2026-10-16
 
-관련: [환경변수 관리](../../Security/env-management.md), [로깅](../../Backend/logging/logging.md), [예외 처리 전략](../../Backend/exception/exception-handling-strategy.md)
+관련: [환경변수 관리](../../Security/env-management.md), [로깅](../../Observability/logging.md), [예외 처리 전략](../../Quality/exception-handling-strategy.md)
 
 다음: [테스트와 배포](./testing-and-distribution.md)

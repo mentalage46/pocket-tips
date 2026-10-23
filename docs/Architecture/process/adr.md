@@ -85,6 +85,6 @@ flowchart LR
 
 ADR은 에이전트가 저장소를 이해하는 데 가장 효율적인 문서입니다. 지침 파일에서 ADR 목록을 가리키고, 설계 변경 작업에는 관련 ADR을 문맥으로 제공합니다. 에이전트가 새 결정을 제안할 때도 같은 형식으로 쓰게 하면 리뷰가 쉬워집니다. 자세한 내용은 [문맥과 지식 축적](../../AI/agents/context-and-knowledge.md)을 참고합니다.
 
-관련: [품질 속성과 트레이드오프](../quality/quality-attributes.md), [코드 리뷰](../../Utility/collaboration/code-review.md)
+관련: [품질 속성과 트레이드오프](../quality/quality-attributes.md), [코드 리뷰](../../Quality/code-review.md)
 
 다음: [다이어그램](./diagrams.md)

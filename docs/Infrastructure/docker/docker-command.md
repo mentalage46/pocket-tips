@@ -45,7 +45,7 @@ Docker는 컨테이너 트래픽을 `nat` 테이블에서 처리하므로 **패�
 docker run -d --log-opt max-size=10m --log-opt max-file=3 myapp
 ```
 
-`docker logs`는 컨테이너의 **stdout/stderr**를 보여 줍니다. 앱이 파일에만 로그를 쓰면 보이지 않으므로 stdout으로 출력합니다([로깅: 이벤트 스트림](../../Backend/logging/logging.md#로그는-이벤트-스트림이다-twelve-factor)).
+`docker logs`는 컨테이너의 **stdout/stderr**를 보여 줍니다. 앱이 파일에만 로그를 쓰면 보이지 않으므로 stdout으로 출력합니다([로깅: 이벤트 스트림](../../Observability/logging.md#로그는-이벤트-스트림이다-twelve-factor)).
 
 ### `--env-file`은 Compose의 `env_file`과 규칙이 다를 수 있다
 

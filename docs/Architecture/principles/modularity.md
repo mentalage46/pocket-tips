@@ -81,6 +81,6 @@ flowchart LR
 | 알고리즘 선택 | 입력과 출력의 계약 |
 | 캐시·재시도 전략 | 성능 특성(문서로) |
 
-관련: [의존성과 추상화](./dependencies.md), [도메인 모델링](../patterns/domain-modeling.md), [API 설계](../../Backend/api/api-design.md)
+관련: [의존성과 추상화](./dependencies.md), [도메인 모델링](../patterns/domain-modeling.md), [API 설계](../../API/api-design.md)
 
 다음: [의존성과 추상화](./dependencies.md)

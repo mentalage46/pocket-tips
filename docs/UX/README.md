@@ -38,4 +38,4 @@ UX(사용자 경험)는 사용자가 목표를 얼마나 쉽게, 확실하게, �
 - 접근성은 별도 작업이 아니라 기본 품질입니다. 대비, 키보드, 포커스, 레이블을 처음부터 넣습니다.
 - 추측 대신 관찰합니다. 사용자 다섯 명만 지켜봐도 대부분의 문제가 드러납니다.
 
-관련: [웹 접근성](../Frontend/accessibility.md), [다국어 관리](../I18N/README.md), [상태 관리](../Frontend/state-management.md)
+관련: [웹 접근성](../Web/accessibility.md), [다국어 관리](../I18N/README.md), [상태 관리](../Web/state-management.md)

@@ -128,4 +128,4 @@ flowchart TB
 | 빠른 사내 도구 | Dify/RAGFlow/Open WebUI에 문서 업로드 |
 | 운영 최소화 | 관리형 RAG(공급자 파일 검색, Bedrock Knowledge Bases 등) |
 
-관련: [에이전트 도구와 생태계](../agents/tools.md), [Docker](../../Infrastructure/docker/docker.md), [DB 마이그레이션](../../Backend/database/migration.md)
+관련: [에이전트 도구와 생태계](../agents/tools.md), [Docker](../../Infrastructure/docker/docker.md), [DB 마이그레이션](../../Data/database/migration.md)

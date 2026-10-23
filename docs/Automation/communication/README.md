@@ -28,5 +28,5 @@ PC에서 PLC 값을 처음 읽어 보는 것이 목표라면 [Modbus](./modbus.m
 
 - [UART와 RS-232/485 전기 규격](../../Hardware/interfaces/uart.md)
 - [네트워크 프로토콜(TCP/UDP)](../../Network/protocol.md), [서브넷](../../Network/subnet.md)
-- [메시지 큐](../../Backend/messaging/message-queue.md) - 브로커 기반 비동기 통신의 일반 개념
+- [메시지 큐](../../Data/messaging/message-queue.md) - 브로커 기반 비동기 통신의 일반 개념
 - [HMI·SCADA](../hmi-scada/README.md), [OT 보안](../safety/ot-security.md)

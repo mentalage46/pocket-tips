@@ -100,4 +100,4 @@ flowchart LR
 | 작은 배포 | 단계마다 배포. 장기 브랜치 금지 |
 | 종료 기준 | 기존 코드 삭제까지가 완료. "둘 다 유지"는 부채 |
 
-관련: [모놀리스와 마이크로서비스](../styles/monolith-vs-microservices.md), [DB 마이그레이션](../../Backend/database/migration.md), [Git Rebase](../../Version%20Control%20System/git/rebase.md), [안티패턴](../patterns/anti-patterns.md)
+관련: [모놀리스와 마이크로서비스](../styles/monolith-vs-microservices.md), [DB 마이그레이션](../../Data/database/migration.md), [Git Rebase](../../Version%20Control%20System/git/rebase.md), [안티패턴](../patterns/anti-patterns.md)

@@ -70,6 +70,6 @@ flowchart LR
 | 모니터링 | 검색 지연 p95, 인덱스 크기, 메모리, 재현율 샘플 검사 |
 | 다중 테넌트 | 테넌트 ID를 필수 필터로 강제. 코드 경로 하나에서 누락되면 데이터 유출 |
 
-관련: [커넥션 풀](../../Backend/database/connection-pool.md), [DB 뷰](../../Backend/database/view.md), [Redis 캐싱](../../Backend/caching/redis.md)
+관련: [커넥션 풀](../../Data/database/connection-pool.md), [DB 뷰](../../Data/database/view.md), [Redis 캐싱](../../Data/caching/redis.md)
 
 다음: [검색 전략](./retrieval.md)

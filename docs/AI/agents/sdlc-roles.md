@@ -124,4 +124,4 @@ PM은 "무엇을, 왜"를 결정합니다. 에이전트는 결정에 필요한 �
 - 품질 기준의 해석: 테스트가 없는 영역의 "충분함"
 - 사람 사이의 합의: 코드 소유권, 팀 규칙, 고객 커뮤니케이션
 
-관련: [실무 워크플로](./workflows.md), [코드 리뷰](../../Utility/collaboration/code-review.md), [테스트 전략](../../Backend/testing/testing-strategy.md), [GitHub Actions](../../Infrastructure/cicd/github-action.md)
+관련: [실무 워크플로](./workflows.md), [코드 리뷰](../../Quality/code-review.md), [테스트 전략](../../Quality/testing-strategy.md), [GitHub Actions](../../Infrastructure/cicd/github-action.md)

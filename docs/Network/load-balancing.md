@@ -84,7 +84,7 @@ server {
 | 쿠키 기반 | LB가 서버 표시 쿠키를 발급. 고르게 분산 |
 | **세션 외부 저장 (권장)** | Redis 등에 세션 저장. 어느 서버로 가도 됨, 배포·확장이 자유로움 |
 
-가능하면 서버를 무상태(stateless)로 만들고 sticky session은 쓰지 않습니다. 세션 저장은 [Redis](../Backend/caching/redis.md)를 참고합니다.
+가능하면 서버를 무상태(stateless)로 만들고 sticky session은 쓰지 않습니다. 세션 저장은 [Redis](../Data/caching/redis.md)를 참고합니다.
 
 ---
 

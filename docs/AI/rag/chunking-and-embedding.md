@@ -91,6 +91,6 @@ flowchart LR
 
 문서 내용의 해시를 저장해 두면 변경되지 않은 문서의 재임베딩을 건너뛸 수 있습니다.
 
-관련: [DB 마이그레이션](../../Backend/database/migration.md), [메시지 큐](../../Backend/messaging/message-queue.md)
+관련: [DB 마이그레이션](../../Data/database/migration.md), [메시지 큐](../../Data/messaging/message-queue.md)
 
 다음: [벡터 저장소](./vector-stores.md)

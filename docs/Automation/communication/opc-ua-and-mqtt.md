@@ -267,6 +267,6 @@ flowchart LR
 
 확인일: 2026-10-21 (포트·표준 번호·보안 모드·정책 폐기 여부·PubSub 매핑·UAFX 현황·Sparkplug 규칙을 확인. Basic256Sha256의 현재 상태는 벤더 문서로만 확인. UNS와 아키텍처·선택 기준은 경험칙)
 
-관련: [산업 이더넷](./industrial-ethernet.md), [메시지 큐](../../Backend/messaging/message-queue.md), [태그와 SCADA 구조](../hmi-scada/tags-and-architecture.md), [OT 보안](../safety/ot-security.md)
+관련: [산업 이더넷](./industrial-ethernet.md), [메시지 큐](../../Data/messaging/message-queue.md), [태그와 SCADA 구조](../hmi-scada/tags-and-architecture.md), [OT 보안](../safety/ot-security.md)
 
 다음: [HMI·SCADA](../hmi-scada/README.md)

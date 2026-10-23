@@ -105,6 +105,6 @@ stateDiagram-v2
 | 상태 표시(배지, 점) | 상시 | 미읽음, 진행 중 |
 | 시스템 알림·이메일 | 외부 | 사용자가 떠난 뒤 완료 |
 
-관련: [사용성 원칙](../foundations/principles.md), [UX 라이팅](./microcopy.md), [예외 처리 전략](../../Backend/exception/exception-handling-strategy.md)
+관련: [사용성 원칙](../foundations/principles.md), [UX 라이팅](./microcopy.md), [예외 처리 전략](../../Quality/exception-handling-strategy.md)
 
 다음: [UX 라이팅](./microcopy.md)

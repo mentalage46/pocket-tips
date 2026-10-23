@@ -33,4 +33,4 @@
 - 에이전트가 읽을 수 있는 문서가 곧 에이전트의 실력입니다. 지식을 쌓는 일이 프롬프트를 다듬는 일보다 오래 남습니다.
 - 자동화 범위를 넓히기 전에 작은 범위에서 성공률과 비용을 측정합니다.
 
-관련: [Harness 학습 가이드](../harness/README.md), [프롬프팅 기법](../prompting/prompting-tips.md), [코드 리뷰](../../Utility/collaboration/code-review.md)
+관련: [Harness 학습 가이드](../harness/README.md), [프롬프팅 기법](../prompting/prompting-tips.md), [코드 리뷰](../../Quality/code-review.md)

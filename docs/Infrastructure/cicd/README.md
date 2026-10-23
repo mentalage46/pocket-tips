@@ -21,4 +21,4 @@
 
 - [Docker](../docker/docker.md), [Docker Compose](../docker/docker-compose.md)
 - [Nginx](../nginx/nginx.md), [SSL 자동화](../nginx/ssl.md)
-- [캐시와 재현 가능한 빌드](../../Build/reproducibility.md), [테스트 전략](../../Backend/testing/testing-strategy.md)
+- [캐시와 재현 가능한 빌드](../../Build/reproducibility.md), [테스트 전략](../../Quality/testing-strategy.md)

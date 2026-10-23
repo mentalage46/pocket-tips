@@ -94,7 +94,7 @@ JWT가 "stateless"인 이유는 서버가 **저장소를 조회하지 않고 서
 
 - 발급한 토큰은 **`exp`까지 유효**합니다. 로그아웃, 비밀번호 변경, 계정 정지, 권한 회수가 **즉시 반영되지 않습니다.**
 - 그래서 Access Token은 **짧게**(분 단위) 두어 피해 시간을 줄입니다. 즉시 차단이 필요하면 `jti`나 사용자별 "토큰 최소 발급 시각"을 **저장소에 기록해 조회**해야 하는데, 이는 세션과 같은 서버 상태를 다시 만드는 것입니다.
-- **JWT가 세션보다 항상 낫다는 것은 오해입니다.** 단일 웹 서비스에서 즉시 로그아웃·강제 만료가 중요하다면 서버 세션 + HttpOnly 쿠키가 더 단순하고 안전합니다. 비교는 [인증과 비밀번호 저장](../../Security/auth-and-passwords.md#세션-vs-토큰)을 참고합니다.
+- **JWT가 세션보다 항상 낫다는 것은 오해입니다.** 단일 웹 서비스에서 즉시 로그아웃·강제 만료가 중요하다면 서버 세션 + HttpOnly 쿠키가 더 단순하고 안전합니다. 비교는 [인증과 비밀번호 저장](./auth-and-passwords.md#세션-vs-토큰)을 참고합니다.
 
 ### Refresh Token: 짧은 Access Token을 가능하게 하는 보조 장치
 
@@ -102,7 +102,7 @@ Access Token을 짧게 두면 사용자가 자주 로그인해야 하므로, 오
 
 - **서버에 저장**(해시로)해서 폐기·추적할 수 있게 합니다. 이 토큰만은 stateless일 필요가 없습니다.
 - **회전(rotation)**: 갱신할 때마다 새 Refresh Token을 주고 이전 것은 무효화합니다. 이미 사용된 Refresh Token이 **다시 제시되면 탈취 신호**로 보고 그 계열 전체를 폐기합니다(재사용 탐지). OAuth 보안 BCP(RFC 9700)도 공개 클라이언트의 Refresh Token은 **회전하거나 발신자에 묶어야(sender-constrained) 한다**고 합니다.
-- **저장 위치**: HttpOnly + Secure + SameSite 쿠키([Cookie](cookie.md#저장-위치별-위협-모델)). Access Token을 `localStorage`에 두면 XSS로 읽히므로, 메모리(변수)에 두고 새로고침 시 Refresh Token으로 다시 받는 구성이 일반적입니다.
+- **저장 위치**: HttpOnly + Secure + SameSite 쿠키([Cookie](./cookie.md#저장-위치별-위협-모델)). Access Token을 `localStorage`에 두면 XSS로 읽히므로, 메모리(변수)에 두고 새로고침 시 Refresh Token으로 다시 받는 구성이 일반적입니다.
 
 ---
 

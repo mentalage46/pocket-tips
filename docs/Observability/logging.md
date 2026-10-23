@@ -93,7 +93,7 @@ traceparent: 00-4bf92f3577b34da6a3ce929d0e0e4736-00f067aa0ba902b7-01
 
 ### 무엇을 남길 것인가
 
-OWASP가 항상 남기라고 하는 이벤트: 입력 검증 실패, 인증 성공·실패, 권한 거부, 세션 관리 실패, 애플리케이션 오류, 시작·종료. 위험도가 높은 행위(사용자 관리, 관리자 작업, 민감 데이터 접근)도 남깁니다. 이는 [OWASP A09 보안 로깅·알림 실패](../../Security/owasp-top-10.md#a09-security-logging-and-alerting-failures-보안-로깅알림-실패)와 직접 연결됩니다.
+OWASP가 항상 남기라고 하는 이벤트: 입력 검증 실패, 인증 성공·실패, 권한 거부, 세션 관리 실패, 애플리케이션 오류, 시작·종료. 위험도가 높은 행위(사용자 관리, 관리자 작업, 민감 데이터 접근)도 남깁니다. 이는 [OWASP A09 보안 로깅·알림 실패](../Security/owasp-top-10.md#a09-security-logging-and-alerting-failures-보안-로깅알림-실패)와 직접 연결됩니다.
 
 ### 로그의 비용
 

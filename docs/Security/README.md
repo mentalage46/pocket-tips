@@ -11,5 +11,7 @@
 - [인증과 비밀번호 저장](./auth-and-passwords.md) - NIST 비밀번호 기준, Argon2id, 세션 vs 토큰, OAuth/OIDC + PKCE, MFA
 - [웹 공격과 방어](./web-attacks.md) - XSS, CSRF, 보안 응답 헤더, CSP 도입 순서
 - [공급망 보안](./supply-chain.md) - lockfile, 새 버전 설치 지연, 설치 스크립트 제한, SBOM, provenance
+- [JWT](./jwt.md) - 서명·검증, 폐기 문제, Refresh Token 회전
+- [Cookie](./cookie.md) - 인증 쿠키 속성, 저장 위치별 위협 모델
 - [CORS](./cors.md) - 크로스 오리진 설정
 - [환경변수 관리](./env-management.md) - dotenv, Secret Manager

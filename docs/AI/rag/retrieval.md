@@ -99,6 +99,6 @@ flowchart LR
 
 같은 질문이 반복되면 검색 결과나 최종 답변을 캐싱합니다. 문서가 갱신될 때 캐시를 무효화하는 규칙을 함께 둡니다.
 
-관련: [비용과 지연](../llm-basics/cost-and-latency.md), [API 설계](../../Backend/api/api-design.md)
+관련: [비용과 지연](../llm-basics/cost-and-latency.md), [API 설계](../../API/api-design.md)
 
 다음: [평가와 실패 진단](./evaluation.md)

@@ -2,7 +2,7 @@
 
 > 비밀번호를 어떻게 받고, 어떻게 저장하고, 외부 로그인(OAuth/OIDC)을 어떻게 붙이는가
 
-쿠키 속성은 [Cookie](../Backend/auth/cookie.md), 토큰 구조와 갱신 흐름은 [JWT](../Backend/auth/jwt.md)를 참고합니다.
+쿠키 속성은 [Cookie](./cookie.md), 토큰 구조와 갱신 흐름은 [JWT](./jwt.md)를 참고합니다.
 
 ---
 

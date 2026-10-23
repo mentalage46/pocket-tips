@@ -100,6 +100,6 @@ DORA(DevOps Research and Assessment)는 소프트웨어 전달 성과를 아래 
 
 확인일: 2026-10-20 (용어 정의, DORA 지표, 트렁크 기반 정의, concurrency 문법)
 
-관련: [GitHub Actions](./github-action.md), [Make로 CI 명령 통일](../../Utility/makefile.md), [테스트 전략](../../Backend/testing/testing-strategy.md)
+관련: [GitHub Actions](./github-action.md), [Make로 CI 명령 통일](../../Utility/makefile.md), [테스트 전략](../../Quality/testing-strategy.md)
 
 다음: [배포 전략과 롤백](./deployment-strategies.md)
