@@ -86,6 +86,6 @@ export async function openChart(data) {
 - 개발 서버가 아닌 배포 빌드에서 초기 요청, 청크 크기, 실제 기능을 확인합니다.
 - 라이브러리는 패키지에 포함될 파일을 확인하고, 소비 프로젝트에서 import와 타입 해석을 검증합니다.
 
-관련: [개발·배포 빌드와 모노레포](./javascript-workflows.md), [웹 성능](../Frontend/web-performance.md)
+관련: [개발·배포 빌드와 모노레포](./javascript-workflows.md), [웹 성능](../Web/web-performance.md)
 
 참고: [Node.js 패키지](https://nodejs.org/api/packages.html), [webpack Tree Shaking](https://webpack.js.org/guides/tree-shaking/), [TypeScript 모듈 해석](https://www.typescriptlang.org/docs/handbook/modules/reference.html)

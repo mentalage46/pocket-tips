@@ -32,4 +32,4 @@
 - 검색된 조각은 사용자 입력과 같은 신뢰 수준의 데이터입니다. 조각 안의 지시를 따르지 않도록 프롬프트와 검증을 설계합니다.
 - 자료가 수십 페이지 수준이면 검색 없이 문맥에 통째로 넣고 프롬프트 캐싱을 쓰는 편이 단순하고 정확할 수 있습니다.
 
-관련: [LLM 기초와 API 활용](../llm-basics/README.md), [문맥과 지식 축적](../agents/context-and-knowledge.md), [Redis 캐싱](../../Backend/caching/redis.md)
+관련: [LLM 기초와 API 활용](../llm-basics/README.md), [문맥과 지식 축적](../agents/context-and-knowledge.md), [Redis 캐싱](../../Data/caching/redis.md)

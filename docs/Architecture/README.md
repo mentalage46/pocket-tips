@@ -38,4 +38,4 @@
 - 결정은 기록합니다. 왜 그렇게 했는지 모르면 바꿀 수도, 지킬 수도 없습니다.
 - 아키텍처 규칙은 문서가 아니라 테스트와 도구로 지킵니다.
 
-관련: [API 설계](../Backend/api/api-design.md), [상태 관리](../Frontend/state-management.md), [문맥과 지식 축적](../AI/agents/context-and-knowledge.md)
+관련: [API 설계](../API/api-design.md), [상태 관리](../Web/state-management.md), [문맥과 지식 축적](../AI/agents/context-and-knowledge.md)

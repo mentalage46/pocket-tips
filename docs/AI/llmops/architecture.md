@@ -86,6 +86,6 @@ flowchart TB
 | 비밀 | 비밀 관리자, 키 순환 절차 |
 | 로컬 개발 | 기록된 응답 재생(replay) 또는 소형 모델로 비용 절감 |
 
-관련: [API 설계](../../Backend/api/api-design.md), [메시지 큐](../../Backend/messaging/message-queue.md), [Redis 캐싱](../../Backend/caching/redis.md), [Docker Compose](../../Infrastructure/docker/docker-compose.md)
+관련: [API 설계](../../API/api-design.md), [메시지 큐](../../Data/messaging/message-queue.md), [Redis 캐싱](../../Data/caching/redis.md), [Docker Compose](../../Infrastructure/docker/docker-compose.md)
 
 다음: [프롬프트 관리](./prompt-management.md)

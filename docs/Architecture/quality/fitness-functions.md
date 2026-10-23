@@ -82,6 +82,6 @@ module.exports = {
 | 깨지면 규칙을 끔 | 끄는 대신 ADR로 규칙 변경 결정 |
 | 테스트가 느려 무시됨 | 정적 검사는 PR, 느린 검사는 야간 |
 
-관련: [품질 속성과 트레이드오프](./quality-attributes.md), [GitHub Actions](../../Infrastructure/cicd/github-action.md), [Husky](../../Utility/huskey.md), [테스트 전략](../../Backend/testing/testing-strategy.md)
+관련: [품질 속성과 트레이드오프](./quality-attributes.md), [GitHub Actions](../../Infrastructure/cicd/github-action.md), [Husky](../../Utility/huskey.md), [테스트 전략](../../Quality/testing-strategy.md)
 
 다음: [ADR](../process/adr.md)

@@ -77,6 +77,6 @@
 | 같은 기능이 화면마다 다르게 생겼는가 | |
 | 키보드만으로 모든 작업이 가능한가 | |
 
-관련: [웹 접근성](../../Frontend/accessibility.md), [피드백과 상태](../components/feedback-and-states.md)
+관련: [웹 접근성](../../Web/accessibility.md), [피드백과 상태](../components/feedback-and-states.md)
 
 다음: [사용자 조사](./research.md)

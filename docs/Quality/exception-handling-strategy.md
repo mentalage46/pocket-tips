@@ -14,7 +14,7 @@
 | **예상하지 못한 결함** (버그·인프라) | null 참조, DB 연결 끊김, 외부 API 장애 | 고칠 수 없음 | **5xx** + 일반 메시지(내부 정보 숨김) | `ERROR` + 스택, 알림 대상 |
 
 - 이 구분이 아래 네 가지 전략보다 먼저입니다. 전략은 "예상된 실패를 어떻게 표현하는가"의 차이이고, 예상하지 못한 결함은 **어떤 전략에서도 마지막 안전망**(전역 핸들러)이 500으로 처리해야 합니다.
-- 구분하지 않으면 **정상적인 로그인 실패가 `ERROR`로 쌓여 알림이 소음**이 되거나, 반대로 **500 응답에 스택 트레이스·SQL이 노출**됩니다([로깅 레벨 기준](../logging/logging.md#로그는-무기도-된다-인젝션과-민감정보), [OWASP A10](../../Security/owasp-top-10.md#a10-mishandling-of-exceptional-conditions-예외-상황-처리-실패)).
+- 구분하지 않으면 **정상적인 로그인 실패가 `ERROR`로 쌓여 알림이 소음**이 되거나, 반대로 **500 응답에 스택 트레이스·SQL이 노출**됩니다([로깅 레벨 기준](../Observability/logging.md#로그는-무기도-된다-인젝션과-민감정보), [OWASP A10](../Security/owasp-top-10.md#a10-mishandling-of-exceptional-conditions-예외-상황-처리-실패)).
 
 ### 어디서 잡는가: 경계에서 한 번
 
@@ -56,7 +56,7 @@ try {
 
 ### 에러 코드는 API 계약이다
 
-`USER_NOT_FOUND` 같은 코드는 클라이언트가 분기(화면 문구, 재시도 여부)에 사용하므로 **바꾸면 깨지는 변경**입니다([API 설계: 호환성](../api/api-design.md#개념-api는-바꾸기-어려운-계약이다)). 이름을 한 번 공개하면 유지하고, 응답 본문은 표준 형식(RFC 9457 Problem Details)으로 통일하는 것을 검토합니다([에러 응답](../api/api-design.md#표준-형식-rfc-9457-problem-details)).
+`USER_NOT_FOUND` 같은 코드는 클라이언트가 분기(화면 문구, 재시도 여부)에 사용하므로 **바꾸면 깨지는 변경**입니다([API 설계: 호환성](../API/api-design.md#개념-api는-바꾸기-어려운-계약이다)). 이름을 한 번 공개하면 유지하고, 응답 본문은 표준 형식(RFC 9457 Problem Details)으로 통일하는 것을 검토합니다([에러 응답](../API/api-design.md#표준-형식-rfc-9457-problem-details)).
 
 ### Node.js·프레임워크의 현실
 
@@ -71,7 +71,7 @@ try {
 
 - 에러 처리 미들웨어는 **인자 4개** `(err, req, res, next)`이고 다른 `app.use()`·라우트 **뒤에** 정의합니다. 시그니처에 `next`가 있어야 에러 처리기로 인식됩니다.
 - 응답을 이미 보내기 시작했다면(`res.headersSent`) 직접 응답하지 말고 `next(err)`로 기본 처리기에 넘깁니다.
-- Express의 **기본 처리기는 `NODE_ENV`가 `production`이 아니면 스택 트레이스를 응답에 포함**합니다. 운영에서는 `NODE_ENV=production`을 반드시 설정합니다([환경변수 관리](../../Security/env-management.md)).
+- Express의 **기본 처리기는 `NODE_ENV`가 `production`이 아니면 스택 트레이스를 응답에 포함**합니다. 운영에서는 `NODE_ENV=production`을 반드시 설정합니다([환경변수 관리](../Security/env-management.md)).
 - (Express 4의 동작은 이 문서에서 확인하지 않았습니다. 미확인)
 
 **NestJS**(공식 문서 기준)

@@ -82,6 +82,6 @@ flowchart LR
 
 "중복을 없애자"는 이유로 업무 모델을 공유 라이브러리에 넣는 것이 가장 흔한 경계 붕괴 원인입니다. 컨텍스트가 다르면 같은 이름이라도 따로 둡니다.
 
-관련: [트랜잭션](../../Backend/database/transaction.md), [API 설계](../../Backend/api/api-design.md), [DB 마이그레이션](../../Backend/database/migration.md), [도메인 모델링](./domain-modeling.md)
+관련: [트랜잭션](../../Data/database/transaction.md), [API 설계](../../API/api-design.md), [DB 마이그레이션](../../Data/database/migration.md), [도메인 모델링](./domain-modeling.md)
 
 다음: [안티패턴](./anti-patterns.md)

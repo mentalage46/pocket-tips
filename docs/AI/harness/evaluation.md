@@ -88,4 +88,4 @@
 - [EleutherAI — Language Model Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness): 언어 모델을 여러 평가 과제에서 실행하고 채점하는 도구입니다.
 - [SWE-bench](https://github.com/SWE-bench/SWE-bench): 실제 저장소의 소프트웨어 문제 해결을 평가하는 데이터와 평가 하네스를 제공합니다. 에이전트의 탐색·수정 실행 루프와 제출 패치를 채점하는 하네스의 역할을 구분해 볼 수 있습니다.
 
-관련: [Harness 학습 목차](./README.md), [실행 구조와 설계](./runtime-design.md), [테스트 전략](../../Backend/testing/testing-strategy.md)
+관련: [Harness 학습 목차](./README.md), [실행 구조와 설계](./runtime-design.md), [테스트 전략](../../Quality/testing-strategy.md)

@@ -107,4 +107,4 @@ claude mcp add --env TRACKER_TOKEN=xxx --transport stdio issues -- uvx my-issues
 
 확인일: 2026-10-16
 
-관련: [GitHub Actions](../../Infrastructure/cicd/github-action.md), [Docker](../../Infrastructure/docker/docker.md), [테스트 전략](../../Backend/testing/testing-strategy.md), [AI 보안](../security/README.md)
+관련: [GitHub Actions](../../Infrastructure/cicd/github-action.md), [Docker](../../Infrastructure/docker/docker.md), [테스트 전략](../../Quality/testing-strategy.md), [AI 보안](../security/README.md)

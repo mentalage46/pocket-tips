@@ -94,4 +94,4 @@ tests:
 
 평가를 CI에 넣으면 프롬프트 변경이 코드 변경과 같은 게이트를 통과합니다.
 
-관련: [Harness 평가와 오류 진단](../harness/evaluation.md), [RAG 평가와 실패 진단](../rag/evaluation.md), [테스트 전략](../../Backend/testing/testing-strategy.md)
+관련: [Harness 평가와 오류 진단](../harness/evaluation.md), [RAG 평가와 실패 진단](../rag/evaluation.md), [테스트 전략](../../Quality/testing-strategy.md)

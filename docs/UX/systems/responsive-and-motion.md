@@ -120,6 +120,6 @@ flowchart LR
 
 확인일: 2026-10-16 (목표 크기 항목만 확인)
 
-관련: [레이아웃과 간격](../visual/layout-and-spacing.md), [웹 성능](../../Frontend/web-performance.md), [PWA](../../Frontend/pwa.md), [웹 접근성](../../Frontend/accessibility.md)
+관련: [레이아웃과 간격](../visual/layout-and-spacing.md), [웹 성능](../../Web/web-performance.md), [PWA](../../Web/pwa.md), [웹 접근성](../../Web/accessibility.md)
 
 다음: [협업과 측정](../process/workflow.md)

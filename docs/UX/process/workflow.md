@@ -109,4 +109,4 @@ flowchart LR
 | 검증 | 동료 2~3명에게 과제 주고 지켜보기 |
 | AI 활용 | 시안 초안·대안 생성에 활용하되 원칙·시스템 규칙으로 검토 |
 
-관련: [사용자 조사](../foundations/research.md), [코드 리뷰](../../Utility/collaboration/code-review.md), [디자인 시스템](../systems/design-system.md)
+관련: [사용자 조사](../foundations/research.md), [코드 리뷰](../../Quality/code-review.md), [디자인 시스템](../systems/design-system.md)

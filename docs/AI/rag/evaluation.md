@@ -84,6 +84,6 @@ flowchart TD
 | 단계별 지연 | 병목 파악 |
 | 인용 클릭률 | 출처가 실제로 유용한지 |
 
-관련: [평가와 오류 진단](../harness/evaluation.md), [테스트 전략](../../Backend/testing/testing-strategy.md), [로깅](../../Backend/logging/logging.md)
+관련: [평가와 오류 진단](../harness/evaluation.md), [테스트 전략](../../Quality/testing-strategy.md), [로깅](../../Observability/logging.md)
 
 다음: [도구와 생태계](./tools.md)

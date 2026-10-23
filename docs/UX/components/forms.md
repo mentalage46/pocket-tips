@@ -104,6 +104,6 @@ flowchart TB
 | 키보드 | Tab 순서가 시각 순서와 일치 |
 | 필수 | `required` 또는 `aria-required` + 시각 표시 |
 
-관련: [컴포넌트 규칙](./components.md), [웹 접근성](../../Frontend/accessibility.md), [API 설계](../../Backend/api/api-design.md)의 오류 응답
+관련: [컴포넌트 규칙](./components.md), [웹 접근성](../../Web/accessibility.md), [API 설계](../../API/api-design.md)의 오류 응답
 
 다음: [피드백과 상태](./feedback-and-states.md)

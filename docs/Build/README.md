@@ -41,4 +41,4 @@
 - [Makefile 문법과 활용](../Utility/makefile.md)
 - [GitHub Actions](../Infrastructure/cicd/github-action.md)
 - [Docker](../Infrastructure/docker/docker.md)
-- [테스트 전략](../Backend/testing/testing-strategy.md)
+- [테스트 전략](../Quality/testing-strategy.md)

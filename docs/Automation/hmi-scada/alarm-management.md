@@ -295,6 +295,6 @@ END_IF;
 
 확인일: 2026-10-21 (표준 판·연도, 성능 지표·우선순위 분포·데드밴드 값과 그 출처, 알람 상태 목록 확인. 성능 지표는 2009판 표를 인용한 2차 자료이며 2016판 원문과 대조하지 못함. 우선순위 매트릭스 값, 채터링 판정 기준, ST 예시는 예시·경험칙)
 
-관련: [HMI 화면 설계](./hmi-design.md), [태그와 SCADA 구성](./tags-and-architecture.md), [기능 안전](../safety/functional-safety.md), [로깅](../../Backend/logging/logging.md)
+관련: [HMI 화면 설계](./hmi-design.md), [태그와 SCADA 구성](./tags-and-architecture.md), [기능 안전](../safety/functional-safety.md), [로깅](../../Observability/logging.md)
 
 다음: [태그와 SCADA 구성](./tags-and-architecture.md)

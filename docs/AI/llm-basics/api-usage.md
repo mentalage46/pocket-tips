@@ -106,6 +106,6 @@ def call_llm(messages, *, system, tools=None, tag):
     return res
 ```
 
-관련: [JWT](../../Backend/auth/jwt.md)의 키 관리 원칙, [환경변수 관리](../../Security/env-management.md), [로깅](../../Backend/logging/logging.md)
+관련: [JWT](../../Security/jwt.md)의 키 관리 원칙, [환경변수 관리](../../Security/env-management.md), [로깅](../../Observability/logging.md)
 
 다음: [구조화 출력과 도구 호출](./structured-output.md)

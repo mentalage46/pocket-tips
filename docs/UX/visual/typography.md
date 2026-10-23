@@ -73,7 +73,7 @@ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Go
 | 보조 텍스트 | 4.5:1 유지 | 연한 회색을 너무 연하게 쓰지 않음 |
 | 비활성 | 예외 | 단, 읽을 수 있어야 함 |
 
-색은 [색상](./color.md), 검사는 [웹 접근성](../../Frontend/accessibility.md)을 참고합니다.
+색은 [색상](./color.md), 검사는 [웹 접근성](../../Web/accessibility.md)을 참고합니다.
 
 ## 텍스트 처리
 
@@ -96,6 +96,6 @@ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Go
 | 가변 폰트 | 여러 굵기를 파일 하나로 |
 | 크기 보정 | `size-adjust`로 폰트 교체 시 레이아웃 이동 최소화 |
 
-관련: [웹 성능](../../Frontend/web-performance.md), [레이아웃과 간격](./layout-and-spacing.md)
+관련: [웹 성능](../../Web/web-performance.md), [레이아웃과 간격](./layout-and-spacing.md)
 
 다음: [색상](./color.md)

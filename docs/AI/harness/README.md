@@ -28,4 +28,4 @@ AI에서 **하네스(Harness)**는 모델을 특정 작업에 연결하고 실�
 - 모델의 완료 선언과 작업의 성공 여부는 별도로 확인합니다.
 - 복잡한 구조를 도입하기 전에 간단한 실행 루프와 대표 과제로 효과를 측정합니다.
 
-관련: [프롬프팅 기법](../prompting/prompting-tips.md), [테스트 전략](../../Backend/testing/testing-strategy.md)
+관련: [프롬프팅 기법](../prompting/prompting-tips.md), [테스트 전략](../../Quality/testing-strategy.md)

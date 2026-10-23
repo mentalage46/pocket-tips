@@ -91,6 +91,6 @@ flowchart LR
 | 4 | 분리 이유가 분명한 모듈 하나를 서비스로 추출([마이그레이션](../process/migration-and-debt.md)) |
 | 5 | 운영 비용 측정 후 다음 추출 여부 결정 |
 
-관련: [메시지 큐](../../Backend/messaging/message-queue.md), [Docker Compose](../../Infrastructure/docker/docker-compose.md), [이벤트 기반 아키텍처](./event-driven.md)
+관련: [메시지 큐](../../Data/messaging/message-queue.md), [Docker Compose](../../Infrastructure/docker/docker-compose.md), [이벤트 기반 아키텍처](./event-driven.md)
 
 다음: [이벤트 기반 아키텍처](./event-driven.md)

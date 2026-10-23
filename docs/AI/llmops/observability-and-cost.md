@@ -87,4 +87,4 @@ OpenTelemetry의 생성형 AI 의미 규약(semantic conventions)을 따르면 �
 
 처음에는 호출 래퍼에서 구조화 로그를 남기는 것으로 시작해도 충분합니다. 트래픽과 기능이 늘면 전용 도구로 옮깁니다.
 
-관련: [로깅](../../Backend/logging/logging.md), [비용과 지연](../llm-basics/cost-and-latency.md), [RAG 평가와 실패 진단](../rag/evaluation.md), [운영과 안전](../agents/operations.md)
+관련: [로깅](../../Observability/logging.md), [비용과 지연](../llm-basics/cost-and-latency.md), [RAG 평가와 실패 진단](../rag/evaluation.md), [운영과 안전](../agents/operations.md)

@@ -12,6 +12,7 @@
 - [DNS 실무](./dns.md) - 조회 과정, 레코드 종류, CNAME 규칙, TTL과 변경 절차, 메일 인증 레코드
 - [TLS와 인증서](./tls.md) - TLS 1.3 핸드셰이크, 인증서 체인, 짧아지는 유효 기간과 자동 갱신
 - [HTTP/1.1, HTTP/2, HTTP/3](./http-versions.md) - 버전별 전송 방식, 협상, 예전 최적화 정리
+- [HTTP 캐싱](./http-caching.md) - 신선도와 검증, `Cache-Control`, ETag·304, `Vary`, CDN, 파일별 전략
 
 ## 주소와 경로
 

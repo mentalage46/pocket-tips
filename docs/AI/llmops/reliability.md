@@ -89,6 +89,6 @@ flowchart LR
 | 비동기 작업 재실행 | 작업 상태를 저장하고 완료된 단계는 건너뜀 |
 | 에이전트가 쓰기 도구를 반복 | 도구에 멱등 키, 실행 이력 확인 |
 
-관련: [Rate Limiting](../../Backend/api/rate-limiting.md), [예외 처리 전략](../../Backend/exception/exception-handling-strategy.md), [Redis 캐싱](../../Backend/caching/redis.md), [트랜잭션](../../Backend/database/transaction.md)
+관련: [Rate Limiting](../../API/rate-limiting.md), [예외 처리 전략](../../Quality/exception-handling-strategy.md), [Redis 캐싱](../../Data/caching/redis.md), [트랜잭션](../../Data/database/transaction.md)
 
 다음: [관측과 비용](./observability-and-cost.md)

@@ -84,6 +84,6 @@ flowchart LR
 | 되돌리는 비용은 | 낮으면 빨리 결정, 높으면 더 조사 |
 | 측정 가능한가 | 아니면 시나리오를 다시 씀 |
 
-관련: [웹 성능](../../Frontend/web-performance.md), [Rate Limiting](../../Backend/api/rate-limiting.md), [OWASP Top 10](../../Security/owasp-top-10.md), [신뢰성](../../AI/llmops/reliability.md)
+관련: [웹 성능](../../Web/web-performance.md), [Rate Limiting](../../API/rate-limiting.md), [OWASP Top 10](../../Security/owasp-top-10.md), [신뢰성](../../AI/llmops/reliability.md)
 
 다음: [피트니스 함수](./fitness-functions.md)
