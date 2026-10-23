@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T08:28:26.506Z",
+  "generatedAt": "2026-10-23T08:30:47.338Z",
   "root": "docs",
   "home": "README.md",
   "tree": [
@@ -1162,6 +1162,21 @@
               "name": "docker.md",
               "path": "Infrastructure/docker/docker.md",
               "title": "Docker & Dockerfile"
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "kubernetes",
+          "path": "Infrastructure/kubernetes",
+          "title": "kubernetes",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "basics.md",
+              "path": "Infrastructure/kubernetes/basics.md",
+              "title": "Kubernetes 기초: Pod, Deployment, Service"
             }
           ]
         },
@@ -9229,6 +9244,11 @@
           "level": 2,
           "text": "Nginx",
           "id": "nginx"
+        },
+        {
+          "level": 2,
+          "text": "Kubernetes",
+          "id": "kubernetes"
         }
       ]
     },
@@ -9924,6 +9944,76 @@
           "level": 2,
           "text": "non-root 사용자 실행 (보안)",
           "id": "non-root-사용자-실행-보안"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Infrastructure/kubernetes/basics.md": {
+      "title": "Kubernetes 기초: Pod, Deployment, Service",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Kubernetes 기초: Pod, Deployment, Service",
+          "id": "kubernetes-기초-pod-deployment-service"
+        },
+        {
+          "level": 2,
+          "text": "개념: 선언형과 컨트롤 루프",
+          "id": "개념-선언형과-컨트롤-루프"
+        },
+        {
+          "level": 3,
+          "text": "세 가지 핵심 오브젝트",
+          "id": "세-가지-핵심-오브젝트"
+        },
+        {
+          "level": 2,
+          "text": "첫 매니페스트",
+          "id": "첫-매니페스트"
+        },
+        {
+          "level": 3,
+          "text": "라벨과 셀렉터가 모든 것을 연결한다",
+          "id": "라벨과-셀렉터가-모든-것을-연결한다"
+        },
+        {
+          "level": 2,
+          "text": "매니페스트 검증: 직접 돌려 본 결과",
+          "id": "매니페스트-검증-직접-돌려-본-결과"
+        },
+        {
+          "level": 2,
+          "text": "배포와 롤링 업데이트",
+          "id": "배포와-롤링-업데이트"
+        },
+        {
+          "level": 2,
+          "text": "프로브: K8s가 컨테이너 상태를 아는 방법",
+          "id": "프로브-k8s가-컨테이너-상태를-아는-방법"
+        },
+        {
+          "level": 2,
+          "text": "리소스: requests와 limits",
+          "id": "리소스-requests와-limits"
+        },
+        {
+          "level": 2,
+          "text": "Service: 고정된 접점",
+          "id": "service-고정된-접점"
+        },
+        {
+          "level": 2,
+          "text": "종료와 상태: 컨테이너 쪽에서 맞춰야 할 것",
+          "id": "종료와-상태-컨테이너-쪽에서-맞춰야-할-것"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
         },
         {
           "level": 2,

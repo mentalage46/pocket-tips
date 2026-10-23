@@ -18,7 +18,7 @@
 | [I18N](./I18N/)                                         | 다국어 번역 파일 관리, React & Angular 구현        |
 | [Linux](./Linux/)                                       | 셸 스크립트의 함정, 권한·프로세스, 파일 시스템·링크, 텍스트 처리, 시스템 진단, SSH, systemd·cron |
 | [Network](./Network/)                                   | 프로토콜, DNS, TLS, HTTP 버전·캐싱, 서브넷·라우팅, 로드 밸런싱, 진단 명령 |
-| [Infrastructure](./Infrastructure/)                     | Docker, CI/CD(배포 전략, 파이프라인 보안, 1인·소규모 도구), Nginx |
+| [Infrastructure](./Infrastructure/)                     | Docker, Kubernetes 기초, CI/CD(배포 전략, 파이프라인 보안, 1인·소규모 도구), Nginx |
 | [Observability](./Observability/)                       | 로깅, 메트릭, 트레이싱, 헬스체크, SLO·알림                  |
 | [Programming](./Programming/)                           | TypeScript, 시간·타임존, 비동기·이벤트 루프 등 언어와 코드 작성의 개념 |
 | [Quality](./Quality/)                                   | 테스트 전략, 예외 처리, 코드 리뷰                  |
@@ -117,7 +117,7 @@
 
 ### Infrastructure
 
-- [Docker](./Infrastructure/docker/docker.md) | [Docker Compose](./Infrastructure/docker/docker-compose.md) | [Nginx](./Infrastructure/nginx/nginx.md)
+- [Docker](./Infrastructure/docker/docker.md) | [Docker Compose](./Infrastructure/docker/docker-compose.md) | [Nginx](./Infrastructure/nginx/nginx.md) | [Kubernetes 기초](./Infrastructure/kubernetes/basics.md)
 - [CI/CD 학습 순서](./Infrastructure/cicd/README.md) | [CI/CD 기초](./Infrastructure/cicd/cicd-basics.md) | [배포 전략](./Infrastructure/cicd/deployment-strategies.md) | [파이프라인 보안](./Infrastructure/cicd/pipeline-security.md)
 - [1인·소규모 도구 선택](./Infrastructure/cicd/solo-dev-tools.md) | [릴리스·의존성 자동화](./Infrastructure/cicd/release-automation.md) | [GitHub Actions](./Infrastructure/cicd/github-action.md)
 

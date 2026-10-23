@@ -20,3 +20,7 @@
 
 - [Nginx](./nginx/nginx.md) - 리버스 프록시 & 로드 밸런싱
 - [SSL](./nginx/ssl.md) - SSL 인증서 자동화 (Let's Encrypt)
+
+## Kubernetes
+
+- [Kubernetes 기초](./kubernetes/basics.md) - Pod·Deployment·Service, 라벨 셀렉터, 롤링 업데이트, 프로브, requests/limits, 매니페스트 검증
