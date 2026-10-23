@@ -20,7 +20,7 @@
 | [Network](./Network/)                                   | 프로토콜, DNS, TLS, HTTP 버전·캐싱, 서브넷·라우팅, 로드 밸런싱, 진단 명령 |
 | [Infrastructure](./Infrastructure/)                     | Docker, CI/CD(배포 전략, 파이프라인 보안, 1인·소규모 도구), Nginx |
 | [Observability](./Observability/)                       | 로깅, 메트릭, 트레이싱, 헬스체크                  |
-| [Programming](./Programming/)                           | TypeScript, 시간·타임존 등 언어와 코드 작성의 개념 |
+| [Programming](./Programming/)                           | TypeScript, 시간·타임존, 비동기·이벤트 루프 등 언어와 코드 작성의 개념 |
 | [Quality](./Quality/)                                   | 테스트 전략, 예외 처리, 코드 리뷰                  |
 | [Security](./Security/)                                 | OWASP Top 10:2025, 인증·비밀번호, JWT·쿠키, XSS·CSRF·보안 헤더, 공급망, CORS, 환경변수 |
 | [UX](./UX/)                                             | 사용성 원칙, 사용자 조사, 시각 요소, 컴포넌트, 디자인 시스템 |
@@ -127,7 +127,7 @@
 
 ### Programming
 
-- [TypeScript](./Programming/typescript.md) | [시간과 타임존](./Programming/datetime.md)
+- [TypeScript](./Programming/typescript.md) | [시간과 타임존](./Programming/datetime.md) | [비동기와 이벤트 루프](./Programming/async-and-event-loop.md)
 
 ### Quality
 

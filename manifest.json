@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T07:00:46.281Z",
+  "generatedAt": "2026-10-23T08:24:09.560Z",
   "root": "docs",
   "home": "README.md",
   "tree": [
@@ -1342,6 +1342,12 @@
       "title": "Programming",
       "index": "Programming/README.md",
       "children": [
+        {
+          "type": "file",
+          "name": "async-and-event-loop.md",
+          "path": "Programming/async-and-event-loop.md",
+          "title": "비동기와 이벤트 루프"
+        },
         {
           "type": "file",
           "name": "datetime.md",
@@ -11641,6 +11647,71 @@
           "level": 1,
           "text": "Programming",
           "id": "programming"
+        }
+      ]
+    },
+    "Programming/async-and-event-loop.md": {
+      "title": "비동기와 이벤트 루프",
+      "headings": [
+        {
+          "level": 1,
+          "text": "비동기와 이벤트 루프",
+          "id": "비동기와-이벤트-루프"
+        },
+        {
+          "level": 2,
+          "text": "개념 1: 실행 순서 — 동기, 마이크로태스크, 매크로태스크",
+          "id": "개념-1-실행-순서-동기-마이크로태스크-매크로태스크"
+        },
+        {
+          "level": 2,
+          "text": "개념 2: 동기 코드가 이벤트 루프를 막는다",
+          "id": "개념-2-동기-코드가-이벤트-루프를-막는다"
+        },
+        {
+          "level": 3,
+          "text": "마이크로태스크로 도배하면 매크로태스크가 굶는다",
+          "id": "마이크로태스크로-도배하면-매크로태스크가-굶는다"
+        },
+        {
+          "level": 2,
+          "text": "개념 3: await를 어디에 두느냐가 성능이다",
+          "id": "개념-3-await를-어디에-두느냐가-성능이다"
+        },
+        {
+          "level": 3,
+          "text": "함정: forEach(async …)는 기다리지 않는다",
+          "id": "함정-foreachasync-는-기다리지-않는다"
+        },
+        {
+          "level": 3,
+          "text": "Promise 조합기 4종",
+          "id": "promise-조합기-4종"
+        },
+        {
+          "level": 2,
+          "text": "개념 4: 실패와 취소",
+          "id": "개념-4-실패와-취소"
+        },
+        {
+          "level": 3,
+          "text": "처리하지 않은 reject는 프로세스를 죽인다",
+          "id": "처리하지-않은-reject는-프로세스를-죽인다"
+        },
+        {
+          "level": 3,
+          "text": "취소는 Promise.race가 아니라 AbortSignal로",
+          "id": "취소는-promiserace가-아니라-abortsignal로"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
         }
       ]
     },
