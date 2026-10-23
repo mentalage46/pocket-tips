@@ -16,7 +16,7 @@
 | [Data](./Data/)                                         | DB(인덱스·쿼리 튜닝, 커넥션 풀, 트랜잭션, View), 캐싱, 메시지 큐 |
 | [Hardware](./Hardware/)                                 | 전기·전자 기초, GPIO, 통신, 센서·모터 제어         |
 | [I18N](./I18N/)                                         | 다국어 번역 파일 관리, React & Angular 구현        |
-| [Linux](./Linux/)                                       | 셸 스크립트의 함정, BSD·GNU 도구 차이, 권한, 프로세스·시그널, systemd·cron |
+| [Linux](./Linux/)                                       | 셸 스크립트의 함정, 권한·프로세스, 파일 시스템·링크, 텍스트 처리, 시스템 진단, SSH, systemd·cron |
 | [Network](./Network/)                                   | 프로토콜, DNS, TLS, HTTP 버전·캐싱, 서브넷·라우팅, 로드 밸런싱, 진단 명령 |
 | [Infrastructure](./Infrastructure/)                     | Docker, CI/CD(배포 전략, 파이프라인 보안, 1인·소규모 도구), Nginx |
 | [Observability](./Observability/)                       | 로깅, 메트릭, 트레이싱, 헬스체크                  |
@@ -104,6 +104,8 @@
 
 - [셸 스크립트의 기본과 함정](./Linux/shell-basics.md) | [파일 권한과 프로세스](./Linux/permissions-and-processes.md)
 - [서비스 관리와 예약 실행](./Linux/services-and-scheduling.md)
+- [파일 시스템과 링크](./Linux/filesystem-and-links.md) | [텍스트 처리 레시피](./Linux/text-processing.md)
+- [시스템 진단](./Linux/system-diagnostics.md) | [SSH와 원격 작업](./Linux/ssh-and-remote.md)
 
 ### Network
 
