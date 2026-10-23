@@ -17,7 +17,7 @@
 | [Hardware](./Hardware/)                                 | 전기·전자 기초, GPIO, 통신, 센서·모터 제어         |
 | [I18N](./I18N/)                                         | 다국어 번역 파일 관리, React & Angular 구현        |
 | [Linux](./Linux/)                                       | 셸 스크립트의 함정, 권한·프로세스, 파일 시스템·링크, 텍스트 처리, 시스템 진단, SSH, systemd·cron |
-| [Network](./Network/)                                   | 프로토콜, DNS, TLS, HTTP 버전·캐싱, 서브넷·라우팅, 로드 밸런싱, 진단 명령 |
+| [Network](./Network/)                                   | 프로토콜, DNS, TLS, HTTP 버전·캐싱, 실시간 통신(SSE·WebSocket), 서브넷·라우팅, 로드 밸런싱, 진단 명령 |
 | [Infrastructure](./Infrastructure/)                     | Docker, Kubernetes 기초, CI/CD(배포 전략, 파이프라인 보안, 1인·소규모 도구), Nginx |
 | [Observability](./Observability/)                       | 로깅, 메트릭, 트레이싱, 헬스체크, SLO·알림                  |
 | [Programming](./Programming/)                           | TypeScript, 시간·타임존, 비동기·이벤트 루프, 정규식 등 언어와 코드 작성의 개념 |
@@ -111,7 +111,7 @@
 ### Network
 
 - [Protocol](./Network/protocol.md) | [Top-down Network](./Network/topdown-network.md)
-- [DNS](./Network/dns.md) | [TLS와 인증서](./Network/tls.md) | [HTTP 버전](./Network/http-versions.md) | [HTTP 캐싱](./Network/http-caching.md)
+- [DNS](./Network/dns.md) | [TLS와 인증서](./Network/tls.md) | [HTTP 버전](./Network/http-versions.md) | [HTTP 캐싱](./Network/http-caching.md) | [실시간 통신](./Network/realtime-communication.md)
 - [Subnet](./Network/subnet.md) | [Router](./Network/router.md) | [Gateway](./Network/gateway.md) | [로드 밸런싱](./Network/load-balancing.md)
 - [진단 명령](./Network/diagnostics.md)
 
