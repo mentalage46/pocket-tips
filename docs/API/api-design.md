@@ -52,10 +52,10 @@ RFC 9110의 정의입니다.
 
 ```http
 POST /orders
-Idempotency-Key: 8e03978e-40d5-43e8-bc93-6894a57f9324
+Idempotency-Key: "8e03978e-40d5-43e8-bc93-6894a57f9324"
 ```
 
-> `Idempotency-Key` 헤더는 IETF HTTP API 워킹그룹의 **인터넷 드래프트**(draft-ietf-httpapi-idempotency-key-header, 확인 시점 최신 개정 07, 2025-10)이며 **아직 RFC가 아닙니다.** 결제 API 등에서 이미 널리 쓰는 관례이지만 표준 문서처럼 인용하지 않습니다. 서버 구현(키 저장 기간, 같은 키에 다른 본문이 오면 거부 등)은 이 문서에서 다루지 않습니다.
+> `Idempotency-Key` 헤더는 IETF HTTP API 워킹그룹의 **인터넷 드래프트**(draft-ietf-httpapi-idempotency-key-header, 확인 시점 최신 개정 08, 2026-10-22)이며 **아직 RFC가 아닙니다.** 결제 API 등에서 이미 널리 쓰는 관례이지만 표준 문서처럼 인용하지 않습니다. 서버 구현(키 선점, 저장 기간, 같은 키에 다른 본문이 오면 422 등)은 [멱등성과 안전한 재시도](./idempotency.md)를 참고합니다.
 
 ### 동시 수정 충돌: 조건부 요청(ETag + If-Match)
 
