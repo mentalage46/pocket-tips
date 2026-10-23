@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T01:16:49.748Z",
+  "generatedAt": "2026-10-23T01:21:51.316Z",
   "root": "docs",
   "home": "README.md",
   "tree": [
@@ -790,6 +790,12 @@
             },
             {
               "type": "file",
+              "name": "indexes.md",
+              "path": "Data/database/indexes.md",
+              "title": "인덱스와 쿼리 튜닝"
+            },
+            {
+              "type": "file",
               "name": "migration.md",
               "path": "Data/database/migration.md",
               "title": "Database Migration"
@@ -1188,6 +1194,12 @@
           "name": "gateway.md",
           "path": "Network/gateway.md",
           "title": "게이트웨이 (Gateway) - 실무 가이드"
+        },
+        {
+          "type": "file",
+          "name": "http-caching.md",
+          "path": "Network/http-caching.md",
+          "title": "HTTP 캐싱"
         },
         {
           "type": "file",
@@ -7169,6 +7181,96 @@
         }
       ]
     },
+    "Data/database/indexes.md": {
+      "title": "인덱스와 쿼리 튜닝",
+      "headings": [
+        {
+          "level": 1,
+          "text": "인덱스와 쿼리 튜닝",
+          "id": "인덱스와-쿼리-튜닝"
+        },
+        {
+          "level": 2,
+          "text": "개념: 인덱스는 \"정렬된 보조 자료구조\"다",
+          "id": "개념-인덱스는-정렬된-보조-자료구조다"
+        },
+        {
+          "level": 3,
+          "text": "비용: 읽기는 빨라지고 쓰기와 공간은 늘어난다",
+          "id": "비용-읽기는-빨라지고-쓰기와-공간은-늘어난다"
+        },
+        {
+          "level": 2,
+          "text": "실행 계획 읽기: 추측하지 말고 확인한다",
+          "id": "실행-계획-읽기-추측하지-말고-확인한다"
+        },
+        {
+          "level": 3,
+          "text": "PostgreSQL의 EXPLAIN",
+          "id": "postgresql의-explain"
+        },
+        {
+          "level": 2,
+          "text": "인덱스를 못 쓰게 만드는 패턴",
+          "id": "인덱스를-못-쓰게-만드는-패턴"
+        },
+        {
+          "level": 3,
+          "text": "컬럼에 함수나 연산을 씌우기",
+          "id": "컬럼에-함수나-연산을-씌우기"
+        },
+        {
+          "level": 3,
+          "text": "그 밖에 주의할 것 (일반 원칙)",
+          "id": "그-밖에-주의할-것-일반-원칙"
+        },
+        {
+          "level": 2,
+          "text": "복합 인덱스: 컬럼 순서가 곧 설계다",
+          "id": "복합-인덱스-컬럼-순서가-곧-설계다"
+        },
+        {
+          "level": 3,
+          "text": "선행 컬럼 없이 뒤 컬럼만 조회하면?",
+          "id": "선행-컬럼-없이-뒤-컬럼만-조회하면"
+        },
+        {
+          "level": 2,
+          "text": "커버링 인덱스와 index-only scan",
+          "id": "커버링-인덱스와-index-only-scan"
+        },
+        {
+          "level": 2,
+          "text": "부분 인덱스: 필요한 행만 색인하기",
+          "id": "부분-인덱스-필요한-행만-색인하기"
+        },
+        {
+          "level": 2,
+          "text": "운영 중인 DB에 인덱스를 추가할 때",
+          "id": "운영-중인-db에-인덱스를-추가할-때"
+        },
+        {
+          "level": 2,
+          "text": "N+1 문제: 쿼리 하나가 아니라 \"쿼리 개수\"가 병목일 때",
+          "id": "n1-문제-쿼리-하나가-아니라-쿼리-개수가-병목일-때"
+        },
+        {
+          "level": 2,
+          "text": "튜닝 순서",
+          "id": "튜닝-순서"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
     "Data/database/migration.md": {
       "title": "Database Migration",
       "headings": [
@@ -10041,6 +10143,91 @@
           "level": 3,
           "text": "4.3. API Gateway (Terraform - REST API 예시)",
           "id": "43-api-gateway-terraform---rest-api-예시"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Network/http-caching.md": {
+      "title": "HTTP 캐싱",
+      "headings": [
+        {
+          "level": 1,
+          "text": "HTTP 캐싱",
+          "id": "http-캐싱"
+        },
+        {
+          "level": 2,
+          "text": "개념: 캐시는 두 가지 질문에 답한다",
+          "id": "개념-캐시는-두-가지-질문에-답한다"
+        },
+        {
+          "level": 3,
+          "text": "캐시는 한 곳이 아니다",
+          "id": "캐시는-한-곳이-아니다"
+        },
+        {
+          "level": 2,
+          "text": "신선도: Cache-Control 응답 지시어",
+          "id": "신선도-cache-control-응답-지시어"
+        },
+        {
+          "level": 3,
+          "text": "가장 흔한 오해: no-cache는 \"캐시하지 않음\"이 아니다",
+          "id": "가장-흔한-오해-no-cache는-캐시하지-않음이-아니다"
+        },
+        {
+          "level": 3,
+          "text": "헤더가 없으면: 휴리스틱 신선도",
+          "id": "헤더가-없으면-휴리스틱-신선도"
+        },
+        {
+          "level": 3,
+          "text": "Age: 이 응답이 얼마나 오래됐나",
+          "id": "age-이-응답이-얼마나-오래됐나"
+        },
+        {
+          "level": 2,
+          "text": "검증: ETag와 Last-Modified, 304",
+          "id": "검증-etag와-last-modified-304"
+        },
+        {
+          "level": 2,
+          "text": "무엇에 어떤 헤더를 쓸까",
+          "id": "무엇에-어떤-헤더를-쓸까"
+        },
+        {
+          "level": 3,
+          "text": "핵심 전략: \"URL을 바꿔서 캐시를 무효화한다\"",
+          "id": "핵심-전략-url을-바꿔서-캐시를-무효화한다"
+        },
+        {
+          "level": 2,
+          "text": "Vary: 같은 URL이라도 요청에 따라 응답이 다를 때",
+          "id": "vary-같은-url이라도-요청에-따라-응답이-다를-때"
+        },
+        {
+          "level": 2,
+          "text": "CDN과 공유 캐시",
+          "id": "cdn과-공유-캐시"
+        },
+        {
+          "level": 2,
+          "text": "서버에서 설정하기",
+          "id": "서버에서-설정하기"
+        },
+        {
+          "level": 2,
+          "text": "확인하는 방법",
+          "id": "확인하는-방법"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
         },
         {
           "level": 2,

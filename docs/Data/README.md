@@ -4,6 +4,7 @@
 
 ## Database
 
+- [인덱스와 쿼리 튜닝](./database/indexes.md) - 실행 계획 읽기, 복합 인덱스, 커버링·부분 인덱스, N+1
 - [Connection Pool](./database/connection-pool.md) - 풀 크기 산정, 라이브러리별 기본값, PgBouncer
 - [Migration](./database/migration.md) - DB 마이그레이션 전략
 - [Transaction](./database/transaction.md) - 트랜잭션 & Isolation Level

@@ -13,10 +13,10 @@
 | [Architecture](./Architecture/)                         | 설계 원칙, 아키텍처 스타일, 도메인 모델링, 품질 속성, ADR |
 | [Automation](./Automation/)                             | PLC 구조, IEC 61131-3·래더, 산업 통신, HMI·SCADA, 기능 안전·OT 보안, 제조사 비교 |
 | [Build](./Build/)                                       | 빌드 과정, 의존성, 도구 선택, 캐시, 오류 진단     |
-| [Data](./Data/)                                         | DB(커넥션 풀, 트랜잭션, View), 캐싱, 메시지 큐        |
+| [Data](./Data/)                                         | DB(인덱스·쿼리 튜닝, 커넥션 풀, 트랜잭션, View), 캐싱, 메시지 큐 |
 | [Hardware](./Hardware/)                                 | 전기·전자 기초, GPIO, 통신, 센서·모터 제어         |
 | [I18N](./I18N/)                                         | 다국어 번역 파일 관리, React & Angular 구현        |
-| [Network](./Network/)                                   | 프로토콜, DNS, TLS, HTTP 버전, 서브넷·라우팅, 로드 밸런싱, 진단 명령 |
+| [Network](./Network/)                                   | 프로토콜, DNS, TLS, HTTP 버전·캐싱, 서브넷·라우팅, 로드 밸런싱, 진단 명령 |
 | [Infrastructure](./Infrastructure/)                     | Docker, CI/CD(배포 전략, 파이프라인 보안, 1인·소규모 도구), Nginx |
 | [Observability](./Observability/)                       | 로깅, 로그·메트릭·트레이스                         |
 | [Programming](./Programming/)                           | TypeScript 등 언어와 코드 작성의 개념              |
@@ -85,7 +85,7 @@
 
 ### Data
 
-- [Connection Pool](./Data/database/connection-pool.md) | [Transaction](./Data/database/transaction.md) | [Migration](./Data/database/migration.md) | [View](./Data/database/view.md)
+- [인덱스와 쿼리 튜닝](./Data/database/indexes.md) | [Connection Pool](./Data/database/connection-pool.md) | [Transaction](./Data/database/transaction.md) | [Migration](./Data/database/migration.md) | [View](./Data/database/view.md)
 - [Redis](./Data/caching/redis.md) | [Message Queue](./Data/messaging/message-queue.md)
 
 ### Hardware
@@ -102,7 +102,7 @@
 ### Network
 
 - [Protocol](./Network/protocol.md) | [Top-down Network](./Network/topdown-network.md)
-- [DNS](./Network/dns.md) | [TLS와 인증서](./Network/tls.md) | [HTTP 버전](./Network/http-versions.md)
+- [DNS](./Network/dns.md) | [TLS와 인증서](./Network/tls.md) | [HTTP 버전](./Network/http-versions.md) | [HTTP 캐싱](./Network/http-caching.md)
 - [Subnet](./Network/subnet.md) | [Router](./Network/router.md) | [Gateway](./Network/gateway.md) | [로드 밸런싱](./Network/load-balancing.md)
 - [진단 명령](./Network/diagnostics.md)
 
