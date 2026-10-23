@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T01:28:25.970Z",
+  "generatedAt": "2026-10-23T01:34:15.700Z",
   "root": "docs",
   "home": "README.md",
   "tree": [
@@ -1167,6 +1167,33 @@
               "title": "SSL 인증서 자동화 (Nginx + Let's Encrypt)"
             }
           ]
+        }
+      ]
+    },
+    {
+      "type": "dir",
+      "name": "Linux",
+      "path": "Linux",
+      "title": "Linux",
+      "index": "Linux/README.md",
+      "children": [
+        {
+          "type": "file",
+          "name": "permissions-and-processes.md",
+          "path": "Linux/permissions-and-processes.md",
+          "title": "파일 권한과 프로세스"
+        },
+        {
+          "type": "file",
+          "name": "services-and-scheduling.md",
+          "path": "Linux/services-and-scheduling.md",
+          "title": "서비스 관리와 예약 실행 (systemd, cron)"
+        },
+        {
+          "type": "file",
+          "name": "shell-basics.md",
+          "path": "Linux/shell-basics.md",
+          "title": "셸 스크립트의 기본과 함정"
         }
       ]
     },
@@ -9950,6 +9977,231 @@
         }
       ]
     },
+    "Linux/README.md": {
+      "title": "Linux",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Linux",
+          "id": "linux"
+        }
+      ]
+    },
+    "Linux/permissions-and-processes.md": {
+      "title": "파일 권한과 프로세스",
+      "headings": [
+        {
+          "level": 1,
+          "text": "파일 권한과 프로세스",
+          "id": "파일-권한과-프로세스"
+        },
+        {
+          "level": 2,
+          "text": "개념 1: 권한은 \"누구에게 · 무엇을\" 3 × 3 으로 정한다",
+          "id": "개념-1-권한은-누구에게-무엇을-3-3-으로-정한다"
+        },
+        {
+          "level": 3,
+          "text": "chmod: 8진수와 기호",
+          "id": "chmod-8진수와-기호"
+        },
+        {
+          "level": 3,
+          "text": "디렉터리의 r과 x는 다르다",
+          "id": "디렉터리의-r과-x는-다르다"
+        },
+        {
+          "level": 3,
+          "text": "스크립트가 \"Permission denied\"로 실행되지 않을 때",
+          "id": "스크립트가-permission-denied로-실행되지-않을-때"
+        },
+        {
+          "level": 2,
+          "text": "umask: 새 파일의 기본 권한은 어디서 오는가",
+          "id": "umask-새-파일의-기본-권한은-어디서-오는가"
+        },
+        {
+          "level": 3,
+          "text": "권한을 줄 때의 원칙",
+          "id": "권한을-줄-때의-원칙"
+        },
+        {
+          "level": 2,
+          "text": "개념 2: 프로세스와 시그널",
+          "id": "개념-2-프로세스와-시그널"
+        },
+        {
+          "level": 3,
+          "text": "정상 종료(SIGTERM)와 강제 종료(SIGKILL)",
+          "id": "정상-종료sigterm와-강제-종료sigkill"
+        },
+        {
+          "level": 3,
+          "text": "백그라운드 실행과 기다리기",
+          "id": "백그라운드-실행과-기다리기"
+        },
+        {
+          "level": 3,
+          "text": "자주 쓰는 확인 명령",
+          "id": "자주-쓰는-확인-명령"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Linux/services-and-scheduling.md": {
+      "title": "서비스 관리와 예약 실행 (systemd, cron)",
+      "headings": [
+        {
+          "level": 1,
+          "text": "서비스 관리와 예약 실행 (systemd, cron)",
+          "id": "서비스-관리와-예약-실행-systemd-cron"
+        },
+        {
+          "level": 2,
+          "text": "개념: 서비스 관리자는 \"프로세스의 보호자\"다",
+          "id": "개념-서비스-관리자는-프로세스의-보호자다"
+        },
+        {
+          "level": 2,
+          "text": "서비스 유닛 파일",
+          "id": "서비스-유닛-파일"
+        },
+        {
+          "level": 3,
+          "text": "Type=: \"시작이 끝났다\"를 언제로 볼 것인가",
+          "id": "type-시작이-끝났다를-언제로-볼-것인가"
+        },
+        {
+          "level": 3,
+          "text": "Restart=: 어떤 종료에 다시 띄울 것인가",
+          "id": "restart-어떤-종료에-다시-띄울-것인가"
+        },
+        {
+          "level": 2,
+          "text": "예약 실행 1: cron",
+          "id": "예약-실행-1-cron"
+        },
+        {
+          "level": 3,
+          "text": "1. %는 줄바꿈이 된다",
+          "id": "1-는-줄바꿈이-된다"
+        },
+        {
+          "level": 3,
+          "text": "2. 실행 환경이 최소한이다",
+          "id": "2-실행-환경이-최소한이다"
+        },
+        {
+          "level": 3,
+          "text": "3. 출력은 메일로 간다",
+          "id": "3-출력은-메일로-간다"
+        },
+        {
+          "level": 3,
+          "text": "4. 일(day of month)과 요일을 둘 다 지정하면 \"또는\"이다",
+          "id": "4-일day-of-month과-요일을-둘-다-지정하면-또는이다"
+        },
+        {
+          "level": 3,
+          "text": "5. 그 밖에",
+          "id": "5-그-밖에"
+        },
+        {
+          "level": 2,
+          "text": "예약 실행 2: systemd timer",
+          "id": "예약-실행-2-systemd-timer"
+        },
+        {
+          "level": 2,
+          "text": "cron과 systemd timer 비교",
+          "id": "cron과-systemd-timer-비교"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Linux/shell-basics.md": {
+      "title": "셸 스크립트의 기본과 함정",
+      "headings": [
+        {
+          "level": 1,
+          "text": "셸 스크립트의 기본과 함정",
+          "id": "셸-스크립트의-기본과-함정"
+        },
+        {
+          "level": 2,
+          "text": "개념 1: 모든 명령은 \"종료 코드\"로 말한다",
+          "id": "개념-1-모든-명령은-종료-코드로-말한다"
+        },
+        {
+          "level": 3,
+          "text": "파이프라인은 마지막 명령의 상태만 돌려준다",
+          "id": "파이프라인은-마지막-명령의-상태만-돌려준다"
+        },
+        {
+          "level": 3,
+          "text": "set -euo pipefail은 만능이 아니다",
+          "id": "set--euo-pipefail은-만능이-아니다"
+        },
+        {
+          "level": 2,
+          "text": "개념 2: 변수는 \"텍스트로 치환된 뒤 공백으로 쪼개진다\"",
+          "id": "개념-2-변수는-텍스트로-치환된-뒤-공백으로-쪼개진다"
+        },
+        {
+          "level": 3,
+          "text": "빈 변수는 가장 위험한 입력이다",
+          "id": "빈-변수는-가장-위험한-입력이다"
+        },
+        {
+          "level": 2,
+          "text": "리다이렉션: 순서가 의미를 바꾼다",
+          "id": "리다이렉션-순서가-의미를-바꾼다"
+        },
+        {
+          "level": 2,
+          "text": "파일 이름 다루기: 공백과 개행을 견디는 방법",
+          "id": "파일-이름-다루기-공백과-개행을-견디는-방법"
+        },
+        {
+          "level": 2,
+          "text": "macOS(BSD)와 Linux(GNU)의 도구 차이",
+          "id": "macosbsd와-linuxgnu의-도구-차이"
+        },
+        {
+          "level": 3,
+          "text": "이식성 있는 스크립트를 쓰는 방법",
+          "id": "이식성-있는-스크립트를-쓰는-방법"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
     "Network/README.md": {
       "title": "Network",
       "headings": [
@@ -11812,6 +12064,11 @@
           "level": 3,
           "text": "I18N",
           "id": "i18n"
+        },
+        {
+          "level": 3,
+          "text": "Linux",
+          "id": "linux"
         },
         {
           "level": 3,

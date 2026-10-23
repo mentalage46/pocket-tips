@@ -16,6 +16,7 @@
 | [Data](./Data/)                                         | DB(인덱스·쿼리 튜닝, 커넥션 풀, 트랜잭션, View), 캐싱, 메시지 큐 |
 | [Hardware](./Hardware/)                                 | 전기·전자 기초, GPIO, 통신, 센서·모터 제어         |
 | [I18N](./I18N/)                                         | 다국어 번역 파일 관리, React & Angular 구현        |
+| [Linux](./Linux/)                                       | 셸 스크립트의 함정, BSD·GNU 도구 차이, 권한, 프로세스·시그널, systemd·cron |
 | [Network](./Network/)                                   | 프로토콜, DNS, TLS, HTTP 버전·캐싱, 서브넷·라우팅, 로드 밸런싱, 진단 명령 |
 | [Infrastructure](./Infrastructure/)                     | Docker, CI/CD(배포 전략, 파이프라인 보안, 1인·소규모 도구), Nginx |
 | [Observability](./Observability/)                       | 로깅, 메트릭, 트레이싱, 헬스체크                  |
@@ -98,6 +99,11 @@
 ### I18N
 
 - [Translation](./I18N/translation.md) - 다국어 번역 파일 관리, 동적 언어 변경, UI 관리
+
+### Linux
+
+- [셸 스크립트의 기본과 함정](./Linux/shell-basics.md) | [파일 권한과 프로세스](./Linux/permissions-and-processes.md)
+- [서비스 관리와 예약 실행](./Linux/services-and-scheduling.md)
 
 ### Network
 

@@ -12,13 +12,13 @@
 
 ```mermaid
 flowchart TD
-    A[요청] --> B{저장된 응답이 있는가}
-    B -- 없음 --> F[원본 서버에 요청]
-    B -- 있음 --> C{신선한가?<br/>Age < max-age}
-    C -- 신선함 --> D[네트워크 없이 바로 재사용]
-    C -- 낡음 --> E[조건부 요청<br/>If-None-Match / If-Modified-Since]
-    E -- 304 Not Modified --> G[저장본 재사용<br/>본문 전송 없음]
-    E -- 200 --> H[새 응답으로 교체]
+    A["요청"] --> B{"저장된 응답이 있는가"}
+    B -->|"없음"| F["원본 서버에 요청"]
+    B -->|"있음"| C{"신선한가?<br/>Age가 max-age보다 작은가"}
+    C -->|"신선함"| D["네트워크 없이 바로 재사용"]
+    C -->|"낡음"| E["조건부 요청<br/>If-None-Match / If-Modified-Since"]
+    E -->|"304 Not Modified"| G["저장본 재사용<br/>본문 전송 없음"]
+    E -->|"200"| H["새 응답으로 교체"]
     F --> H
 ```
 

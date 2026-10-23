@@ -55,10 +55,10 @@ cat .git/HEAD                        # ref: refs/heads/main
 
 ```mermaid
 flowchart LR
-    W[작업 디렉터리<br/>Working Tree] -- git add --> I[스테이징<br/>Index]
-    I -- git commit --> R[저장소<br/>Repository]
-    R -- git restore --source / switch --> W
-    I -. git restore --staged .-> W
+    W["작업 디렉터리<br/>(Working Tree)"] -->|"git add"| I["스테이징<br/>(Index)"]
+    I -->|"git commit"| R["저장소<br/>(Repository)"]
+    R -->|"git switch / git restore --source"| W
+    I -.->|"git restore --staged"| W
 ```
 
 | 영역 | 무엇인가 | 확인 명령 |
