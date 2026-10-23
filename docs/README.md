@@ -9,7 +9,7 @@
 | 폴더                                                    | 설명                                               |
 | ------------------------------------------------------- | -------------------------------------------------- |
 | [AI](./AI/)                                             | LLM 기초·API, 프롬프팅, RAG, MCP, 운영, 보안, 로컬 모델, 에이전트 하네스와 개발 방법론 적용 |
-| [API](./API/)                                           | API 설계, 호환성, 상태 코드, 페이지네이션, 레이트 리밋 |
+| [API](./API/)                                           | API 설계, 호환성, 상태 코드, 페이지네이션, 레이트 리밋, 멱등성, 웹훅, OpenAPI |
 | [Architecture](./Architecture/)                         | 설계 원칙, 아키텍처 스타일, 도메인 모델링, 품질 속성, ADR |
 | [Automation](./Automation/)                             | PLC 구조, IEC 61131-3·래더, 산업 통신, HMI·SCADA, 기능 안전·OT 보안, 제조사 비교 |
 | [Build](./Build/)                                       | 빌드 과정, 의존성, 도구 선택, 캐시, 오류 진단     |
@@ -76,6 +76,7 @@
 ### API
 
 - [API Design](./API/api-design.md) | [Rate Limiting](./API/rate-limiting.md)
+- [멱등성과 안전한 재시도](./API/idempotency.md) | [웹훅](./API/webhooks.md) | [OpenAPI](./API/openapi.md)
 
 ### Build
 

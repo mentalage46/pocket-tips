@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T06:13:44.886Z",
+  "generatedAt": "2026-10-23T07:00:46.281Z",
   "root": "docs",
   "home": "README.md",
   "tree": [
@@ -330,9 +330,27 @@
         },
         {
           "type": "file",
+          "name": "idempotency.md",
+          "path": "API/idempotency.md",
+          "title": "멱등성과 안전한 재시도"
+        },
+        {
+          "type": "file",
+          "name": "openapi.md",
+          "path": "API/openapi.md",
+          "title": "OpenAPI로 API 계약 문서화하기"
+        },
+        {
+          "type": "file",
           "name": "rate-limiting.md",
           "path": "API/rate-limiting.md",
           "title": "Rate Limiting"
+        },
+        {
+          "type": "file",
+          "name": "webhooks.md",
+          "path": "API/webhooks.md",
+          "title": "웹훅(Webhook) 설계와 수신"
         }
       ]
     },
@@ -3856,6 +3874,101 @@
         }
       ]
     },
+    "API/idempotency.md": {
+      "title": "멱등성과 안전한 재시도",
+      "headings": [
+        {
+          "level": 1,
+          "text": "멱등성과 안전한 재시도",
+          "id": "멱등성과-안전한-재시도"
+        },
+        {
+          "level": 2,
+          "text": "개념: 왜 재시도가 위험한가",
+          "id": "개념-왜-재시도가-위험한가"
+        },
+        {
+          "level": 2,
+          "text": "멱등 키(Idempotency-Key)",
+          "id": "멱등-키idempotency-key"
+        },
+        {
+          "level": 3,
+          "text": "서버의 판단 흐름",
+          "id": "서버의-판단-흐름"
+        },
+        {
+          "level": 3,
+          "text": "직접 돌려 본 결과",
+          "id": "직접-돌려-본-결과"
+        },
+        {
+          "level": 2,
+          "text": "설계할 때 놓치기 쉬운 것",
+          "id": "설계할-때-놓치기-쉬운-것"
+        },
+        {
+          "level": 2,
+          "text": "클라이언트가 지킬 규칙",
+          "id": "클라이언트가-지킬-규칙"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "API/openapi.md": {
+      "title": "OpenAPI로 API 계약 문서화하기",
+      "headings": [
+        {
+          "level": 1,
+          "text": "OpenAPI로 API 계약 문서화하기",
+          "id": "openapi로-api-계약-문서화하기"
+        },
+        {
+          "level": 2,
+          "text": "개념: 버전과 구조",
+          "id": "개념-버전과-구조"
+        },
+        {
+          "level": 3,
+          "text": "3.0과 3.1의 큰 차이: 스키마가 JSON Schema가 됨",
+          "id": "30과-31의-큰-차이-스키마가-json-schema가-됨"
+        },
+        {
+          "level": 3,
+          "text": "문서의 뼈대",
+          "id": "문서의-뼈대"
+        },
+        {
+          "level": 2,
+          "text": "린트로 계약 품질 지키기",
+          "id": "린트로-계약-품질-지키기"
+        },
+        {
+          "level": 2,
+          "text": "명세를 먼저 쓸까, 코드에서 뽑을까",
+          "id": "명세를-먼저-쓸까-코드에서-뽑을까"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
     "API/rate-limiting.md": {
       "title": "Rate Limiting",
       "headings": [
@@ -4023,6 +4136,96 @@
           "level": 2,
           "text": "주의사항",
           "id": "주의사항"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "API/webhooks.md": {
+      "title": "웹훅(Webhook) 설계와 수신",
+      "headings": [
+        {
+          "level": 1,
+          "text": "웹훅(Webhook) 설계와 수신",
+          "id": "웹훅webhook-설계와-수신"
+        },
+        {
+          "level": 2,
+          "text": "개념: 웹훅이 신뢰성 문제인 이유",
+          "id": "개념-웹훅이-신뢰성-문제인-이유"
+        },
+        {
+          "level": 2,
+          "text": "페이로드 구조",
+          "id": "페이로드-구조"
+        },
+        {
+          "level": 3,
+          "text": "얇은(thin) 페이로드 vs 가득 찬(full) 페이로드",
+          "id": "얇은thin-페이로드-vs-가득-찬full-페이로드"
+        },
+        {
+          "level": 2,
+          "text": "서명 검증",
+          "id": "서명-검증"
+        },
+        {
+          "level": 3,
+          "text": "직접 돌려 본 검증 결과",
+          "id": "직접-돌려-본-검증-결과"
+        },
+        {
+          "level": 3,
+          "text": "검증에서 자주 틀리는 것",
+          "id": "검증에서-자주-틀리는-것"
+        },
+        {
+          "level": 2,
+          "text": "받는 쪽: 빨리 응답하고, 중복을 견딘다",
+          "id": "받는-쪽-빨리-응답하고-중복을-견딘다"
+        },
+        {
+          "level": 2,
+          "text": "보내는 쪽: 재시도와 실패 처리",
+          "id": "보내는-쪽-재시도와-실패-처리"
+        },
+        {
+          "level": 3,
+          "text": "성공·실패 판정과 상태 코드 처리",
+          "id": "성공실패-판정과-상태-코드-처리"
+        },
+        {
+          "level": 3,
+          "text": "재시도 스케줄",
+          "id": "재시도-스케줄"
+        },
+        {
+          "level": 3,
+          "text": "SSRF 방어 (보내는 쪽)",
+          "id": "ssrf-방어-보내는-쪽"
+        },
+        {
+          "level": 3,
+          "text": "있으면 좋은 것",
+          "id": "있으면-좋은-것"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 3,
+          "text": "받는 쪽",
+          "id": "받는-쪽"
+        },
+        {
+          "level": 3,
+          "text": "보내는 쪽",
+          "id": "보내는-쪽"
         },
         {
           "level": 2,
