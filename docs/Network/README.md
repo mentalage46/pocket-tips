@@ -13,6 +13,7 @@
 - [TLS와 인증서](./tls.md) - TLS 1.3 핸드셰이크, 인증서 체인, 짧아지는 유효 기간과 자동 갱신
 - [HTTP/1.1, HTTP/2, HTTP/3](./http-versions.md) - 버전별 전송 방식, 협상, 예전 최적화 정리
 - [HTTP 캐싱](./http-caching.md) - 신선도와 검증, `Cache-Control`, ETag·304, `Vary`, CDN, 파일별 전략
+- [실시간 통신](./realtime-communication.md) - 폴링·롱 폴링·SSE·WebSocket 비교, 재연결과 `Last-Event-ID`, 종료 코드, Origin 검증, 프록시·유휴 타임아웃
 
 ## 주소와 경로
 
