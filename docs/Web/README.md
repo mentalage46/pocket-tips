@@ -5,6 +5,7 @@
 - [Web Performance](./web-performance.md) - Core Web Vitals, 필드·랩 데이터, 로딩 최적화
 - [PWA](./pwa.md) - 서비스 워커 수명주기, 캐싱 전략, 설치 조건
 - [상태 관리](./state-management.md) - 상태를 어디에 둘 것인가, 서버 상태, Context·Zustand·Signals
+- [브라우저 저장소](./browser-storage.md) - 쿠키·`localStorage`·`sessionStorage`·IndexedDB·Cache API 비교, 출처 격리, 용량, 무엇을 어디에 둘지
 - [Accessibility](./accessibility.md) - WAI-ARIA, 시맨틱 HTML, 웹 접근성 체크리스트
 
 관련: [JavaScript 빌드 도구](../Build/javascript-tools.md), [TypeScript](../Programming/typescript.md), [I18N](../I18N/README.md)

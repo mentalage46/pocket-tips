@@ -26,7 +26,7 @@
 | [UX](./UX/)                                             | 사용성 원칙, 사용자 조사, 시각 요소, 컴포넌트, 디자인 시스템 |
 | [Utility](./Utility/)                                   | Makefile, YAML, Husky                              |
 | [Version Control System](./Version%20Control%20System/) | Git 기본 모델, 브랜치 전략·커밋 규칙, Rebase, Cherry-pick, 서브모듈, SSH 키 |
-| [Web](./Web/)                                           | 웹 성능, PWA, 상태 관리, 접근성                    |
+| [Web](./Web/)                                           | 웹 성능, PWA, 상태 관리, 브라우저 저장소, 접근성                    |
 
 ---
 
@@ -155,4 +155,4 @@
 ### Web
 
 - [Web Performance](./Web/web-performance.md) | [PWA](./Web/pwa.md)
-- [상태 관리](./Web/state-management.md) | [Accessibility](./Web/accessibility.md)
+- [상태 관리](./Web/state-management.md) | [브라우저 저장소](./Web/browser-storage.md) | [Accessibility](./Web/accessibility.md)

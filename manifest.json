@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T08:26:12.382Z",
+  "generatedAt": "2026-10-23T08:28:26.506Z",
   "root": "docs",
   "home": "README.md",
   "tree": [
@@ -1683,6 +1683,12 @@
           "name": "accessibility.md",
           "path": "Web/accessibility.md",
           "title": "웹 접근성 (Web Accessibility) 가이드라인"
+        },
+        {
+          "type": "file",
+          "name": "browser-storage.md",
+          "path": "Web/browser-storage.md",
+          "title": "브라우저 저장소 선택하기"
         },
         {
           "type": "file",
@@ -15398,6 +15404,91 @@
           "level": 2,
           "text": "유용한 도구",
           "id": "유용한-도구"
+        }
+      ]
+    },
+    "Web/browser-storage.md": {
+      "title": "브라우저 저장소 선택하기",
+      "headings": [
+        {
+          "level": 1,
+          "text": "브라우저 저장소 선택하기",
+          "id": "브라우저-저장소-선택하기"
+        },
+        {
+          "level": 2,
+          "text": "한눈에 비교",
+          "id": "한눈에-비교"
+        },
+        {
+          "level": 2,
+          "text": "직접 확인한 동작",
+          "id": "직접-확인한-동작"
+        },
+        {
+          "level": 3,
+          "text": "모든 저장소는 출처(origin) 단위로 격리된다 — 쿠키만 예외",
+          "id": "모든-저장소는-출처origin-단위로-격리된다-쿠키만-예외"
+        },
+        {
+          "level": 3,
+          "text": "HttpOnly 쿠키는 JS에서 보이지 않는다",
+          "id": "httponly-쿠키는-js에서-보이지-않는다"
+        },
+        {
+          "level": 3,
+          "text": "localStorage/sessionStorage는 문자열만 저장한다",
+          "id": "localstoragesessionstorage는-문자열만-저장한다"
+        },
+        {
+          "level": 3,
+          "text": "용량: 한계에 닿으면 예외가 난다",
+          "id": "용량-한계에-닿으면-예외가-난다"
+        },
+        {
+          "level": 3,
+          "text": "새로고침·이동 후에도 남는가",
+          "id": "새로고침이동-후에도-남는가"
+        },
+        {
+          "level": 3,
+          "text": "sessionStorage는 \"탭마다\"이고, 새 창으로 복사된다",
+          "id": "sessionstorage는-탭마다이고-새-창으로-복사된다"
+        },
+        {
+          "level": 3,
+          "text": "같은 탭의 storage 이벤트는 오지 않는다",
+          "id": "같은-탭의-storage-이벤트는-오지-않는다"
+        },
+        {
+          "level": 3,
+          "text": "동기 API의 비용",
+          "id": "동기-api의-비용"
+        },
+        {
+          "level": 3,
+          "text": "IndexedDB는 JS 객체를 그대로 저장한다",
+          "id": "indexeddb는-js-객체를-그대로-저장한다"
+        },
+        {
+          "level": 3,
+          "text": "Cache API",
+          "id": "cache-api"
+        },
+        {
+          "level": 2,
+          "text": "무엇을 어디에 저장할까",
+          "id": "무엇을-어디에-저장할까"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
         }
       ]
     },
