@@ -4,3 +4,4 @@
 
 - [Logging](./logging.md) - 로그·메트릭·트레이스, 구조화 로깅, 상관관계 ID, 로그 보안
 - [메트릭, 트레이싱, 헬스체크](./metrics-and-tracing.md) - 골든 시그널, 백분위수, 메트릭 타입과 카디널리티, `traceparent` 전파, 증상 기준 알림, liveness/readiness
+- [SLO와 번 레이트 알림](./slo-and-alerting.md) - SLI·SLO·에러 버짓, 번 레이트 계산, 멀티 윈도 알림 시뮬레이션, 호출과 티켓 구분

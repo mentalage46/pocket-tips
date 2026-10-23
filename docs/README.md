@@ -18,15 +18,15 @@
 | [I18N](./I18N/)                                         | 다국어 번역 파일 관리, React & Angular 구현        |
 | [Linux](./Linux/)                                       | 셸 스크립트의 함정, 권한·프로세스, 파일 시스템·링크, 텍스트 처리, 시스템 진단, SSH, systemd·cron |
 | [Network](./Network/)                                   | 프로토콜, DNS, TLS, HTTP 버전·캐싱, 실시간 통신(SSE·WebSocket), 서브넷·라우팅, 로드 밸런싱, 진단 명령 |
-| [Infrastructure](./Infrastructure/)                     | Docker, CI/CD(배포 전략, 파이프라인 보안, 1인·소규모 도구), Nginx |
-| [Observability](./Observability/)                       | 로깅, 메트릭, 트레이싱, 헬스체크                  |
-| [Programming](./Programming/)                           | TypeScript, 시간·타임존 등 언어와 코드 작성의 개념 |
+| [Infrastructure](./Infrastructure/)                     | Docker, Kubernetes 기초, CI/CD(배포 전략, 파이프라인 보안, 1인·소규모 도구), Nginx |
+| [Observability](./Observability/)                       | 로깅, 메트릭, 트레이싱, 헬스체크, SLO·알림                  |
+| [Programming](./Programming/)                           | TypeScript, 시간·타임존, 비동기·이벤트 루프, 정규식 등 언어와 코드 작성의 개념 |
 | [Quality](./Quality/)                                   | 테스트 전략, 예외 처리, 코드 리뷰                  |
 | [Security](./Security/)                                 | OWASP Top 10:2025, 인증·비밀번호, JWT·쿠키, XSS·CSRF·보안 헤더, 공급망, CORS, 환경변수 |
 | [UX](./UX/)                                             | 사용성 원칙, 사용자 조사, 시각 요소, 컴포넌트, 디자인 시스템 |
 | [Utility](./Utility/)                                   | Makefile, YAML, Husky                              |
 | [Version Control System](./Version%20Control%20System/) | Git 기본 모델, 브랜치 전략·커밋 규칙, Rebase, Cherry-pick, 서브모듈, SSH 키 |
-| [Web](./Web/)                                           | 웹 성능, PWA, 상태 관리, 접근성                    |
+| [Web](./Web/)                                           | 웹 성능, PWA, 상태 관리, 브라우저 저장소, 접근성                    |
 
 ---
 
@@ -117,17 +117,17 @@
 
 ### Infrastructure
 
-- [Docker](./Infrastructure/docker/docker.md) | [Docker Compose](./Infrastructure/docker/docker-compose.md) | [Nginx](./Infrastructure/nginx/nginx.md)
+- [Docker](./Infrastructure/docker/docker.md) | [Docker Compose](./Infrastructure/docker/docker-compose.md) | [Nginx](./Infrastructure/nginx/nginx.md) | [Kubernetes 기초](./Infrastructure/kubernetes/basics.md)
 - [CI/CD 학습 순서](./Infrastructure/cicd/README.md) | [CI/CD 기초](./Infrastructure/cicd/cicd-basics.md) | [배포 전략](./Infrastructure/cicd/deployment-strategies.md) | [파이프라인 보안](./Infrastructure/cicd/pipeline-security.md)
 - [1인·소규모 도구 선택](./Infrastructure/cicd/solo-dev-tools.md) | [릴리스·의존성 자동화](./Infrastructure/cicd/release-automation.md) | [GitHub Actions](./Infrastructure/cicd/github-action.md)
 
 ### Observability
 
-- [Logging](./Observability/logging.md) | [메트릭·트레이싱·헬스체크](./Observability/metrics-and-tracing.md)
+- [Logging](./Observability/logging.md) | [메트릭·트레이싱·헬스체크](./Observability/metrics-and-tracing.md) | [SLO와 번 레이트 알림](./Observability/slo-and-alerting.md)
 
 ### Programming
 
-- [TypeScript](./Programming/typescript.md) | [시간과 타임존](./Programming/datetime.md)
+- [TypeScript](./Programming/typescript.md) | [시간과 타임존](./Programming/datetime.md) | [비동기와 이벤트 루프](./Programming/async-and-event-loop.md) | [정규식의 함정](./Programming/regex-pitfalls.md)
 
 ### Quality
 
@@ -155,4 +155,4 @@
 ### Web
 
 - [Web Performance](./Web/web-performance.md) | [PWA](./Web/pwa.md)
-- [상태 관리](./Web/state-management.md) | [Accessibility](./Web/accessibility.md)
+- [상태 관리](./Web/state-management.md) | [브라우저 저장소](./Web/browser-storage.md) | [Accessibility](./Web/accessibility.md)

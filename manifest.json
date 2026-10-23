@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T08:12:36.332Z",
+  "generatedAt": "2026-10-23T08:41:03.919Z",
   "root": "docs",
   "home": "README.md",
   "tree": [
@@ -1167,6 +1167,21 @@
         },
         {
           "type": "dir",
+          "name": "kubernetes",
+          "path": "Infrastructure/kubernetes",
+          "title": "kubernetes",
+          "index": null,
+          "children": [
+            {
+              "type": "file",
+              "name": "basics.md",
+              "path": "Infrastructure/kubernetes/basics.md",
+              "title": "Kubernetes 기초: Pod, Deployment, Service"
+            }
+          ]
+        },
+        {
+          "type": "dir",
           "name": "nginx",
           "path": "Infrastructure/nginx",
           "title": "nginx",
@@ -1338,6 +1353,12 @@
           "name": "metrics-and-tracing.md",
           "path": "Observability/metrics-and-tracing.md",
           "title": "메트릭, 트레이싱, 헬스체크"
+        },
+        {
+          "type": "file",
+          "name": "slo-and-alerting.md",
+          "path": "Observability/slo-and-alerting.md",
+          "title": "SLO와 번 레이트 알림"
         }
       ]
     },
@@ -1350,9 +1371,21 @@
       "children": [
         {
           "type": "file",
+          "name": "async-and-event-loop.md",
+          "path": "Programming/async-and-event-loop.md",
+          "title": "비동기와 이벤트 루프"
+        },
+        {
+          "type": "file",
           "name": "datetime.md",
           "path": "Programming/datetime.md",
           "title": "시간과 타임존"
+        },
+        {
+          "type": "file",
+          "name": "regex-pitfalls.md",
+          "path": "Programming/regex-pitfalls.md",
+          "title": "정규식의 함정"
         },
         {
           "type": "file",
@@ -1677,6 +1710,12 @@
           "name": "accessibility.md",
           "path": "Web/accessibility.md",
           "title": "웹 접근성 (Web Accessibility) 가이드라인"
+        },
+        {
+          "type": "file",
+          "name": "browser-storage.md",
+          "path": "Web/browser-storage.md",
+          "title": "브라우저 저장소 선택하기"
         },
         {
           "type": "file",
@@ -9217,6 +9256,11 @@
           "level": 2,
           "text": "Nginx",
           "id": "nginx"
+        },
+        {
+          "level": 2,
+          "text": "Kubernetes",
+          "id": "kubernetes"
         }
       ]
     },
@@ -9912,6 +9956,76 @@
           "level": 2,
           "text": "non-root 사용자 실행 (보안)",
           "id": "non-root-사용자-실행-보안"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Infrastructure/kubernetes/basics.md": {
+      "title": "Kubernetes 기초: Pod, Deployment, Service",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Kubernetes 기초: Pod, Deployment, Service",
+          "id": "kubernetes-기초-pod-deployment-service"
+        },
+        {
+          "level": 2,
+          "text": "개념: 선언형과 컨트롤 루프",
+          "id": "개념-선언형과-컨트롤-루프"
+        },
+        {
+          "level": 3,
+          "text": "세 가지 핵심 오브젝트",
+          "id": "세-가지-핵심-오브젝트"
+        },
+        {
+          "level": 2,
+          "text": "첫 매니페스트",
+          "id": "첫-매니페스트"
+        },
+        {
+          "level": 3,
+          "text": "라벨과 셀렉터가 모든 것을 연결한다",
+          "id": "라벨과-셀렉터가-모든-것을-연결한다"
+        },
+        {
+          "level": 2,
+          "text": "매니페스트 검증: 직접 돌려 본 결과",
+          "id": "매니페스트-검증-직접-돌려-본-결과"
+        },
+        {
+          "level": 2,
+          "text": "배포와 롤링 업데이트",
+          "id": "배포와-롤링-업데이트"
+        },
+        {
+          "level": 2,
+          "text": "프로브: K8s가 컨테이너 상태를 아는 방법",
+          "id": "프로브-k8s가-컨테이너-상태를-아는-방법"
+        },
+        {
+          "level": 2,
+          "text": "리소스: requests와 limits",
+          "id": "리소스-requests와-limits"
+        },
+        {
+          "level": 2,
+          "text": "Service: 고정된 접점",
+          "id": "service-고정된-접점"
+        },
+        {
+          "level": 2,
+          "text": "종료와 상태: 컨테이너 쪽에서 맞춰야 할 것",
+          "id": "종료와-상태-컨테이너-쪽에서-맞춰야-할-것"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
         },
         {
           "level": 2,
@@ -11735,6 +11849,56 @@
         }
       ]
     },
+    "Observability/slo-and-alerting.md": {
+      "title": "SLO와 번 레이트 알림",
+      "headings": [
+        {
+          "level": 1,
+          "text": "SLO와 번 레이트 알림",
+          "id": "slo와-번-레이트-알림"
+        },
+        {
+          "level": 2,
+          "text": "개념: SLI, SLO, 에러 버짓",
+          "id": "개념-sli-slo-에러-버짓"
+        },
+        {
+          "level": 2,
+          "text": "번 레이트(burn rate): 예산을 얼마나 빨리 쓰는가",
+          "id": "번-레이트burn-rate-예산을-얼마나-빨리-쓰는가"
+        },
+        {
+          "level": 3,
+          "text": "소진율 ↔ 번 레이트 변환",
+          "id": "소진율-번-레이트-변환"
+        },
+        {
+          "level": 2,
+          "text": "알림 방식 비교: 시뮬레이션 결과",
+          "id": "알림-방식-비교-시뮬레이션-결과"
+        },
+        {
+          "level": 3,
+          "text": "Prometheus 규칙 예시 (워크북 본문)",
+          "id": "prometheus-규칙-예시-워크북-본문"
+        },
+        {
+          "level": 2,
+          "text": "설계할 때 놓치기 쉬운 것",
+          "id": "설계할-때-놓치기-쉬운-것"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
     "Programming/README.md": {
       "title": "Programming",
       "headings": [
@@ -11742,6 +11906,71 @@
           "level": 1,
           "text": "Programming",
           "id": "programming"
+        }
+      ]
+    },
+    "Programming/async-and-event-loop.md": {
+      "title": "비동기와 이벤트 루프",
+      "headings": [
+        {
+          "level": 1,
+          "text": "비동기와 이벤트 루프",
+          "id": "비동기와-이벤트-루프"
+        },
+        {
+          "level": 2,
+          "text": "개념 1: 실행 순서 — 동기, 마이크로태스크, 매크로태스크",
+          "id": "개념-1-실행-순서-동기-마이크로태스크-매크로태스크"
+        },
+        {
+          "level": 2,
+          "text": "개념 2: 동기 코드가 이벤트 루프를 막는다",
+          "id": "개념-2-동기-코드가-이벤트-루프를-막는다"
+        },
+        {
+          "level": 3,
+          "text": "마이크로태스크로 도배하면 매크로태스크가 굶는다",
+          "id": "마이크로태스크로-도배하면-매크로태스크가-굶는다"
+        },
+        {
+          "level": 2,
+          "text": "개념 3: await를 어디에 두느냐가 성능이다",
+          "id": "개념-3-await를-어디에-두느냐가-성능이다"
+        },
+        {
+          "level": 3,
+          "text": "함정: forEach(async …)는 기다리지 않는다",
+          "id": "함정-foreachasync-는-기다리지-않는다"
+        },
+        {
+          "level": 3,
+          "text": "Promise 조합기 4종",
+          "id": "promise-조합기-4종"
+        },
+        {
+          "level": 2,
+          "text": "개념 4: 실패와 취소",
+          "id": "개념-4-실패와-취소"
+        },
+        {
+          "level": 3,
+          "text": "처리하지 않은 reject는 프로세스를 죽인다",
+          "id": "처리하지-않은-reject는-프로세스를-죽인다"
+        },
+        {
+          "level": 3,
+          "text": "취소는 Promise.race가 아니라 AbortSignal로",
+          "id": "취소는-promiserace가-아니라-abortsignal로"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
         }
       ]
     },
@@ -11812,6 +12041,96 @@
           "level": 2,
           "text": "도구 선택",
           "id": "도구-선택"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Programming/regex-pitfalls.md": {
+      "title": "정규식의 함정",
+      "headings": [
+        {
+          "level": 1,
+          "text": "정규식의 함정",
+          "id": "정규식의-함정"
+        },
+        {
+          "level": 2,
+          "text": "파국적 백트래킹(ReDoS)",
+          "id": "파국적-백트래킹redos"
+        },
+        {
+          "level": 3,
+          "text": "왜 느려지는가",
+          "id": "왜-느려지는가"
+        },
+        {
+          "level": 3,
+          "text": "실전에서 만나는 모양",
+          "id": "실전에서-만나는-모양"
+        },
+        {
+          "level": 3,
+          "text": "위험한 패턴의 특징",
+          "id": "위험한-패턴의-특징"
+        },
+        {
+          "level": 3,
+          "text": "고치는 방법",
+          "id": "고치는-방법"
+        },
+        {
+          "level": 3,
+          "text": "V8의 선형 시간 엔진 (실험 기능)",
+          "id": "v8의-선형-시간-엔진-실험-기능"
+        },
+        {
+          "level": 2,
+          "text": "틀린 결과를 내는 함정",
+          "id": "틀린-결과를-내는-함정"
+        },
+        {
+          "level": 3,
+          "text": "g(또는 y) 플래그와 test()는 상태를 가진다",
+          "id": "g또는-y-플래그와-test는-상태를-가진다"
+        },
+        {
+          "level": 3,
+          "text": "., ^, $와 줄바꿈",
+          "id": "-와-줄바꿈"
+        },
+        {
+          "level": 3,
+          "text": "\\w와 \\b는 한글을 단어 문자로 보지 않는다",
+          "id": "w와-b는-한글을-단어-문자로-보지-않는다"
+        },
+        {
+          "level": 3,
+          "text": "이모지와 u 플래그",
+          "id": "이모지와-u-플래그"
+        },
+        {
+          "level": 3,
+          "text": "탐욕적 vs 게으른 수량자",
+          "id": "탐욕적-vs-게으른-수량자"
+        },
+        {
+          "level": 3,
+          "text": "replace의 특수 치환 문자열",
+          "id": "replace의-특수-치환-문자열"
+        },
+        {
+          "level": 3,
+          "text": "사용자 입력을 패턴에 넣을 때는 이스케이프",
+          "id": "사용자-입력을-패턴에-넣을-때는-이스케이프"
         },
         {
           "level": 2,
@@ -15372,6 +15691,91 @@
           "level": 2,
           "text": "유용한 도구",
           "id": "유용한-도구"
+        }
+      ]
+    },
+    "Web/browser-storage.md": {
+      "title": "브라우저 저장소 선택하기",
+      "headings": [
+        {
+          "level": 1,
+          "text": "브라우저 저장소 선택하기",
+          "id": "브라우저-저장소-선택하기"
+        },
+        {
+          "level": 2,
+          "text": "한눈에 비교",
+          "id": "한눈에-비교"
+        },
+        {
+          "level": 2,
+          "text": "직접 확인한 동작",
+          "id": "직접-확인한-동작"
+        },
+        {
+          "level": 3,
+          "text": "모든 저장소는 출처(origin) 단위로 격리된다 — 쿠키만 예외",
+          "id": "모든-저장소는-출처origin-단위로-격리된다-쿠키만-예외"
+        },
+        {
+          "level": 3,
+          "text": "HttpOnly 쿠키는 JS에서 보이지 않는다",
+          "id": "httponly-쿠키는-js에서-보이지-않는다"
+        },
+        {
+          "level": 3,
+          "text": "localStorage/sessionStorage는 문자열만 저장한다",
+          "id": "localstoragesessionstorage는-문자열만-저장한다"
+        },
+        {
+          "level": 3,
+          "text": "용량: 한계에 닿으면 예외가 난다",
+          "id": "용량-한계에-닿으면-예외가-난다"
+        },
+        {
+          "level": 3,
+          "text": "새로고침·이동 후에도 남는가",
+          "id": "새로고침이동-후에도-남는가"
+        },
+        {
+          "level": 3,
+          "text": "sessionStorage는 \"탭마다\"이고, 새 창으로 복사된다",
+          "id": "sessionstorage는-탭마다이고-새-창으로-복사된다"
+        },
+        {
+          "level": 3,
+          "text": "같은 탭의 storage 이벤트는 오지 않는다",
+          "id": "같은-탭의-storage-이벤트는-오지-않는다"
+        },
+        {
+          "level": 3,
+          "text": "동기 API의 비용",
+          "id": "동기-api의-비용"
+        },
+        {
+          "level": 3,
+          "text": "IndexedDB는 JS 객체를 그대로 저장한다",
+          "id": "indexeddb는-js-객체를-그대로-저장한다"
+        },
+        {
+          "level": 3,
+          "text": "Cache API",
+          "id": "cache-api"
+        },
+        {
+          "level": 2,
+          "text": "무엇을 어디에 저장할까",
+          "id": "무엇을-어디에-저장할까"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
         }
       ]
     },
