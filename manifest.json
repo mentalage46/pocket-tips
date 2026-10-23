@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T01:34:15.700Z",
+  "generatedAt": "2026-10-23T06:13:44.886Z",
   "root": "docs",
   "home": "README.md",
   "tree": [
@@ -1179,6 +1179,12 @@
       "children": [
         {
           "type": "file",
+          "name": "filesystem-and-links.md",
+          "path": "Linux/filesystem-and-links.md",
+          "title": "파일 시스템과 링크"
+        },
+        {
+          "type": "file",
           "name": "permissions-and-processes.md",
           "path": "Linux/permissions-and-processes.md",
           "title": "파일 권한과 프로세스"
@@ -1194,6 +1200,24 @@
           "name": "shell-basics.md",
           "path": "Linux/shell-basics.md",
           "title": "셸 스크립트의 기본과 함정"
+        },
+        {
+          "type": "file",
+          "name": "ssh-and-remote.md",
+          "path": "Linux/ssh-and-remote.md",
+          "title": "SSH로 원격 작업하기"
+        },
+        {
+          "type": "file",
+          "name": "system-diagnostics.md",
+          "path": "Linux/system-diagnostics.md",
+          "title": "시스템 진단: CPU, 메모리, 디스크, 로그"
+        },
+        {
+          "type": "file",
+          "name": "text-processing.md",
+          "path": "Linux/text-processing.md",
+          "title": "텍스트 처리 도구 (grep, sed, awk, sort, jq)"
         }
       ]
     },
@@ -9987,6 +10011,61 @@
         }
       ]
     },
+    "Linux/filesystem-and-links.md": {
+      "title": "파일 시스템과 링크",
+      "headings": [
+        {
+          "level": 1,
+          "text": "파일 시스템과 링크",
+          "id": "파일-시스템과-링크"
+        },
+        {
+          "level": 2,
+          "text": "개념 1: 파일 이름과 파일 내용(inode)은 다르다",
+          "id": "개념-1-파일-이름과-파일-내용inode은-다르다"
+        },
+        {
+          "level": 3,
+          "text": "mv와 cp는 inode 관점에서 다르다",
+          "id": "mv와-cp는-inode-관점에서-다르다"
+        },
+        {
+          "level": 2,
+          "text": "개념 2: 삭제한 파일이 디스크를 계속 차지한다",
+          "id": "개념-2-삭제한-파일이-디스크를-계속-차지한다"
+        },
+        {
+          "level": 3,
+          "text": "디스크가 찼을 때: df → du",
+          "id": "디스크가-찼을-때-df-du"
+        },
+        {
+          "level": 2,
+          "text": "개념 3: \"모든 것은 파일\"과 파일 디스크립터",
+          "id": "개념-3-모든-것은-파일과-파일-디스크립터"
+        },
+        {
+          "level": 3,
+          "text": "자주 쓰는 특수 파일",
+          "id": "자주-쓰는-특수-파일"
+        },
+        {
+          "level": 2,
+          "text": "Linux의 디렉터리 구조",
+          "id": "linux의-디렉터리-구조"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
     "Linux/permissions-and-processes.md": {
       "title": "파일 권한과 프로세스",
       "headings": [
@@ -10189,6 +10268,221 @@
           "level": 3,
           "text": "이식성 있는 스크립트를 쓰는 방법",
           "id": "이식성-있는-스크립트를-쓰는-방법"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Linux/ssh-and-remote.md": {
+      "title": "SSH로 원격 작업하기",
+      "headings": [
+        {
+          "level": 1,
+          "text": "SSH로 원격 작업하기",
+          "id": "ssh로-원격-작업하기"
+        },
+        {
+          "level": 2,
+          "text": "개념: SSH는 하나의 암호화된 채널 위에 여러 기능을 올린다",
+          "id": "개념-ssh는-하나의-암호화된-채널-위에-여러-기능을-올린다"
+        },
+        {
+          "level": 2,
+          "text": "호스트 키: \"서버가 진짜인가\"를 확인하는 장치",
+          "id": "호스트-키-서버가-진짜인가를-확인하는-장치"
+        },
+        {
+          "level": 2,
+          "text": "원격 명령 실행",
+          "id": "원격-명령-실행"
+        },
+        {
+          "level": 3,
+          "text": "종료 코드는 그대로 전달된다",
+          "id": "종료-코드는-그대로-전달된다"
+        },
+        {
+          "level": 3,
+          "text": "따옴표가 바뀌면 \"어느 쪽 셸이 확장하는가\"가 바뀐다",
+          "id": "따옴표가-바뀌면-어느-쪽-셸이-확장하는가가-바뀐다"
+        },
+        {
+          "level": 2,
+          "text": "포트 포워딩(터널): 세 가지 방향",
+          "id": "포트-포워딩터널-세-가지-방향"
+        },
+        {
+          "level": 3,
+          "text": "터널은 기본적으로 \"내 PC에서만\" 열린다",
+          "id": "터널은-기본적으로-내-pc에서만-열린다"
+        },
+        {
+          "level": 2,
+          "text": "파일 전송",
+          "id": "파일-전송"
+        },
+        {
+          "level": 3,
+          "text": "scp: 포트 옵션이 대문자다",
+          "id": "scp-포트-옵션이-대문자다"
+        },
+        {
+          "level": 3,
+          "text": "scp는 이제 SFTP 위에서 동작한다",
+          "id": "scp는-이제-sftp-위에서-동작한다"
+        },
+        {
+          "level": 3,
+          "text": "rsync: 변경분만, 그리고 끝의 슬래시",
+          "id": "rsync-변경분만-그리고-끝의-슬래시"
+        },
+        {
+          "level": 2,
+          "text": "설정 파일(~/.ssh/config)로 줄이기",
+          "id": "설정-파일sshconfig로-줄이기"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Linux/system-diagnostics.md": {
+      "title": "시스템 진단: CPU, 메모리, 디스크, 로그",
+      "headings": [
+        {
+          "level": 1,
+          "text": "시스템 진단: CPU, 메모리, 디스크, 로그",
+          "id": "시스템-진단-cpu-메모리-디스크-로그"
+        },
+        {
+          "level": 2,
+          "text": "개념: 자원마다 \"사용량, 포화, 에러\"를 본다",
+          "id": "개념-자원마다-사용량-포화-에러를-본다"
+        },
+        {
+          "level": 2,
+          "text": "CPU: load average를 읽는 법",
+          "id": "cpu-load-average를-읽는-법"
+        },
+        {
+          "level": 3,
+          "text": "어느 프로세스가 CPU를 쓰는가",
+          "id": "어느-프로세스가-cpu를-쓰는가"
+        },
+        {
+          "level": 2,
+          "text": "메모리: free가 아니라 available을 본다",
+          "id": "메모리-free가-아니라-available을-본다"
+        },
+        {
+          "level": 3,
+          "text": "OOM killer: 메모리가 바닥나면 커널이 프로세스를 죽인다",
+          "id": "oom-killer-메모리가-바닥나면-커널이-프로세스를-죽인다"
+        },
+        {
+          "level": 2,
+          "text": "디스크",
+          "id": "디스크"
+        },
+        {
+          "level": 2,
+          "text": "네트워크 소켓: 누가 어느 포트를 듣고 있는가",
+          "id": "네트워크-소켓-누가-어느-포트를-듣고-있는가"
+        },
+        {
+          "level": 2,
+          "text": "로그: journalctl",
+          "id": "로그-journalctl"
+        },
+        {
+          "level": 2,
+          "text": "증상별 첫 확인",
+          "id": "증상별-첫-확인"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Linux/text-processing.md": {
+      "title": "텍스트 처리 도구 (grep, sed, awk, sort, jq)",
+      "headings": [
+        {
+          "level": 1,
+          "text": "텍스트 처리 도구 (grep, sed, awk, sort, jq)",
+          "id": "텍스트-처리-도구-grep-sed-awk-sort-jq"
+        },
+        {
+          "level": 2,
+          "text": "개념: 작은 도구를 텍스트 스트림으로 이어 붙인다",
+          "id": "개념-작은-도구를-텍스트-스트림으로-이어-붙인다"
+        },
+        {
+          "level": 2,
+          "text": "grep: 줄을 찾는다",
+          "id": "grep-줄을-찾는다"
+        },
+        {
+          "level": 3,
+          "text": "열 기반 데이터에 grep을 쓰면 오탐이 난다",
+          "id": "열-기반-데이터에-grep을-쓰면-오탐이-난다"
+        },
+        {
+          "level": 2,
+          "text": "awk: 필드 단위로 계산한다",
+          "id": "awk-필드-단위로-계산한다"
+        },
+        {
+          "level": 3,
+          "text": "macOS의 awk는 gawk가 아니다",
+          "id": "macos의-awk는-gawk가-아니다"
+        },
+        {
+          "level": 2,
+          "text": "sed: 치환과 줄 편집",
+          "id": "sed-치환과-줄-편집"
+        },
+        {
+          "level": 2,
+          "text": "sort, uniq, cut: 빈도 집계 패턴",
+          "id": "sort-uniq-cut-빈도-집계-패턴"
+        },
+        {
+          "level": 3,
+          "text": "sort는 로케일에 따라 순서가 달라진다",
+          "id": "sort는-로케일에-따라-순서가-달라진다"
+        },
+        {
+          "level": 2,
+          "text": "jq: JSON은 jq로 다룬다",
+          "id": "jq-json은-jq로-다룬다"
+        },
+        {
+          "level": 2,
+          "text": "레시피 모음",
+          "id": "레시피-모음"
         },
         {
           "level": 2,
