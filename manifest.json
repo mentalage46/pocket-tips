@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T01:21:51.316Z",
+  "generatedAt": "2026-10-23T01:24:22.990Z",
   "root": "docs",
   "home": "README.md",
   "tree": [
@@ -1532,6 +1532,18 @@
           "title": "git",
           "index": null,
           "children": [
+            {
+              "type": "file",
+              "name": "basics.md",
+              "path": "Version Control System/git/basics.md",
+              "title": "Git 기본 모델"
+            },
+            {
+              "type": "file",
+              "name": "branching-and-commits.md",
+              "path": "Version Control System/git/branching-and-commits.md",
+              "title": "브랜치 전략과 커밋 규칙"
+            },
             {
               "type": "file",
               "name": "cherry-pick.md",
@@ -13468,6 +13480,126 @@
           "level": 2,
           "text": "Git",
           "id": "git"
+        }
+      ]
+    },
+    "Version Control System/git/basics.md": {
+      "title": "Git 기본 모델",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Git 기본 모델",
+          "id": "git-기본-모델"
+        },
+        {
+          "level": 2,
+          "text": "개념 1: Git은 \"스냅샷\"을 내용 주소로 저장한다",
+          "id": "개념-1-git은-스냅샷을-내용-주소로-저장한다"
+        },
+        {
+          "level": 3,
+          "text": "브랜치와 HEAD는 그냥 \"포인터\"다",
+          "id": "브랜치와-head는-그냥-포인터다"
+        },
+        {
+          "level": 2,
+          "text": "개념 2: 변경은 세 영역을 지나간다",
+          "id": "개념-2-변경은-세-영역을-지나간다"
+        },
+        {
+          "level": 2,
+          "text": "되돌리기: 어느 영역을 되돌릴 것인가",
+          "id": "되돌리기-어느-영역을-되돌릴-것인가"
+        },
+        {
+          "level": 2,
+          "text": "합치기: merge의 세 가지 모양",
+          "id": "합치기-merge의-세-가지-모양"
+        },
+        {
+          "level": 2,
+          "text": ".gitignore는 이미 추적 중인 파일을 숨기지 못한다",
+          "id": "gitignore는-이미-추적-중인-파일을-숨기지-못한다"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Version Control System/git/branching-and-commits.md": {
+      "title": "브랜치 전략과 커밋 규칙",
+      "headings": [
+        {
+          "level": 1,
+          "text": "브랜치 전략과 커밋 규칙",
+          "id": "브랜치-전략과-커밋-규칙"
+        },
+        {
+          "level": 2,
+          "text": "개념: 브랜치 전략은 \"얼마나 자주, 얼마나 크게 합치는가\"의 선택이다",
+          "id": "개념-브랜치-전략은-얼마나-자주-얼마나-크게-합치는가의-선택이다"
+        },
+        {
+          "level": 3,
+          "text": "Trunk-based development",
+          "id": "trunk-based-development"
+        },
+        {
+          "level": 3,
+          "text": "GitHub flow",
+          "id": "github-flow"
+        },
+        {
+          "level": 3,
+          "text": "GitFlow가 맞는 곳과 아닌 곳",
+          "id": "gitflow가-맞는-곳과-아닌-곳"
+        },
+        {
+          "level": 3,
+          "text": "브랜치 이름과 수명",
+          "id": "브랜치-이름과-수명"
+        },
+        {
+          "level": 2,
+          "text": "GitHub PR의 세 가지 merge 방식",
+          "id": "github-pr의-세-가지-merge-방식"
+        },
+        {
+          "level": 2,
+          "text": "커밋 메시지: Conventional Commits",
+          "id": "커밋-메시지-conventional-commits"
+        },
+        {
+          "level": 3,
+          "text": "SemVer와의 연결",
+          "id": "semver와의-연결"
+        },
+        {
+          "level": 3,
+          "text": "좋은 커밋의 습관",
+          "id": "좋은-커밋의-습관"
+        },
+        {
+          "level": 3,
+          "text": "이 저장소의 예",
+          "id": "이-저장소의-예"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
         }
       ]
     },

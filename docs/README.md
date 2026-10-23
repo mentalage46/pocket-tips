@@ -24,7 +24,7 @@
 | [Security](./Security/)                                 | OWASP Top 10:2025, 인증·비밀번호, JWT·쿠키, XSS·CSRF·보안 헤더, 공급망, CORS, 환경변수 |
 | [UX](./UX/)                                             | 사용성 원칙, 사용자 조사, 시각 요소, 컴포넌트, 디자인 시스템 |
 | [Utility](./Utility/)                                   | Makefile, YAML, Husky                              |
-| [Version Control System](./Version%20Control%20System/) | Git 명령어, Rebase, Cherry-pick, 서브모듈, SSH 키   |
+| [Version Control System](./Version%20Control%20System/) | Git 기본 모델, 브랜치 전략·커밋 규칙, Rebase, Cherry-pick, 서브모듈, SSH 키 |
 | [Web](./Web/)                                           | 웹 성능, PWA, 상태 관리, 접근성                    |
 
 ---
@@ -139,6 +139,7 @@
 
 ### Git
 
+- [Git 기본 모델](./Version%20Control%20System/git/basics.md) | [브랜치 전략과 커밋 규칙](./Version%20Control%20System/git/branching-and-commits.md)
 - [Rebase](./Version%20Control%20System/git/rebase.md) | [Cherry-pick](./Version%20Control%20System/git/cherry-pick.md)
 - [Tips](./Version%20Control%20System/git/tips.md) | [Submodules](./Version%20Control%20System/git/submodules.md) | [SSH 키](./Version%20Control%20System/git/public-key.md)
 
