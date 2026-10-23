@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T07:00:46.281Z",
+  "generatedAt": "2026-10-23T08:12:36.332Z",
   "root": "docs",
   "home": "README.md",
   "tree": [
@@ -1287,6 +1287,12 @@
           "name": "protocol.md",
           "path": "Network/protocol.md",
           "title": "네트워크 프로토콜 (Network Protocols) - 실무 가이드"
+        },
+        {
+          "type": "file",
+          "name": "realtime-communication.md",
+          "path": "Network/realtime-communication.md",
+          "title": "실시간 통신: 폴링, SSE, WebSocket"
         },
         {
           "type": "file",
@@ -11141,6 +11147,101 @@
           "level": 2,
           "text": "3. DNS (Domain Name System) 실무 팁",
           "id": "3-dns-domain-name-system-실무-팁"
+        }
+      ]
+    },
+    "Network/realtime-communication.md": {
+      "title": "실시간 통신: 폴링, SSE, WebSocket",
+      "headings": [
+        {
+          "level": 1,
+          "text": "실시간 통신: 폴링, SSE, WebSocket",
+          "id": "실시간-통신-폴링-sse-websocket"
+        },
+        {
+          "level": 2,
+          "text": "한눈에 비교",
+          "id": "한눈에-비교"
+        },
+        {
+          "level": 3,
+          "text": "무엇을 고를까",
+          "id": "무엇을-고를까"
+        },
+        {
+          "level": 2,
+          "text": "SSE (Server-Sent Events)",
+          "id": "sse-server-sent-events"
+        },
+        {
+          "level": 3,
+          "text": "전송 형식",
+          "id": "전송-형식"
+        },
+        {
+          "level": 3,
+          "text": "재연결과 이어받기: 직접 실행한 결과",
+          "id": "재연결과-이어받기-직접-실행한-결과"
+        },
+        {
+          "level": 3,
+          "text": "SSE의 제약",
+          "id": "sse의-제약"
+        },
+        {
+          "level": 2,
+          "text": "WebSocket",
+          "id": "websocket"
+        },
+        {
+          "level": 3,
+          "text": "시작은 HTTP다 (업그레이드 핸드셰이크)",
+          "id": "시작은-http다-업그레이드-핸드셰이크"
+        },
+        {
+          "level": 3,
+          "text": "연결 상태와 종료 코드",
+          "id": "연결-상태와-종료-코드"
+        },
+        {
+          "level": 3,
+          "text": "보안: Origin을 직접 확인해야 한다",
+          "id": "보안-origin을-직접-확인해야-한다"
+        },
+        {
+          "level": 3,
+          "text": "HTTP/2, HTTP/3에서",
+          "id": "http2-http3에서"
+        },
+        {
+          "level": 2,
+          "text": "오래 유지되는 연결의 운영 문제",
+          "id": "오래-유지되는-연결의-운영-문제"
+        },
+        {
+          "level": 3,
+          "text": "프록시와 로드밸런서",
+          "id": "프록시와-로드밸런서"
+        },
+        {
+          "level": 3,
+          "text": "연결이 서버 메모리를 차지한다",
+          "id": "연결이-서버-메모리를-차지한다"
+        },
+        {
+          "level": 3,
+          "text": "서버가 여러 대일 때",
+          "id": "서버가-여러-대일-때"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
         }
       ]
     },
