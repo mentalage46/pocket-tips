@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T08:30:47.338Z",
+  "generatedAt": "2026-10-23T08:33:55.666Z",
   "root": "docs",
   "home": "README.md",
   "tree": [
@@ -1374,6 +1374,12 @@
           "name": "datetime.md",
           "path": "Programming/datetime.md",
           "title": "시간과 타임존"
+        },
+        {
+          "type": "file",
+          "name": "regex-pitfalls.md",
+          "path": "Programming/regex-pitfalls.md",
+          "title": "정규식의 함정"
         },
         {
           "type": "file",
@@ -11934,6 +11940,96 @@
           "level": 2,
           "text": "도구 선택",
           "id": "도구-선택"
+        },
+        {
+          "level": 2,
+          "text": "🎯 체크리스트",
+          "id": "-체크리스트"
+        },
+        {
+          "level": 2,
+          "text": "참고 자료",
+          "id": "참고-자료"
+        }
+      ]
+    },
+    "Programming/regex-pitfalls.md": {
+      "title": "정규식의 함정",
+      "headings": [
+        {
+          "level": 1,
+          "text": "정규식의 함정",
+          "id": "정규식의-함정"
+        },
+        {
+          "level": 2,
+          "text": "파국적 백트래킹(ReDoS)",
+          "id": "파국적-백트래킹redos"
+        },
+        {
+          "level": 3,
+          "text": "왜 느려지는가",
+          "id": "왜-느려지는가"
+        },
+        {
+          "level": 3,
+          "text": "실전에서 만나는 모양",
+          "id": "실전에서-만나는-모양"
+        },
+        {
+          "level": 3,
+          "text": "위험한 패턴의 특징",
+          "id": "위험한-패턴의-특징"
+        },
+        {
+          "level": 3,
+          "text": "고치는 방법",
+          "id": "고치는-방법"
+        },
+        {
+          "level": 3,
+          "text": "V8의 선형 시간 엔진 (실험 기능)",
+          "id": "v8의-선형-시간-엔진-실험-기능"
+        },
+        {
+          "level": 2,
+          "text": "틀린 결과를 내는 함정",
+          "id": "틀린-결과를-내는-함정"
+        },
+        {
+          "level": 3,
+          "text": "g(또는 y) 플래그와 test()는 상태를 가진다",
+          "id": "g또는-y-플래그와-test는-상태를-가진다"
+        },
+        {
+          "level": 3,
+          "text": "., ^, $와 줄바꿈",
+          "id": "-와-줄바꿈"
+        },
+        {
+          "level": 3,
+          "text": "\\w와 \\b는 한글을 단어 문자로 보지 않는다",
+          "id": "w와-b는-한글을-단어-문자로-보지-않는다"
+        },
+        {
+          "level": 3,
+          "text": "이모지와 u 플래그",
+          "id": "이모지와-u-플래그"
+        },
+        {
+          "level": 3,
+          "text": "탐욕적 vs 게으른 수량자",
+          "id": "탐욕적-vs-게으른-수량자"
+        },
+        {
+          "level": 3,
+          "text": "replace의 특수 치환 문자열",
+          "id": "replace의-특수-치환-문자열"
+        },
+        {
+          "level": 3,
+          "text": "사용자 입력을 패턴에 넣을 때는 이스케이프",
+          "id": "사용자-입력을-패턴에-넣을-때는-이스케이프"
         },
         {
           "level": 2,
